@@ -4,7 +4,7 @@
       <button @click="toggleSidebarLogic" class="btn me-2"
         v-if="$route.name==='Therapist' || $route.name==='Patient'"><i class="fas fa-bars"></i></button>
 
-      <router-link to="/landing" type="button" class="btn">iSchema</router-link>
+      <router-link to="/landing" type="button" class="btn brandtext">iSchema</router-link>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
