@@ -4,7 +4,8 @@
       <button @click="toggleSidebarLogic" class="btn me-2"
         v-if="$route.name==='Therapist' || 
         $route.name==='Patient' || 
-        $route.name==='Messages'"><i class="fas fa-bars"></i></button>
+        $route.name==='Messages' || 
+        $route.name==='Survey' "><i class="fas fa-bars"></i></button>
 
       <router-link to="/landing" type="button" class="btn brandtext">iSchema</router-link>
 
@@ -31,7 +32,10 @@
   <div class="container-fluid px-0">
 
     <sidebar :class="{ sidebarOpen: !toggleSidebar}"
-      v-if="$route.name==='Therapist' || $route.name==='Patient' || $route.name==='Messages'"></sidebar>
+      v-if="$route.name==='Therapist' || 
+      $route.name==='Patient' || 
+      $route.name==='Messages'|| 
+      $route.name==='Survey'"></sidebar>
 
 
     <div class="mainContent" :class="{ 

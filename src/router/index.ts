@@ -8,6 +8,7 @@ import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import Therapistjoin from '../views/Therapistjoin.vue'
 import Messages from '../views/Messages.vue'
+import Survey from '../views/Survey.vue'
 
 
 const routes: Array<RouteRecordRaw> = [
@@ -63,6 +64,12 @@ const routes: Array<RouteRecordRaw> = [
     path: '/messages',
     name: 'Messages',
     component: Messages
+  }
+  ,
+  {
+    path: '/survey',
+    name: 'Survey',
+    component: Survey
   }
 ]
 
