@@ -72,7 +72,6 @@ $dark: #303840;
   .accordion-item {
     margin: 2px 0;
     border-radius: 10px !important;
-    overflow: hidden;
     transition: ease all 0.3s;
     svg {
       margin-right: 4px;
@@ -293,4 +292,53 @@ $dark: #303840;
   button:disabled::after {
     opacity: 0;
   }
+}
+
+// Messages 
+.messagewrapper {
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+/*------scroll bar---------------------*/
+::-webkit-scrollbar {
+  width: 10px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #525965;
+  border: 0px none #ffffff;
+  border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #525965;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #525965;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
 }

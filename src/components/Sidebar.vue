@@ -28,7 +28,7 @@
           $route.name==='Schedule' || 
           $route.name==='Scheduled' || 
           $route.name==='Patientbilling' 
-          "><i class="far fa-comment-alt"></i> Messages</router-link>    
+          "><i class="far fa-comment-alt"></i> Messages <span class="badge bg-primary ms-1">1</span></router-link>    
           <router-link to="/Schedule" class="list-group-item list-group-item-action bg-dark text-light"  v-if="
           $route.name==='Patient' || 
           $route.name==='Messages'  || 
@@ -44,7 +44,7 @@
           $route.name==='Schedule' || 
           $route.name==='Scheduled' || 
           $route.name==='Patientbilling' 
-          "><i class="far fa-calendar-alt"></i> Calendar</router-link>    
+          "><i class="far fa-calendar-alt"></i> Calendar</router-link>  
           <router-link to="/Patientbilling" class="list-group-item list-group-item-action bg-dark text-light"  v-if="
           $route.name==='Patient' || 
           $route.name==='Messages'  || 
@@ -52,15 +52,23 @@
           $route.name==='Schedule' || 
           $route.name==='Scheduled' || 
           $route.name==='Patientbilling' 
-          "><i class="fas fa-file-invoice"></i> Billing</router-link>    
+          "><i class="fas fa-file-invoice"></i> Patient Forms <span class="badge bg-primary ms-1">2</span></router-link>     
+          <router-link to="/Patientbilling" class="list-group-item list-group-item-action bg-dark text-light"  v-if="
+          $route.name==='Patient' || 
+          $route.name==='Messages'  || 
+          $route.name==='Patientprofile' || 
+          $route.name==='Schedule' || 
+          $route.name==='Scheduled' || 
+          $route.name==='Patientbilling' 
+          "><i class="fas fa-file-invoice"></i> Billing <span class="badge bg-primary ms-1">1</span></router-link>    
 
         
-          <router-link to="/Therapist" class="list-group-item list-group-item-action bg-dark text-light" v-if="$route.name==='Therapist' || $route.name==='Messages'"><i class="fas fa-chart-bar"></i> Dashboard</router-link>
+          <!-- <router-link to="/Therapist" class="list-group-item list-group-item-action bg-dark text-light" v-if="$route.name==='Therapist' || $route.name==='Messages'"><i class="fas fa-chart-bar"></i> Dashboard</router-link>
           <router-link to="/Messages" class="list-group-item list-group-item-action bg-dark text-light" v-if="$route.name==='Therapist' || $route.name==='Messages'"><i class="far fa-comment-alt"></i> Messages</router-link>    
           <router-link to="/" class="list-group-item list-group-item-action bg-dark text-light" v-if="$route.name==='Therapist' || $route.name==='Messages'"><i class="fas fa-calendar-day"></i> Sessions</router-link>    
           <router-link to="/" class="list-group-item list-group-item-action bg-dark text-light" v-if="$route.name==='Therapist' || $route.name==='Messages'"><i class="fas fa-users"></i> Patients</router-link>    
           <router-link to="/" class="list-group-item list-group-item-action bg-dark text-light" v-if="$route.name==='Therapist' || $route.name==='Messages'"><i class="fas fa-file-invoice"></i> Billing</router-link>    
-          <router-link to="/" class="list-group-item list-group-item-action bg-dark text-light" v-if="$route.name==='Therapist' || $route.name==='Messages'"><i class="fab fa-wpforms"></i> Questionnaire Manager</router-link>    
+          <router-link to="/" class="list-group-item list-group-item-action bg-dark text-light" v-if="$route.name==='Therapist' || $route.name==='Messages'"><i class="fab fa-wpforms"></i> Questionnaire Manager</router-link>     -->
 
        
         </div>

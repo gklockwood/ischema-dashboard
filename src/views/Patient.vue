@@ -48,7 +48,7 @@
 
                             <hr>Monday, September 27, 2021 - 1:30 PM - Dr. George Lockwood
                             <hr>
-                            <div>
+                                <div class="cardfooter">
                                 <button type="button" class="btn btn-light mx-1 shadow-sm text-dark">Calendar</button>
                             </div>
                         </div>
@@ -72,10 +72,14 @@
 
                         <div class="card-body">
                             
-                            <span class="alert border-0 fw-bold" role="alert">
+                            <span class="alert border-0" role="alert">
                               Dr. George Lockwood sent you a new message <i class="fas fa-arrow-right ms-1"></i>
                             </span>
                             <hr>
+                            <span class="alert border-0" role="alert">
+                                Complete patient forms <i class="fas fa-arrow-right ms-1"></i>
+                              </span>
+                          <hr>
         
                             <div class="cardfooter">
                                 <button type="button" class="btn btn-light mx-1 shadow-sm text-dark">View all Messages</button>
@@ -88,7 +92,7 @@
 
                         <div class="card-title text-white bg-secondary rounded-top d-flex">
                             <div class="col-sm-6 d-flex align-items-center p-4">
-                                <h4 class="fw-light mb-0">Rewards</h4>
+                                <h4 class="fw-light mb-0">Membership</h4>
                             </div>
                             <div class="col-sm-6 d-flex justify-content-end">
                                 <div class="icontypica shadow">
@@ -99,16 +103,16 @@
 
            
 
-                        <div class="card-body">
-                            
-                            <div class="alert alert-warning border-0 fw-bold" role="alert">
+                        <div class="card-body">                           
+                           
                               Schedule bulk sessions for a discount <i class="fas fa-arrow-right ms-1"></i>
-                            </div>
+                              <hr>
+                              Complete patient questionnaire <i class="fas fa-arrow-right ms-1"></i>
+                              <hr>
                           
-        
-                            <div class="cardfooter">
+                            <!-- <div class="cardfooter">
                                 <button type="button" class="btn btn-light mx-1 shadow-sm text-dark">View all offers</button>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

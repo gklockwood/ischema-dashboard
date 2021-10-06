@@ -5,12 +5,30 @@
             <h1>Register</h1>
 
 
-            <div class="row g-3 pt-4">
+            <div class="row g-3 py-4">
                 <div class="col">
                     <input type="text" class="form-control" placeholder="First Name" aria-label="First name">
                 </div>
                 <div class="col">
                     <input type="text" class="form-control" placeholder="Last Name" aria-label="Last name">
+                </div>
+            </div>
+
+            
+            <div class="row g-3 py-4">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Age" aria-label="Age">
+                </div>
+                <div class="col">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Gender</option>
+                        <option value="1">Male</option>
+                        <option value="2">Female</option>
+                        <option value="3">Non-Binary</option>
+                        <option value="1">Gender-Neutral</option>
+                        <option value="2">Gender-Fluid</option>
+                        <option value="3">Gender-Queer</option>
+                    </select>
                 </div>
             </div>
      
@@ -308,7 +326,18 @@
                 </div>
             </div>
 
-<!--             
+
+            <div class="row g-3 py-4">
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number">
+                </div>
+            </div>
+
+
+            
             <div class="row g-3 py-4">
                 <div class="col">
                     <input type="text" class="form-control" placeholder="Password" aria-label="Password">
@@ -319,22 +348,7 @@
             </div>
 
 
-            <div class="row g-3 py-4">
-                <div class="col">
-                    <input type="text" class="form-control" placeholder="Age" aria-label="Age">
-                </div>
-                <div class="col">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Gender</option>
-                        <option value="1">Male</option>
-                        <option value="2">Female</option>
-                        <option value="3">Non-Binary</option>
-                        <option value="1">Gender-Neutral</option>
-                        <option value="2">Gender-Fluid</option>
-                        <option value="3">Gender-Queer</option>
-                    </select>
-                </div>
-            </div>
+
 
             <div class="row g-3 pt-4">
                 <div class="col-12">
@@ -349,7 +363,7 @@
                 </div>
                 <div class="col">
                     <label  class="form-label">Not sure what treatment is best?</label><br>
-                    <button type="button" class="btn btn-primary">Take a Treatment Questionnaire </button>
+                    <button type="button" class="btn btn-primary">Take Treatment Questionnaire </button>
                 </div>
             </div>
 
@@ -358,7 +372,7 @@
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                         placeholder="Add Additional Information"></textarea>
                 </div>
-            </div> -->
+            </div>
 
 
             <div class="row pt-4">

@@ -2,7 +2,9 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <button @click="toggleSidebarLogic" class="btn me-2"
-        v-if="$route.name==='Therapist' || $route.name==='Patient'"><i class="fas fa-bars"></i></button>
+        v-if="$route.name==='Therapist' || 
+        $route.name==='Patient' || 
+        $route.name==='Messages'"><i class="fas fa-bars"></i></button>
 
       <router-link to="/landing" type="button" class="btn brandtext">iSchema</router-link>
 
@@ -13,13 +15,13 @@
       <div class="collapse navbar-collapse  gap-2 d-md-flex justify-content-md-end" id="navbarSupportedContent">
 
         <div class="btn-group" role="group" aria-label="Basic example"
-          v-if="$route.name!=='Therapist' && $route.name!=='Patient'">
+          v-if="$route.name!=='Therapist' && 
+          $route.name!=='Patient' && 
+          $route.name!=='Messages'">
           <router-link to="/Register" type="button" class="btn btn-outline-dark">Create Account</router-link>
           <router-link to="/Login" type="button" class="btn btn-outline-dark">Login</router-link>
         </div>
 
-        <router-link to="/Faq" type="button" class="btn btn-outline-dark"
-          v-if="$route.name!=='Therapist' && $route.name!=='Patient'">FAQ</router-link>
       </div>
     </div>
   </nav>
@@ -30,6 +32,7 @@
 
     <sidebar :class="{ sidebarOpen: !toggleSidebar}"
       v-if="$route.name==='Therapist' || $route.name==='Patient' || $route.name==='Messages'"></sidebar>
+
 
     <div class="mainContent" :class="{ 
       mainContentPushed: !toggleSidebar, 

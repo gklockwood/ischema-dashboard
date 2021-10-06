@@ -58,6 +58,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/therapistjoin',
     name: 'Therapistjoin',
     component: Therapistjoin
+  },
+  {
+    path: '/messages',
+    name: 'Messages',
+    component: Messages
   }
 ]
 
