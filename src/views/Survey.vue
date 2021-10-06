@@ -1,46 +1,242 @@
 <template>
   <div class="survey">
-    <div class="container-fluid py-4">
+    <div class="container py-4">
       <div class="row">
         <div class="col-sm">
           <div class="surveywrap">
-            <h1 class="likert-header">This is a Likert Scale survey</h1>
-            <form action="">
-              <label class="statement">This HTML Likert scale is easy to use.</label>
+            <h2>Positive Parenting Schema Inventory (PPSI)</h2>
 
-              <ul class='likert'>
-                <li class="form-check">
-                  <input type="radio" name="likert" value="1" class="form-check-input">
-                  <label class="form-check-label">1</label>
-                </li>
-                <li>
-                  <input type="radio" name="likert" value="2" class="form-check-input">
-                  <label class="form-check-label">2</label>
-                </li>
-                <li>
-                  <input type="radio" name="likert" value="3" class="form-check-input">
-                  <label class="form-check-label">3</label>
-                </li>
-                <li>
-                  <input type="radio" name="likert" value="4" class="form-check-input">
-                  <label class="form-check-label">4</label>
-                </li>
-                <li>
-                  <input type="radio" name="likert" value="5" class="form-check-input">
-                  <label class="form-check-label">5</label>
-                </li>
-                <li>
-                  <input type="radio" name="likert" value="6" class="form-check-input">
-                  <label class="form-check-label">6</label>
-                </li>
-              </ul>
-             
-              <div class="buttons">
-                <button class="clear">Clear</button>
-                <button class="submit">Submit</button>
+            <label class="fw-bold">INSTRUCTIONS:</label>
+            <p>
+              Listed below are statements that you might use to describe your parents and how they treated you. Please read each statement and decide how well it describes your parents. Choose the highest rating from 1 to 6 that describes your father and your mother when you were a child and write the number in the spaces before each statement. If someone substituted as your mother or father, please rate the scale for that person. Give your first impression and move on to the next item. Do not dwell on any item. If you did not have a mother or a father, leave the appropriate column blank. 
+            </p>
+
+            <div class="card">
+              <div class="card-body">
+                <div class="row pt-1">
+                  <label class="fw-bold">RATING SCALE:</label>
+                  <div class="col-sm">
+                    1 = Completely untrue 
+                  </div>
+                  <div class="col-sm"> 
+                    2 = Mostly untrue 
+                  </div>
+                  <div class="col-sm">
+                    3 = Slightly more true than untrue
+                  </div>
+                  <div class="col-sm">
+                    4 = Moderately true 
+                  </div>
+                  <div class="col-sm">
+                    5 = Mostly true
+                  </div>
+                  <div class="col-sm">
+                    6 = Describes him/her perfectly
+                  </div>
+                </div>
               </div>
+            </div>
+         
+
+            <form action="" class="py-3">
+              <h5 class="fw-bold pb-3">Had realistic expectations of him/herself.</h5>
+              <div class="row">
+                <div class="vol-sm-12 col-md-6">
+                  <p class="fw-bold">Father</p>
+                  <ul class='likert'>
+                    <li class="form-check">
+                      <input type="radio" name="likert" value="1" class="form-check-input">
+                      <label class="form-check-label">1</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="2" class="form-check-input">
+                      <label class="form-check-label">2</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="3" class="form-check-input">
+                      <label class="form-check-label">3</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="4" class="form-check-input">
+                      <label class="form-check-label">4</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="5" class="form-check-input">
+                      <label class="form-check-label">5</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="6" class="form-check-input">
+                      <label class="form-check-label">6</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="vol-sm-12 col-md-6">
+                  <p class="fw-bold">Mother</p>
+                  <ul class='likert'>
+                    <li class="form-check">
+                      <input type="radio" name="likert" value="1" class="form-check-input">
+                      <label class="form-check-label">1</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="2" class="form-check-input">
+                      <label class="form-check-label">2</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="3" class="form-check-input">
+                      <label class="form-check-label">3</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="4" class="form-check-input">
+                      <label class="form-check-label">4</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="5" class="form-check-input">
+                      <label class="form-check-label">5</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="6" class="form-check-input">
+                      <label class="form-check-label">6</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>  
             </form>
+
+
+            <form action="" class="py-3">
+              <h5 class="fw-bold pb-3">Respected my wanting to keep certain things to myself.</h5>
+              <div class="row">
+                <div class="vol-sm-12 col-md-6">
+                  <p class="fw-bold">Father</p>
+                  <ul class='likert'>
+                    <li class="form-check">
+                      <input type="radio" name="likert" value="1" class="form-check-input">
+                      <label class="form-check-label">1</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="2" class="form-check-input">
+                      <label class="form-check-label">2</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="3" class="form-check-input">
+                      <label class="form-check-label">3</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="4" class="form-check-input">
+                      <label class="form-check-label">4</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="5" class="form-check-input">
+                      <label class="form-check-label">5</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="6" class="form-check-input">
+                      <label class="form-check-label">6</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="vol-sm-12 col-md-6">
+                  <p class="fw-bold">Mother</p>
+                  <ul class='likert'>
+                    <li class="form-check">
+                      <input type="radio" name="likert" value="1" class="form-check-input">
+                      <label class="form-check-label">1</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="2" class="form-check-input">
+                      <label class="form-check-label">2</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="3" class="form-check-input">
+                      <label class="form-check-label">3</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="4" class="form-check-input">
+                      <label class="form-check-label">4</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="5" class="form-check-input">
+                      <label class="form-check-label">5</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="6" class="form-check-input">
+                      <label class="form-check-label">6</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>  
+            </form>
+
+
+            <form action="" class="py-3">
+              <h5 class="fw-bold pb-3">Was proud of me when I succeeded at something important.</h5>
+              <div class="row">
+                <div class="vol-sm-12 col-md-6">
+                  <p class="fw-bold">Father</p>
+                  <ul class='likert'>
+                    <li class="form-check">
+                      <input type="radio" name="likert" value="1" class="form-check-input">
+                      <label class="form-check-label">1</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="2" class="form-check-input">
+                      <label class="form-check-label">2</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="3" class="form-check-input">
+                      <label class="form-check-label">3</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="4" class="form-check-input">
+                      <label class="form-check-label">4</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="5" class="form-check-input">
+                      <label class="form-check-label">5</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="6" class="form-check-input">
+                      <label class="form-check-label">6</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="vol-sm-12 col-md-6">
+                  <p class="fw-bold">Mother</p>
+                  <ul class='likert'>
+                    <li class="form-check">
+                      <input type="radio" name="likert" value="1" class="form-check-input">
+                      <label class="form-check-label">1</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="2" class="form-check-input">
+                      <label class="form-check-label">2</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="3" class="form-check-input">
+                      <label class="form-check-label">3</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="4" class="form-check-input">
+                      <label class="form-check-label">4</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="5" class="form-check-input">
+                      <label class="form-check-label">5</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="6" class="form-check-input">
+                      <label class="form-check-label">6</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>  
+            </form>
+
           </div>
+        </div>
+        <div class="col-sm-12 text-center">
+          <button type="button" class="btn btn-danger m-2">Reset</button>
+          <button type="button" class="btn btn-primary m-2">Submit</button>
         </div>
       </div>
     </div>

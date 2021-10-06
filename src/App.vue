@@ -18,7 +18,8 @@
         <div class="btn-group" role="group" aria-label="Basic example"
           v-if="$route.name!=='Therapist' && 
           $route.name!=='Patient' && 
-          $route.name!=='Messages'">
+          $route.name!=='Messages' && 
+          $route.name!=='Survey'">
           <router-link to="/Register" type="button" class="btn btn-outline-dark">Create Account</router-link>
           <router-link to="/Login" type="button" class="btn btn-outline-dark">Login</router-link>
         </div>

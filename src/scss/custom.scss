@@ -51,6 +51,7 @@ $dark: #303840;
 
 .btn-danger {
   background: var(--danger-bg-gradient);
+  color: white !important;
 }
 
 .bg-primary {
@@ -345,22 +346,10 @@ $dark: #303840;
 
 // Survey CSS
 .surveywrap {
-  font: 12px Arial, san-serif;
   .form-check-label {
     font-size: 14px;
     font-weight: 600;
   }
-}
-h1.likert-header {
-  padding-left: 4.25%;
-  margin: 20px 0 0;
-}
-form .statement {
-  display: block;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 30px 0 0 4.25%;
-  margin-bottom: 10px;
 }
 form .likert {
   list-style: none;
@@ -388,6 +377,7 @@ form .likert li {
   width: 16%;
   text-align: center;
   vertical-align: top;
+  padding: 0;
 }
 form .likert li input[type="radio"] {
   display: block;
