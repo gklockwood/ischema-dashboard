@@ -14,24 +14,30 @@
             <div class="card">
               <div class="card-body">
                 <div class="row pt-1">
-                  <label class="fw-bold">RATING SCALE:</label>
-                  <div class="col-sm">
-                    1 = Completely untrue 
+                  <label class="fw-bold pb-1">RATING SCALE:</label>
+                  <div class="col-sm text-center">
+                    <h5 class="mb-0">1</h5>
+                    Completely untrue 
                   </div>
-                  <div class="col-sm"> 
-                    2 = Mostly untrue 
+                  <div class="col-sm text-center">
+                    <h5 class="mb-0">2</h5>
+                    Mostly untrue 
                   </div>
-                  <div class="col-sm">
-                    3 = Slightly more true than untrue
+                  <div class="col-sm text-center">
+                    <h5 class="mb-0">3</h5>
+                    Slightly more true than untrue
                   </div>
-                  <div class="col-sm">
-                    4 = Moderately true 
+                  <div class="col-sm text-center">
+                    <h5 class="mb-0">4</h5>
+                    Moderately true 
                   </div>
-                  <div class="col-sm">
-                    5 = Mostly true
+                  <div class="col-sm text-center">
+                    <h5 class="mb-0">5</h5>
+                    Mostly true
                   </div>
-                  <div class="col-sm">
-                    6 = Describes him/her perfectly
+                  <div class="col-sm text-center">
+                    <h5 class="mb-0">6</h5>
+                    Describes him/her perfectly
                   </div>
                 </div>
               </div>
