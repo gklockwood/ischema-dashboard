@@ -9,6 +9,9 @@ import Register from '../views/Register.vue'
 import Therapistjoin from '../views/Therapistjoin.vue'
 import Messages from '../views/Messages.vue'
 import Survey from '../views/Survey.vue'
+import Schedule from '../views/Schedule.vue'
+import Patientdocuments from '../views/Patientdocuments.vue'
+import Patientbilling from '../views/Patientbilling.vue'
 
 
 const routes: Array<RouteRecordRaw> = [
@@ -64,12 +67,26 @@ const routes: Array<RouteRecordRaw> = [
     path: '/messages',
     name: 'Messages',
     component: Messages
-  }
-  ,
+  },
   {
     path: '/survey',
     name: 'Survey',
     component: Survey
+  },
+  {
+    path: '/schedule',
+    name: 'Schedule',
+    component: Schedule
+  },
+  {
+    path: '/patientdocuments',
+    name: 'Patientdocuments',
+    component: Patientdocuments
+  },
+  {
+    path: '/patientbilling',
+    name: 'Patientbilling',
+    component: Patientbilling
   }
 ]
 

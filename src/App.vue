@@ -5,7 +5,10 @@
         v-if="$route.name==='Therapist' || 
         $route.name==='Patient' || 
         $route.name==='Messages' || 
-        $route.name==='Survey' "><i class="fas fa-bars"></i></button>
+        $route.name==='Survey' || 
+        $route.name==='Schedule'|| 
+        $route.name==='Patientdocuments'|| 
+        $route.name==='Patientbilling'"><i class="fas fa-bars"></i></button>
 
       <router-link to="/landing" type="button" class="btn brandtext">iSchema</router-link>
 
@@ -19,7 +22,10 @@
           v-if="$route.name!=='Therapist' && 
           $route.name!=='Patient' && 
           $route.name!=='Messages' && 
-          $route.name!=='Survey'">
+          $route.name!=='Survey' && 
+          $route.name!=='Schedule' && 
+          $route.name!=='Patientdocuments'&& 
+          $route.name!=='Patientbilling'">
           <router-link to="/Register" type="button" class="btn btn-outline-dark">Create Account</router-link>
           <router-link to="/Login" type="button" class="btn btn-outline-dark">Login</router-link>
         </div>
@@ -36,7 +42,10 @@
       v-if="$route.name==='Therapist' || 
       $route.name==='Patient' || 
       $route.name==='Messages'|| 
-      $route.name==='Survey'"></sidebar>
+      $route.name==='Survey'|| 
+      $route.name==='Schedule'|| 
+      $route.name==='Patientdocuments'|| 
+      $route.name==='Patientbilling'"></sidebar>
 
 
     <div class="mainContent" :class="{ 

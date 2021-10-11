@@ -10,7 +10,9 @@
           $route.name==='Schedule' || 
           $route.name==='Scheduled' || 
           $route.name==='Patientbilling' || 
-          $route.name==='Survey' 
+          $route.name==='Survey' || 
+          $route.name==='Patientdocuments' || 
+          $route.name==='Patientbilling'
           ">
           <i class="fas fa-chart-bar"></i> Dashboard</router-link>  
           <router-link to="/Patientprofile" class="list-group-item list-group-item-action bg-dark text-light" 
@@ -21,7 +23,9 @@
           $route.name==='Schedule' || 
           $route.name==='Scheduled' || 
           $route.name==='Patientbilling' || 
-          $route.name==='Survey' 
+          $route.name==='Survey' || 
+          $route.name==='Patientdocuments' || 
+          $route.name==='Patientbilling'
           "><i class="fas fa-user"></i> Personal Information</router-link>  
           <router-link to="/Messages" class="list-group-item list-group-item-action bg-dark text-light"  v-if="
           $route.name==='Patient' || 
@@ -30,7 +34,9 @@
           $route.name==='Schedule' || 
           $route.name==='Scheduled' || 
           $route.name==='Patientbilling' || 
-          $route.name==='Survey' 
+          $route.name==='Survey' || 
+          $route.name==='Patientdocuments' || 
+          $route.name==='Patientbilling'
           "><i class="far fa-comment-alt"></i> Messages <span class="badge bg-primary ms-1">1</span></router-link>    
           <router-link to="/Schedule" class="list-group-item list-group-item-action bg-dark text-light"  v-if="
           $route.name==='Patient' || 
@@ -39,17 +45,32 @@
           $route.name==='Schedule' || 
           $route.name==='Scheduled' || 
           $route.name==='Patientbilling' || 
-          $route.name==='Survey' 
+          $route.name==='Survey' || 
+          $route.name==='Patientdocuments' || 
+          $route.name==='Patientbilling'
           "><i class="fas fa-clock"></i> Schedule Session</router-link>    
-          <router-link to="/Scheduled" class="list-group-item list-group-item-action bg-dark text-light"  v-if="
+          <router-link to="/Calendar" class="list-group-item list-group-item-action bg-dark text-light"  v-if="
           $route.name==='Patient' || 
           $route.name==='Messages'  || 
           $route.name==='Patientprofile' || 
           $route.name==='Schedule' || 
           $route.name==='Scheduled' || 
           $route.name==='Patientbilling' || 
-          $route.name==='Survey' 
-          "><i class="far fa-calendar-alt"></i> Calendar</router-link>  
+          $route.name==='Survey' || 
+          $route.name==='Patientdocuments' || 
+          $route.name==='Patientbilling'
+          "><i class="far fa-calendar-alt"></i> Appointments</router-link>  
+          <router-link to="/Patientdocuments" class="list-group-item list-group-item-action bg-dark text-light"  v-if="
+          $route.name==='Patient' || 
+          $route.name==='Messages'  || 
+          $route.name==='Patientprofile' || 
+          $route.name==='Schedule' || 
+          $route.name==='Scheduled' || 
+          $route.name==='Patientbilling' || 
+          $route.name==='Survey' || 
+          $route.name==='Patientdocuments'  || 
+          $route.name==='Patientbilling'
+          "><i class="fas fa-file-invoice"></i> Documents <span class="badge bg-primary ms-1">2</span></router-link>     
           <router-link to="/Patientbilling" class="list-group-item list-group-item-action bg-dark text-light"  v-if="
           $route.name==='Patient' || 
           $route.name==='Messages'  || 
@@ -57,16 +78,9 @@
           $route.name==='Schedule' || 
           $route.name==='Scheduled' || 
           $route.name==='Patientbilling' || 
-          $route.name==='Survey' 
-          "><i class="fas fa-file-invoice"></i> Patient Forms <span class="badge bg-primary ms-1">2</span></router-link>     
-          <router-link to="/Patientbilling" class="list-group-item list-group-item-action bg-dark text-light"  v-if="
-          $route.name==='Patient' || 
-          $route.name==='Messages'  || 
-          $route.name==='Patientprofile' || 
-          $route.name==='Schedule' || 
-          $route.name==='Scheduled' || 
-          $route.name==='Patientbilling' || 
-          $route.name==='Survey' 
+          $route.name==='Survey' || 
+          $route.name==='Patientdocuments' || 
+          $route.name==='Patientbilling'
           "><i class="fas fa-file-invoice"></i> Billing <span class="badge bg-primary ms-1">1</span></router-link>    
 
         

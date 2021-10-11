@@ -28,7 +28,7 @@
 
                         <div class="card-title text-white bg-primary rounded-top d-flex">
                             <div class="col-sm-6 d-flex align-items-center p-4">
-                                <h4 class="fw-light mb-0">Sessions</h4>
+                                <h4 class="fw-light mb-0">Appointments</h4>
                             </div>
                             <div class="col-sm-6 d-flex justify-content-end">
                                 <div class="icontypica shadow">
@@ -59,7 +59,7 @@
 
                         <div class="card-title text-white bg-blue rounded-top d-flex">
                             <div class="col-sm-6 d-flex align-items-center p-4">
-                                <h4 class="fw-light mb-0">Messages</h4>
+                                <h4 class="fw-light mb-0">Documents</h4>
                             </div>
                             <div class="col-sm-6 d-flex justify-content-end">
                                 <div class="icontypica shadow">
@@ -71,18 +71,15 @@
            
 
                         <div class="card-body">
-                            
-                            <span class="alert border-0" role="alert">
-                              Dr. George Lockwood sent you a new message <i class="fas fa-arrow-right ms-1"></i>
-                            </span>
-                            <hr>
-                            <span class="alert border-0" role="alert">
-                                Complete patient forms <i class="fas fa-arrow-right ms-1"></i>
-                              </span>
-                          <hr>
-        
+                            <div class="alert alert-warning text-center" role="alert">
+                                Patient documents need to be completed.
+                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item"><i class="fas fa-exclamation me-2" style="color:#dc3545"></i><a href="">Credit Card Information</a></li>
+                                <li class="list-group-item"><i class="fas fa-exclamation me-2" style="color:#dc3545"></i><a href="">Practice Policies</a></li>
+                              </ul>
                             <div class="cardfooter">
-                                <button type="button" class="btn btn-light mx-1 shadow-sm text-dark">View all Messages</button>
+                                <button type="button" class="btn btn-light mx-1 shadow-sm text-dark">View all Documents</button>
                             </div>
                         </div>
                     </div>
@@ -92,7 +89,7 @@
 
                         <div class="card-title text-white bg-secondary rounded-top d-flex">
                             <div class="col-sm-6 d-flex align-items-center p-4">
-                                <h4 class="fw-light mb-0">Membership</h4>
+                                <h4 class="fw-light mb-0">Billing & Staments</h4>
                             </div>
                             <div class="col-sm-6 d-flex justify-content-end">
                                 <div class="icontypica shadow">
@@ -101,18 +98,23 @@
                             </div>
                         </div>
 
-           
-
                         <div class="card-body">                           
-                           
-                              Schedule bulk sessions for a discount <i class="fas fa-arrow-right ms-1"></i>
-                              <hr>
-                              Complete patient questionnaire <i class="fas fa-arrow-right ms-1"></i>
-                              <hr>
-                          
-                            <!-- <div class="cardfooter">
-                                <button type="button" class="btn btn-light mx-1 shadow-sm text-dark">View all offers</button>
-                            </div> -->
+                            <ul class="list-group">
+                                <li class="list-group-item"> 
+                                    <span class="badge rounded-pill bg-light text-dark shadow-sm">Oct 15</span> 
+                                    <a href="" class="px-3">Patient Statement</a>
+                                    <span class="badge rounded-pill bg-light text-dark shadow-sm me-2">Due by Dec 15</span> 
+                                </li>
+                                <li class="list-group-item"> 
+                                    <span class="badge rounded-pill bg-light text-dark shadow-sm">Sep 15</span> 
+                                    <a href="" class="px-3">Patient Statement</a>
+                                    <span class="badge rounded-pill bg-light text-dark shadow-sm me-2">Due by Oct 15</span> 
+                                    <span class="badge rounded-pill bg-danger text-light shadow-sm me-2">Past Due</span> 
+                                </li>
+                              </ul>
+                              <div class="cardfooter">
+                                <button type="button" class="btn btn-light mx-1 shadow-sm text-dark">View all Bills & Statements</button>
+                            </div>
                         </div>
                     </div>
                 </div>
