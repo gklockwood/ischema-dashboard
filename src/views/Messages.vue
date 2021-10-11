@@ -120,7 +120,7 @@
                         <div class="card-body">
                           <h5 class="card-title fw-bolder">From George Lockwood</h5>
                           <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam eu tristique tortor. Mauris porttitor libero in lobortis semper. Vivamus sapien nulla, aliquam nec odio ut, iaculis finibus lacus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi lobortis dolor sit amet blandit iaculis. Morbi ac facilisis magna, non feugiat magna. Pellentesque scelerisque dignissim viverra.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                          <a href="#" class="btn btn-primary">Reply</a>
                         </div>
                       </div>
                 </div>
