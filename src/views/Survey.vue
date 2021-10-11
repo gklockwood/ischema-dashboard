@@ -1,5 +1,19 @@
 <template>
   <div class="survey">
+    <div class="container">
+      <form class="form cf">
+        <section class="plan cf">
+          <h2>Choose a plan:</h2>
+          <input type="radio" name="radio1" id="free" value="1"><label class="six col" for="free">1</label>
+          <input type="radio" name="radio1" id="basic" value="2"><label class="six col" for="basic">2</label>
+          <input type="radio" name="radio1" id="premium" value="3"><label class="six col" for="premium">3</label>
+          <input type="radio" name="radio1" id="premium" value="4"><label class="six col" for="premium">4</label>
+          <input type="radio" name="radio1" id="premium" value="5"><label class="six col" for="premium">5</label>
+          <input type="radio" name="radio1" id="premium" value="6"><label class="six col" for="premium">6</label>
+
+        </section>
+      </form>
+    </div>
     <div class="container py-4">
       <div class="row">
         <div class="col-sm">
@@ -78,6 +92,41 @@
                 </div>
                 <div class="vol-sm-12 col-md-6">
                   <p class="fw-bold">Mother</p>
+                  <ul class='likert'>
+                    <li class="form-check">
+                      <input type="radio" name="likert" value="1" class="form-check-input">
+                      <label class="form-check-label">1</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="2" class="form-check-input">
+                      <label class="form-check-label">2</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="3" class="form-check-input">
+                      <label class="form-check-label">3</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="4" class="form-check-input">
+                      <label class="form-check-label">4</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="5" class="form-check-input">
+                      <label class="form-check-label">5</label>
+                    </li>
+                    <li>
+                      <input type="radio" name="likert" value="6" class="form-check-input">
+                      <label class="form-check-label">6</label>
+                    </li>
+                  </ul>
+                </div>
+              </div>  
+            </form>
+
+
+            <form action="" class="py-3">
+              <h5 class="fw-bold pb-3">I like to do well but don't have to be the best.</h5>
+              <div class="row">
+                <div class="vol-sm-12">
                   <ul class='likert'>
                     <li class="form-check">
                       <input type="radio" name="likert" value="1" class="form-check-input">
@@ -248,3 +297,4 @@
     </div>
   </div>
 </template>
+
