@@ -26,7 +26,7 @@
           $route.name!=='Schedule' && 
           $route.name!=='Patientdocuments'&& 
           $route.name!=='Patientbilling'">
-          <router-link to="/Register" type="button" class="btn btn-outline-dark">Create Account</router-link>
+          <router-link to="/Register" type="button" class="btn btn-outline-dark">Register</router-link>
           <router-link to="/Login" type="button" class="btn btn-outline-dark">Login</router-link>
         </div>
 
@@ -54,6 +54,8 @@
       $route.name==='About' || 
       $route.name==='Login' || 
       $route.name==='Register' ||
+      $route.name==='Schedulepreview'|| 
+      $route.name==='Entercode'|| 
       $route.name==='Faq' 
     }">
       <router-view />

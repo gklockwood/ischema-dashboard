@@ -10,8 +10,10 @@ import Therapistjoin from '../views/Therapistjoin.vue'
 import Messages from '../views/Messages.vue'
 import Survey from '../views/Survey.vue'
 import Schedule from '../views/Schedule.vue'
+import Schedulepreview from '../views/Schedulepreview.vue'
 import Patientdocuments from '../views/Patientdocuments.vue'
 import Patientbilling from '../views/Patientbilling.vue'
+import Entercode from '../views/Entercode.vue'
 
 
 const routes: Array<RouteRecordRaw> = [
@@ -87,6 +89,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/patientbilling',
     name: 'Patientbilling',
     component: Patientbilling
+  },
+  {
+    path: '/schedulepreview',
+    name: 'Schedulepreview',
+    component: Schedulepreview
+  },
+  {
+    path: '/entercode',
+    name: 'Entercode',
+    component: Entercode
   }
 ]
 

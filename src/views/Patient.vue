@@ -40,14 +40,16 @@
            
 
                         <div class="card-body">
-                            
-                            <div class="alert alert-info border-0 fw-bold" role="alert">
-                              Today,  1:30 PM - Dr. George Lockwood
-                            </div>
 
-
-                            <hr>Monday, September 27, 2021 - 1:30 PM - Dr. George Lockwood
-                            <hr>
+                            <ul class="list-group">
+                                <li class="list-group-item bg-light">
+                                    <span class=" fw-bold">
+                                        Today,  1:30 PM - Dr. George Lockwood
+                                    </span>
+                                </li>
+                                <li class="list-group-item">Monday, September 27, 2021 - 1:30 PM - Dr. George Lockwood</li>
+                              </ul>
+                    
                                 <div class="cardfooter">
                                 <button type="button" class="btn btn-light mx-1 shadow-sm text-dark">Calendar</button>
                             </div>

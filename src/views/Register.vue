@@ -2,7 +2,7 @@
     <div class="register">
 
         <div class="container py-4">
-            <h1>Register</h1>
+            <h2>Please enter Personal Information</h2>
 
 
             <div class="row g-3 py-4">
@@ -348,25 +348,6 @@
             </div>
 
 
-
-
-            <div class="row g-3 pt-4">
-                <div class="col-12">
-                    <h4>Treatment Options</h4>
-                </div>
-                <div class="col">
-                    <label  class="form-label">Choose a treatment area</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Treatment</option>
-                        <option value="false">Please choose a treatment</option><option value="131">Addictions</option><option value="21">Adult ADHD/ADD</option><option value="311">Anxiety Disorders (OCD, Phobias, Panic Attacks)</option><option value="111">ASC Assessment (Autism Spectrum Condition)</option><option value="81">Bipolar Disorder</option><option value="121">Child ADHD/ADD</option><option value="41">Children and Adolescents</option><option value="201">Dementia/Memory</option><option value="31">Depression/Bipolar</option><option value="191">Eating Disorders</option><option value="171">Learning Disability</option><option value="971">Lifestyle Psychiatry</option><option value="91">Obsessive Compulsive Disorder (OCD)</option><option value="841">Old Age - Anxiety Disorders (OCD, Phobias, Panic Attacks)</option><option value="851">Old Age - Bipolar Disorder</option><option value="861">Old Age - Dementia/Memory</option><option value="871">Old Age - Depression/Bipolar</option><option value="881">Old Age - Personality Disorder</option><option value="891">Old Age - Psychosis</option><option value="901">Old Age - Sleep Disorders</option><option value="911">Old Age - Stress</option><option value="921">Old Age - Trauma/PTSD</option><option value="261">Other / TBC</option><option value="61">Perinatal</option><option value="11">Personality Disorders</option><option value="331">Psychosis</option><option value="391">Relative Consultation</option><option value="321">Sleep Disorders</option><option value="211">Stress</option><option value="961">Stress Management</option><option value="251">Trauma/PTSD </option><option value="141">Weight Management</option>
-                    </select>
-                </div>
-                <div class="col">
-                    <label  class="form-label">Not sure what treatment is best?</label><br>
-                    <button type="button" class="btn btn-primary">Take Treatment Questionnaire </button>
-                </div>
-            </div>
-
             <div class="row g-3 py-4">
                 <div class="col">
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
@@ -377,7 +358,7 @@
 
             <div class="row pt-4">
                 <div class="col text-center">
-                    <router-link to="/Patient" type="button" class="btn btn-success">Register</router-link>
+                    <router-link to="/Patient" type="button" class="btn btn-primary">Register</router-link>
                 </div>
             </div>
         </div>

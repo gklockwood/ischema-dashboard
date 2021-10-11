@@ -1,7 +1,9 @@
 <template>
   <div class="landing">
-    <div class="container-fluid banner">
-
+    <div class="container-fluid banner d-flex align-items-center">
+      <div class="text-center d-block w-100">
+        <router-link  type="button" class="btn btn-primary" to="/Schedulepreview">Schedule Session</router-link >
+      </div>
     </div>
     <div class="container py-4">
       <h1>Landing</h1>
