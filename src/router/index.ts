@@ -1,19 +1,26 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+
+// General
 import Landing from '../views/Landing.vue'
 import About from '../views/About.vue'
-import Therapist from '../views/Therapist.vue'
-import Dashboard from '../views/patient/Dashboard.vue'
 import Faq from '../views/Faq.vue'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import Therapistjoin from '../views/Therapistjoin.vue'
 import Messages from '../views/patient/Messages.vue'
 import Survey from '../views/Survey.vue'
-// import Schedule from '../views/patient/Schedule.vue'
+import Entercode from '../views/Entercode.vue'
+
+// Patient Related
+import Dashboard from '../views/patient/Dashboard.vue'
 import Schedulepreview from '../views/Schedulepreview.vue'
 import Documents from '../views/patient/Documents.vue'
 import Billing from '../views/patient/Billing.vue'
-import Entercode from '../views/Entercode.vue'
+
+// Therapist Related
+import Tdashboard from '../views/therapist/Tdashboard.vue'
+import Tdocuments from '../views/therapist/Tdocuments.vue'
+import Tbilling from '../views/therapist/Tbilling.vue'
 
 
 const routes: Array<RouteRecordRaw> = [
@@ -30,11 +37,6 @@ const routes: Array<RouteRecordRaw> = [
     path: '/about',
     name: 'About',
     component: About
-  },
-  {
-    path: '/therapist',
-    name: 'Therapist',
-    component: Therapist
   },
   {
     path: '/patient/dashboard',
@@ -96,6 +98,21 @@ const routes: Array<RouteRecordRaw> = [
     path: '/entercode',
     name: 'Entercode',
     component: Entercode
+  },
+  {
+    path: '/therapist/dashboard',
+    name: 'TherapistDashboard',
+    component: Tdashboard
+  },
+  {
+    path: '/therapist/billing',
+    name: 'TherapistBilling',
+    component: Tbilling
+  },
+  {
+    path: '/therapist/documents',
+    name: 'TherapistDocuments',
+    component: Tdocuments
   }
 ]
 
