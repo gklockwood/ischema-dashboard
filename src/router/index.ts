@@ -2,17 +2,17 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Landing from '../views/Landing.vue'
 import About from '../views/About.vue'
 import Therapist from '../views/Therapist.vue'
-import Patient from '../views/Patient.vue'
+import Dashboard from '../views/patient/Dashboard.vue'
 import Faq from '../views/Faq.vue'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import Therapistjoin from '../views/Therapistjoin.vue'
-import Messages from '../views/Messages.vue'
+import Messages from '../views/patient/Messages.vue'
 import Survey from '../views/Survey.vue'
-import Schedule from '../views/Schedule.vue'
+// import Schedule from '../views/patient/Schedule.vue'
 import Schedulepreview from '../views/Schedulepreview.vue'
-import Patientdocuments from '../views/Patientdocuments.vue'
-import Patientbilling from '../views/Patientbilling.vue'
+import Documents from '../views/patient/Documents.vue'
+import Billing from '../views/patient/Billing.vue'
 import Entercode from '../views/Entercode.vue'
 
 
@@ -37,13 +37,9 @@ const routes: Array<RouteRecordRaw> = [
     component: Therapist
   },
   {
-    path: '/therapist/:therapistId',
-    component: Messages  
-  },
-  {
-    path: '/patient',
-    name: 'Patient',
-    component: Patient
+    path: '/patient/dashboard',
+    name: 'PatientDashboard',
+    component: Dashboard
   },
   {
     path: '/faq',
@@ -52,7 +48,7 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/login',
-    name: 'Login',
+    name: 'login',
     component: Login
   },
   {
@@ -66,29 +62,30 @@ const routes: Array<RouteRecordRaw> = [
     component: Therapistjoin
   },
   {
-    path: '/messages',
-    name: 'Messages',
+    path: '/patient/messages',
+    name: 'PatientMessages',
     component: Messages
   },
   {
     path: '/survey',
     name: 'Survey',
     component: Survey
+  }
+  ,
+  // {
+  //   path: '/patient/schedule',
+  //   name: 'Schedule',
+  //   component: Schedule
+  // },
+  {
+    path: '/patient/documents',
+    name: 'PatientDocuments',
+    component: Documents
   },
   {
-    path: '/schedule',
-    name: 'Schedule',
-    component: Schedule
-  },
-  {
-    path: '/patientdocuments',
-    name: 'Patientdocuments',
-    component: Patientdocuments
-  },
-  {
-    path: '/patientbilling',
-    name: 'Patientbilling',
-    component: Patientbilling
+    path: '/patient/billing',
+    name: 'PatientBilling',
+    component: Billing
   },
   {
     path: '/schedulepreview',

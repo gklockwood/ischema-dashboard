@@ -1,5 +1,5 @@
 <template>
-    <div class="faq">
+    <div class="schedule">
         <div class="container">
 
             <div class="row my-3">

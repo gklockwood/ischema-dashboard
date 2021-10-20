@@ -1,5 +1,5 @@
 <template>
-    <div class="patient">
+    <div class="dashboard">
         <div class="container-fluid py-4 dashboard">
             <div class="row mt-4">
                 <div class="col-md-6">

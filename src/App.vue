@@ -1,14 +1,13 @@
 <template>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <button @click="toggleSidebarLogic" class="btn me-2"
-        v-if="$route.name==='Therapist' || 
-        $route.name==='Patient' || 
-        $route.name==='Messages' || 
-        $route.name==='Survey' || 
-        $route.name==='Schedule'|| 
-        $route.name==='Patientdocuments'|| 
-        $route.name==='Patientbilling'"><i class="fas fa-bars"></i></button>
+      <button @click="toggleSidebarLogic" class="btn me-2" v-if="[
+      'PatientDashboard', 
+      'PatientMessages',
+      'PatientDocuments',
+      'PatientBilling',
+      'Therapist'
+      ].includes($route.name)"><i class="fas fa-bars"></i></button>
 
       <router-link to="/landing" type="button" class="btn brandtext">iSchema</router-link>
 
@@ -18,8 +17,7 @@
       </button>
       <div class="collapse navbar-collapse  gap-2 d-md-flex justify-content-md-end" id="navbarSupportedContent">
 
-        <div class="btn-group" role="group" aria-label="Basic example"
-          v-if="$route.name!=='Therapist' && 
+        <div class="btn-group" role="group" aria-label="Basic example" v-if="$route.name!=='Therapist' && 
           $route.name!=='Patient' && 
           $route.name!=='Messages' && 
           $route.name!=='Survey' && 
@@ -38,26 +36,24 @@
 
   <div class="container-fluid px-0">
 
-    <sidebar :class="{ sidebarOpen: !toggleSidebar}"
-      v-if="$route.name==='Therapist' || 
-      $route.name==='Patient' || 
-      $route.name==='Messages'|| 
-      $route.name==='Survey'|| 
-      $route.name==='Schedule'|| 
-      $route.name==='Patientdocuments'|| 
-      $route.name==='Patientbilling'"></sidebar>
+    <sidebar :class="{ sidebarOpen: !toggleSidebar}" v-if="[
+    'PatientDashboard', 
+    'PatientMessages',
+    'PatientDocuments',
+    'PatientBilling',
+    'Therapist'
+    ].includes($route.name)"></sidebar>
 
 
     <div class="mainContent" :class="{ 
-      mainContentPushed: !toggleSidebar, 
-      reset: $route.name==='Landing' || 
-      $route.name==='About' || 
-      $route.name==='Login' || 
-      $route.name==='Register' ||
-      $route.name==='Schedulepreview'|| 
-      $route.name==='Entercode'|| 
-      $route.name==='Faq' 
-    }">
+        mainContentPushed: !toggleSidebar, 
+        reset: ![
+        'PatientDashboard', 
+        'PatientMessages',
+        'PatientDocuments',
+        'PatientBilling',
+        'Therapist'
+        ].includes($route.name) }">
       <router-view />
 
     </div>
@@ -72,11 +68,7 @@
 <script lang="ts">
   // import { Options, Vue } from 'vue-class-component';
   import Sidebar from '@/components/Sidebar.vue'; // @ is an alias to /src
-
-
-
-
-
+  import { useRoute } from 'vue-router';
   import {
     ref
   } from 'vue';
@@ -86,17 +78,16 @@
       Sidebar
     },
     setup() {
+      const route = useRoute();
       const toggleSidebar = ref(false);
-
       function toggleSidebarLogic() {
         toggleSidebar.value = !toggleSidebar.value;
       }
 
-
-
       return {
         toggleSidebar,
-        toggleSidebarLogic
+        toggleSidebarLogic,
+        route
 
       }
     }
