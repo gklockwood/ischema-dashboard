@@ -87,11 +87,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-3">
+                <div class="col-sm-3  d-flex justify-content-center">
                     <div class="row">
-                        <div class="col-sm-12 d-flex justify-content-end">
-                            <div class="dropdown">
-                                <button class="btn btn-light dropdown-toggle shadow-sm" type="button" id="dropdownMenuButton1"
+                        <div class="col-sm-12 d-flex">
+                            <div class="dropdown d-flex">
+                                <button class="btn btn-light dropdown-toggle shadow-sm align-self-center" type="button" id="dropdownMenuButton1"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fas fa-cogs me-1"></i> Manage Session
                                 </button>

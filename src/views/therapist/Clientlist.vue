@@ -2,6 +2,7 @@
     <div class="clientlist">
         <div class="container py-4">
             <h1>Client List</h1>
+            
 
             <div class="row my-3">
                 <div class="col-sm col-sm-6 py-3">
@@ -55,7 +56,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <a href="#" class="text-decoration-none">{{ client.first_name }} {{ client.last_name }}</a>
+                                <router-link to="/therapist/clientdetail" class="text-decoration-none"> {{ client.first_name }} {{ client.last_name }}</router-link>
                             </div>
                         </div>
                     </div>
@@ -80,11 +81,11 @@
                         </div>
 
                     </div>
-                    <div class="col-sm-6 justify-content-end">
+                    <div class="col-sm-6 d-flex justify-content-center">
                         <div class="row">
-                            <div class="col-sm-12 d-flex justify-content-end">
-                                <div class="dropdown">
-                                    <button class="btn btn-light dropdown-toggle shadow-sm" type="button" id="dropdownMenuButton1"
+                            <div class="col-sm-12 d-flex">
+                                <div class="dropdown d-flex">
+                                    <button class="btn btn-light dropdown-toggle shadow-sm align-self-center" type="button" id="dropdownMenuButton1"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fas fa-cogs me-1"></i> Manage
                                     </button>

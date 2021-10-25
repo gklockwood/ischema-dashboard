@@ -34,7 +34,7 @@
     'Sessiondetail',
     'Clientdetail'
     ].includes($route.name)">
-      <router-link to="/patient/Tdashboard" class="list-group-item list-group-item-action bg-dark text-light"><i
+      <router-link to="/therapist/therapistdashboard" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-chart-bar"></i> Dashboard</router-link>
       <router-link to="/therapist/clientlist" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-user"></i> Client List</router-link>

@@ -103,7 +103,7 @@ const routes: Array<RouteRecordRaw> = [
     component: Entercode
   },
   {
-    path: '/therapist/dashboard',
+    path: '/therapist/therapistdashboard',
     name: 'TherapistDashboard',
     component: Tdashboard
   },
