@@ -30,7 +30,9 @@
     'TherapistDocuments',
     'TherapistBilling',
     'Clientlist',
-    'Sessions'
+    'Sessions',
+    'Sessiondetail',
+    'Clientdetail'
     ].includes($route.name)">
       <router-link to="/patient/Tdashboard" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-chart-bar"></i> Dashboard</router-link>

@@ -11,7 +11,9 @@
       'TherapistDocuments',
       'TherapistBilling',
       'Clientlist',
-      'Sessions'
+      'Sessions',
+      'Sessiondetail',
+      'Clientdetail'
       ].includes($route.name)"><i class="fas fa-bars"></i></button>
 
       <router-link to="/landing" type="button" class="btn brandtext">iSchema</router-link>
@@ -51,7 +53,9 @@
     'TherapistDocuments',
     'TherapistBilling',
     'Clientlist',
-    'Sessions'
+    'Sessions',
+    'Sessiondetail',
+    'Clientdetail'
     ].includes($route.name)"></sidebar>
 
 
@@ -67,7 +71,9 @@
         'TherapistDocuments',
         'TherapistBilling',
         'Clientlist',
-        'Sessions'
+        'Sessions',
+        'Sessiondetail',
+        'Clientdetail'
         ].includes($route.name) }">
       <router-view />
 

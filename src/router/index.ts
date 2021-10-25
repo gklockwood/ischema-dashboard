@@ -23,6 +23,8 @@ import Tdocuments from '../views/therapist/Tdocuments.vue'
 import Tbilling from '../views/therapist/Tbilling.vue'
 import Clientlist from '../views/therapist/Clientlist.vue'
 import Sessions from '../views/therapist/Sessions.vue'
+import Sessiondetail from '../views/therapist/Sessiondetail.vue'
+import Clientdetail from '../views/therapist/Clientdetail.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -124,6 +126,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/therapist/sessions',
     name: 'Sessions',
     component: Sessions
+  },
+  {
+    path: '/therapist/sessionsdetail',
+    name: 'Sessionsdetail',
+    component: Sessiondetail
+  },
+  {
+    path: '/therapist/clientdetail',
+    name: 'Clientdetail',
+    component: Clientdetail
   }
 ]
 
