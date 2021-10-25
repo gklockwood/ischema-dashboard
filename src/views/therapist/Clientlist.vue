@@ -18,7 +18,7 @@
                 </div>
                 <div class="col-sm-6 py-3">
                     <div class="dropdown d-inline">
-                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        <button class="btn btn-light dropdown-toggle  shadow-sm" type="button" id="dropdownMenuButton1"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-filter me-1"></i> Filter Clients
                         </button>
@@ -29,7 +29,7 @@
                         </ul>
                     </div>
                     <div class="dropdown d-inline ps-2">
-                        <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        <button class="btn btn-light dropdown-toggle shadow-sm" type="button" id="dropdownMenuButton1"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             <i class="fas fa-sort me-1"></i> Sort By: Last Name
                         </button>
@@ -75,7 +75,7 @@
                             </div>
                             <div class="col-sm-12">
                                 <hr class="my-2">
-                                <button type="button" class="btn btn-sm btn-primary mt-2"><i class="fas fa-video me-1"></i> Secure Video Call</button>  <div class="vr me-2 ms-2"></div> <button type="button" class="btn btn-sm btn-primary mt-2"><i class="fas fa-comment-alt me-2"></i>Message</button>
+                                <button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>  <button type="button" class="btn btn-sm btn-light mt-2 ms-2 shadow-sm"><i class="fas fa-comment-alt me-2"></i>Message</button>
                             </div>
                         </div>
 
@@ -84,7 +84,7 @@
                         <div class="row">
                             <div class="col-sm-12 d-flex justify-content-end">
                                 <div class="dropdown">
-                                    <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    <button class="btn btn-light dropdown-toggle shadow-sm" type="button" id="dropdownMenuButton1"
                                         data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="fas fa-cogs me-1"></i> Manage
                                     </button>

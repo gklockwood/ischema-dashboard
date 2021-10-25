@@ -29,7 +29,8 @@
     'TherapistMessages',
     'TherapistDocuments',
     'TherapistBilling',
-    'Clientlist'
+    'Clientlist',
+    'Sessions'
     ].includes($route.name)">
       <router-link to="/patient/Tdashboard" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-chart-bar"></i> Dashboard</router-link>
@@ -37,8 +38,8 @@
           class="fas fa-user"></i> Client List</router-link>
       <router-link to="/therapist/Tmessages" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="far fa-comment-alt"></i> Messages <span class="badge bg-primary ms-1">1</span></router-link>
-      <router-link to="/therapist/Tcalendar" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="far fa-calendar-alt"></i> Appointments</router-link>
+      <router-link to="/therapist/Sessions" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="far fa-calendar-alt"></i> Sessions</router-link>
       <router-link to="/therapist/Tdocuments" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-file-invoice"></i> Documents <span class="badge bg-primary ms-1">2</span></router-link>
       <router-link to="/therapist/Tbilling" class="list-group-item list-group-item-action bg-dark text-light"><i
