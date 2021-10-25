@@ -24,6 +24,28 @@
     </div>
 
 
+    <div class="list-group" v-if="[
+    'TherapistDashboard', 
+    'TherapistMessages',
+    'TherapistDocuments',
+    'TherapistBilling',
+    'Clientlist'
+    ].includes($route.name)">
+      <router-link to="/patient/Tdashboard" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="fas fa-chart-bar"></i> Dashboard</router-link>
+      <router-link to="/therapist/clientlist" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="fas fa-user"></i> Client List</router-link>
+      <router-link to="/therapist/Tmessages" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="far fa-comment-alt"></i> Messages <span class="badge bg-primary ms-1">1</span></router-link>
+      <router-link to="/therapist/Tcalendar" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="far fa-calendar-alt"></i> Appointments</router-link>
+      <router-link to="/therapist/Tdocuments" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="fas fa-file-invoice"></i> Documents <span class="badge bg-primary ms-1">2</span></router-link>
+      <router-link to="/therapist/Tbilling" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="fas fa-file-invoice"></i> Billing <span class="badge bg-primary ms-1">1</span></router-link>
+    </div>
+
+
     <!-- <div class="accordion accordion-flush" id="accordionFlushExample">
           <div class="accordion-item">
             <h2 class="accordion-header" id="flush-headingOne">
