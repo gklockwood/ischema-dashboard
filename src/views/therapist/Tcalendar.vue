@@ -118,4 +118,11 @@
     .vuecal__event.Appointment {
         padding: 15px;
     }
+
+    .vuecal--blue-theme .vuecal__cell-events-count, .vuecal--blue-theme .vuecal__menu {
+        background: var(--secondary-bg-gradient-dark);
+    }
+    .vuecal--blue-theme .vuecal__title-bar {
+        background-color: rgb(119 30 198 / 13%);
+    }
 </style>

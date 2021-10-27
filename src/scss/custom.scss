@@ -36,6 +36,11 @@ $dark: #303840;
 //   }
 // }
 
+.vr {
+  position: relative;
+  top:2px;
+}
+
 .bg-primary-dark {
   background: var(--primary-bg-gradient-dark);
 }

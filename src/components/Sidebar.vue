@@ -41,8 +41,8 @@
           class="fas fa-user"></i> Client List</router-link>
       <router-link to="/therapist/Tmessages" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="far fa-comment-alt"></i> Messages <span class="badge bg-primary ms-1">1</span></router-link>
-      <router-link to="/therapist/Sessions" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="far fa-calendar-alt"></i> Sessions</router-link>
+      <!-- <router-link to="/therapist/Sessions" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="far fa-calendar-alt"></i> Sessions</router-link> -->
       <router-link to="/therapist/therapistcalendar" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="far fa-calendar-alt"></i> Calendar</router-link>
       <router-link to="/therapist/Tdocuments" class="list-group-item list-group-item-action bg-dark text-light"><i
