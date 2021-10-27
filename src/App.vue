@@ -13,7 +13,8 @@
       'Clientlist',
       'Sessions',
       'Sessiondetail',
-      'Clientdetail'
+      'Clientdetail',
+      'Therapistcalendar'
       ].includes($route.name)"><i class="fas fa-bars"></i></button>
 
       <router-link to="/landing" type="button" class="btn brandtext">iSchema</router-link>
@@ -55,7 +56,8 @@
     'Clientlist',
     'Sessions',
     'Sessiondetail',
-    'Clientdetail'
+    'Clientdetail',
+    'Therapistcalendar'
     ].includes($route.name)"></sidebar>
 
 
@@ -73,7 +75,8 @@
         'Clientlist',
         'Sessions',
         'Sessiondetail',
-        'Clientdetail'
+        'Clientdetail',
+        'Therapistcalendar'
         ].includes($route.name) }">
       <router-view />
 
