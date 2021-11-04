@@ -3,7 +3,7 @@
         <div class="container py-4">
             <h1>Therapist Calendar</h1>
             <div style="height:1000px">
-                <vue-cal class="vuecal--blue-theme shadow" :time="false" :disable-views="['years', 'year']" active-view="month"
+                <vue-cal class="vuecal--blue-theme shadow" :time="true" :disable-views="['years', 'year']" active-view="month"
                     :events="events">
                     <template v-slot:no-event="">Available</template>
                 </vue-cal>
@@ -25,44 +25,58 @@
         },
         setup() {
             const events = reactive([{
-                start: '2021-10-27 11:00',
-                end: '2021-10-27 12:00',
-                title: 'Appointent',
+                start: '2021-11-27 11:00',
+                end: '2021-11-27 12:00',
+                title: 'Appointment',
                 background: true,
                 class: 'Appointment',
                 content: '<button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
             }, {
-                start: '2021-10-28 18:00',
-                end: '2021-10-28 19:00',
-                title: 'Appointent'
+                start: '2021-11-28 18:00',
+                end: '2021-11-28 19:00',
+                title: 'Appointment',
+                background: true,
+                class: 'Appointment',
+                content: '<button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
             }, {
-                start: '2021-8-20 18:30',
-                end: '2021-8-20 20:30',
-                title: 'Appointent'
+                start: '2021-11-20 18:30',
+                end: '2021-11-20 20:30',
+                title: 'Appointment',
+                background: true,
+                class: 'Appointment',
+                content: '<button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
             }, {
-                start: '2021-8-21 11:00',
-                end: '2021-8-21 12:00',
-                title: 'Appointent'
+                start: '2021-11-21 11:00',
+                end: '2021-11-21 12:00',
+                title: 'Appointment',
+                background: true,
+                class: 'Appointment',
+                content: '<button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
             }, {
-                start: '2021-8-21 19:00',
-                end: '2021-8-21 20:00',
-                title: 'Appointent'
+                start: '2021-11-21 19:00',
+                end: '2021-11-21 20:00',
+                title: 'Appointment'
             }, {
-                start: '2019-8-30 19:00',
-                end: '2019-8-30 20:00',
-                title: 'Appointent'
+                start: '2021-11-30 19:00',
+                end: '2021-11-30 20:00',
+                title: 'Appointment',
+                background: true,
+                class: 'Appointment',
+                content: '<button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
             }, {
                 start: '2021-8-19 12:00',
                 end: '2021-8-19 13:00',
-                title: "Appointent",
-                class: "Appointent",
-                background: true
+                title: "Appointment",
+                class: "Appointment",
+                background: true,
+                content: '<button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
             }, {
                 start: "2021-8-20 12:00",
                 end: "2021-8-20 13:00",
-                title: 'Appointent',
-                class: 'Appointent',
-                background: true
+                title: 'Appointment',
+                class: 'Appointment',
+                background: true,
+                content: '<button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
             }]);
 
             function onEventClick(event, e) {
@@ -125,4 +139,7 @@
     .vuecal--blue-theme .vuecal__title-bar {
         background-color: rgb(119 30 198 / 13%);
     }
+    .vuecal__event.vuecal__event--focus {
+    height: auto !important;
+}
 </style>
