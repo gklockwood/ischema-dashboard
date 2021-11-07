@@ -27,6 +27,8 @@ import Sessiondetail from '../views/therapist/Sessiondetail.vue'
 import Clientdetail from '../views/therapist/Clientdetail.vue'
 import Tcalendar from '../views/therapist/Tcalendar.vue'
 import Sentforms from '../views/therapist/Sentforms.vue'
+import Tmessages from '../views/therapist/Tmessages.vue'
+import Tsettings from '../views/therapist/Tsettings.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -148,6 +150,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/therapist/sentforms',
     name: 'Sentforms',
     component: Sentforms
+  },
+  {
+    path: '/therapist/therapistmessages',
+    name: 'Therapistmessages',
+    component: Tmessages
+  },
+  {
+    path: '/therapist/therapistsettings',
+    name: 'Therapistsettings',
+    component: Tsettings
   }
 ]
 

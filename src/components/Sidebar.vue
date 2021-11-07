@@ -26,7 +26,7 @@
 
     <div class="list-group" v-if="[
     'TherapistDashboard', 
-    'TherapistMessages',
+    'Therapistmessages',
     'TherapistDocuments',
     'TherapistBilling',
     'Clientlist',
@@ -34,7 +34,8 @@
     'Sessiondetail',
     'Clientdetail',
     'Therapistcalendar',
-    'Sentforms'
+    'Sentforms',
+    'Therapistsettings'
     ].includes($route.name)">
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
@@ -47,13 +48,9 @@
           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
             data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
-              <router-link to="/" class="list-group-item list-group-item-action mt-1">
+              <router-link to="/therapist/therapistsettings" class="list-group-item list-group-item-action mt-1">
                 <i class="fas fa-user"></i>
-                Account
-              </router-link>
-              <router-link to="/" class="list-group-item list-group-item-action">
-                <i class="fas fa-cog"></i> 
-                Settings
+                Edit
               </router-link>
             </div>
           </div>
@@ -63,8 +60,10 @@
         <i class="fas fa-chart-bar"></i> Dashboard
       </router-link>
       <router-link to="/therapist/clientlist" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-users"></i> Client List</router-link>
-      <router-link to="/therapist/Tmessages" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="fas fa-users"></i> Client Settings</router-link>
+          <router-link to="/therapist/therapistdashboard" class="list-group-item list-group-item-action bg-dark text-light"><i
+            class="fas fa-cog"></i> Toolbox</router-link>
+      <router-link to="/therapist/therapistmessages" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="far fa-comment-alt"></i> Messages <span class="badge bg-primary ms-1">1</span></router-link>
       <!-- <router-link to="/therapist/Sessions" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="far fa-calendar-alt"></i> Sessions</router-link> -->
@@ -74,9 +73,9 @@
       <router-link to="/therapist/Tdocuments" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-file-invoice"></i> Documents <span class="badge bg-primary ms-1">2</span></router-link>
       <router-link to="/therapist/Sentforms" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-share-square"></i> Sent Forms</router-link>
+          class="fas fa-share-square"></i> Requests</router-link>
       <router-link to="/therapist/Tbilling" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-file-invoice"></i> Billing <span class="badge bg-primary ms-1">1</span></router-link>
+          class="fas fa-file-invoice"></i> Create</router-link>
     </div>
 
 

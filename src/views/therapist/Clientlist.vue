@@ -76,7 +76,7 @@
                             </div>
                             <div class="col-sm-12">
                                 <hr class="my-2">
-                                <button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>  <button type="button" class="btn btn-sm btn-light mt-2 ms-2 shadow-sm"><i class="fas fa-comment-alt me-2"></i>Message</button>
+                                <button type="button" class="btn btn-sm btn-light mt-2 shadow-sm"><i class="fas fa-comment-alt me-2"></i>Message</button>
                             </div>
                         </div>
 

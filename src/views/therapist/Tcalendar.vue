@@ -129,10 +129,6 @@
         padding: 5px;
     }
 
-    .vuecal__event.Appointment {
-        padding: 15px;
-    }
-
     .vuecal--blue-theme .vuecal__cell-events-count, .vuecal--blue-theme .vuecal__menu {
         background: var(--secondary-bg-gradient-dark);
     }
@@ -141,5 +137,9 @@
     }
     .vuecal__event.vuecal__event--focus {
     height: auto !important;
-}
+    }
+    .vuecal__event {
+        height: auto !important;
+    }
+
 </style>

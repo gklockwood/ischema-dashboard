@@ -3,11 +3,37 @@
         <div class="container-fluid py-4">
             <div class="row">
                 <div class="col-sm-8">
-                    <h4>(Client Name Here) Detail</h4>
                     <div class="row">
-                        <div class="col-sm d-flex justify-content-end">
-                            <div class="dropdown">
-                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        <div class="col-sm">
+                            <h4>(Client Name Here) Detail</h4>
+                        </div>
+                    </div>
+                    <div class="row pt-2">
+                        <div class="col-sm d-flex justify-content-start">
+                            <div class="dropdown shadow-sm">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    All Time
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Select</a></li>
+                                    <li><a class="dropdown-item" href="#">Select</a></li>
+                                    <li><a class="dropdown-item" href="#">Select</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown  ms-2 shadow-sm">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    All Items
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#">Select</a></li>
+                                    <li><a class="dropdown-item" href="#">Select</a></li>
+                                    <li><a class="dropdown-item" href="#">Select</a></li>
+                                </ul>
+                            </div>
+                            <div class="dropdown  ms-2 shadow-sm">
+                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     New
                                 </button>
@@ -32,7 +58,8 @@
                                     <div class="col-sm-12">
                                         <p class="text-decoration-none d-inline">{{ session.session_date }}</p>
                                         <div class="vr me-2 ms-2"></div>
-                                        <p class="text-decoration-none d-inline fw-bolder">{{ session.session_time }}</p>
+                                        <p class="text-decoration-none d-inline fw-bolder">{{ session.session_time }}
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -44,18 +71,27 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4 pt-4">
-                    <div class="row pt-2">
+                <div class="col-sm-4">
+                    <div class="row">
                         <div class="col-sm d-flex">
                             <button class="btn btn-light align-self-center shadow-sm flex-fill" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal"><i class="fas fa-file-alt"></i>
-                                    Consent Forms</button>
-                                    <button class="btn btn-light align-self-center shadow-sm ms-2  flex-fill" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal"><i class="fas fa-folder-open"></i>
-                                    Inventories</button>
-                                    <button class="btn btn-light align-self-center shadow-sm ms-2  flex-fill" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal"><i class="fas fa-comment-alt"></i>
-                                    Message</button>
+                                data-bs-target="#exampleModal"><i class="fas fa-file-upload"></i>
+                                Upload</button>
+                            <div class="dropdown">
+                                <button class="btn btn-light shadow-sm dropdown-toggle ms-2" type="button"
+                                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <i class="fas fa-share"></i> Share
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                    <li><a class="dropdown-item" href="#"><i class="fas fa-user"></i> Client Info</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fas fa-address-book"></i> Contacts</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fas fa-folder"></i> Consent Forms</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fas fa-list"></i> Inventories</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-light align-self-center shadow-sm ms-2  flex-fill"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-comment-alt"></i>
+                                Message</button>
                         </div>
                     </div>
                 </div>
