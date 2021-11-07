@@ -37,6 +37,15 @@ $dark: #303840;
 //     color: #2a948b;
 //   }
 // }
+.accordion-body {
+  background: white;
+  *, a.activeLink {
+    background: white !important
+  }
+}
+.sidebar a.activeLink {
+  background: white !important
+}
 
 .vr {
   position: relative;
@@ -60,6 +69,10 @@ $dark: #303840;
 }
 
 .btn-secondary {
+  background: var(--secondary-bg-gradient-dark);
+}
+
+.bg-secondary {
   background: var(--secondary-bg-gradient-dark);
 }
 

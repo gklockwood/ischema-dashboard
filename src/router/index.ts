@@ -106,13 +106,13 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Entercode',
     component: Entercode
   },
+  // {
+  //   path: '/therapist/therapistdashboard',
+  //   name: 'TherapistDashboard',
+  //   component: Tdashboard
+  // },
   {
-    path: '/therapist/therapistdashboard',
-    name: 'TherapistDashboard',
-    component: Tdashboard
-  },
-  {
-    path: '/therapist/billing',
+    path: '/therapist/therapistbilling',
     name: 'TherapistBilling',
     component: Tbilling
   },
@@ -157,7 +157,7 @@ const routes: Array<RouteRecordRaw> = [
     component: Tmessages
   },
   {
-    path: '/therapist/therapistsettings',
+    path: '/therapist/therapistdashboard',
     name: 'Therapistsettings',
     component: Tsettings
   }

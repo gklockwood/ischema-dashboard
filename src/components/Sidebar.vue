@@ -48,7 +48,7 @@
           <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
             data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
-              <router-link to="/therapist/therapistsettings" class="list-group-item list-group-item-action mt-1">
+              <router-link to="#" class="list-group-item list-group-item-action mt-1">
                 <i class="fas fa-user"></i>
                 Edit
               </router-link>
@@ -56,26 +56,42 @@
           </div>
         </div>
       </div>
-      <router-link to="/therapist/therapistdashboard" class="list-group-item list-group-item-action bg-dark text-light">
+      <!-- <router-link to="/therapist/therapistdashboard" class="list-group-item list-group-item-action bg-dark text-light">
         <i class="fas fa-chart-bar"></i> Dashboard
-      </router-link>
-      <router-link to="/therapist/clientlist" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-users"></i> Client Settings</router-link>
-          <router-link to="/therapist/therapistdashboard" class="list-group-item list-group-item-action bg-dark text-light"><i
-            class="fas fa-cog"></i> Toolbox</router-link>
-      <router-link to="/therapist/therapistmessages" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="far fa-comment-alt"></i> Messages <span class="badge bg-primary ms-1">1</span></router-link>
-      <!-- <router-link to="/therapist/Sessions" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="far fa-calendar-alt"></i> Sessions</router-link> -->
+      </router-link> -->
       <router-link to="/therapist/therapistcalendar" class="list-group-item list-group-item-action bg-dark text-light">
         <i class="far fa-calendar-alt"></i> Calendar
       </router-link>
-      <router-link to="/therapist/Tdocuments" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-file-invoice"></i> Documents <span class="badge bg-primary ms-1">2</span></router-link>
-      <router-link to="/therapist/Sentforms" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-share-square"></i> Requests</router-link>
-      <router-link to="/therapist/Tbilling" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-file-invoice"></i> Create</router-link>
+      <router-link to="/therapist/clientlist" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="fas fa-users"></i> Clients</router-link>
+          <router-link to="/therapist/therapistdashboard" class="list-group-item list-group-item-action bg-dark text-light"><i
+            class="fas fa-cog"></i> Settings</router-link>
+          <router-link to="/therapist/toolbox" class="list-group-item list-group-item-action bg-dark text-light"><i
+            class="fas fa-wrench"></i> Toolbox</router-link>
+      <router-link to="/therapist/therapistmessages" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="far fa-comment-alt"></i> Messages <span class="badge bg-primary ms-1">1</span></router-link>
+          <router-link to="/therapist/Sentforms" class="list-group-item list-group-item-action bg-dark text-light"><i
+            class="fas fa-share-square"></i> Requests</router-link>
+      <!-- <router-link to="/therapist/Sessions" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="far fa-calendar-alt"></i> Sessions</router-link> -->
+
+
+          <div class="dropdown">
+            <button class="btn btn-dark shadow-sm dropdown-toggle d-block mt-2 ms-1" type="button"
+                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fas fa-plus me-2"></i> Create
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#"><i class="fas fa-clock me-1"></i> 
+                        Appointment</a></li>
+                <li><a class="dropdown-item" href="#"><i class="fas fa-check me-1"></i>
+                        Add Availability</a></li>
+            </ul>
+        </div>
+
+
+          <router-link to="/" class="list-group-item list-group-item-action bg-dark text-light"><i
+            class="fas fa-file-invoice"></i> Billing</router-link>
     </div>
 
 

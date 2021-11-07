@@ -2,10 +2,15 @@
     <div class="clientdetail">
         <div class="container-fluid py-4">
             <div class="row">
-                <div class="col-sm-8">
+                <div class="col-sm-9">
                     <div class="row">
-                        <div class="col-sm">
+                        <div class="col-sm d-flex align-items-center">
                             <h4>(Client Name Here) Detail</h4>
+                            birthdate
+                            <button class="btn btn-light align-self-center shadow-sm d-block mt-2"
+                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Edit
+                        </button>
                         </div>
                     </div>
                     <div class="row pt-2">
@@ -33,7 +38,7 @@
                                 </ul>
                             </div>
                             <div class="dropdown  ms-2 shadow-sm">
-                                <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     New
                                 </button>
@@ -43,6 +48,7 @@
                                     <li><a class="dropdown-item" href="#">Mental Status Exam</a></li>
                                 </ul>
                             </div>
+
                         </div>
                     </div>
                     <div class="card p-3 my-3 shadow-sm" v-for="session in sessionsList" :key="session.id"
@@ -71,27 +77,30 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-3">
                     <div class="row">
-                        <div class="col-sm d-flex">
-                            <button class="btn btn-light align-self-center shadow-sm flex-fill" data-bs-toggle="modal"
+                        <div class="col-sm-12 text-center">
+                            <button class="btn btn-light align-self-center shadow-sm d-block" data-bs-toggle="modal"
                                 data-bs-target="#exampleModal"><i class="fas fa-file-upload"></i>
                                 Upload</button>
+
+                            <button class="btn btn-light align-self-center shadow-sm d-block mt-2"
+                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-comment-alt"></i>
+                                Message
+                            </button>
+
                             <div class="dropdown">
-                                <button class="btn btn-light shadow-sm dropdown-toggle ms-2" type="button"
+                                <button class="btn btn-light shadow-sm dropdown-toggle d-block mt-2" type="button"
                                     id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                     <i class="fas fa-share"></i> Share
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#"><i class="fas fa-user"></i> Client Info</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fas fa-address-book"></i> Contacts</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fas fa-folder"></i> Consent Forms</a></li>
-                                    <li><a class="dropdown-item" href="#"><i class="fas fa-list"></i> Inventories</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fas fa-folder me-1"></i> Consent
+                                            Forms</a></li>
+                                    <li><a class="dropdown-item" href="#"><i class="fas fa-table me-1"></i>
+                                            Inventories</a></li>
                                 </ul>
                             </div>
-                            <button class="btn btn-light align-self-center shadow-sm ms-2  flex-fill"
-                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-comment-alt"></i>
-                                Message</button>
                         </div>
                     </div>
                 </div>
