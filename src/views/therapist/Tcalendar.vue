@@ -33,14 +33,18 @@
                                             class="fas fa-share me-1"></i> Share Video Link</button>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <select class="form-select my-2" aria-label="Default select example">
+                                        <option selected>Show</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                            <select class="form-select my-2" aria-label="Default select example">
-                                <option selected>Standard Progress Note</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-
+                           
                             <div class="row pt-3">
                                 <div class="col-sm-3">
                                     <input placeholder="12/06/2021" class="form-control" />
@@ -62,50 +66,60 @@
                             </div>
 
 
-                            <div class="d-flex pb-4 pt-3 align-items-center">
-                                <span class="fw-bolder">Notes</span>
-                                <span class="px-2"><a href="">11/30/2021</a> </span>
-                                <span><a href="">11/29/2021</a> </span>
-                                <span><button class="btn">Add Note</button></span>
-                            </div>
-
-                            <div class="row pt-3">
-                                <div class="col-sm-12">
+                            <div class="row pt-4">
+                                <div class="col-sm-6">
+                                    <ul class="list-group">
+                                        <li class="list-group-item"><span class="fw-bolder">Notes</span></li>
+                                        <li class="list-group-item"><span><a href="">11/30/2021</a></span></li>
+                                        <li class="list-group-item"><span><a href="">11/29/2021</a> </span></li>
+                                    </ul>
+                                    <div class=" d-flex justify-content-center">
+                                        <button class="btn btn-light mt-2 shadow-sm"><i class="fas fa-plus me-1"></i>
+                                            Add Note</button>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
                                     <div class="row">
-                                        <div class="col-sm-3">
-                                            <span class="fw-bolder">Billing type</span>
+                                        <div class="col-sm-12">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <span class="fw-bolder">Billing type</span>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    Self Pay
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div class="col-sm-2 d-flex justify-content-end">
-                                            Self Pay
+                                        <div class="col-sm-12">
+                                            <div class="row">
+                                                <div class="col-sm-6">
+                                                    <span class="fw-bolder">Appointment total</span>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    $145
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-12">
-                                    <div class="row">
-                                        <div class="col-sm-3">
-                                            <span class="fw-bolder">Appointment total</span>
-                                        </div>
-                                        <div class="col-sm-2 d-flex justify-content-end">
-                                            $145
-                                        </div>
-                                    </div>
-                                </div>
                             </div>
 
 
-                            <div class="row pt-3">
-                                <div class="col-sm-3">
+
+
+                            <div class="row pt-4">
+                                <div class="col-sm-6">
                                     <input placeholder="Psychotherapy, 60 min" class="form-control" />
                                 </div>
                                 <div class="col-sm-3">
                                     <input placeholder="$145" class="form-control" />
                                 </div>
-                                <div class="col-sm-2 d-flex align-items-center">
-                                    <button class="btn">Add Service</button>
+                                <div class="col-sm-3 d-flex align-items-center">
+                                    <button class="btn"><i class="fas fa-plus me-1"></i> Add Service</button>
                                 </div>
                             </div>
                             <hr>
-                            <div class="d-flex justify-content-end pt-3">
+                            <div class="d-flex justify-content-end">
                                 <button type="button" class="btn btn-danger me-2"><i
                                         class="fas fa-trash me-1"></i>Delete</button>
                                 <button type="button" class="btn btn-primary me-2"><i
