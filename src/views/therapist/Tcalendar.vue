@@ -3,11 +3,125 @@
         <div class="container py-4">
             <h1>Therapist Calendar</h1>
             <div style="height:1000px">
-                <vue-cal class="vuecal--blue-theme shadow" :time="true" :disable-views="['years', 'year']" active-view="month"
-                    :events="events">
+                <vue-cal class="vuecal--blue-theme shadow" :time="true" :disable-views="['years', 'year']"
+                    active-view="month" :events="events">
                     <template v-slot:no-event="">Available</template>
                 </vue-cal>
             </div>
+
+
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="secureCallModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Patient Name</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="d-flex pb-4">
+                                <div class="d-flex-item pe-4">
+                                    <button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i
+                                            class="fas fa-video me-1"></i> Start Video Session</button>
+                                </div>
+                                <div class="d-flex-item">
+                                    <button type="button" class="btn btn-sm btn-light mt-2 shadow-sm"><i
+                                            class="fas fa-share me-1"></i> Share Video Link</button>
+                                </div>
+                            </div>
+
+                            <select class="form-select my-2" aria-label="Default select example">
+                                <option selected>Standard Progress Note</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select>
+
+                            <div class="row pt-3">
+                                <div class="col-sm-3">
+                                    <input placeholder="12/06/2021" class="form-control" />
+                                </div>
+                                <div class="col-sm-3">
+                                    <input placeholder="10:00 am" class="form-control" />
+                                </div>
+                                <div class="col-sm-2 d-flex align-items-center">
+                                    <input placeholder="55" class="form-control" /><span class="ps-1">min</span>
+                                </div>
+                                <div class="col-sm-2 d-flex align-items-center">
+                                    <div class="form-check align-self-center mb-0">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Repeats
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="d-flex pb-4 pt-3 align-items-center">
+                                <span class="fw-bolder">Notes</span>
+                                <span class="px-2"><a href="">11/30/2021</a> </span>
+                                <span><a href="">11/29/2021</a> </span>
+                                <span><button class="btn">Add Note</button></span>
+                            </div>
+
+                            <div class="row pt-3">
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <span class="fw-bolder">Billing type</span>
+                                        </div>
+                                        <div class="col-sm-2 d-flex justify-content-end">
+                                            Self Pay
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12">
+                                    <div class="row">
+                                        <div class="col-sm-3">
+                                            <span class="fw-bolder">Appointment total</span>
+                                        </div>
+                                        <div class="col-sm-2 d-flex justify-content-end">
+                                            $145
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="row pt-3">
+                                <div class="col-sm-3">
+                                    <input placeholder="Psychotherapy, 60 min" class="form-control" />
+                                </div>
+                                <div class="col-sm-3">
+                                    <input placeholder="$145" class="form-control" />
+                                </div>
+                                <div class="col-sm-2 d-flex align-items-center">
+                                    <button class="btn">Add Service</button>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="d-flex justify-content-end pt-3">
+                                <button type="button" class="btn btn-danger me-2"><i
+                                        class="fas fa-trash me-1"></i>Delete</button>
+                                <button type="button" class="btn btn-primary me-2"><i
+                                        class="fas fa-check me-1"></i>Save</button>
+                                <button type="button" class="btn btn-light me-2"><i
+                                        class="fas fa-times me-1"></i>Cancel</button>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
         </div>
     </div>
 </template>
@@ -30,28 +144,28 @@
                 title: 'Appointment',
                 background: true,
                 class: 'Appointment',
-                content: '<button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
+                content: '<button data-bs-toggle="modal" data-bs-target="#secureCallModal" type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
             }, {
                 start: '2021-11-28 18:00',
                 end: '2021-11-28 19:00',
                 title: 'Appointment',
                 background: true,
                 class: 'Appointment',
-                content: '<button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
+                content: '<button data-bs-toggle="modal" data-bs-target="#secureCallModal" type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
             }, {
                 start: '2021-11-20 18:30',
                 end: '2021-11-20 20:30',
                 title: 'Appointment',
                 background: true,
                 class: 'Appointment',
-                content: '<button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
+                content: '<button data-bs-toggle="modal" data-bs-target="#secureCallModal" type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
             }, {
                 start: '2021-11-21 11:00',
                 end: '2021-11-21 12:00',
                 title: 'Appointment',
                 background: true,
                 class: 'Appointment',
-                content: '<button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
+                content: '<button data-bs-toggle="modal" data-bs-target="#secureCallModal" type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
             }, {
                 start: '2021-11-21 19:00',
                 end: '2021-11-21 20:00',
@@ -62,21 +176,21 @@
                 title: 'Appointment',
                 background: true,
                 class: 'Appointment',
-                content: '<button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
+                content: '<button data-bs-toggle="modal" data-bs-target="#secureCallModal" type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
             }, {
                 start: '2021-8-19 12:00',
                 end: '2021-8-19 13:00',
                 title: "Appointment",
                 class: "Appointment",
                 background: true,
-                content: '<button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
+                content: '<button data-bs-toggle="modal" data-bs-target="#secureCallModal" type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
             }, {
                 start: "2021-8-20 12:00",
                 end: "2021-8-20 13:00",
                 title: 'Appointment',
                 class: 'Appointment',
                 background: true,
-                content: '<button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
+                content: '<button data-bs-toggle="modal"  data-bs-target="#secureCallModal" type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
             }]);
 
             function onEventClick(event, e) {
@@ -106,6 +220,8 @@
             };
         }
     }
+
+
 </script>
 
 <style>
@@ -129,17 +245,20 @@
         padding: 5px;
     }
 
-    .vuecal--blue-theme .vuecal__cell-events-count, .vuecal--blue-theme .vuecal__menu {
+    .vuecal--blue-theme .vuecal__cell-events-count,
+    .vuecal--blue-theme .vuecal__menu {
         background: var(--secondary-bg-gradient-dark);
     }
+
     .vuecal--blue-theme .vuecal__title-bar {
         background-color: rgb(119 30 198 / 13%);
     }
+
     .vuecal__event.vuecal__event--focus {
-    height: auto !important;
-    }
-    .vuecal__event {
         height: auto !important;
     }
 
+    .vuecal__event {
+        height: auto !important;
+    }
 </style>

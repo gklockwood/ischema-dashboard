@@ -37,15 +37,7 @@ $dark: #303840;
 //     color: #2a948b;
 //   }
 // }
-.accordion-body {
-  background: white;
-  *, a.activeLink {
-    background: white !important
-  }
-}
-.sidebar a.activeLink {
-  background: white !important
-}
+
 
 .vr {
   position: relative;
@@ -522,4 +514,19 @@ input.form-check-input {
 .submit:hover{
 	cursor: pointer;
 	transform: rotateX(360deg);
+}
+
+// forms
+
+.inputiconwrapper {
+  margin-bottom:-22px;
+  margin-right:5px;
+}
+
+.inputicon {
+  opacity: 0.5;
+  margin-top:-8px;
+  color: var(--primary-color);
+  margin-right:5px;
+  font-size: 20px !important;
 }

@@ -90,7 +90,7 @@
         </div>
 
 
-          <router-link to="/" class="list-group-item list-group-item-action bg-dark text-light"><i
+          <router-link to="/therapist/therapistbilling" class="list-group-item list-group-item-action bg-dark text-light"><i
             class="fas fa-file-invoice"></i> Billing</router-link>
     </div>
 

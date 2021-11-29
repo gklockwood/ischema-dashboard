@@ -34,8 +34,8 @@
           $route.name!=='Schedule' && 
           $route.name!=='Patientdocuments'&& 
           $route.name!=='Patientbilling'">
-          <router-link to="/entercode" type="button" class="btn btn-outline-dark">Register</router-link>
-          <router-link to="/Login" type="button" class="btn btn-outline-dark">Login</router-link>
+          <!-- <router-link to="/entercode" type="button" class="btn btn-outline-dark">Register</router-link>
+          <router-link to="/Login" type="button" class="btn btn-outline-dark">Login</router-link> -->
         </div>
 
       </div>
