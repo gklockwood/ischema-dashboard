@@ -1,7 +1,18 @@
 <template>
     <div class="therapistcalendar">
         <div class="container py-4">
-            <h1>Therapist Calendar</h1>
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>Therapist Calendar</h1>
+                </div>
+                <div class="col-sm-6 text-end">
+                    <button data-bs-toggle="modal" data-bs-target="#createSessionModal" type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-plus me-1"></i> Add Session</button>
+                </div>
+            </div>
+
+
+            
             <div style="height:1000px">
                 <vue-cal class="vuecal--blue-theme shadow" :time="true" :disable-views="['years', 'year']"
                     active-view="month" :events="events">
@@ -12,7 +23,7 @@
 
 
 
-            <!-- Modal -->
+            <!-- Modal - Edit Session -->
             <div class="modal fade" id="secureCallModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-lg">
@@ -44,7 +55,7 @@
                                 </div>
                             </div>
 
-                           
+
                             <div class="row pt-3">
                                 <div class="col-sm-3">
                                     <input placeholder="12/06/2021" class="form-control" />
@@ -79,28 +90,32 @@
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
-                                    <div class="row">
-                                        <div class="col-sm-12">
+
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <span class="fw-bolder">Billing type</span>
                                                 </div>
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-6 border-start">
                                                     Self Pay
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div class="col-sm-12">
+                                        </li>
+                                        <li class="list-group-item">
                                             <div class="row">
                                                 <div class="col-sm-6">
                                                     <span class="fw-bolder">Appointment total</span>
                                                 </div>
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-6 border-start">
                                                     $145
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
+                                        </li>
+                                    </ul>
+
+
+
                                 </div>
                             </div>
 
@@ -118,14 +133,17 @@
                                     <button class="btn"><i class="fas fa-plus me-1"></i> Add Service</button>
                                 </div>
                             </div>
+
+                            
                             <hr>
                             <div class="d-flex justify-content-end">
+                                <button  data-bs-dismiss="modal" type="button" class="btn btn-light me-2"><i
+                                    class="fas fa-times me-1"></i>Cancel</button>
                                 <button type="button" class="btn btn-danger me-2"><i
                                         class="fas fa-trash me-1"></i>Delete</button>
                                 <button type="button" class="btn btn-primary me-2"><i
                                         class="fas fa-check me-1"></i>Save</button>
-                                <button type="button" class="btn btn-light me-2"><i
-                                        class="fas fa-times me-1"></i>Cancel</button>
+                            
                             </div>
 
 
@@ -134,6 +152,112 @@
                     </div>
                 </div>
             </div>
+
+
+
+            <!-- Modal - Create Session -->
+            <div class="modal fade" id="createSessionModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">New Appointment</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <select class="form-select my-2" aria-label="Default select example">
+                                        <option selected>Patient Name Here</option>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                            <div class="row pt-3">
+                                <div class="col-sm-3">
+                                    <input placeholder="12/06/2021" class="form-control" />
+                                </div>
+                                <div class="col-sm-3">
+                                    <input placeholder="10:00 am" class="form-control" />
+                                </div>
+                                <div class="col-sm-2 d-flex align-items-center">
+                                    <input placeholder="55" class="form-control" /><span class="ps-1">min</span>
+                                </div>
+                                <div class="col-sm-2 d-flex align-items-center">
+                                    <div class="form-check align-self-center mb-0">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Repeats
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row pt-4">
+                                <div class="col-sm-6">
+                                    <input placeholder="Psychotherapy, 60 min" class="form-control" />
+                                </div>
+                                <div class="col-sm-3">
+                                    <input placeholder="$145" class="form-control" />
+                                </div>
+                                <div class="col-sm-3 d-flex align-items-center">
+                                    <button class="btn"><i class="fas fa-plus me-1"></i> Add Service</button>
+                                </div>
+                            </div>
+
+
+                            <div class="col-sm-6 pt-4">
+
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <span class="fw-bolder">Billing type</span>
+                                            </div>
+                                            <div class="col-sm-6 border-start">
+                                                Self Pay
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <span class="fw-bolder">Appointment total</span>
+                                            </div>
+                                            <div class="col-sm-6 border-start">
+                                                $145
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+
+
+                            </div>
+
+
+
+
+                            <hr>
+                            <div class="d-flex justify-content-end">
+                                <button  data-bs-dismiss="modal" type="button" class="btn btn-light me-2"><i
+                                        class="fas fa-times me-1"></i>Cancel</button>
+                                <button type="button" class="btn btn-primary me-2"><i
+                                        class="fas fa-check me-1"></i>Save</button>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
 
 
         </div>
