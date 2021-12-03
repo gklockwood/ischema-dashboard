@@ -24,73 +24,202 @@
 
 
             <!-- Modal - Edit Session -->
+
             <div class="modal fade" id="secureCallModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                 aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Patient Name</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                <div class="vertical-alignment-helper">
+                    <div class="modal-dialog modal-lg  vertical-align-center">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Patient Name</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+    
+                                <div class="d-flex pb-4">
+                                    <div class="d-flex-item pe-4">
+                                        <a type="button" class="btn btn-sm btn-primary mt-2 shadow-sm" href="http://localhost:8080/securecall"><i
+                                                class="fas fa-video me-1"></i> Start Video Session</a>
+
+                                    </div>
+                                    <div class="d-flex-item">
+                                        <button type="button" class="btn btn-sm btn-light mt-2 shadow-sm"><i
+                                                class="fas fa-share me-1"></i> Share Video Link</button>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <select class="form-select my-2" aria-label="Default select example">
+                                            <option selected>Show</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+    
+    
+                                <div class="row pt-3">
+                                    <div class="col-sm-3">
+                                        <input placeholder="12/06/2021" class="form-control" />
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input placeholder="10:00 am" class="form-control" />
+                                    </div>
+                                    <div class="col-sm-2 d-flex align-items-center">
+                                        <input placeholder="55" class="form-control" /><span class="ps-1">min</span>
+                                    </div>
+                                    <div class="col-sm-2 d-flex align-items-center">
+                                        <div class="form-check align-self-center mb-0">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Repeats
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+    
+    
+                                <div class="row pt-4">
+                                    <div class="col-sm-6">
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><span class="fw-bolder">Notes</span></li>
+                                            <li class="list-group-item"><span><a href="">11/30/2021</a></span></li>
+                                            <li class="list-group-item"><span><a href="">11/29/2021</a> </span></li>
+                                        </ul>
+                                        <div class=" d-flex justify-content-center">
+                                            <button class="btn btn-light mt-2 shadow-sm"><i class="fas fa-plus me-1"></i>
+                                                Add Note</button>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6">
+    
+                                        <ul class="list-group">
+                                            <li class="list-group-item">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <span class="fw-bolder">Billing type</span>
+                                                    </div>
+                                                    <div class="col-sm-6 border-start">
+                                                        Self Pay
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="list-group-item">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <span class="fw-bolder">Appointment total</span>
+                                                    </div>
+                                                    <div class="col-sm-6 border-start">
+                                                        $145
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+    
+    
+    
+                                    </div>
+                                </div>
+    
+    
+    
+    
+                                <div class="row pt-4">
+                                    <div class="col-sm-6">
+                                        <input placeholder="Psychotherapy, 60 min" class="form-control" />
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input placeholder="$145" class="form-control" />
+                                    </div>
+                                    <div class="col-sm-3 d-flex align-items-center">
+                                        <button class="btn"><i class="fas fa-plus me-1"></i> Add Service</button>
+                                    </div>
+                                </div>
+    
+                                
+                                <hr>
+                                <div class="d-flex justify-content-end">
+                                    <button  data-bs-dismiss="modal" type="button" class="btn btn-light me-2"><i
+                                        class="fas fa-times me-1"></i>Cancel</button>
+                                    <button type="button" class="btn btn-danger me-2"><i
+                                            class="fas fa-trash me-1"></i>Delete</button>
+                                    <button type="button" class="btn btn-primary me-2"><i
+                                            class="fas fa-check me-1"></i>Save</button>
+                                
+                                </div>
+    
+    
+                            </div>
+    
                         </div>
-                        <div class="modal-body">
+                    </div>
+                </div>
 
-                            <div class="d-flex pb-4">
-                                <div class="d-flex-item pe-4">
-                                    <button type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i
-                                            class="fas fa-video me-1"></i> Start Video Session</button>
-                                </div>
-                                <div class="d-flex-item">
-                                    <button type="button" class="btn btn-sm btn-light mt-2 shadow-sm"><i
-                                            class="fas fa-share me-1"></i> Share Video Link</button>
-                                </div>
+            </div>
+
+
+
+            <!-- Modal - Create Session -->
+            <div class="modal fade" id="createSessionModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="vertical-alignment-helper">
+                    <div class="modal-dialog modal-lg  vertical-align-center">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">New Appointment</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-3">
-                                    <select class="form-select my-2" aria-label="Default select example">
-                                        <option selected>Show</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                            </div>
-
-
-                            <div class="row pt-3">
-                                <div class="col-sm-3">
-                                    <input placeholder="12/06/2021" class="form-control" />
-                                </div>
-                                <div class="col-sm-3">
-                                    <input placeholder="10:00 am" class="form-control" />
-                                </div>
-                                <div class="col-sm-2 d-flex align-items-center">
-                                    <input placeholder="55" class="form-control" /><span class="ps-1">min</span>
-                                </div>
-                                <div class="col-sm-2 d-flex align-items-center">
-                                    <div class="form-check align-self-center mb-0">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Repeats
-                                        </label>
+                            <div class="modal-body">
+    
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <select class="form-select my-2" aria-label="Default select example">
+                                            <option selected>Patient Name Here</option>
+                                            <option value="1">One</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
                                     </div>
                                 </div>
-                            </div>
-
-
-                            <div class="row pt-4">
-                                <div class="col-sm-6">
-                                    <ul class="list-group">
-                                        <li class="list-group-item"><span class="fw-bolder">Notes</span></li>
-                                        <li class="list-group-item"><span><a href="">11/30/2021</a></span></li>
-                                        <li class="list-group-item"><span><a href="">11/29/2021</a> </span></li>
-                                    </ul>
-                                    <div class=" d-flex justify-content-center">
-                                        <button class="btn btn-light mt-2 shadow-sm"><i class="fas fa-plus me-1"></i>
-                                            Add Note</button>
+    
+    
+                                <div class="row pt-3">
+                                    <div class="col-sm-3">
+                                        <input placeholder="12/06/2021" class="form-control" />
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input placeholder="10:00 am" class="form-control" />
+                                    </div>
+                                    <div class="col-sm-2 d-flex align-items-center">
+                                        <input placeholder="55" class="form-control" /><span class="ps-1">min</span>
+                                    </div>
+                                    <div class="col-sm-2 d-flex align-items-center">
+                                        <div class="form-check align-self-center mb-0">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Repeats
+                                            </label>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-sm-6">
-
+    
+                                <div class="row pt-4">
+                                    <div class="col-sm-6">
+                                        <input placeholder="Psychotherapy, 60 min" class="form-control" />
+                                    </div>
+                                    <div class="col-sm-3">
+                                        <input placeholder="$145" class="form-control" />
+                                    </div>
+                                    <div class="col-sm-3 d-flex align-items-center">
+                                        <button class="btn"><i class="fas fa-plus me-1"></i> Add Service</button>
+                                    </div>
+                                </div>
+    
+    
+                                <div class="col-sm-6 pt-4">
+    
                                     <ul class="list-group">
                                         <li class="list-group-item">
                                             <div class="row">
@@ -113,147 +242,26 @@
                                             </div>
                                         </li>
                                     </ul>
-
-
-
+    
+    
+    
                                 </div>
+    
+    
+    
+    
+                                <hr>
+                                <div class="d-flex justify-content-end">
+                                    <button  data-bs-dismiss="modal" type="button" class="btn btn-light me-2"><i
+                                            class="fas fa-times me-1"></i>Cancel</button>
+                                    <button type="button" class="btn btn-primary me-2"><i
+                                            class="fas fa-check me-1"></i>Save</button>
+                                </div>
+    
+    
                             </div>
-
-
-
-
-                            <div class="row pt-4">
-                                <div class="col-sm-6">
-                                    <input placeholder="Psychotherapy, 60 min" class="form-control" />
-                                </div>
-                                <div class="col-sm-3">
-                                    <input placeholder="$145" class="form-control" />
-                                </div>
-                                <div class="col-sm-3 d-flex align-items-center">
-                                    <button class="btn"><i class="fas fa-plus me-1"></i> Add Service</button>
-                                </div>
-                            </div>
-
-                            
-                            <hr>
-                            <div class="d-flex justify-content-end">
-                                <button  data-bs-dismiss="modal" type="button" class="btn btn-light me-2"><i
-                                    class="fas fa-times me-1"></i>Cancel</button>
-                                <button type="button" class="btn btn-danger me-2"><i
-                                        class="fas fa-trash me-1"></i>Delete</button>
-                                <button type="button" class="btn btn-primary me-2"><i
-                                        class="fas fa-check me-1"></i>Save</button>
-                            
-                            </div>
-
-
+    
                         </div>
-
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- Modal - Create Session -->
-            <div class="modal fade" id="createSessionModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">New Appointment</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <select class="form-select my-2" aria-label="Default select example">
-                                        <option selected>Patient Name Here</option>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                    </select>
-                                </div>
-                            </div>
-
-
-                            <div class="row pt-3">
-                                <div class="col-sm-3">
-                                    <input placeholder="12/06/2021" class="form-control" />
-                                </div>
-                                <div class="col-sm-3">
-                                    <input placeholder="10:00 am" class="form-control" />
-                                </div>
-                                <div class="col-sm-2 d-flex align-items-center">
-                                    <input placeholder="55" class="form-control" /><span class="ps-1">min</span>
-                                </div>
-                                <div class="col-sm-2 d-flex align-items-center">
-                                    <div class="form-check align-self-center mb-0">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Repeats
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="row pt-4">
-                                <div class="col-sm-6">
-                                    <input placeholder="Psychotherapy, 60 min" class="form-control" />
-                                </div>
-                                <div class="col-sm-3">
-                                    <input placeholder="$145" class="form-control" />
-                                </div>
-                                <div class="col-sm-3 d-flex align-items-center">
-                                    <button class="btn"><i class="fas fa-plus me-1"></i> Add Service</button>
-                                </div>
-                            </div>
-
-
-                            <div class="col-sm-6 pt-4">
-
-                                <ul class="list-group">
-                                    <li class="list-group-item">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <span class="fw-bolder">Billing type</span>
-                                            </div>
-                                            <div class="col-sm-6 border-start">
-                                                Self Pay
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="list-group-item">
-                                        <div class="row">
-                                            <div class="col-sm-6">
-                                                <span class="fw-bolder">Appointment total</span>
-                                            </div>
-                                            <div class="col-sm-6 border-start">
-                                                $145
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-
-
-
-                            </div>
-
-
-
-
-                            <hr>
-                            <div class="d-flex justify-content-end">
-                                <button  data-bs-dismiss="modal" type="button" class="btn btn-light me-2"><i
-                                        class="fas fa-times me-1"></i>Cancel</button>
-                                <button type="button" class="btn btn-primary me-2"><i
-                                        class="fas fa-check me-1"></i>Save</button>
-                            </div>
-
-
-                        </div>
-
                     </div>
                 </div>
             </div>
