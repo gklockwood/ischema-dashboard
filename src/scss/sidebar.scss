@@ -1,0 +1,46 @@
+.sidebar {
+  width: 300px;
+  position: absolute;
+  top: 60px;
+  bottom: 0;
+  background: $dark;
+  left: -300px;
+  transition: ease all 0.3s;
+  padding: 10px;
+  a,
+  .accordion-item {
+    margin: 2px 0;
+    border-radius: 10px !important;
+    transition: ease all 0.3s;
+    svg {
+      margin-right: 4px;
+      width: 16px !important;
+    }
+    &:hover {
+      background: rgba(102, 102, 109, 0.555) !important;
+    }
+    .accordion-button.collapsed::after {
+      transform: rotate(-90deg);
+    }
+    .accordion-button::after {
+      transform: rotate(-180deg);
+    }
+  }
+  a.activeLink {
+    background: rgba(102, 102, 109, 0.555) !important;
+  }
+}
+.sidebarOpen {
+  left: 0px;
+}
+.mainContent {
+  margin: 0;
+  position: relative;
+  transition: ease all 0.3s;
+}
+.mainContentPushed {
+  margin-left: 300px;
+}
+.reset {
+  margin-left: 0px;
+}

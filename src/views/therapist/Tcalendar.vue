@@ -394,9 +394,11 @@
 
     .vuecal__event.vuecal__event--focus {
         height: auto !important;
+        padding:10px !important;
     }
 
     .vuecal__event {
         height: auto !important;
+        padding:10px !important;
     }
 </style>

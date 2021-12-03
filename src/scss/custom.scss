@@ -7,37 +7,22 @@ body {
   font-family: "Source Sans Pro", sans-serif !important;
 }
 
-$primary: #0074d9;
+$primary: teal;
+$secondary:  purple;
 $danger: #ff4136;
 $dark: #303840;
 
-:root {
-  --primary-bg-gradient-light: linear-gradient(to right, #f4faff, #e4f5ff);
-  --primary-bg-gradient-dark: linear-gradient(to right, #5b9cb4, #2a948b);
-  --bg-blue: linear-gradient(to right, #61acc7, #5a82ce);
-  --secondary-bg-gradient-dark: linear-gradient(to right, #a43dfc, #6813b3);
-  --gray-bg-gradient-dark: linear-gradient(to right, #0f172a, #203a43, #2c5364);
-  --danger-bg-gradient: linear-gradient(to right, #c93345, #b92f3f);
-  --success-bg-gradient: linear-gradient(to right, #378f66, #228169);
-  --warning-bg-gradient: linear-gradient(
-    to right,
-    rgb(200, 131, 2),
-    rgb(192, 127, 24)
-  );
-  --info-bg-gradient: linear-gradient(
-    to right,
-    rgb(102, 171, 189),
-    rgb(76, 163, 185)
-  );
-}
 
-// a {
-//   color: #5b9cb4 !important;
-//   &:hover {
-//     color: #2a948b;
-//   }
-// }
 
+@import "colors.scss"; 
+@import "forms.scss";    
+@import "survey.scss";   
+@import "tables.scss";    
+@import "fonts.scss";    
+@import "cards.scss";   
+@import "buttons.scss";
+@import "sidebar.scss";
+@import "tabs.scss";
 
 .vr {
   position: relative;
@@ -56,75 +41,10 @@ $dark: #303840;
   background: var(--primary-bg-gradient-light);
 }
 
-.btn-primary {
-  background: var(--primary-bg-gradient-dark);
-}
 
-.btn-secondary {
-  background: var(--secondary-bg-gradient-dark);
-}
-
-.bg-secondary {
-  background: var(--secondary-bg-gradient-dark);
-}
-
-.btn-danger {
-  background: var(--danger-bg-gradient);
-  color: white !important;
-}
-
-.bg-primary {
-  background: var(--primary-bg-gradient-dark);
-}
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-.sidebar {
-  width: 300px;
-  position: absolute;
-  top: 60px;
-  bottom: 0;
-  background: $dark;
-  left: -300px;
-  transition: ease all 0.3s;
-  padding: 10px;
-  a,
-  .accordion-item {
-    margin: 2px 0;
-    border-radius: 10px !important;
-    transition: ease all 0.3s;
-    svg {
-      margin-right: 4px;
-      width: 16px !important;
-    }
-    &:hover {
-      background: rgba(102, 102, 109, 0.555) !important;
-    }
-    .accordion-button.collapsed::after {
-      transform: rotate(-90deg);
-    }
-    .accordion-button::after {
-      transform: rotate(-180deg);
-    }
-  }
-  a.activeLink {
-    background: rgba(102, 102, 109, 0.555) !important;
-  }
-}
-.sidebarOpen {
-  left: 0px;
-}
-.mainContent {
-  margin: 0;
-  position: relative;
-  transition: ease all 0.3s;
-}
-.mainContentPushed {
-  margin-left: 300px;
-}
-.reset {
-  margin-left: 0px;
-}
 
 .banner {
   background: $dark;
@@ -139,7 +59,7 @@ $dark: #303840;
 }
 
 // Dashboard styles
-.dashboard {
+.dashboard, .securecall {
   .card {
     min-height: 350px;
     .icontypica {
@@ -205,114 +125,7 @@ $dark: #303840;
   }
 }
 
-// buttons
-.dashboard {
-  button {
-    border: 0 !important;
-    position: relative;
-    display: inline-block;
-    box-sizing: border-box;
-    border: none;
-    border-radius: 25px !important;
-    padding: 0 16px;
-    min-width: 64px;
-    vertical-align: middle;
-    text-align: center;
-    text-overflow: ellipsis;
-    text-transform: uppercase !important;
-    color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-    overflow: hidden;
-    outline: none;
-    cursor: pointer;
-    transition: box-shadow 0.2s;
-    font-size: 14px !important;
-    padding: 10px 15px !important;
-    letter-spacing: 1px;
-  }
 
-  button::-moz-focus-inner {
-    border: none;
-  }
-
-  /* Overlay */
-  button::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgb(var(--pure-material-onprimary-rgb, 255, 255, 255));
-    opacity: 0;
-    transition: opacity 0.2s;
-  }
-
-  /* Ripple */
-  button::after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    border-radius: 50%;
-    padding: 50%;
-    width: 32px; /* Safari */
-    height: 32px; /* Safari */
-    background-color: rgb(var(--pure-material-onprimary-rgb, 000, 000, 000));
-    opacity: 0;
-    transform: translate(-50%, -50%) scale(1);
-    transition: opacity 1s, transform 0.5s;
-  }
-
-  /* Hover, Focus */
-  button:hover,
-  button:focus {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.25) !important;
-    overflow: hidden;
-    outline: none;
-    border: 0;
-  }
-
-  // button:hover::before {
-  //   opacity: 0.08;
-  // }
-
-  // button:focus::before {
-  //   opacity: 0.24;
-  // }
-
-  // button:hover:focus::before {
-  //   opacity: 0.3;
-  // }
-
-  /* Active */
-  button:active {
-    box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
-      0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
-  }
-
-  button:active::after {
-    opacity: 0.32;
-    transform: translate(-50%, -50%) scale(0);
-    transition: transform 0s;
-  }
-
-  /* Disabled */
-  button:disabled {
-    color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.38);
-    background-color: rgba(var(--pure-material-onsurface-rgb, 0, 0, 0), 0.12);
-    box-shadow: none;
-    cursor: initial;
-  }
-
-  button:disabled::before {
-    opacity: 0;
-  }
-
-  button:disabled::after {
-    opacity: 0;
-  }
-}
 
 // Messages 
 .messagewrapper {
@@ -363,170 +176,7 @@ $dark: #303840;
   background: transparent;
 }
 
-// Survey CSS
-.surveywrap {
-  .form-check-label {
-    font-size: 14px;
-    font-weight: 600;
-  }
-}
-form .likert {
-  list-style: none;
-  width: 100%;
-  margin: 0;
-  padding: 0 0 35px;
-  display: block;
-  border-bottom: 2px solid #efefef;
-}
-form .likert:last-of-type {
-  border-bottom: 0;
-}
-form .likert:before {
-  content: "";
-  position: relative;
-  top: 15px;
-  left: 8.2%;
-  display: block;
-  background-color: #efefef;
-  height: 4px;
-  width: 80%;
-}
-form .likert li {
-  display: inline-block;
-  width: 16%;
-  text-align: center;
-  vertical-align: top;
-  padding: 0;
-}
-form .likert li input[type="radio"] {
-  display: block;
-  position: relative;
-  top: 0;
-  left: 50%;
-  margin-left: -10px;
-}
-form .likert li label {
-  width: 100%;
-}
-form .buttons {
-  margin: 30px 0;
-  padding: 0 4.25%;
-  text-align: right;
-}
-form .buttons button {
-  padding: 5px 10px;
-  background-color: #67ab49;
-  border: 0;
-  border-radius: 3px;
-}
-form .buttons .clear {
-  background-color: #e9e9e9;
-}
-form .buttons .submit {
-  background-color: #67ab49;
-}
-form .buttons .clear:hover {
-  background-color: #ccc;
-}
-form .buttons .submit:hover {
-  background-color: #14892c;
-}
-
-input.form-check-input {
-  width: 20px;
-  height: 20px;
-  margin-bottom: 12px;
-}
 
 
-// Custom survey radio buttons
-/* CONTAINERS */
-
-.six { width: 15.26%; max-width: 15.26%;}
-
-/* COLUMNS */
-
-.col {
-  display: block;
-  float:left;
-  margin: 1% 0 1% 1.6%;
-}
-
-.col:first-of-type { margin-left: 0; }
-
-/* CLEARFIX */
-
-.cf:before,
-.cf:after {
-    content: " ";
-    display: table;
-}
-
-.cf:after {
-    clear: both;
-}
-
-.cf {
-    *zoom: 1;
-}
-
-/* FORM */
-
-.form .plan input, .form .payment-plan input, .form .payment-type input{
-	display: none;
-}
-
-.form label{
-  position: relative;
-  color: black;
-  background: #C9D6FF;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #f5f5f5, #e2e8fb);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #f5f5f5, #e2e8fb); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-size: 26px;
-  text-align: center;
-  line-height: 60px;
-  display: block;
-  cursor: pointer;
-  transition: all 0.3s all;
-}
-
-.form input:checked + label,
-.form label:hover {
-	background: var(--primary-bg-gradient-dark);
-  color: white;
-}
 
 
-.submit{
-	padding: 15px 60px;
-	display: inline-block;
-	border: none;
-	margin: 20px 0;
-	background-color: #2fcc71;
-	color: #fff;
-	border: 2px solid #333;
-	font-size: 18px;
-	-webkit-transition: transform 0.3s ease-in-out;
-	-o-transition: transform 0.3s ease-in-out;
-	transition: transform 0.3s ease-in-out;
-}
-
-.submit:hover{
-	cursor: pointer;
-	transform: rotateX(360deg);
-}
-
-// forms
-
-.inputiconwrapper {
-  margin-bottom:-22px;
-  margin-right:5px;
-}
-
-.inputicon {
-  opacity: 0.5;
-  margin-top:-8px;
-  color: var(--primary-color);
-  margin-right:5px;
-  font-size: 20px !important;
-}

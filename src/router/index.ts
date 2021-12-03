@@ -10,6 +10,7 @@ import Therapistjoin from '../views/Therapistjoin.vue'
 import Messages from '../views/patient/Messages.vue'
 import Survey from '../views/Survey.vue'
 import Entercode from '../views/Entercode.vue'
+import Securecall from '../views/Securecall.vue'
 
 // Patient Related
 import Dashboard from '../views/patient/Dashboard.vue'
@@ -160,6 +161,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/therapist/therapistdashboard',
     name: 'Therapistsettings',
     component: Tsettings
+  },
+  {
+    path: '/securecall',
+    name: 'Securecall',
+    component: Securecall
   }
 ]
 

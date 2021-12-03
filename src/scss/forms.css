@@ -1,0 +1,66 @@
+/* FORM */
+.form .plan input,
+.form .payment-plan input,
+.form .payment-type input {
+  display: none;
+}
+
+.form label {
+  position: relative;
+  color: black;
+  background: #c9d6ff;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#f5f5f5), to(#e2e8fb));
+  background: linear-gradient(to right, #f5f5f5, #e2e8fb);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-size: 26px;
+  text-align: center;
+  line-height: 60px;
+  display: block;
+  cursor: pointer;
+  -webkit-transition: all 0.3s all;
+  transition: all 0.3s all;
+}
+
+.form input:checked + label,
+.form label:hover {
+  background: var(--primary-bg-gradient-dark);
+  color: white;
+}
+
+.submit {
+  padding: 15px 60px;
+  display: inline-block;
+  border: none;
+  margin: 20px 0;
+  background-color: #2fcc71;
+  color: #fff;
+  border: 2px solid #333;
+  font-size: 18px;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+}
+
+.submit:hover {
+  cursor: pointer;
+  -webkit-transform: rotateX(360deg);
+          transform: rotateX(360deg);
+}
+
+.inputiconwrapper {
+  margin-bottom: -22px;
+  margin-right: 5px;
+}
+
+.inputicon {
+  opacity: 0.5;
+  margin-top: -8px;
+  color: var(--primary-color);
+  margin-right: 5px;
+  font-size: 20px !important;
+}
+/*# sourceMappingURL=forms.css.map */
