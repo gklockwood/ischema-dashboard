@@ -25,6 +25,13 @@ $dark: #303840;
 @import "tabs.scss";
 @import "modals.scss";
 
+.custom-logo {
+ width: 180px;
+ height:auto;
+ position: relative;
+ margin-top:-2px;
+}
+
 .vr {
   position: relative;
   top:2px;

@@ -39,13 +39,21 @@
     
                                 <div class="d-flex pb-4">
                                     <div class="d-flex-item pe-4">
-                                        <a type="button" class="btn btn-sm btn-primary mt-2 shadow-sm" href="http://localhost:8080/securecall"><i
+                                        <a type="button" class="btn btn-sm btn-primary shadow-sm p-2" href="http://localhost:8080/securecall"><i
                                                 class="fas fa-video me-1"></i> Start Video Session</a>
 
                                     </div>
                                     <div class="d-flex-item">
-                                        <button type="button" class="btn btn-sm btn-light mt-2 shadow-sm"><i
-                                                class="fas fa-share me-1"></i> Share Video Link</button>
+                                        <div class="dropdown d-flex">
+                                            <button class="btn btn-light dropdown-toggle shadow-sm align-self-center" type="button" id="dropdownMenuButton1"
+                                                data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="fas fa-share me-1"></i> Share Link
+                                            </button>
+                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                <li><a class="dropdown-item" href="#"><i class="fas fa-copy me-1"></i> Copy Link</a></li>
+                                                <li><a class="dropdown-item" href="#"><i class="fas fa-envelope me-1"></i> Send Reminder</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -143,7 +151,7 @@
                                 <hr>
                                 <div class="d-flex justify-content-end">
                                     <button  data-bs-dismiss="modal" type="button" class="btn btn-light me-2"><i
-                                        class="fas fa-times me-1"></i>Cancel</button>
+                                        class="fas fa-times me-1 shadow-sm"></i>Cancel</button>
                                     <button type="button" class="btn btn-danger me-2"><i
                                             class="fas fa-trash me-1"></i>Delete</button>
                                     <button type="button" class="btn btn-primary me-2"><i
@@ -254,7 +262,7 @@
                                 <hr>
                                 <div class="d-flex justify-content-end">
                                     <button  data-bs-dismiss="modal" type="button" class="btn btn-light me-2"><i
-                                            class="fas fa-times me-1"></i>Cancel</button>
+                                            class="fas fa-times me-1 shadow-sm"></i>Cancel</button>
                                     <button type="button" class="btn btn-primary me-2"><i
                                             class="fas fa-check me-1"></i>Save</button>
                                 </div>
