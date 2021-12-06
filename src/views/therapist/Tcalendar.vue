@@ -50,11 +50,12 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-sm-3">
-                                        <select class="form-select my-2" aria-label="Default select example">
+                                        <label for="Patient Attendance Select" class="fw-bolder">Patient Attendance</label>
+                                        <select class="form-select my-2" aria-label="Patient Attendance">
                                             <option selected>Show</option>
-                                            <option value="1">One</option>
-                                            <option value="2">Two</option>
-                                            <option value="3">Three</option>
+                                            <option value="1">No Show</option>
+                                            <option value="2">Cancelled</option>
+                                            <option value="3">Late Cancelled</option>
                                         </select>
                                     </div>
                                 </div>
@@ -71,7 +72,7 @@
                                         <input placeholder="55" class="form-control" /><span class="ps-1">min</span>
                                     </div>
                                     <div class="col-sm-2 d-flex align-items-center">
-                                        <div class="form-check align-self-center mb-0">
+                                        <div class="form-check">
                                             <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                             <label class="form-check-label" for="flexCheckDefault">
                                                 Repeats
@@ -285,29 +286,29 @@
         },
         setup() {
             const events = reactive([{
-                start: '2021-11-27 11:00',
-                end: '2021-11-27 12:00',
+                start: '2021-12-06 11:00',
+                end: '2021-12-06 12:00',
                 title: 'Appointment',
                 background: true,
                 class: 'Appointment',
                 content: '<button data-bs-toggle="modal" data-bs-target="#secureCallModal" type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
             }, {
-                start: '2021-11-28 18:00',
-                end: '2021-11-28 19:00',
+                start: '2021-12-07 11:00',
+                end: '2021-12-07 12:00',
                 title: 'Appointment',
                 background: true,
                 class: 'Appointment',
                 content: '<button data-bs-toggle="modal" data-bs-target="#secureCallModal" type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
             }, {
-                start: '2021-11-20 18:30',
-                end: '2021-11-20 20:30',
+                start: '2021-12-09 11:00',
+                end: '2021-12-09 12:00',
                 title: 'Appointment',
                 background: true,
                 class: 'Appointment',
                 content: '<button data-bs-toggle="modal" data-bs-target="#secureCallModal" type="button" class="btn btn-sm btn-primary mt-2 shadow-sm"><i class="fas fa-video me-1"></i> Secure Video Call</button>'
             }, {
-                start: '2021-11-21 11:00',
-                end: '2021-11-21 12:00',
+                start: '2021-12-10 11:00',
+                end: '2021-12-10 12:00',
                 title: 'Appointment',
                 background: true,
                 class: 'Appointment',
