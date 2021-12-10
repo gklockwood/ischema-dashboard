@@ -327,13 +327,17 @@
             </div>
             <div class="row pt-4">
                 <div class="col-sm-12">
-                    <h4>Client Portal Greeting</h4>
+                    <h4 class="m-0">Client Portal Greeting</h4>
                     <p>A custom message welcoming clients when they sign into the Client Portal to complete paperwork.</p>
                 </div>
                 <div class="col-sm-12">
                     <div class="row">
                         <div class="col-sm-6 text-start">
-                            <h5 class="fw-bolder">Welcome Message</h5>
+                            <div class="d-flex align-items-center">
+                                <span class="align-self-center d-block">
+                                    <h5 class="fw-bolder m-0">Welcome Message</h5>
+                                </span>
+                            </div>   
                         </div>
                         <div class="col-sm-6 text-end">
                             <button type="button" class="btn btn-outline-dark">
