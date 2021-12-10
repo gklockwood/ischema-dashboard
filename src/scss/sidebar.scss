@@ -1,6 +1,6 @@
 .sidebar {
   width: 300px;
-  position: absolute;
+  position: fixed;
   top: 60px;
   bottom: 0;
   background: $dark;
@@ -37,6 +37,7 @@
   margin: 0;
   position: relative;
   transition: ease all 0.3s;
+  padding-top: 64px;
 }
 .mainContentPushed {
   margin-left: 300px;
