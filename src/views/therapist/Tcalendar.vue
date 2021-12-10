@@ -40,7 +40,7 @@
                                 <div class="d-flex pb-4">
                                     <div class="d-flex-item pe-4">
                                         <a type="button" class="btn btn-sm btn-primary shadow-sm p-2" href="http://localhost:8080/securecall"><i
-                                                class="fas fa-video me-1"></i> Start Video Session</a>
+                                                class="fas fa-video me-1"></i> Start Session</a>
 
                                     </div>
                                     <div class="d-flex-item">

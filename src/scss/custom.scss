@@ -184,6 +184,25 @@ $dark: #303840;
   background: transparent;
 }
 
+// Bootstrap icons general styles 
+button svg.bi {
+  margin-top:-4px;
+  margin-right: 2px;
+}
+th, td {
+  vertical-align: middle;
+  .form-check {
+    top: 4px;
+    position: relative;
+    input {
+      margin-right: 8px;
+    }
+    label {
+      top: 1px;
+      position: relative;
+    }
+  }
+}
 
 
 

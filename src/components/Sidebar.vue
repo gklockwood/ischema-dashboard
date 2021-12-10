@@ -35,7 +35,8 @@
     'Clientdetail',
     'Therapistcalendar',
     'Sentforms',
-    'Therapistsettings'
+    'Therapistsettings',
+    'Clientportal'
     ].includes($route.name)">
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">

@@ -30,6 +30,7 @@ import Tcalendar from '../views/therapist/Tcalendar.vue'
 import Sentforms from '../views/therapist/Sentforms.vue'
 import Tmessages from '../views/therapist/Tmessages.vue'
 import Tsettings from '../views/therapist/Tsettings.vue'
+import Clientportal from '../views/therapist/Clientportal.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -166,6 +167,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/securecall',
     name: 'Securecall',
     component: Securecall
+  },
+  {
+    path: '/therapist/clientportal',
+    name: 'Clientportal',
+    component: Clientportal
   }
 ]
 

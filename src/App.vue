@@ -16,7 +16,8 @@
       'Clientdetail',
       'Therapistcalendar',
       'Sentforms',
-      'Therapistsettings'
+      'Therapistsettings',
+      'Clientportal'
       ].includes($route.name)"><i class="fas fa-bars"></i></button>
 
       <router-link to="/landing" type="button" class="btn brandtext">
@@ -98,7 +99,8 @@
     'Clientdetail',
     'Therapistcalendar',
     'Sentforms',
-    'Therapistsettings'
+    'Therapistsettings',
+    'Clientportal'
     ].includes($route.name)"></sidebar>
 
 
@@ -119,7 +121,8 @@
         'Clientdetail',
         'Therapistcalendar',
         'Sentforms',
-        'Therapistsettings'
+        'Therapistsettings',
+        'Clientportal'
         ].includes($route.name) }">
       <router-view />
 
