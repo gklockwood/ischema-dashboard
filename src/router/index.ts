@@ -11,6 +11,7 @@ import Messages from '../views/patient/Messages.vue'
 import Survey from '../views/Survey.vue'
 import Entercode from '../views/Entercode.vue'
 import Securecall from '../views/Securecall.vue'
+import Patientportal from '../views/Patientportal.vue'
 
 // Patient Related
 import Dashboard from '../views/patient/Dashboard.vue'
@@ -41,6 +42,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/landing',
     name: 'Landing',
     component: Landing
+  },
+  {
+    path: '/patientportal',
+    name: 'Patientportal',
+    component: Patientportal
   },
   {
     path: '/about',
