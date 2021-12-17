@@ -40,13 +40,13 @@
     ].includes($route.name)">
       <div class="accordion accordion-flush" id="accordionFlushExample">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOne">
+          <h2 class="accordion-header" id="flush-headingOneog">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOneog">
               George Lockwood
             </button>
           </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          <div id="flush-collapseOneog" class="accordion-collapse collapse" aria-labelledby="flush-headingOneog"
             data-bs-parent="#accordionFlushExample">
             <div class="accordion-body">
               <router-link to="#" class="list-group-item list-group-item-action mt-1">

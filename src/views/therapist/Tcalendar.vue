@@ -226,39 +226,7 @@
                                     </div>
                                 </div>
     
-    
-                                <div class="col-sm-6 pt-4">
-    
-                                    <ul class="list-group">
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <span class="fw-bolder">Billing type</span>
-                                                </div>
-                                                <div class="col-sm-6 border-start">
-                                                    Self Pay
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item">
-                                            <div class="row">
-                                                <div class="col-sm-6">
-                                                    <span class="fw-bolder">Appointment total</span>
-                                                </div>
-                                                <div class="col-sm-6 border-start">
-                                                    $145
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-    
-    
-    
-                                </div>
-    
-    
-    
-    
+
                                 <hr>
                                 <div class="d-flex justify-content-end">
                                     <button  data-bs-dismiss="modal" type="button" class="btn btn-light me-2"><i

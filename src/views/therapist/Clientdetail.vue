@@ -8,9 +8,9 @@
                             <h4>(Client Name Here) Detail</h4>
                             birthdate
                             <button class="btn btn-light align-self-center shadow-sm d-block mt-2"
-                            data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Edit
-                        </button>
+                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                Edit
+                            </button>
                         </div>
                     </div>
                     <div class="row pt-2">
@@ -75,6 +75,22 @@
                                     Add Progress Note</button>
                             </div>
                         </div>
+                        <div class="row pt-3">
+                            <div class="col-sm-12 offset-md-3 col-md-9">
+                                <label class="fw-bolder">Progress Note</label>
+                                <p>
+                                    This is an example progress note. 
+                                </p>
+                                <button class="btn btn-light btn-sm align-self-center shadow-sm">Read More</button>
+                            </div>
+                            <div class="col-sm-12 offset-md-3 col-md-9 pt-3">
+                                <label class="fw-bolder">Psychotherapy Note</label>
+                                <p>
+                                    This is an example progress note. 
+                                </p>
+                                <button class="btn btn-light btn-sm align-self-center shadow-sm">Read More</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
@@ -102,6 +118,112 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-sm-12 pt-3">
+
+
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Client Info
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">Phone: 222-222-2222</li>
+                                                <li class="list-group-item">Email: test@testmail.net</li>
+                                                <li class="list-group-item">Addr: 123 Great Ln</li>
+                                            </ul>
+                                            <div class="pt-3 text-center">
+                                                <button class="btn btn-light align-self-center shadow-sm"><i
+                                                    class="fas fa-edit"></i>
+                                                Edit Info</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne2">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne2"
+                                            aria-expanded="false" aria-controls="flush-collapseOne2">
+                                            Contacts
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne2" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">Name: Johny Johnson</li>
+                                                <li class="list-group-item">Phone: 222-222-2222</li>
+                                                <li class="list-group-item">Email: test@testmail.net</li>
+                                            </ul>
+                                            <div class="pt-3 text-center">
+                                                <button class="btn btn-light align-self-center shadow-sm"><i
+                                                    class="fas fa-edit"></i>
+                                                Edit Contacts Info</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne3">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne3"
+                                            aria-expanded="false" aria-controls="flush-collapseOne2">
+                                            Upcoming Appointments
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne3" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">Date:</li>
+                                                <li class="list-group-item">Date:</li>
+                                                <li class="list-group-item">Date:</li>
+                                            </ul>
+                                            <div class="pt-3 text-center">
+                                                <button class="btn btn-light align-self-center shadow-sm"><i
+                                                    class="fas fa-edit"></i>
+                                                Edit Appointments</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne4">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne4"
+                                            aria-expanded="false" aria-controls="flush-collapseOne2">
+                                            Communication Settings
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne4" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <ul class="list-group">
+                                                <li class="list-group-item">Appointment Reminders: Disabled</li>
+                                                <li class="list-group-item">Client Portal Access: Documents, Scheduling Messaging & Billing</li>
+                                            </ul>
+                                            <div class="pt-3 text-center">
+                                                <button class="btn btn-light align-self-center shadow-sm"><i
+                                                    class="fas fa-edit"></i>
+                                                Manage</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
                     </div>
                 </div>
             </div>

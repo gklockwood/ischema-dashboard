@@ -67,7 +67,8 @@
                         <div class="card-body">
                             <div class="list-group">
                                 <a href="#" class="list-group-item list-group-item-action">Progress Notes</a>
-                                <a href="#" class="list-group-item list-group-item-action">Inventories and Questionnaires</a>
+                                <router-link to="/therapist/clientportal" class="list-group-item list-group-item-action ">
+                                    Inventories and Questionnaires</router-link>
                                 <a href="#" class="list-group-item list-group-item-action">Assessments</a>
                               </div>
                         </div>
