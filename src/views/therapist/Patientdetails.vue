@@ -1,7 +1,7 @@
 <template>
     <div class="patientdetails">
         <div class="container py-4">
-            <h2>Edit patient <a href="" class="font-style-none">Patient Name</a> </h2>
+            <h2 class="pb-3">Edit patient <a href="" class="text-decoration-none">Patient Name</a> </h2>
 
 
             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -20,6 +20,14 @@
               </ul>
               <div class="tab-content" id="myTabContent">
                 <div class="tab-pane fade show active" id="clientinfo" role="tabpanel" aria-labelledby="clientinfo-tab">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <label class="fw-bolder pt-4 pb-2">Patient Status: </label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Active</option>
+                              </select>
+                        </div>
+                    </div>
                     <div class="row">
                         <div class="col-sm-12">
                             <label class="fw-bolder pt-4">Name</label>
@@ -50,11 +58,50 @@
                                 <div class="col">
                                     <label for="" class="pb-2">Preferred Name</label>
                                     <input type="text" class="form-control" aria-label="Last name">
+                                    <small class="text-muted">
+                                        Used in place of a first name. 
+                                    </small>
                                 </div>
                                 <div class="col">
                                 </div>
                             </div>
 
+                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                          Patient is a minor
+                                        </label>
+                                      </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <label class="fw-bolder pt-4">Phone</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <label class="fw-bolder pt-4">Email</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <label class="fw-bolder pt-4">Address</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <label class="fw-bolder pt-4">About Client</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm">
+                            <label class="fw-bolder pt-4">Referred By</label>
                         </div>
                     </div>
                 </div>
