@@ -32,6 +32,7 @@ import Sentforms from '../views/therapist/Sentforms.vue'
 import Tmessages from '../views/therapist/Tmessages.vue'
 import Tsettings from '../views/therapist/Tsettings.vue'
 import Clientportal from '../views/therapist/Clientportal.vue'
+import Patientdetails from '../views/therapist/Patientdetails.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -178,6 +179,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/therapist/clientportal',
     name: 'Clientportal',
     component: Clientportal
+  },
+  {
+    path: '/therapist/patientdetails',
+    name: 'Patientdetails',
+    component: Patientdetails
   }
 ]
 
