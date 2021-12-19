@@ -68,8 +68,6 @@
           class="fas fa-users"></i> Clients</router-link>
           <router-link to="/therapist/therapistdashboard" class="list-group-item list-group-item-action bg-dark text-light"><i
             class="fas fa-cog"></i> Settings</router-link>
-          <router-link to="/therapist/toolbox" class="list-group-item list-group-item-action bg-dark text-light"><i
-            class="fas fa-wrench"></i> Toolbox</router-link>
       <router-link to="/therapist/therapistmessages" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="far fa-comment-alt"></i> Messages <span class="badge bg-primary ms-1">1</span></router-link>
           <router-link to="/therapist/Sentforms" class="list-group-item list-group-item-action bg-dark text-light"><i
@@ -92,8 +90,6 @@
         </div>
 
 
-          <router-link to="/therapist/therapistbilling" class="list-group-item list-group-item-action bg-dark text-light"><i
-            class="fas fa-file-invoice"></i> Billing</router-link>
     </div>
 
 
