@@ -60,98 +60,373 @@
 
                     <ul class="nav nav-pills mt-4" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#standardview" type="button" role="tab" aria-controls="standardview" aria-selected="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-task" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z"/>
-                                <path d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z"/>
-                                <path fill-rule="evenodd" d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z"/>
-                              </svg>
-                              Standard View
-                          </button>
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#standardview" type="button" role="tab" aria-controls="standardview"
+                                aria-selected="true">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-list-task" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+                                    <path
+                                        d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+                                    <path fill-rule="evenodd"
+                                        d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
+                                </svg>
+                                Standard View
+                            </button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#detailview" type="button" role="tab" aria-controls="detailview" aria-selected="false">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-zoom-in" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z"/>
-                                <path d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z"/>
-                                <path fill-rule="evenodd" d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z"/>
-                              </svg>
-                              Epanded View
-                          </button>
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#detailview"
+                                type="button" role="tab" aria-controls="detailview" aria-selected="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-zoom-in" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
+                                    <path
+                                        d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
+                                    <path fill-rule="evenodd"
+                                        d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z" />
+                                </svg>
+                                Epanded View
+                            </button>
                         </li>
-                      </ul>
-                      <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="standardview" role="tabpanel" aria-labelledby="standardview-tab">
-                            <div class="card p-3 my-3 shadow-sm">
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <h5 class="fw-normal">Session</h5>
-                                            </div>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="standardview" role="tabpanel"
+                            aria-labelledby="standardview-tab">
+
+                            <ul class="list-group mt-4">
+                                <li class="list-group-item py-3">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <h5 class="d-inline"><span class="badge bg-light text-dark">DEC 13</span>
+                                            </h5>
+                                            <span class="fw-bolder px-2">Appointment</span>
+                                            <span class="text-muted fw-bolder">CPT: 90837</span>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <p class="text-decoration-none d-inline">Nov 05/2021</p>
-                                                <div class="vr me-2 ms-2"></div>
-                                                <p class="text-decoration-none d-inline fw-bolder">12:00PM - 1:00PM
-                                                </p>
-                                            </div>
+                                        <div class="col-sm-6 text-end">
+                                            <span>11:00 am - 12:00 pm</span>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 d-flex">
-                                        <button class="btn btn-outline-dark align-self-center shadow-sm" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal"><i class="fas fa-edit"></i>
-                                            Add Progress Note</button>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                    class="fas fa-edit"></i>
+                                                Add Progress Note
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                </li>
+                                <li class="list-group-item py-3">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <h5 class="d-inline"><span class="badge bg-light text-dark">NOV 13</span>
+                                            </h5>
+                                            <span class="fw-bolder px-2">Appointment</span>
+                                            <span class="text-muted fw-bolder">CPT: 90837</span>
+                                        </div>
+                                        <div class="col-sm-6 text-end">
+                                            <span>11:00 am - 12:00 pm</span>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                    class="fas fa-edit"></i>
+                                                Add Progress Note
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item py-3">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <h5 class="d-inline"><span class="badge bg-light text-dark">OCT 13</span>
+                                            </h5>
+                                            <span class="fw-bolder px-2">Appointment</span>
+                                            <span class="text-muted fw-bolder">CPT: 90837</span>
+                                        </div>
+                                        <div class="col-sm-6 text-end">
+                                            <span>11:00 am - 12:00 pm</span>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                    class="fas fa-edit"></i>
+                                                Add Progress Note
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+
                         </div>
+                        <!-- Expanded view -->
                         <div class="tab-pane fade" id="detailview" role="tabpanel" aria-labelledby="detailview-tab">
-                            <div class="card p-3 my-3 shadow-sm">
-                                <div class="row">
-                                    <div class="col-sm-3">
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <h5 class="fw-normal">Session</h5>
-                                            </div>
+
+                            <ul class="list-group mt-4">
+                                <li class="list-group-item py-3">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <h5 class="d-inline"><span class="badge bg-light text-dark">DEC 13</span>
+                                            </h5>
+                                            <span class="fw-bolder px-2">Appointment</span>
+                                            <span class="text-muted fw-bolder">CPT: 90837</span>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <p class="text-decoration-none d-inline">Nov 05/2021</p>
-                                                <div class="vr me-2 ms-2"></div>
-                                                <p class="text-decoration-none d-inline fw-bolder">12:00PM - 1:00PM
-                                                </p>
-                                            </div>
+                                        <div class="col-sm-6 text-end">
+                                            <span>11:00 am - 12:00 pm</span>
                                         </div>
                                     </div>
-                                    <div class="col-sm-3 d-flex">
-                                        <button class="btn btn-outline-dark align-self-center shadow-sm" data-bs-toggle="modal"
-                                            data-bs-target="#exampleModal"><i class="fas fa-edit"></i>
-                                            Add Progress Note</button>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="fw-bolder">Progress Note</label>
+                                        </div>
+                                        <div class="col-sm-6 text-end">
+                                            <span class="text-muted">
+                                                8:53 am
+                                            </span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
+                                                vel lectus vel porttitor...
+                                            </p>
+                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Ream More
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="row pt-3">
-                                    <div class="col-sm-12 offset-md-3 col-md-9">
-                                        <label class="fw-bolder">Progress Note</label>
-                                        <p>
-                                            This is an example progress note.
-                                        </p>
-                                        <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm">Read
-                                            More</button>
+                                    <div class="row pt-3">
+                                        <div class="col-sm-6">
+                                            <label class="fw-bolder">Psychotherapy Note</label>
+                                        </div>
+                                        <div class="col-sm-6 text-end">
+                                            <span class="text-muted">
+                                                8:48 am
+                                            </span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
+                                                vel lectus vel porttitor...
+                                            </p>
+                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Ream More
+                                            </button>
+                                        </div>
                                     </div>
-                                    <div class="col-sm-12 offset-md-3 col-md-9 pt-3">
-                                        <label class="fw-bolder">Psychotherapy Note</label>
-                                        <p>
-                                            This is an example progress note.
-                                        </p>
-                                        <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm">Read
-                                            More</button>
+                                    <div class="row pt-3">
+                                        <div class="col-sm-6">
+                                            <label class="fw-bolder">Chart Note</label>
+                                        </div>
+                                        <div class="col-sm-6 text-end">
+                                            <span class="text-muted">
+                                                8:46 am
+                                            </span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
+                                                vel lectus vel porttitor...
+                                            </p>
+                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Ream More
+                                            </button>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                    class="fas fa-edit"></i>
+                                                Add Progress Note
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item py-3">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <h5 class="d-inline"><span class="badge bg-light text-dark">NOV 13</span>
+                                            </h5>
+                                            <span class="fw-bolder px-2">Appointment</span>
+                                            <span class="text-muted fw-bolder">CPT: 90837</span>
+                                        </div>
+                                        <div class="col-sm-6 text-end">
+                                            <span>11:00 am - 12:00 pm</span>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="fw-bolder">Progress Note</label>
+                                        </div>
+                                        <div class="col-sm-6 text-end">
+                                            <span class="text-muted">
+                                                8:53 am
+                                            </span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
+                                                vel lectus vel porttitor...
+                                            </p>
+                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Ream More
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col-sm-6">
+                                            <label class="fw-bolder">Psychotherapy Note</label>
+                                        </div>
+                                        <div class="col-sm-6 text-end">
+                                            <span class="text-muted">
+                                                8:48 am
+                                            </span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
+                                                vel lectus vel porttitor...
+                                            </p>
+                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Ream More
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col-sm-6">
+                                            <label class="fw-bolder">Chart Note</label>
+                                        </div>
+                                        <div class="col-sm-6 text-end">
+                                            <span class="text-muted">
+                                                8:46 am
+                                            </span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
+                                                vel lectus vel porttitor...
+                                            </p>
+                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Ream More
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                    class="fas fa-edit"></i>
+                                                Add Progress Note
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="list-group-item py-3">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <h5 class="d-inline"><span class="badge bg-light text-dark">OCT 13</span>
+                                            </h5>
+                                            <span class="fw-bolder px-2">Appointment</span>
+                                            <span class="text-muted fw-bolder">CPT: 90837</span>
+                                        </div>
+                                        <div class="col-sm-6 text-end">
+                                            <span>11:00 am - 12:00 pm</span>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <label class="fw-bolder">Progress Note</label>
+                                        </div>
+                                        <div class="col-sm-6 text-end">
+                                            <span class="text-muted">
+                                                8:53 am
+                                            </span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
+                                                vel lectus vel porttitor...
+                                            </p>
+                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Ream More
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col-sm-6">
+                                            <label class="fw-bolder">Psychotherapy Note</label>
+                                        </div>
+                                        <div class="col-sm-6 text-end">
+                                            <span class="text-muted">
+                                                8:48 am
+                                            </span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
+                                                vel lectus vel porttitor...
+                                            </p>
+                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Ream More
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="col-sm-6">
+                                            <label class="fw-bolder">Chart Note</label>
+                                        </div>
+                                        <div class="col-sm-6 text-end">
+                                            <span class="text-muted">
+                                                8:46 am
+                                            </span>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <p>
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
+                                                vel lectus vel porttitor...
+                                            </p>
+                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                Ream More
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="row">
+                                        <div class="col-sm-12">
+                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
+                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
+                                                    class="fas fa-edit"></i>
+                                                Add Progress Note
+                                            </button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                      </div>
+                    </div>
 
 
 
@@ -537,53 +812,39 @@
                                                 <li class="list-group-item">
                                                     <div class="row">
                                                         <div class="col-sm">
-                                                            <a href="" class="text-decoration-none">  Credit Card Information</a>
+                                                            <a href="" class="text-decoration-none"> Credit Card
+                                                                Information</a>
                                                         </div>
                                                         <div class="col-sm">
                                                             <button class="btn">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                                                  </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                                                </svg>
                                                             </button>
                                                             <button class="btn">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                                                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                                                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                                                                  </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bi bi-download" viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                                                    <path
+                                                                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                                                </svg>
                                                             </button>
                                                             <button class="btn">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                                                                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-                                                                  </svg>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="list-group-item">
-                                                    <div class="row">
-                                                        <div class="col-sm">
-                                                            <a href="" class="text-decoration-none"> Consent for Telehealth</a>
-                                                        </div>
-                                                        <div class="col-sm">
-                                                            <button class="btn">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                                                  </svg>
-                                                            </button>
-                                                            <button class="btn">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                                                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                                                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                                                                  </svg>
-                                                            </button>
-                                                            <button class="btn">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                                                                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-                                                                  </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor" class="bi bi-trash"
+                                                                    viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                                                </svg>
                                                             </button>
                                                         </div>
                                                     </div>
@@ -591,26 +852,79 @@
                                                 <li class="list-group-item">
                                                     <div class="row">
                                                         <div class="col-sm">
-                                                            <a href="" class="text-decoration-none">Notice of Privacy Practices</a>
+                                                            <a href="" class="text-decoration-none"> Consent for
+                                                                Telehealth</a>
                                                         </div>
                                                         <div class="col-sm">
                                                             <button class="btn">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                                                  </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                                                </svg>
                                                             </button>
                                                             <button class="btn">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                                                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                                                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                                                                  </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bi bi-download" viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                                                    <path
+                                                                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                                                </svg>
                                                             </button>
                                                             <button class="btn">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                                                                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-                                                                  </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor" class="bi bi-trash"
+                                                                    viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                                                </svg>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="list-group-item">
+                                                    <div class="row">
+                                                        <div class="col-sm">
+                                                            <a href="" class="text-decoration-none">Notice of Privacy
+                                                                Practices</a>
+                                                        </div>
+                                                        <div class="col-sm">
+                                                            <button class="btn">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                                                </svg>
+                                                            </button>
+                                                            <button class="btn">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bi bi-download" viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                                                    <path
+                                                                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                                                </svg>
+                                                            </button>
+                                                            <button class="btn">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor" class="bi bi-trash"
+                                                                    viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                                                </svg>
                                                             </button>
                                                         </div>
                                                     </div>
@@ -619,27 +933,40 @@
                                                     <div class="row">
                                                         <div class="col-sm">
                                                             <label class="d-block">
-                                                                 <a href="" class="text-decoration-none">Informed Consent for Pychotherapy</a>
+                                                                <a href="" class="text-decoration-none">Informed Consent
+                                                                    for Pychotherapy</a>
                                                             </label>
                                                         </div>
                                                         <div class="col-sm">
                                                             <button class="btn">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                                                    <path d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z"/>
-                                                                    <path fill-rule="evenodd" d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z"/>
-                                                                  </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bi bi-pencil-square" viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                                                                </svg>
                                                             </button>
                                                             <button class="btn">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download" viewBox="0 0 16 16">
-                                                                    <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                                                                    <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
-                                                                  </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor"
+                                                                    class="bi bi-download" viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                                                    <path
+                                                                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+                                                                </svg>
                                                             </button>
                                                             <button class="btn">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                                                    <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                                                                    <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-                                                                  </svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                    height="16" fill="currentColor" class="bi bi-trash"
+                                                                    viewBox="0 0 16 16">
+                                                                    <path
+                                                                        d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                                                    <path fill-rule="evenodd"
+                                                                        d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                                                </svg>
                                                             </button>
                                                         </div>
                                                     </div>
@@ -681,7 +1008,8 @@
                                                 <li class="list-group-item">
                                                     <div class="row">
                                                         <div class="col-sm">
-                                                            <span><a href="" class="text-decoration-none">INV #257</a></span>
+                                                            <span><a href="" class="text-decoration-none">INV
+                                                                    #257</a></span>
                                                         </div>
                                                         <div class="col-sm">
                                                             <span class="badge bg-danger">Unpaid</span>
@@ -694,7 +1022,8 @@
                                                 <li class="list-group-item">
                                                     <div class="row">
                                                         <div class="col-sm">
-                                                            <span><a href="" class="text-decoration-none">INV #245</a></span>
+                                                            <span><a href="" class="text-decoration-none">INV
+                                                                    #245</a></span>
                                                         </div>
                                                         <div class="col-sm">
                                                             <span class="badge bg-danger">Unpaid</span>
@@ -707,7 +1036,8 @@
                                                 <li class="list-group-item">
                                                     <div class="row">
                                                         <div class="col-sm">
-                                                            <span><a href="" class="text-decoration-none">INV #230</a></span>
+                                                            <span><a href="" class="text-decoration-none">INV
+                                                                    #230</a></span>
                                                         </div>
                                                         <div class="col-sm">
                                                             <span class="badge bg-danger">Unpaid</span>
@@ -717,7 +1047,7 @@
                                                         </div>
                                                     </div>
                                                 </li>
-                                               
+
 
                                             </ul>
                                             <div class="d-flex pt-3">
@@ -828,4 +1158,3 @@
 
     </div>
 </template>
-
