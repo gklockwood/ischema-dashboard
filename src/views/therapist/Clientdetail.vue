@@ -18,7 +18,7 @@
                         </div>
                     </div>
                     <div class="row pt-4">
-                        <div class="col-sm d-flex justify-content-start">
+                        <div class="col-sm-6 d-flex ">
                             <div class="dropdown shadow-sm">
                                 <button class="btn btn-outline-dark dropdown-toggle" type="button"
                                     id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
@@ -33,17 +33,62 @@
                             <div class="dropdown  ms-2 shadow-sm">
                                 <button class="btn btn-outline-dark dropdown-toggle" type="button"
                                     id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                    All Items
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                                        <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                                      </svg>
+                                   All Items
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                    <li><a class="dropdown-item" href="#">Select</a></li>
-                                    <li><a class="dropdown-item" href="#">Select</a></li>
-                                    <li><a class="dropdown-item" href="#">Select</a></li>
+                                    <li><a class="dropdown-item" href="#">All Items</a></li>
+                                    <li><a class="dropdown-item" href="#">Assessments</a></li>
+                                    <li><a class="dropdown-item" href="#">Diagnosis and Treatment Plans</a></li>
+                                    <li><a class="dropdown-item" href="#">Mental Status Exams</a></li>
+                                    <li><a class="dropdown-item" href="#">Appointments</a></li>
+                                    <li><a class="dropdown-item" href="#">Chart Notes</a></li>
+                                    <li><a class="dropdown-item" href="#">Inventories</a></li>
                                 </ul>
                             </div>
-                            <div class="dropdown  ms-2 shadow-sm">
+                            <div>
+                                <ul class="nav nav-pills ms-2" id="myTab" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                            data-bs-target="#standardview" type="button" role="tab" aria-controls="standardview"
+                                            aria-selected="true">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                class="bi bi-list-task" viewBox="0 0 16 16">
+                                                <path fill-rule="evenodd"
+                                                    d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
+                                                <path
+                                                    d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
+                                                <path fill-rule="evenodd"
+                                                    d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
+                                            </svg>
+                                            List View
+                                        </button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#detailview"
+                                            type="button" role="tab" aria-controls="detailview" aria-selected="false">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-stickies" viewBox="0 0 16 16">
+                                                <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5V13a1 1 0 0 0 1 1V1.5a.5.5 0 0 1 .5-.5H14a1 1 0 0 0-1-1H1.5z"/>
+                                                <path d="M3.5 2A1.5 1.5 0 0 0 2 3.5v11A1.5 1.5 0 0 0 3.5 16h6.086a1.5 1.5 0 0 0 1.06-.44l4.915-4.914A1.5 1.5 0 0 0 16 9.586V3.5A1.5 1.5 0 0 0 14.5 2h-11zM3 3.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 .5.5V9h-4.5A1.5 1.5 0 0 0 9 10.5V15H3.5a.5.5 0 0 1-.5-.5v-11zm7 11.293V10.5a.5.5 0 0 1 .5-.5h4.293L10 14.793z"/>
+                                              </svg>
+                                            Excerpt View
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        </div>
+                        <div class="col-sm-6 text-end">
+                            <div class="dropdown  ms-2">
                                 <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1"
                                     data-bs-toggle="dropdown" aria-expanded="false">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg>
                                     New
                                 </button>
                                 <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
@@ -52,45 +97,12 @@
                                     <li><a class="dropdown-item" href="#">Mental Status Exam</a></li>
                                 </ul>
                             </div>
-
                         </div>
                     </div>
 
-                    <!-- Sessions Start Simple-->
 
-                    <ul class="nav nav-pills mt-4" id="myTab" role="tablist">
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
-                                data-bs-target="#standardview" type="button" role="tab" aria-controls="standardview"
-                                aria-selected="true">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-list-task" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M2 2.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5V3a.5.5 0 0 0-.5-.5H2zM3 3H2v1h1V3z" />
-                                    <path
-                                        d="M5 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM5.5 7a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 4a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9z" />
-                                    <path fill-rule="evenodd"
-                                        d="M1.5 7a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5V7zM2 7h1v1H2V7zm0 3.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5H2zm1 .5H2v1h1v-1z" />
-                                </svg>
-                                Standard View
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#detailview"
-                                type="button" role="tab" aria-controls="detailview" aria-selected="false">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    class="bi bi-zoom-in" viewBox="0 0 16 16">
-                                    <path fill-rule="evenodd"
-                                        d="M6.5 12a5.5 5.5 0 1 0 0-11 5.5 5.5 0 0 0 0 11zM13 6.5a6.5 6.5 0 1 1-13 0 6.5 6.5 0 0 1 13 0z" />
-                                    <path
-                                        d="M10.344 11.742c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1 6.538 6.538 0 0 1-1.398 1.4z" />
-                                    <path fill-rule="evenodd"
-                                        d="M6.5 3a.5.5 0 0 1 .5.5V6h2.5a.5.5 0 0 1 0 1H7v2.5a.5.5 0 0 1-1 0V7H3.5a.5.5 0 0 1 0-1H6V3.5a.5.5 0 0 1 .5-.5z" />
-                                </svg>
-                                Epanded View
-                            </button>
-                        </li>
-                    </ul>
+
+                   
                     <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="standardview" role="tabpanel"
                             aria-labelledby="standardview-tab">
@@ -195,7 +207,7 @@
                                             </span>
                                         </div>
                                         <div class="col-sm-6">
-                                            <p>
+                                            <p class="mb-1">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
                                                 vel lectus vel porttitor...
                                             </p>
@@ -215,7 +227,7 @@
                                             </span>
                                         </div>
                                         <div class="col-sm-6">
-                                            <p>
+                                            <p class="mb-1">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
                                                 vel lectus vel porttitor...
                                             </p>
@@ -235,7 +247,7 @@
                                             </span>
                                         </div>
                                         <div class="col-sm-6">
-                                            <p>
+                                            <p class="mb-1">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
                                                 vel lectus vel porttitor...
                                             </p>
@@ -279,7 +291,7 @@
                                             </span>
                                         </div>
                                         <div class="col-sm-6">
-                                            <p>
+                                            <p class="mb-1">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
                                                 vel lectus vel porttitor...
                                             </p>
@@ -299,7 +311,7 @@
                                             </span>
                                         </div>
                                         <div class="col-sm-6">
-                                            <p>
+                                            <p class="mb-1">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
                                                 vel lectus vel porttitor...
                                             </p>
@@ -319,7 +331,7 @@
                                             </span>
                                         </div>
                                         <div class="col-sm-6">
-                                            <p>
+                                            <p class="mb-1">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
                                                 vel lectus vel porttitor...
                                             </p>
@@ -363,7 +375,7 @@
                                             </span>
                                         </div>
                                         <div class="col-sm-6">
-                                            <p>
+                                            <p class="mb-1">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
                                                 vel lectus vel porttitor...
                                             </p>
@@ -383,7 +395,7 @@
                                             </span>
                                         </div>
                                         <div class="col-sm-6">
-                                            <p>
+                                            <p class="mb-1">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
                                                 vel lectus vel porttitor...
                                             </p>
@@ -403,7 +415,7 @@
                                             </span>
                                         </div>
                                         <div class="col-sm-6">
-                                            <p>
+                                            <p class="mb-1">
                                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dignissim
                                                 vel lectus vel porttitor...
                                             </p>
@@ -441,12 +453,12 @@
                             data-bs-target="#exampleModal"><i class="fas fa-file-upload"></i>
                             Upload</button>
 
-                        <button class="btn btn-outline-dark align-self-center shadow-sm ms-1" data-bs-toggle="modal"
+                        <button class="btn btn-outline-dark align-self-center shadow-sm ms-2" data-bs-toggle="modal"
                             data-bs-target="#exampleModal"><i class="fas fa-comment-alt"></i>
                             Message
                         </button>
 
-                        <div class="dropdown ms-1">
+                        <div class="dropdown ms-2">
                             <button class="btn btn-outline-dark shadow-sm dropdown-toggle" type="button"
                                 id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-share"></i> Share
