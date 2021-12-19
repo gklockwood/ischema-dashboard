@@ -205,5 +205,15 @@ th, td {
 }
 
 
+.billingtable {
+  max-width:700px;
+    thead th, tbody th {
+        &:first-child {
+            width:60%;
+        }
+    }
+}
+
+
 
 
