@@ -1,19 +1,19 @@
 <template>
     <div class="patientdetails">
         <div class="container py-4">
-            <h2 class="pb-3">Edit patient <a href="" class="text-decoration-none">Patient Name</a> </h2>
+            <h2 class="pb-3">Edit Client <a href="" class="text-decoration-none">Client Name</a> </h2>
 
 
             <ul class="nav nav-tabs" id="myTab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="clientinfo-tab" data-bs-toggle="tab"
                         data-bs-target="#clientinfo" type="button" role="tab" aria-controls="clientinfo"
-                        aria-selected="true">Client Info</button>
+                        aria-selected="true">Client Portal</button>
                 </li>
-                <li class="nav-item" role="presentation">
+                <!-- <li class="nav-item" role="presentation">
                     <button class="nav-link" id="clientbilling-tab" data-bs-toggle="tab" data-bs-target="#clientbilling"
                         type="button" role="tab" aria-controls="clientbilling" aria-selected="false">Billing</button>
-                </li>
+                </li> -->
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="clientcontacts-tab" data-bs-toggle="tab"
                         data-bs-target="#clientcontacts" type="button" role="tab" aria-controls="clientcontacts"
@@ -21,7 +21,7 @@
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-link" id="patientportal-tab" data-bs-toggle="tab" data-bs-target="#patientportal"
-                        type="button" role="tab" aria-controls="patientportal" aria-selected="false">Patient
+                        type="button" role="tab" aria-controls="patientportal" aria-selected="false">Client
                         Portal</button>
                 </li>
             </ul>
@@ -29,7 +29,7 @@
                 <div class="tab-pane fade show active" id="clientinfo" role="tabpanel" aria-labelledby="clientinfo-tab">
                     <div class="row">
                         <div class="col-sm-3">
-                            <label class="fw-bolder pt-4 pb-2">Patient Status: </label>
+                            <label class="fw-bolder pt-4 pb-2">Client Status: </label>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Active</option>
                                 <option value="1">Inactive</option>
@@ -82,7 +82,7 @@
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                                         <label class="form-check-label" for="flexCheckDefault">
-                                            Patient is a minor
+                                            Client is a minor
                                         </label>
                                     </div>
                                 </div>
@@ -144,7 +144,7 @@
                         <div class="col-sm">
                             <label class="fw-bolder pt-4 d-block">Email</label>
                             <small class="text-muted">
-                                Used to send client reminders or documents, as well as give access to the Patient
+                                Used to send client reminders or documents, as well as give access to the Client
                                 Portal.
                             </small>
                             <div class="row g-3 py-3">
@@ -306,7 +306,7 @@
                                 <div class="col-sm-6">
                                     <label for="" class="pb-2">Gender Identity</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    <small class="text-muted">Add patient's gender identity & pronouns.</small>
+                                    <small class="text-muted">Add client's gender identity & pronouns.</small>
                                 </div>
                             </div>
 
@@ -398,7 +398,7 @@
                                 <div class="col-sm-6 pt-4">
                                     <label for="" class="pb-2">Race & Ethnicity Details</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    <small class="text-muted">Add any relevant detials about the patient's race,
+                                    <small class="text-muted">Add any relevant detials about the client's race,
                                         ethnicity or origin.</small>
                                 </div>
                             </div>
@@ -473,7 +473,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="clientbilling" role="tabpanel" aria-labelledby="clientbilling-tab">
+                <!-- <div class="tab-pane fade" id="clientbilling" role="tabpanel" aria-labelledby="clientbilling-tab">
                     <label class="fw-bolder pt-4 d-block">Credit & Debit Cards</label>
                     <div class="d-flex align-items-center pt-2">
                         <span class="badge bg-primary">Default</span>
@@ -611,7 +611,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="tab-pane fade" id="clientcontacts" role="tabpanel" aria-labelledby="clientcontacts-tab">
                     <div class="row py-3">
                         <div class="col-sm-12 text-end">
@@ -726,7 +726,7 @@
                       </div>
                 </div>
                 <div class="tab-pane fade" id="patientportal" role="tabpanel" aria-labelledby="patientportal-tab">
-                    Patient Portal
+                    Client Portal
                 </div>
             </div>
 
@@ -1009,7 +1009,7 @@
                         <div class="col-sm">
                             <label class="fw-bolder pt-4 d-block">Email</label>
                             <small class="text-muted">
-                                Used to send client reminders or documents, as well as give access to the Patient
+                                Used to send client reminders or documents, as well as give access to the Client
                                 Portal.
                             </small>
                             <div class="row g-3 py-3">
