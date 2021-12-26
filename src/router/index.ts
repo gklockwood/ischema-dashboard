@@ -18,6 +18,7 @@ import Dashboard from '../views/patient/Dashboard.vue'
 import Schedulepreview from '../views/Schedulepreview.vue'
 import Documents from '../views/patient/Documents.vue'
 import Billing from '../views/patient/Billing.vue'
+import Schedule from '../views/patient/Schedule.vue'
 
 // Therapist Related
 import Tdashboard from '../views/therapist/Tdashboard.vue'
@@ -88,13 +89,12 @@ const routes: Array<RouteRecordRaw> = [
     path: '/survey',
     name: 'Survey',
     component: Survey
-  }
-  ,
-  // {
-  //   path: '/patient/schedule',
-  //   name: 'Schedule',
-  //   component: Schedule
-  // },
+  },
+  {
+    path: '/patient/schedule',
+    name: 'Schedule',
+    component: Schedule
+  },
   {
     path: '/patient/documents',
     name: 'PatientDocuments',

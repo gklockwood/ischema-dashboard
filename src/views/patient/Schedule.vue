@@ -57,10 +57,10 @@
 </template>
 
 <script>
-    import therapistData from './../data/therapists-data.js';
-    import languagesData from './../data/languages-data.js';
-    import regionsData from './../data/regions-data.js';
-    import treatmentData from './../data/treatment-data.js';
+    import therapistData from './../../data/therapists-data.js';
+    import languagesData from './../../data/languages-data.js';
+    import regionsData from './../../data/regions-data.js';
+    import treatmentData from './../../data/treatment-data.js';
 
 
     import {
