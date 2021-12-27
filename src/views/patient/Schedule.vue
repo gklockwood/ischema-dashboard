@@ -2,6 +2,26 @@
     <div class="schedule">
         <div class="container">
 
+            <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="" selected disabled>Select Your Region</option>
+                        <option v-for="region in selectRegion" :key="region.id"
+                        :therapist-name="region.label" :id="region.id">{{ region.label }}</option>
+                      </select>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="" selected disabled>Select a Language Preference</option>
+                        <option v-for="language in selectLanguage" :key="language.id"
+                        :therapist-name="language.label" :id="language.id">{{ language.label }}</option>
+                      </select>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4">
+                    
+                </div>
+            </div>
+
             <div class="row my-3">
                 <div class="col-sm py-3">
                     <div class="input-group">
@@ -61,6 +81,7 @@
     import languagesData from './../../data/languages-data.js';
     import regionsData from './../../data/regions-data.js';
     import treatmentData from './../../data/treatment-data.js';
+    import TreatmentData from './../../data/treatment-data.js';
 
 
     import {
