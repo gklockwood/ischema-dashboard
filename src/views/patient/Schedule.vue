@@ -67,13 +67,23 @@
                                     <div class="text-left ps-3">
                                         <h3>Dr {{ therapist.first_name }} {{ therapist.last_name }}</h3>
 
-                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#profileModal">Profile
-                                            <i class="fas fa-arrow-right ms-1"></i></button>
-                                        <button type="button" class="btn btn-primary ms-2">Read Reviews <i
-                                                class="fas fa-book-reader ms-1"></i></button>
-                                        <button type="button" class="btn btn-primary ms-2"
-                                            @click="selectTherapistSchedule">Schedule
-                                            Session <i class="fas fa-calendar-day ms-1"></i></button>
+                                        <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#profileModal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
+                                                <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                                <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z"/>
+                                              </svg>
+                                              Profile
+                                            </button>
+                                        <button type="button" class="btn btn-outline-dark ms-2"
+                                            @click="selectTherapistSchedule">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-plus" viewBox="0 0 16 16">
+                                                <path d="M8 7a.5.5 0 0 1 .5.5V9H10a.5.5 0 0 1 0 1H8.5v1.5a.5.5 0 0 1-1 0V10H6a.5.5 0 0 1 0-1h1.5V7.5A.5.5 0 0 1 8 7z"/>
+                                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                              </svg>
+                                            Schedule
+                                            Session 
+                                           
+                                            </button>
                                     </div>
                                 </div>
                             </div>
