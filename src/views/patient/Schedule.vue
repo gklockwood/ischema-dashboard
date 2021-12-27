@@ -67,7 +67,7 @@
                                     <div class="text-left ps-3">
                                         <h3>Dr {{ therapist.first_name }} {{ therapist.last_name }}</h3>
 
-                                        <button type="button" class="btn btn-primary" @click="showDialog = true">Profile
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#profileModal">Profile
                                             <i class="fas fa-arrow-right ms-1"></i></button>
                                         <button type="button" class="btn btn-primary ms-2">Read Reviews <i
                                                 class="fas fa-book-reader ms-1"></i></button>
@@ -87,15 +87,34 @@
             <!-- Select Therapist Start -->
             <div class="row" v-if="selectedTherapistBubble">
                 <div class="col-sm-12">
-                    <div class="pt-4p pb-4">
+                    <div class="pt-4p">
                         <div class="row">
                             <div class="col-sm-12 text-center">
-                                <div class="alert alert-primary" role="alert">
-                                    A simple primary alert—check it out!
+                                <div class="alert alert-light border mt-4" role="alert">
+                                    You have selected <span class="fw-bolder">(Name Here)</span>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="col-sm-12 text-center pt-2 pb-4">
+                    <button class="btn btn-outline-dark me-1" @click="cancelSchedule">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                          </svg>
+                        Previous
+                    </button>
+                    <button class="btn btn-outline-dark ms-1" @click="cancelSchedule">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" fill="currentColor" class="bi bi-x-lg"
+                        viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+                        <path fill-rule="evenodd"
+                            d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+                    </svg>
+                        Cancel
+                    </button>
                 </div>
             </div>
             <!-- Select Therapist End -->
@@ -105,8 +124,8 @@
             <div class="row" v-if="calendarVisiblity">
                 <div class="col-sm-12">
                     <div class="row">
-                        <div class="col-sm-1 text-center p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        <div class="col-sm-1 text-center p-3 d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                 class="bi bi-arrow-left" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z" />
@@ -131,8 +150,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-1 text-center p-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        <div class="col-sm-1 text-center p-3 d-flex align-items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
                                 class="bi bi-arrow-right" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
                                     d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
@@ -177,7 +196,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-4 py-3">
-                                            <span class="pe-2">07:00am - 08:30am</span>
+                                            <span class="pe-2">10:00am - 11:00am</span>
                                         </div>
                                         <div class="col-sm-8 py-3">
                                             <button class="btn btn-outline-dark btn-sm" @click="showForm">
@@ -192,7 +211,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-4 py-3">
-                                            <span class="pe-2">07:00am - 08:30am</span>
+                                            <span class="pe-2">11:00am - 12:00pm</span>
                                         </div>
                                         <div class="col-sm-8 py-3">
                                             <button class="btn btn-outline-dark btn-sm" @click="showForm">
@@ -207,7 +226,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-4 py-3">
-                                            <span class="pe-2">07:00am - 08:30am</span>
+                                            <span class="pe-2">1:00pm - 2:00pm</span>
                                         </div>
                                         <div class="col-sm-8 py-3">
                                             <button class="btn btn-outline-dark btn-sm" @click="showForm">
@@ -243,7 +262,7 @@
                                 <div class="accordion-body">
                                     <div class="row">
                                         <div class="col-sm-4 py-3">
-                                            <span class="pe-2">07:00am - 08:30am</span>
+                                            <span class="pe-2">1:00pm - 2:00pm</span>
                                         </div>
                                         <div class="col-sm-8 py-3">
                                             <button class="btn btn-outline-dark btn-sm" @click="showForm">
@@ -258,7 +277,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-4 py-3">
-                                            <span class="pe-2">07:00am - 08:30am</span>
+                                            <span class="pe-2">3:00pm - 4:00pm</span>
                                         </div>
                                         <div class="col-sm-8 py-3">
                                             <button class="btn btn-outline-dark btn-sm" @click="showForm">
@@ -273,7 +292,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-4 py-3">
-                                            <span class="pe-2">07:00am - 08:30am</span>
+                                            <span class="pe-2">4:00pm - 5:00pm</span>
                                         </div>
                                         <div class="col-sm-8 py-3">
                                             <button class="btn btn-outline-dark btn-sm" @click="showForm">
@@ -288,7 +307,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-4 py-3">
-                                            <span class="pe-2">07:00am - 08:30am</span>
+                                            <span class="pe-2">5:00pm - 6:00pm</span>
                                         </div>
                                         <div class="col-sm-8 py-3">
                                             <button class="btn btn-outline-dark btn-sm" @click="showForm">
@@ -339,7 +358,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-4 py-3">
-                                            <span class="pe-2">07:00am - 08:30am</span>
+                                            <span class="pe-2">10:00am - 11:00am</span>
                                         </div>
                                         <div class="col-sm-8 py-3">
                                             <button class="btn btn-outline-dark btn-sm" @click="showForm">
@@ -354,7 +373,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-4 py-3">
-                                            <span class="pe-2">07:00am - 08:30am</span>
+                                            <span class="pe-2">11:00am - 12:00am</span>
                                         </div>
                                         <div class="col-sm-8 py-3">
                                             <button class="btn btn-outline-dark btn-sm" @click="showForm">
@@ -390,7 +409,7 @@
                                 <div class="accordion-body">
                                     <div class="row">
                                         <div class="col-sm-4 py-3">
-                                            <span class="pe-2">07:00am - 08:30am</span>
+                                            <span class="pe-2">7:00am - 8:30am</span>
                                         </div>
                                         <div class="col-sm-8 py-3">
                                             <button class="btn btn-outline-dark btn-sm" @click="showForm">
@@ -405,7 +424,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-4 py-3">
-                                            <span class="pe-2">07:00am - 08:30am</span>
+                                            <span class="pe-2">9:00am - 10:30am</span>
                                         </div>
                                         <div class="col-sm-8 py-3">
                                             <button class="btn btn-outline-dark btn-sm" @click="showForm">
@@ -489,7 +508,7 @@
                                 <div class="accordion-body">
                                     <div class="row">
                                         <div class="col-sm-4 py-3">
-                                            <span class="pe-2">07:00am - 08:30am</span>
+                                            <span class="pe-2">7:00am - 08:30am</span>
                                         </div>
                                         <div class="col-sm-8 py-3">
                                             <button class="btn btn-outline-dark btn-sm" @click="showForm">
@@ -504,7 +523,7 @@
                                     </div>
                                     <div class="row">
                                         <div class="col-sm-4 py-3">
-                                            <span class="pe-2">07:00am - 08:30am</span>
+                                            <span class="pe-2">9:00am - 10:00am</span>
                                         </div>
                                         <div class="col-sm-8 py-3">
                                             <button class="btn btn-outline-dark btn-sm" @click="showForm">
@@ -526,7 +545,178 @@
             <!-- Scheduling View End -->
 
 
+            <!-- Form View Start -->
+            <div class="row py-4" v-if="userForm">
+                <div class="col-sm-12 pb-4">
+                    <div class="text-center">
+                        <h4>Please enter Personal Information to Complete</h4>
+                    </div>
+      
+                    <div class="row g-3 py-4">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="First Name" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Last Name" aria-label="Last name">
+                        </div>
+                    </div>
+        
+                    
+                    <div class="row g-3 py-4">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Age" aria-label="Age">
+                        </div>
+                        <div class="col">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Gender</option>
+                                <option value="1">Male</option>
+                                <option value="2">Female</option>
+                                <option value="3">Non-Binary</option>
+                                <option value="1">Gender-Neutral</option>
+                                <option value="2">Gender-Fluid</option>
+                                <option value="3">Gender-Queer</option>
+                            </select>
+                        </div>
+                    </div>
+             
+                    <div class="row g-3 pt-4">
+                        <div class="col">
+                            <div class="control-group">
+                                <div class="controls">
+                                    <input id="address-line1" name="address-line1" type="text" placeholder="Address line 1"
+                                        class="form-control">
+                                    <p class="help-block">Street address, P.O. box, company name, c/o</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="control-group">
+                                <div class="controls">
+                                    <input id="address-line1" name="address-line1" type="text" placeholder="Address line 2"
+                                        class="form-control">
+                                    <p class="help-block">Apartment, suite , unit, building, floor, etc.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3 pt-4">
+                        <div class="col">
+                            <div class="control-group">
+                                <div class="controls">
+                                    <input id="city" name="city" type="text" placeholder="City/Town" class="form-control">
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="control-group">
+                                <div class="controls">
+                                    <input id="region" name="region" type="text" placeholder="State / Province / Region"
+                                        class="form-control">
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row g-3 pt-4">
+                        <div class="col">
+                            <div class="control-group">
+                                <div class="controls">
+                                    <input id="city" name="city" type="text" placeholder="Zip/Postal Code" class="form-control">
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="" selected="selected">Country</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+        
+        
+                    <div class="row g-3 py-4">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Email" aria-label="Email">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number">
+                        </div>
+                    </div>
+        
+        
+                    
+                    <div class="row g-3 py-4">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Password" aria-label="Password">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Repeat Passord" aria-label="AgRepeat Passworde">
+                        </div>
+                    </div>
+        
+        
+                    <div class="row g-3 py-4">
+                        <div class="col">
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Add Additional Information"></textarea>
+                        </div>
+                    </div>
+        
+        
+                    <div class="row pt-4">
+                        <div class="col text-center">
+                            <router-link to="/Patient" type="button" class="btn btn-primary">Register</router-link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Form View Start -->
+
+
         </div>
+
+        <!-- Profile Modal Start-->
+
+
+
+
+
+
+        <div class="modal fade" id="profileModal"  data-bs-backdrop="static" aria-labelledby="profileModalLabel" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-xl modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img class="sh1 profileImage pe-2"
+                        src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y" />
+                      <h5 class="modal-title" id="staticBackdropLabel">(Dr. Name)</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut purus lorem, vestibulum ac metus
+                            ut, porttitor ornare libero. Nulla viverra cursus lacinia. Maecenas mauris leo, auctor vitae
+                            diam sed, rutrum ullamcorper odio. Nullam posuere congue velit at
+                            dictum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus consectetur, nibh
+                            et sodales congue, ante nibh aliquet enim, a dapibus nisi diam a urna. Nulla felis ante,
+                            fringilla at quam a, condimentum volutpat eros.
+                            Nam ultrices sem metus, sit amet condimentum mauris ultrices eget. Curabitur cursus quis
+                            purus quis vestibulum. Ut scelerisque enim et augue fermentum, eu maximus turpis pretium.
+                            Nam lacinia leo mauris, sit amet aliquam nisl congue
+                            mattis.
+                        </p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- Profile Modal End -->
 
     </div>
 
