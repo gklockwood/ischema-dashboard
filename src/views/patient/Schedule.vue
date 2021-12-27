@@ -595,7 +595,7 @@
                                 <div class="controls">
                                     <input id="address-line1" name="address-line1" type="text" placeholder="Address line 1"
                                         class="form-control">
-                                    <p class="help-block">Street address, P.O. box, company name, c/o</p>
+                                    <small class="help-block text-muted">Street address, P.O. box, company name, c/o</small>
                                 </div>
                             </div>
                         </div>
@@ -604,7 +604,7 @@
                                 <div class="controls">
                                     <input id="address-line1" name="address-line1" type="text" placeholder="Address line 2"
                                         class="form-control">
-                                    <p class="help-block">Apartment, suite , unit, building, floor, etc.</p>
+                                    <small class="help-block text-muted">Apartment, suite , unit, building, floor, etc.</small>
                                 </div>
                             </div>
                         </div>
