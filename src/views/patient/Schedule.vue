@@ -2,7 +2,7 @@
     <div class="schedule">
         <div class="container">
 
-            <div class="row">
+            <div class="row pt-4">
                 <div class="col-sm-12 col-md-6 col-lg-4">
                     <select class="form-select" aria-label="Default select example">
                         <option value="" selected disabled>Select Your Region</option>
@@ -18,7 +18,11 @@
                       </select>
                 </div>
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    
+                    <select class="form-select" aria-label="Default select example">
+                        <option value="" selected disabled>Select Desired Treatment</option>
+                        <option v-for="treatment in selectTreatment" :key="treatment.id"
+                        :therapist-name="treatment.label" :id="treatment.id">{{ treatment.label }}</option>
+                      </select>
                 </div>
             </div>
 
@@ -28,7 +32,7 @@
                         <input class="form-control border-end-0 border rounded-pill" type="search" value="Search Therapists"
                             id="example-search-input">
                         <span class="input-group-append">
-                            <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n5"
+                            <button class="btn btn-outline-dark bg-white border-bottom-0 border rounded-pill ms-n5"
                                 type="button">
                                 <i class="fa fa-search"></i>
                             </button>
