@@ -2,82 +2,107 @@
     <div class="schedule">
         <div class="container">
 
-            <div class="row pt-4">
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="" selected disabled>Select Your Region</option>
-                        <option v-for="region in selectRegion" :key="region.id"
-                        :therapist-name="region.label" :id="region.id">{{ region.label }}</option>
-                      </select>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="" selected disabled>Select a Language Preference</option>
-                        <option v-for="language in selectLanguage" :key="language.id"
-                        :therapist-name="language.label" :id="language.id">{{ language.label }}</option>
-                      </select>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4">
-                    <select class="form-select" aria-label="Default select example">
-                        <option value="" selected disabled>Select Desired Treatment</option>
-                        <option v-for="treatment in selectTreatment" :key="treatment.id"
-                        :therapist-name="treatment.label" :id="treatment.id">{{ treatment.label }}</option>
-                      </select>
+
+            <!-- General Therapist View Start -->
+            <div class="row" v-if="therapistsVisiblity">
+                <div class="col-sm-12">
+                    <div class="row pt-4">
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="" selected disabled>Select Your Region</option>
+                                <option v-for="region in selectRegion" :key="region.id"
+                                :therapist-name="region.label" :id="region.id">{{ region.label }}</option>
+                              </select>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="" selected disabled>Select a Language Preference</option>
+                                <option v-for="language in selectLanguage" :key="language.id"
+                                :therapist-name="language.label" :id="language.id">{{ language.label }}</option>
+                              </select>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="" selected disabled>Select Desired Treatment</option>
+                                <option v-for="treatment in selectTreatment" :key="treatment.id"
+                                :therapist-name="treatment.label" :id="treatment.id">{{ treatment.label }}</option>
+                              </select>
+                        </div>
+                    </div>
+                    <div class="row my-3">
+                        <div class="col-sm py-3">
+                            <div class="input-group">
+                                <input class="form-control border-end-0 border rounded-pill" type="search" value="Search Therapists"
+                                    id="example-search-input">
+                                <span class="input-group-append">
+                                    <button class="btn btn-outline-dark bg-white border-bottom-0 border rounded-pill ms-n5"
+                                        type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="col-sm py-3">
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label ps-1 fw-bold" for="inlineCheckbox1">Male Only</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label ps-1 fw-bold" for="inlineCheckbox2">Female Only</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card p-3 my-3 shadow-sm" v-for="therapist in selectTherapist" :key="therapist.id"
+                            :therapist-name="therapist.first_name" :id="therapist.id">
+                            <div class="d-flex">
+                                <div class="pa2">
+                                    <img class="profileImage"
+                                        src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y" />
+                                </div>
+            
+                                <div class="text-left ps-3">
+                                    <h3>Dr {{ therapist.first_name }} {{ therapist.last_name }}</h3>
+            
+                                    <button type="button" class="btn btn-primary" @click="showDialog = true">Profile <i
+                                            class="fas fa-arrow-right ms-1"></i></button>
+                                    <button type="button" class="btn btn-primary ms-2">Read Reviews <i
+                                            class="fas fa-book-reader ms-1"></i></button>
+                                    <button type="button" class="btn btn-primary ms-2" @click="selectTherapistSchedule">Schedule
+                                        Session <i class="fas fa-calendar-day ms-1"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+             <!-- General Therapist View End -->
 
-            <div class="row my-3">
-                <div class="col-sm py-3">
-                    <div class="input-group">
-                        <input class="form-control border-end-0 border rounded-pill" type="search" value="Search Therapists"
-                            id="example-search-input">
-                        <span class="input-group-append">
-                            <button class="btn btn-outline-dark bg-white border-bottom-0 border rounded-pill ms-n5"
-                                type="button">
-                                <i class="fa fa-search"></i>
-                            </button>
-                        </span>
-                    </div>
-                </div>
-                <div class="col-sm py-3">
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
-                        <label class="form-check-label ps-1 fw-bold" for="inlineCheckbox1">Male Only</label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                        <label class="form-check-label ps-1 fw-bold" for="inlineCheckbox2">Female Only</label>
+
+            <!-- Select Therapist Start -->
+            <div class="row" v-if="selectedTherapistBubble">
+                <div class="col-sm-12">
+                    <div class="pt-4p pb-4">
+                        <div class="row">
+                            <div class="col-sm-12 text-center">
+                                <div class="alert alert-primary" role="alert">
+                                    A simple primary alert—check it out!
+                                  </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-
-
-
-            <div class="card p-3 my-3 shadow-sm" v-for="therapist in selectTherapist" :key="therapist.id"
-                :therapist-name="therapist.first_name" :id="therapist.id">
-                <div class="d-flex">
-                    <div class="pa2">
-                        <img class="profileImage"
-                            src="https://www.gravatar.com/avatar/00000000000000000000000000000000?d=mp&f=y" />
-                    </div>
-
-                    <div class="text-left ps-3">
-                        <h3>Dr {{ therapist.first_name }} {{ therapist.last_name }}</h3>
-
-                        <button type="button" class="btn btn-primary" @click="showDialog = true">Profile <i
-                                class="fas fa-arrow-right ms-1"></i></button>
-                        <button type="button" class="btn btn-primary ms-2">Read Reviews <i
-                                class="fas fa-book-reader ms-1"></i></button>
-                        <button type="button" class="btn btn-primary ms-2" @click="selectTherapistSchedule">Schedule
-                            Session <i class="fas fa-calendar-day ms-1"></i></button>
-
-                    </div>
-                </div>
-            </div>
+            <!-- Select Therapist End -->
+    
 
         </div>
+
     </div>
+
 </template>
 
 <script>
@@ -91,6 +116,7 @@
     import {
         ref
     } from 'vue';
+
 
     export default {
         setup() {
