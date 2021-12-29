@@ -13,7 +13,7 @@
                                 data-bs-target="#nav-signin" type="button" role="tab" aria-controls="nav-profile"
                                 aria-selected="false">Sign In Events</button>
                             <button class="nav-link" id="nav-hippa-tab" data-bs-toggle="tab" data-bs-target="#nav-hippa"
-                                type="button" role="tab" aria-controls="nav-hippa" aria-selected="false">HIPPAA Audit
+                                type="button" role="tab" aria-controls="nav-hippa" aria-selected="false">HIPPA Audit
                                 Log</button>
                         </div>
                     </nav>

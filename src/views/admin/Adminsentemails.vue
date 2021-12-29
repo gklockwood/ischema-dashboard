@@ -1,7 +1,7 @@
 <template>
     <div class="adminsentemails">
         <div class="container-fluid py-4">
-            <h1>Admin Sent Emails</h1>
+            <h1>Sent Emails</h1>
             <div class="row pt-4">
                 <div class="col-sm">
                     <table class="table">
