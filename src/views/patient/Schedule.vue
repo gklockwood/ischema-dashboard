@@ -559,7 +559,7 @@
             <div class="row py-4" v-if="userForm">
                 <div class="col-sm-12 pb-4">
                     <div class="text-center">
-                        <h4>Please enter Personal Information to Complete</h4>
+                        <h4>Please Complete Registration to Book Session </h4>
                     </div>
       
                     <div class="row g-3 py-4">
@@ -621,7 +621,7 @@
                         <div class="col">
                             <div class="control-group">
                                 <div class="controls">
-                                    <input id="region" name="region" type="text" placeholder="State / Province / Region"
+                                    <input id="region" name="region" type="text" placeholder="County / Prefecture / State"
                                         class="form-control">
                                     <p class="help-block"></p>
                                 </div>
@@ -679,7 +679,7 @@
         
                     <div class="row pt-4">
                         <div class="col text-center">
-                            <router-link to="/Patient" type="button" class="btn btn-primary">Register</router-link>
+                            <button type="button" class="btn btn-primary" @click="triggerUserPayment">Continue</button>
                         </div>
                     </div>
                 </div>
@@ -687,13 +687,61 @@
             <!-- Form View Start -->
 
 
+         <!-- Billing Section -->
+         <div class="row" v-if="userMakesPayment">
+            <div class="col-sm-12 text-center">
+                <div class="alert alert-light border mt-4" role="alert">
+                    You have selected <span class="fw-bolder me-1">(Name Here)</span>at <span class="fw-bolder ms-1">(Time Here)</span>
+                </div>
+            </div>
+            <div class="col-sm-12 text-center pt-2 pb-4">
+                <button class="btn btn-outline-dark me-1" @click="cancelSchedule">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                      </svg>
+                    Previous
+                </button>
+                <button class="btn btn-outline-dark ms-1" @click="cancelSchedule">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                    height="16" fill="currentColor" class="bi bi-x-lg"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+                    <path fill-rule="evenodd"
+                        d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+                </svg>
+                    Cancel
+                </button>
+            </div>
+
+            <div class="text-center">
+                <h4>Please make a Payment to Complete Session Booking</h4>
+                <small class="text-muted">Please note this session will be cancelled if you do not make a payment</small>
+                    
+               
+            </div>
+            <div class="text-center pt-3">
+                <button class="btn btn-outline-dark">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1H2zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V7z"/>
+                        <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1v-1z"/>
+                      </svg>
+                    Make Payment
+                </button>
+            </div>
+         </div>
+
+
+           <!-- Billing End -->
+
+
+
         </div>
 
+
+
+
         <!-- Profile Modal Start-->
-
-
-
-
 
 
         <div class="modal fade" id="profileModal"  data-bs-backdrop="static" aria-labelledby="profileModalLabel" tabindex="-1" aria-hidden="true">
@@ -758,6 +806,7 @@
             const selectTreatment = treatmentData;
             const calendarVisiblity = ref(false);
             const therapistsVisiblity = ref(true);
+            const userMakesPayment = ref(false);
 
             function showCalendar() {
                 calendarVisiblity.value = true
@@ -783,7 +832,14 @@
                 therapistsVisiblity.value = true;
                 selectedTherapistBubble.value = false;
                 showFilters.value = true;
-                userForm.value = false
+                userForm.value = false;
+                userMakesPayment.value = false;
+            }
+
+            function triggerUserPayment() {
+                userMakesPayment.value = true;
+                userForm.value = false;
+                selectedTherapistBubble.value = false;
             }
 
             const showFilters = ref(true)
@@ -844,7 +900,9 @@
                 patientGender,
                 patientTitle,
                 showForm,
-                userForm
+                userForm,
+                userMakesPayment,
+                triggerUserPayment
 
             }
         }

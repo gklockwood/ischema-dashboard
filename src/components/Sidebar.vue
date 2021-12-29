@@ -1,6 +1,35 @@
 <template>
   <div class="sidebar">
 
+    <!--  Admin Sidebar -->
+    <div class="list-group" v-if="[
+    'Adminaccountactivity', 
+    'Admincalendar',
+    'Adminclients',
+    'Admindashboard',
+    'Adminreminders',
+    'Adminreports',
+    'Admincalendar'
+    ].includes($route.name)">
+      <router-link to="/admin/admincalendar" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="fas fa-calendar"></i> Calendar</router-link>
+      <router-link to="/admin/admintherapists" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="fas fa-users"></i> Therapists</router-link>
+      <router-link to="/admin/adminclients" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="fas fa-users"></i> Clients</router-link>
+      <router-link to="/admin/adminbilling" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="fas fa-users"></i> Billing</router-link>
+      <router-link to="/admin/adminreports" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="fas fa-users"></i> Reports</router-link>
+      <router-link to="/admin/adminaccountactivity" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="fas fa-users"></i> Account Activity</router-link>
+      <router-link to="/admin/adminreminders" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="fas fa-users"></i> Reminders</router-link>
+    </div>
+
+
+    <!--  Patient Sidebar -->
+
     <div class="list-group" v-if="[
     'PatientDashboard', 
     'PatientMessages',
@@ -24,6 +53,8 @@
     </div>
 
 
+
+    <!--  Therapist Sidebar -->
     <div class="list-group" v-if="[
     'TherapistDashboard', 
     'Therapistmessages',
@@ -66,28 +97,30 @@
       </router-link>
       <router-link to="/therapist/clientlist" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-users"></i> Clients</router-link>
-          <router-link to="/therapist/therapistdashboard" class="list-group-item list-group-item-action bg-dark text-light"><i
-            class="fas fa-cog"></i> Settings</router-link>
-      <router-link to="/therapist/therapistmessages" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="far fa-comment-alt"></i> Messages <span class="badge bg-primary ms-1">1</span></router-link>
-          <router-link to="/therapist/Sentforms" class="list-group-item list-group-item-action bg-dark text-light"><i
-            class="fas fa-share-square"></i> Requests</router-link>
+      <router-link to="/therapist/therapistdashboard" class="list-group-item list-group-item-action bg-dark text-light">
+        <i class="fas fa-cog"></i> Settings
+      </router-link>
+      <router-link to="/therapist/therapistmessages" class="list-group-item list-group-item-action bg-dark text-light">
+        <i class="far fa-comment-alt"></i> Messages <span class="badge bg-primary ms-1">1</span>
+      </router-link>
+      <router-link to="/therapist/Sentforms" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="fas fa-share-square"></i> Requests</router-link>
       <!-- <router-link to="/therapist/Sessions" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="far fa-calendar-alt"></i> Sessions</router-link> -->
 
 
-          <div class="dropdown">
-            <button class="btn btn-dark shadow-sm dropdown-toggle d-block mt-2 ms-1" type="button"
-                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="fas fa-plus me-2"></i> Create
-            </button>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                <li><a class="dropdown-item" href="#"><i class="fas fa-clock me-1"></i> 
-                        Appointment</a></li>
-                <li><a class="dropdown-item" href="#"><i class="fas fa-check me-1"></i>
-                        Add Availability</a></li>
-            </ul>
-        </div>
+      <div class="dropdown">
+        <button class="btn btn-dark shadow-sm dropdown-toggle d-block mt-2 ms-1" type="button" id="dropdownMenuButton1"
+          data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-plus me-2"></i> Create
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item" href="#"><i class="fas fa-clock me-1"></i>
+              Appointment</a></li>
+          <li><a class="dropdown-item" href="#"><i class="fas fa-check me-1"></i>
+              Add Availability</a></li>
+        </ul>
+      </div>
 
 
     </div>

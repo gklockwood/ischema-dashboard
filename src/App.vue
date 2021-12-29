@@ -18,7 +18,14 @@
       'Sentforms',
       'Therapistsettings',
       'Clientportal',
-      'Patientdetails'
+      'Patientdetails',
+      'Adminaccountactivity', 
+      'Admincalendar',
+      'Adminclients',
+      'Admindashboard',
+      'Adminreminders',
+      'Adminreports',
+      'Admincalendar'
       ].includes($route.name)"><i class="fas fa-bars"></i></button>
 
       <router-link to="/landing" type="button" class="btn brandtext">
@@ -102,7 +109,14 @@
     'Sentforms',
     'Therapistsettings',
     'Clientportal',
-    'Patientdetails'
+    'Patientdetails',
+    'Adminaccountactivity', 
+    'Admincalendar',
+    'Adminclients',
+    'Admindashboard',
+    'Adminreminders',
+    'Adminreports',
+    'Admincalendar'
     ].includes($route.name)"></sidebar>
 
 
@@ -125,7 +139,14 @@
         'Sentforms',
         'Therapistsettings',
         'Clientportal',
-        'Patientdetails'
+        'Patientdetails',
+        'Adminaccountactivity', 
+        'Admincalendar',
+        'Adminclients',
+        'Admindashboard',
+        'Adminreminders',
+        'Adminreports',
+        'Admincalendar'
         ].includes($route.name) }">
       <router-view />
 

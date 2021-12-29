@@ -35,6 +35,15 @@ import Tsettings from '../views/therapist/Tsettings.vue'
 import Clientportal from '../views/therapist/Clientportal.vue'
 import Patientdetails from '../views/therapist/Patientdetails.vue'
 
+// Admin Related
+import Adminaccountactivity from '../views/admin/Adminaccountactivity.vue'
+import Admincalendar from '../views/admin/Admincalendar.vue'
+import Adminclients from '../views/admin/Adminclients.vue'
+import Admindashboard from '../views/admin/Admindashboard.vue'
+import Adminreminders from '../views/admin/Adminreminders.vue'
+import Adminreports from '../views/admin/Adminreports.vue'
+import Admintherapists from '../views/admin/Admincalendar.vue'
+
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -184,8 +193,44 @@ const routes: Array<RouteRecordRaw> = [
     path: '/therapist/patientdetails',
     name: 'Patientdetails',
     component: Patientdetails
+  },
+  {
+    path: '/admin/adminaccountactivity',
+    name: 'Adminaccountactivity',
+    component: Adminaccountactivity
+  },
+  {
+    path: '/admin/admincalendar',
+    name: 'Admincalendar',
+    component: Admincalendar
+  },
+  {
+    path: '/admin/Aaminclients',
+    name: 'Adminclients',
+    component: Adminclients
+  },
+  {
+    path: '/admin/admindashboard',
+    name: 'Admindashboard',
+    component: Admindashboard
+  },
+  {
+    path: '/admin/adminreminders',
+    name: 'Adminreminders',
+    component: Adminreminders
+  },
+  {
+    path: '/admin/adminreports',
+    name: 'Adminreports',
+    component: Adminreports
+  },
+  {
+    path: '/admin/Admincalendar',
+    name: 'Admincalendar',
+    component: Admincalendar
   }
 ]
+
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
