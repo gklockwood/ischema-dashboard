@@ -1,8 +1,8 @@
 <template>
     <div class="adminpayouts">
         <div class="container-fluid py-4">
-            <h1>Admin Payouts</h1>
-            <div class="row">
+            <h1>Payouts</h1>
+            <div class="row pt-4">
                 <div class="col-sm">
                     <table class="table">
                         <thead>

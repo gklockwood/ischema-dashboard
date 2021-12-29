@@ -21,8 +21,8 @@
 
                         <div class="card-body">
                             <div class="list-group">
-                                <a href="#" class="list-group-item list-group-item-action">Monthly Income</a>
-                                <a href="#" class="list-group-item list-group-item-action">Payouts</a>
+                                <router-link to="/admin/adminmonthlyincome" class="list-group-item list-group-item-action"> Monthly Income</router-link>
+                                <router-link to="/admin/adminpayouts" class="list-group-item list-group-item-action"> Payouts</router-link>
                               </div>
                         </div>
                     </div>
@@ -46,8 +46,8 @@
 
                         <div class="card-body">
                             <div class="list-group">
-                                <a href="#" class="list-group-item list-group-item-action">Appointment Status</a>
-                                <a href="#" class="list-group-item list-group-item-action">Sent Emails</a>
+                                <router-link to="/admin/adminappointmentstatus" class="list-group-item list-group-item-action"> Appointment Status</router-link>
+                                <router-link to="/admin/adminsentemails" class="list-group-item list-group-item-action"> Sent Emails</router-link>
                               </div>
                         </div>
                     </div>
