@@ -45,6 +45,9 @@ import Adminreports from '../views/admin/Adminreports.vue'
 import Admintherapists from '../views/admin/Admintherapists.vue'
 import Adminmonthlyincome from '../views/admin/Adminmonthlyincome.vue'
 import Adminpayouts from '../views/admin/Adminpayouts.vue'
+import Adminappointmentstatus from '../views/admin/Adminappointmentstatus.vue'
+import Adminsentemails from '../views/admin/Adminsentemails.vue'
+import Adminbilling from '../views/admin/Adminbilling.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -245,6 +248,21 @@ const routes: Array<RouteRecordRaw> = [
     path: '/admin/adminpayouts',
     name: 'Adminpayouts',
     component: Adminpayouts
+  },
+  {
+    path: '/admin/adminappointmentstatus',
+    name: 'Adminappointmentstatus',
+    component: Adminappointmentstatus
+  },
+  {
+    path: '/admin/adminsentemails',
+    name: 'Adminsentemails',
+    component: Adminsentemails
+  },
+  {
+    path: '/admin/adminbilling',
+    name: 'Adminbilling',
+    component: Adminbilling
   }
 ]
 

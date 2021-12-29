@@ -27,7 +27,10 @@
       'Adminreports',
       'Admincalendar',
       'Adminmonthlyincome',
-      'Adminpayouts'
+      'Adminpayouts',
+      'Adminappointmentstatus',
+      'Adminsentemails',
+      'Adminbilling'
       ].includes($route.name)"><i class="fas fa-bars"></i></button>
 
       <router-link to="/landing" type="button" class="btn brandtext">
@@ -120,7 +123,10 @@
     'Adminreports',
     'Admincalendar',
     'Adminmonthlyincome',
-    'Adminpayouts'
+    'Adminpayouts',
+    'Adminappointmentstatus',
+    'Adminsentemails',
+    'Adminbilling'
     ].includes($route.name)"></sidebar>
 
 
@@ -152,7 +158,10 @@
         'Adminreports',
         'Admincalendar',
         'Adminmonthlyincome',
-        'Adminpayouts'
+        'Adminpayouts',
+        'Adminappointmentstatus',
+        'Adminsentemails',
+        'Adminbilling'
         ].includes($route.name) }">
       <router-view />
 
