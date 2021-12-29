@@ -115,20 +115,22 @@
 
 
       <div class="dropdown">
-        <button class="btn btn-dark shadow-sm dropdown-toggle d-block mt-2 ms-1" type="button" id="dropdownMenuButton1"
+        <button class="btn btn-dark shadow-sm dropdown-toggle d-block mt-2 ms-1 w-100 text-start" type="button" id="dropdownMenuButton1"
           data-bs-toggle="dropdown" aria-expanded="false">
           <i class="fas fa-plus me-2"></i> Create
         </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item" href="#"><i class="fas fa-clock me-1"></i>
-              Appointment</a></li>
-          <li><a class="dropdown-item" href="#"><i class="fas fa-check me-1"></i>
+        <ul class="dropdown-menu w-100 p-2" aria-labelledby="dropdownMenuButton1">
+          <li><a class="dropdown-item cursor-pointer"  data-bs-toggle="modal" data-bs-target="#addavailabilitymodal"><i class="fas fa-clock me-1"></i>
+              Add Appointment</a></li>
+          <li><a class="dropdown-item cursor-pointer"  data-bs-toggle="modal" data-bs-target="#addappointmentmodal"><i class="fas fa-check me-1"></i>
               Add Availability</a></li>
         </ul>
       </div>
 
 
     </div>
+
+   
 
 
 
