@@ -39,7 +39,7 @@
                                             <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
                                             <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
                                           </svg>
-                                        All Events
+                                        All Time
                                     </button>
                                 </div>
                             </div>
@@ -63,6 +63,23 @@
                               </table>
                         </div>
                         <div class="tab-pane fade" id="nav-signin" role="tabpanel" aria-labelledby="nav-signin">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4 py-3">
+                                    <button class="btn btn-outline-dark me-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-filter" viewBox="0 0 16 16">
+                                            <path d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z"/>
+                                          </svg>
+                                        All Events
+                                    </button>
+                                    <button class="btn btn-outline-dark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
+                                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                          </svg>
+                                        All Time
+                                    </button>
+                                </div>
+                            </div>
                             <table class="table">
                                 <thead>
                                   <tr>
@@ -90,6 +107,30 @@
                               </table>
                         </div>
                         <div class="tab-pane fade" id="nav-hippa" role="tabpanel" aria-labelledby="nav-hippa">
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4 py-3">
+                                    <div class="input-group">
+                                        <input class="form-control border-end-0 border rounded-pill" type="search"
+                                            value="Search" id="example-search-input">
+                                        <span class="input-group-append">
+                                            <button
+                                                class="btn btn-outline-dark bg-white border-bottom-0 border rounded-pill ms-n5"
+                                                type="button">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 py-3">
+                                    <button class="btn btn-outline-dark">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event" viewBox="0 0 16 16">
+                                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z"/>
+                                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z"/>
+                                          </svg>
+                                        All Time
+                                    </button>
+                                </div>
+                            </div>
                             <table class="table">
                                 <thead>
                                   <tr>
