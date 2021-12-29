@@ -121,9 +121,9 @@
         </button>
         <ul class="dropdown-menu w-100 p-2" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item cursor-pointer"  data-bs-toggle="modal" data-bs-target="#addavailabilitymodal"><i class="fas fa-clock me-1"></i>
-              Add Appointment</a></li>
-          <li><a class="dropdown-item cursor-pointer"  data-bs-toggle="modal" data-bs-target="#addappointmentmodal"><i class="fas fa-check me-1"></i>
               Add Availability</a></li>
+          <li><a class="dropdown-item cursor-pointer"  data-bs-toggle="modal" data-bs-target="#addappointmentmodal"><i class="fas fa-check me-1"></i>
+              Add Appointment</a></li>
         </ul>
       </div>
 
