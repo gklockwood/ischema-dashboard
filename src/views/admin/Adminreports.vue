@@ -21,9 +21,8 @@
 
                         <div class="card-body">
                             <div class="list-group">
-                                <a href="#" class="list-group-item list-group-item-action">My Profile</a>
-                                <a href="#" class="list-group-item list-group-item-action">My Practice</a>
-                                <a href="#" class="list-group-item list-group-item-action">My Team Members</a>
+                                <a href="#" class="list-group-item list-group-item-action">Monthly Income</a>
+                                <a href="#" class="list-group-item list-group-item-action">Payouts</a>
                               </div>
                         </div>
                     </div>
@@ -38,16 +37,17 @@
                             </div>
                             <div class="col-sm-6 d-flex justify-content-end">
                                 <div class="icontypica shadow">
-                                    <i class="fas fa-user-cog"></i>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-calendar-week-fill" viewBox="0 0 16 16">
+                                        <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zM9.5 7h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm3 0h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zM2 10.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1zm3.5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5z"/>
+                                      </svg>
                                 </div>
                             </div>
                         </div>
 
                         <div class="card-body">
                             <div class="list-group">
-                                <a href="#" class="list-group-item list-group-item-action">Subscription Information</a>
-                                <a href="#" class="list-group-item list-group-item-action">Demo Data</a>
-                                <a href="#" class="list-group-item list-group-item-action">Data Export</a>
+                                <a href="#" class="list-group-item list-group-item-action">Appointment Status</a>
+                                <a href="#" class="list-group-item list-group-item-action">Sent Emails</a>
                               </div>
                         </div>
                     </div>

@@ -42,7 +42,9 @@ import Adminclients from '../views/admin/Adminclients.vue'
 import Admindashboard from '../views/admin/Admindashboard.vue'
 import Adminreminders from '../views/admin/Adminreminders.vue'
 import Adminreports from '../views/admin/Adminreports.vue'
-import Admintherapists from '../views/admin/Admincalendar.vue'
+import Admintherapists from '../views/admin/Admintherapists.vue'
+import Adminmonthlyincome from '../views/admin/Adminmonthlyincome.vue'
+import Adminpayouts from '../views/admin/Adminpayouts.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -225,9 +227,24 @@ const routes: Array<RouteRecordRaw> = [
     component: Adminreports
   },
   {
-    path: '/admin/Admincalendar',
+    path: '/admin/admincalendar',
     name: 'Admincalendar',
     component: Admincalendar
+  },
+  {
+    path: '/admin/admintherapists',
+    name: 'Admintherapists',
+    component: Admintherapists
+  },
+  {
+    path: '/admin/adminmonthlyincome',
+    name: 'Adminmonthlyincome',
+    component: Adminmonthlyincome
+  },
+  {
+    path: '/admin/adminpayouts',
+    name: 'Adminpayouts',
+    component: Adminpayouts
   }
 ]
 

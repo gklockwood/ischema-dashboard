@@ -25,7 +25,9 @@
       'Admindashboard',
       'Adminreminders',
       'Adminreports',
-      'Admincalendar'
+      'Admincalendar',
+      'Adminmonthlyincome',
+      'Adminpayouts'
       ].includes($route.name)"><i class="fas fa-bars"></i></button>
 
       <router-link to="/landing" type="button" class="btn brandtext">
@@ -116,7 +118,9 @@
     'Admindashboard',
     'Adminreminders',
     'Adminreports',
-    'Admincalendar'
+    'Admincalendar',
+    'Adminmonthlyincome',
+    'Adminpayouts'
     ].includes($route.name)"></sidebar>
 
 
@@ -146,7 +150,9 @@
         'Admindashboard',
         'Adminreminders',
         'Adminreports',
-        'Admincalendar'
+        'Admincalendar',
+        'Adminmonthlyincome',
+        'Adminpayouts'
         ].includes($route.name) }">
       <router-view />
 
