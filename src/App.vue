@@ -30,7 +30,14 @@
       'Adminpayouts',
       'Adminappointmentstatus',
       'Adminsentemails',
-      'Adminbilling'
+      'Adminbilling',
+      'Clientappointmentconfirmation',
+      'Clientappointments',
+      'Clientrequestappointment',
+      'Clientselecttime',
+      'Therapistacceptappointment',
+      'Therapistcontinuetoemail',
+      'Therapistcontinuetoemail'
       ].includes($route.name)"><i class="fas fa-bars"></i></button>
 
       <router-link to="/landing" type="button" class="btn brandtext">
@@ -129,7 +136,14 @@
     'Adminpayouts',
     'Adminappointmentstatus',
     'Adminsentemails',
-    'Adminbilling'
+    'Adminbilling',
+    'Clientappointmentconfirmation',
+    'Clientappointments',
+    'Clientrequestappointment',
+    'Clientselecttime',
+    'Therapistacceptappointment',
+    'Therapistcontinuetoemail',
+    'Therapistcontinuetoemail'
     ].includes($route.name)"></sidebar>
 
 
@@ -164,7 +178,14 @@
         'Adminpayouts',
         'Adminappointmentstatus',
         'Adminsentemails',
-        'Adminbilling'
+        'Adminbilling',
+        'Clientappointmentconfirmation',
+        'Clientappointments',
+        'Clientrequestappointment',
+        'Clientselecttime',
+        'Therapistacceptappointment',
+        'Therapistcontinuetoemail',
+        'Therapistcontinuetoemail'
         ].includes($route.name) }">
       <router-view />
 
@@ -201,12 +222,12 @@
 
             <div class="row">
               <div class="col">
-                  <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                      <label class="form-check-label" for="flexCheckChecked">
-                          Repeats
-                      </label>
-                  </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Repeats
+                  </label>
+                </div>
               </div>
             </div>
 
@@ -223,7 +244,7 @@
               </div>
             </div>
 
-            
+
             <div class="row ">
               <div class="col">
                 <div class="btn-group w-100" role="group" aria-label="Basic example">
@@ -292,12 +313,12 @@
 
             <div class="row">
               <div class="col">
-                  <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                      <label class="form-check-label" for="flexCheckChecked">
-                          Repeats
-                      </label>
-                  </div>
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                  <label class="form-check-label" for="flexCheckChecked">
+                    Repeats
+                  </label>
+                </div>
               </div>
             </div>
 
@@ -314,7 +335,7 @@
               </div>
             </div>
 
-            
+
             <div class="row ">
               <div class="col">
                 <div class="btn-group w-100" role="group" aria-label="Basic example">

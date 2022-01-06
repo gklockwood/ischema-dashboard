@@ -12,6 +12,7 @@ import Survey from '../views/Survey.vue'
 import Entercode from '../views/Entercode.vue'
 import Securecall from '../views/Securecall.vue'
 import Patientportal from '../views/Patientportal.vue'
+import Prospectivepatient from '../views/Prospectivepatient.vue'
 
 // Patient Related
 import Dashboard from '../views/patient/Dashboard.vue'
@@ -19,6 +20,10 @@ import Schedulepreview from '../views/Schedulepreview.vue'
 import Documents from '../views/patient/Documents.vue'
 import Billing from '../views/patient/Billing.vue'
 import Schedule from '../views/patient/Schedule.vue'
+import Clientappointmentconfirmation from '../views/patient/Clientappointmentconfirmation.vue'
+import Clientappointments from '../views/patient/Clientappointments.vue'
+import Clientrequestappointment from '../views/patient/Clientrequestappointment.vue'
+import Clientselecttime from '../views/patient/Clientselecttime.vue'
 
 // Therapist Related
 import Tdashboard from '../views/therapist/Tdashboard.vue'
@@ -34,6 +39,9 @@ import Tmessages from '../views/therapist/Tmessages.vue'
 import Tsettings from '../views/therapist/Tsettings.vue'
 import Clientportal from '../views/therapist/Clientportal.vue'
 import Patientdetails from '../views/therapist/Patientdetails.vue'
+import Therapistacceptappointment from '../views/therapist/Therapistacceptappointment.vue'
+import Therapistcontinuetoemail from '../views/therapist/Therapistcontinuetoemail.vue'
+import Therapistemailreview from '../views/therapist/Therapistemailreview.vue'
 
 // Admin Related
 import Adminaccountactivity from '../views/admin/Adminaccountactivity.vue'
@@ -263,8 +271,50 @@ const routes: Array<RouteRecordRaw> = [
     path: '/admin/adminbilling',
     name: 'Adminbilling',
     component: Adminbilling
+  },
+  {
+    path: '/patient/clientappointmentconfirmation',
+    name: 'Clientappointmentconfirmation',
+    component: Clientappointmentconfirmation
+  },
+  {
+    path: '/patient/clientappointments',
+    name: 'Clientappointments',
+    component: Clientappointments
+  },
+  {
+    path: '/patient/clientrequestappointment',
+    name: 'Clientrequestappointment',
+    component: Clientrequestappointment
+  },
+  {
+    path: '/patient/clientselecttime',
+    name: 'Clientselecttime',
+    component: Clientselecttime 
+  },
+  {
+    path: '/therapist/therapistacceptappointment',
+    name: 'Therapistacceptappointment',
+    component: Therapistacceptappointment 
+  },
+  {
+    path: '/therapist/therapistcontinuetoemail',
+    name: 'Therapistcontinuetoemail',
+    component: Therapistcontinuetoemail 
+  },
+  {
+    path: '/therapist/therapistemailreview',
+    name: 'Therapistemailreview',
+    component: Therapistemailreview 
+  },
+  {
+    path: '/prospectivepatient',
+    name: 'Prospectivepatient',
+    component: Prospectivepatient 
   }
 ]
+
+
 
 
 const router = createRouter({

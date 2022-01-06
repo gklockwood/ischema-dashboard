@@ -40,6 +40,10 @@
     'PatientMessages',
     'PatientDocuments',
     'PatientBilling',
+    'Clientappointmentconfirmation',
+    'Clientappointments',
+    'Clientrequestappointment',
+    'Clientselecttime'
     ].includes($route.name)">
       <router-link to="/patient/dashboard" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-chart-bar"></i> Dashboard</router-link>
@@ -73,7 +77,10 @@
     'Sentforms',
     'Therapistsettings',
     'Clientportal',
-    'Patientdetails'
+    'Patientdetails',
+    'Therapistacceptappointment',
+    'Therapistcontinuetoemail',
+    'Therapistcontinuetoemail'
     ].includes($route.name)">
       <div class="accordion accordion-flush" id="accordionFlushExample1">
         <div class="accordion-item">
