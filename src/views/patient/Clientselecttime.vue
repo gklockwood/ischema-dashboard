@@ -146,7 +146,7 @@
 
 <style>
     .vuecal__cell-date {
-        padding: 0;
-        font-size: 15px;
+        padding: 0 !important;
+        font-size: 15px !important;
     }
 </style>
