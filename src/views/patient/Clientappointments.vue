@@ -21,7 +21,7 @@
                                 <div class="col-sm-6">
                                     <ul class="list-unstyled p-0 m-0">
                                         <li class="py-1"><span class="badge bg-primary">Upcoming</span></li>
-                                        <li class="py-1"><small class="text-muted">JSN 07, 2022</small></li>
+                                        <li class="py-1"><small class="text-muted">JAN 07, 2022</small></li>
                                         <li class="py-1"><span class="fw-bolder">8:00 AM - 8:55 AM EST</span></li>
                                         <li class="py-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill me-1" viewBox="0 0 16 16">
@@ -42,7 +42,7 @@
                                 <div class="col-sm-6">
                                     <ul class="list-unstyled p-0 m-0">
                                         <li class="py-1"><span class="badge bg-danger">Cancelled</span></li>
-                                        <li class="py-1"><small class="text-muted">JSN 07, 2022</small></li>
+                                        <li class="py-1"><small class="text-muted">JAN 07, 2022</small></li>
                                         <li class="py-1"><span class="fw-bolder">8:00 AM - 8:55 AM EST</span></li>
                                         <li class="py-1">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill me-1" viewBox="0 0 16 16">
@@ -56,7 +56,6 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
