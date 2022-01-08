@@ -42,6 +42,9 @@ import Patientdetails from '../views/therapist/Patientdetails.vue'
 import Therapistacceptappointment from '../views/therapist/Therapistacceptappointment.vue'
 import Therapistcontinuetoemail from '../views/therapist/Therapistcontinuetoemail.vue'
 import Therapistemailreview from '../views/therapist/Therapistemailreview.vue'
+import Therapistemailreviewsend from '../views/therapist/Therapistemailreviewsend.vue'
+
+
 
 // Admin Related
 import Adminaccountactivity from '../views/admin/Adminaccountactivity.vue'
@@ -311,7 +314,12 @@ const routes: Array<RouteRecordRaw> = [
     path: '/prospectivepatient',
     name: 'Prospectivepatient',
     component: Prospectivepatient 
-  }
+  },
+  {
+    path: '/therapist/therapistemailreviewsend',
+    name: 'Therapistemailreviewsend',
+    component: Therapistemailreviewsend 
+  },
 ]
 
 

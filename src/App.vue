@@ -37,7 +37,9 @@
       'Clientselecttime',
       'Therapistacceptappointment',
       'Therapistcontinuetoemail',
-      'Therapistcontinuetoemail'
+      'Therapistcontinuetoemail',
+      'Therapistemailreview',
+      'Therapistemailreviewsend'
       ].includes($route.name)"><i class="fas fa-bars"></i></button>
 
       <router-link to="/landing" type="button" class="btn brandtext">
@@ -143,7 +145,9 @@
     'Clientselecttime',
     'Therapistacceptappointment',
     'Therapistcontinuetoemail',
-    'Therapistcontinuetoemail'
+    'Therapistcontinuetoemail',
+    'Therapistemailreview',
+    'Therapistemailreviewsend'
     ].includes($route.name)"></sidebar>
 
 
@@ -185,7 +189,9 @@
         'Clientselecttime',
         'Therapistacceptappointment',
         'Therapistcontinuetoemail',
-        'Therapistcontinuetoemail'
+        'Therapistcontinuetoemail',
+        'Therapistemailreview',
+        'Therapistemailreviewsend'
         ].includes($route.name) }">
       <router-view />
 

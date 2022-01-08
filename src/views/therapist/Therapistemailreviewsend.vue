@@ -1,7 +1,7 @@
 <template>
     <div class="therapistcontinuetoemail">
         <div class="container-fluid pt-4">
-            <h1>Accept Appointment for Jamie D. Appleseed</h1>
+            <h1>Email Review</h1>
             <div class="row  mt-4">
                 <div class="col-sm-12">
                     <div class="shadow-sm rounded-3 p-3 border">
@@ -45,13 +45,35 @@
                                 </div>
                             </div>
                             <div class="col-md-4 d-flex align-items-sm-center justify-content-center">
-                                <router-link to="/therapist/therapistemailreview" class="btn btn-outline-dark mt-2">
-                                    Continue to Email
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right ms-1" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                                      </svg>
-                                </router-link>
+                                <div>
+                                    <span class="d-block text-success">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-check2 me-1" viewBox="0 0 16 16">
+                                            <path d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z"/>
+                                          </svg>
+                                        Jamie has Client Portal access
+                                    </span>
+                                    <span class="d-block">
+                                        Jamie will receive an email directing them to your Client Portal
+                                    </span>
+                                </div>
+                              
                             </div>
+                        </div>
+                    </div>
+                    <div class="row pt-3">
+                        <div class="col-sm">
+                            <button class="btn btn-outline-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left me-1" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                                  </svg>
+                                Back to Email
+                            </button>
+                            <router-link to="/therapist/therapistemailreview" class="btn btn-outline-dark ms-2">
+                                Share & Send Now
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right ms-1" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                                  </svg>
+                            </router-link>
                         </div>
                     </div>
                 </div>

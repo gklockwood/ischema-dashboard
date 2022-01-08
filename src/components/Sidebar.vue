@@ -80,7 +80,9 @@
     'Patientdetails',
     'Therapistacceptappointment',
     'Therapistcontinuetoemail',
-    'Therapistcontinuetoemail'
+    'Therapistcontinuetoemail',
+    'Therapistemailreview',
+    'Therapistemailreviewsend'
     ].includes($route.name)">
       <div class="accordion accordion-flush" id="accordionFlushExample1">
         <div class="accordion-item">
