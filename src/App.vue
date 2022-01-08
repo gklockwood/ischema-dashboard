@@ -380,6 +380,154 @@
     <!-- Add Appointment Modal End -->
 
 
+
+
+
+
+    <!-- Modal - Edit Session Start -->
+
+    <div class="modal fade" id="shareModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+      <div class="vertical-alignment-helper">
+        <div class="modal-dialog modal-lg  vertical-align-center">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Patient Name</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+              <div class="d-flex pb-4">
+                <div class="d-flex-item pe-4">
+                  <a type="button" class="btn btn-sm btn-primary shadow-sm p-2"
+                    href="http://localhost:8080/securecall"><i class="fas fa-video me-1"></i> Start Session</a>
+
+                </div>
+                <div class="d-flex-item">
+                  <div class="dropdown d-flex">
+                    <button class="btn btn-light dropdown-toggle shadow-sm align-self-center" type="button"
+                      id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                      <i class="fas fa-share me-1"></i> Share Link
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-copy me-1"></i> Copy Link</a></li>
+                      <li><a class="dropdown-item" href="#"><i class="fas fa-envelope me-1"></i> Send Reminder</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-3">
+                  <label for="Patient Attendance Select" class="fw-bolder">Patient Attendance</label>
+                  <select class="form-select my-2" aria-label="Patient Attendance">
+                    <option selected>Show</option>
+                    <option value="1">No Show</option>
+                    <option value="2">Cancelled</option>
+                    <option value="3">Late Cancelled</option>
+                  </select>
+                </div>
+              </div>
+
+
+              <div class="row pt-3">
+                <div class="col-sm-3">
+                  <input placeholder="12/06/2021" class="form-control" />
+                </div>
+                <div class="col-sm-3">
+                  <input placeholder="10:00 am" class="form-control" />
+                </div>
+                <div class="col-sm-2 d-flex align-items-center">
+                  <input placeholder="55" class="form-control" /><span class="ps-1">min</span>
+                </div>
+                <div class="col-sm-2 d-flex align-items-center">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Repeats
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="row pt-4">
+                <div class="col-sm-6">
+                  <ul class="list-group">
+                    <li class="list-group-item"><span class="fw-bolder">Notes</span></li>
+                    <li class="list-group-item"><span><a href="">11/30/2021</a></span></li>
+                    <li class="list-group-item"><span><a href="">11/29/2021</a> </span></li>
+                  </ul>
+                  <div class=" d-flex justify-content-center">
+                    <button class="btn btn-light mt-2 shadow-sm"><i class="fas fa-plus me-1"></i>
+                      Add Note</button>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <span class="fw-bolder">Billing type</span>
+                        </div>
+                        <div class="col-sm-6 border-start">
+                          Self Pay
+                        </div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-sm-6">
+                          <span class="fw-bolder">Appointment total</span>
+                        </div>
+                        <div class="col-sm-6 border-start">
+                          $145
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+
+
+
+                </div>
+              </div>
+
+
+
+
+              <div class="row pt-4">
+                <div class="col-sm-6">
+                  <input placeholder="Psychotherapy, 60 min" class="form-control" />
+                </div>
+                <div class="col-sm-3">
+                  <input placeholder="$145" class="form-control" />
+                </div>
+                <div class="col-sm-3 d-flex align-items-center">
+                  <button class="btn"><i class="fas fa-plus me-1"></i> Add Service</button>
+                </div>
+              </div>
+
+
+              <hr>
+              <div class="d-flex justify-content-end">
+                <button data-bs-dismiss="modal" type="button" class="btn btn-light me-2"><i
+                    class="fas fa-times me-1 shadow-sm"></i>Cancel</button>
+                <button type="button" class="btn btn-primary me-2"><i class="fas fa-check me-1"></i>Done</button>
+
+              </div>
+
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Modal - Edit Session End -->
+
+
   </div>
 
 
