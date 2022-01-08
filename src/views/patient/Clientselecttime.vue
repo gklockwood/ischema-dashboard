@@ -35,7 +35,21 @@
                             <div class="col-sm-4 text-center"><span class="fw-bolder">Evening</span></div>
                         </div>
                         <div class="row pt-3">
-                            <div class="col-sm-4 text-center"><span class="badge bg-primary">8:00 AM</span></div>
+
+                          
+
+
+                            <div class="col-sm-4 text-center">
+                                
+
+
+                                <router-link to="/patient/Clientappointmentconfirmation" class="btn btn-outline-success shadow-sm btn-sm">
+                                    8:00 AM
+                                </router-link>
+
+
+                            
+                            </div>
                             <div class="col-sm-4 text-center">----</div>
                             <div class="col-sm-4 text-center">----</div>
                         </div>
