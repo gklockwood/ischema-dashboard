@@ -6,6 +6,9 @@
 
 
             <h3 class="pt-4">Roles:</h3>
+            <p>
+                Each user can have multiple roles.  A user's roles determine what they can access within e-schematherapy.
+            </p>
             <h4 class="pt-3">Practive Administration</h4>
             <div class="row">
                 <div class="col-sm-12">
