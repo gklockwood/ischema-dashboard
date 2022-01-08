@@ -54,7 +54,7 @@
       <router-link to="/patient/messages" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="far fa-comment-alt"></i> Messages <span class="badge bg-primary ms-1">1</span></router-link>
       <router-link to="/patient/schedule" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-clock"></i> Schedule Session</router-link>
+          class="fas fa-clock"></i> Prospective Patient</router-link>
       <router-link to="/patient/Clientappointments" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="far fa-calendar-alt"></i> Appointments</router-link>
       <router-link to="/patient/documents" class="list-group-item list-group-item-action bg-dark text-light"><i
@@ -125,7 +125,7 @@
       <div class="dropdown">
         <button class="btn btn-dark shadow-sm dropdown-toggle d-block mt-2 ms-1 w-100 text-start" type="button" id="dropdownMenuButton1"
           data-bs-toggle="dropdown" aria-expanded="false">
-          <i class="fas fa-plus me-2"></i> Create
+          <i class="fas fa-plus me-2"></i> Add
         </button>
         <ul class="dropdown-menu w-100 p-2" aria-labelledby="dropdownMenuButton1">
           <li><a class="dropdown-item cursor-pointer"  data-bs-toggle="modal" data-bs-target="#addavailabilitymodal"><i class="fas fa-clock me-1"></i>

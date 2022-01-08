@@ -210,7 +210,7 @@
       <div class="modal-dialog modal-dialog-centered" style="z-index:2000;position: relative;">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Add Availability</h5>
+            <h5 class="modal-title" id="exampleModalLabel">New Availibility</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -301,7 +301,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Add Appointment</h5>
+            <h5 class="modal-title" id="exampleModalLabel">New Appointment</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
