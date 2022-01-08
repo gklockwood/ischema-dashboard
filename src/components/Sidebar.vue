@@ -115,12 +115,9 @@
       <router-link to="/therapist/therapistmessages" class="list-group-item list-group-item-action bg-dark text-light">
         <i class="far fa-comment-alt"></i> Messages <span class="badge bg-primary ms-1">1</span>
       </router-link>
-      <router-link to="/therapist/Sentforms" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-share-square"></i> Requests</router-link>
-      <!-- <router-link to="/therapist/Sessions" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="far fa-calendar-alt"></i> Sessions</router-link> -->
-
-
+      <router-link to="/therapist/Therapistacceptappointment" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="fas fa-share-square"></i> Requests <span class="badge bg-primary ms-1">2</span>
+        </router-link>
       <div class="dropdown">
         <button class="btn btn-dark shadow-sm dropdown-toggle d-block mt-2 ms-1 w-100 text-start" type="button" id="dropdownMenuButton1"
           data-bs-toggle="dropdown" aria-expanded="false">
