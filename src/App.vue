@@ -39,7 +39,9 @@
       'Therapistcontinuetoemail',
       'Therapistcontinuetoemail',
       'Therapistemailreview',
-      'Therapistemailreviewsend'
+      'Therapistemailreviewsend',
+      'Adminstaff',
+      'Adminaddnewuser'
       ].includes($route.name)"><i class="fas fa-bars"></i></button>
 
       <router-link to="/landing" type="button" class="btn brandtext">
@@ -147,7 +149,9 @@
     'Therapistcontinuetoemail',
     'Therapistcontinuetoemail',
     'Therapistemailreview',
-    'Therapistemailreviewsend'
+    'Therapistemailreviewsend',
+    'Adminstaff',
+    'Adminaddnewuser'
     ].includes($route.name)"></sidebar>
 
 
@@ -191,7 +195,9 @@
         'Therapistcontinuetoemail',
         'Therapistcontinuetoemail',
         'Therapistemailreview',
-        'Therapistemailreviewsend'
+        'Therapistemailreviewsend',
+        'Adminstaff',
+        'Adminaddnewuser'
         ].includes($route.name) }">
       <router-view />
 

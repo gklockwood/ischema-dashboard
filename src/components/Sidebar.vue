@@ -14,12 +14,14 @@
     'Adminpayouts',
     'Adminappointmentstatus',
     'Adminsentemails',
-    'Adminbilling'
+    'Adminbilling',
+    'Adminstaff',
+    'Adminaddnewuser'
     ].includes($route.name)">
       <router-link to="/admin/admincalendar" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-calendar"></i> Calendar</router-link>
-      <router-link to="/admin/admintherapists" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-users"></i> Therapists</router-link>
+      <router-link to="/admin/adminstaff" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="fas fa-users"></i> Staff</router-link>
       <router-link to="/admin/adminclients" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-users"></i> Clients</router-link>
       <router-link to="/admin/adminbilling" class="list-group-item list-group-item-action bg-dark text-light"><i
