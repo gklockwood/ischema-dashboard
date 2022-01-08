@@ -41,7 +41,16 @@
       'Therapistemailreview',
       'Therapistemailreviewsend',
       'Adminstaff',
-      'Adminaddnewuser'
+      'Adminaddnewuser',
+      'Therapistclientportal',
+      'Therapistautomaticemails',
+      'Therapistautomaticemails',
+      'Therapistsubscriptioninformation',
+      'Therapistdemodata',
+      'Therapistdataexport',
+      'Therapistassesment ',
+      'Therapistdiagnosisandtreatmentplan',
+      'Therapistmentalstatusexam'
       ].includes($route.name)"><i class="fas fa-bars"></i></button>
 
       <router-link to="/landing" type="button" class="btn brandtext">
@@ -151,7 +160,16 @@
     'Therapistemailreview',
     'Therapistemailreviewsend',
     'Adminstaff',
-    'Adminaddnewuser'
+    'Adminaddnewuser',
+    'Therapistclientportal',
+    'Therapistautomaticemails',
+    'Therapistautomaticemails',
+    'Therapistsubscriptioninformation',
+    'Therapistdemodata',
+    'Therapistdataexport',
+    'Therapistassesment ',
+    'Therapistdiagnosisandtreatmentplan',
+    'Therapistmentalstatusexam'
     ].includes($route.name)"></sidebar>
 
 
@@ -197,7 +215,16 @@
         'Therapistemailreview',
         'Therapistemailreviewsend',
         'Adminstaff',
-        'Adminaddnewuser'
+        'Adminaddnewuser',
+        'Therapistclientportal',
+        'Therapistautomaticemails',
+        'Therapistautomaticemails',
+        'Therapistsubscriptioninformation',
+        'Therapistdemodata',
+        'Therapistdataexport',
+        'Therapistassesment ',
+        'Therapistdiagnosisandtreatmentplan',
+        'Therapistmentalstatusexam'
         ].includes($route.name) }">
       <router-view />
 

@@ -44,6 +44,17 @@ import Therapistcontinuetoemail from '../views/therapist/Therapistcontinuetoemai
 import Therapistemailreview from '../views/therapist/Therapistemailreview.vue'
 import Therapistemailreviewsend from '../views/therapist/Therapistemailreviewsend.vue'
 
+import Therapistclientportal  from '../views/therapist/Therapistclientportal .vue'
+import Therapistclientreminders  from '../views/therapist/Therapistclientreminders .vue'
+import Therapistsubscriptioninformation from '../views/therapist/Therapistsubscriptioninformation.vue'
+import Therapistdemodata from '../views/therapist/Therapistdemodata.vue'
+import Therapistdataexport from '../views/therapist/Therapistdataexport.vue'
+import Therapistprofile from '../views/therapist/Therapistprofile.vue'
+import Therapistassesment from '../views/therapist/Therapistassesment .vue'
+import Therapistdiagnosisandtreatmentplan  from '../views/therapist/Therapistdiagnosisandtreatmentplan .vue'
+import Therapistmentalstatusexam  from '../views/therapist/Therapistmentalstatusexam .vue'
+import Therapistautomaticemails  from '../views/therapist/Therapistautomaticemails .vue'
+
 
 
 // Admin Related
@@ -332,6 +343,56 @@ const routes: Array<RouteRecordRaw> = [
     name: 'Adminaddnewuser',
     component: Adminaddnewuser 
   },
+  {
+    path: '/therapist/therapistclientportal',
+    name: 'Therapistclientportal',
+    component: Therapistclientportal 
+  },
+  {
+    path: '/therapist/therapistclientreminders',
+    name: 'Therapistclientreminders',
+    component: Therapistclientreminders 
+  },
+  {
+    path: '/therapist/therapistsubscriptioninformation',
+    name: 'Therapistsubscriptioninformation',
+    component: Therapistsubscriptioninformation
+  },
+  {
+    path: '/therapist/therapistdemodata',
+    name: 'Therapistdemodata',
+    component: Therapistdemodata 
+  },
+  {
+    path: '/therapist/therapistdataexport',
+    name: 'Therapistdataexport',
+    component: Therapistdataexport 
+  },
+  {
+    path: '/therapist/therapistprofile',
+    name: 'Therapistprofile',
+    component: Therapistprofile
+  },
+  {
+    path: '/therapist/Therapistassesment',
+    name: 'Therapistassesment',
+    component: Therapistassesment 
+  },
+  {
+    path: '/therapist/Therapistdiagnosisandtreatmentplan',
+    name: 'Therapistdiagnosisandtreatmentplan',
+    component: Therapistdiagnosisandtreatmentplan  
+  },
+  {
+    path: '/therapist/therapistmentalstatusexam',
+    name: 'Therapistmentalstatusexam',
+    component: Therapistmentalstatusexam 
+  },
+  {
+    path: '/therapist/therapistautomaticemails',
+    name: 'Therapistautomaticemails',
+    component: Therapistautomaticemails  
+  }
 ]
 
 

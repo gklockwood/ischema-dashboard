@@ -84,7 +84,16 @@
     'Therapistcontinuetoemail',
     'Therapistcontinuetoemail',
     'Therapistemailreview',
-    'Therapistemailreviewsend'
+    'Therapistemailreviewsend',
+    'Therapistclientportal',
+    'Therapistautomaticemails',
+    'Therapistautomaticemails',
+    'Therapistsubscriptioninformation',
+    'Therapistdemodata',
+    'Therapistdataexport',
+    'Therapistassesment ',
+    'Therapistdiagnosisandtreatmentplan',
+    'Therapistmentalstatusexam'
     ].includes($route.name)">
       <div class="accordion accordion-flush" id="accordionFlushExample1">
         <div class="accordion-item">
