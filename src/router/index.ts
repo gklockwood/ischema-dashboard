@@ -13,6 +13,14 @@ import Entercode from '../views/Entercode.vue'
 import Securecall from '../views/Securecall.vue'
 import Patientportal from '../views/Patientportal.vue'
 import Prospectivepatient from '../views/Prospectivepatient.vue'
+import Staffmemberlogin from '../views/Staffmemberlogin.vue'
+import Staffmembertermsofservice from '../views/Staffmembertermsofservice.vue'
+import Staffmemberchangepassword from '../views/Staffmemberchangepassword.vue'
+import Staffcontinue from '../views/Staffcontinue.vue'
+
+
+
+
 
 // Patient Related
 import Dashboard from '../views/patient/Dashboard.vue'
@@ -44,16 +52,18 @@ import Therapistcontinuetoemail from '../views/therapist/Therapistcontinuetoemai
 import Therapistemailreview from '../views/therapist/Therapistemailreview.vue'
 import Therapistemailreviewsend from '../views/therapist/Therapistemailreviewsend.vue'
 
-import Therapistclientportal  from '../views/therapist/Therapistclientportal .vue'
-import Therapistclientreminders  from '../views/therapist/Therapistclientreminders .vue'
+import Therapistclientportal  from '../views/therapist/Therapistclientportal.vue'
+import Therapistclientreminders  from '../views/therapist/Therapistclientreminders.vue'
 import Therapistsubscriptioninformation from '../views/therapist/Therapistsubscriptioninformation.vue'
 import Therapistdemodata from '../views/therapist/Therapistdemodata.vue'
 import Therapistdataexport from '../views/therapist/Therapistdataexport.vue'
-import Therapistprofile from '../views/therapist/Therapistprofile.vue'
-import Therapistassesment from '../views/therapist/Therapistassesment .vue'
-import Therapistdiagnosisandtreatmentplan  from '../views/therapist/Therapistdiagnosisandtreatmentplan .vue'
-import Therapistmentalstatusexam  from '../views/therapist/Therapistmentalstatusexam .vue'
-import Therapistautomaticemails  from '../views/therapist/Therapistautomaticemails .vue'
+import Therapistprofile from '../views/therapist/practicemanagement/Therapistprofile.vue'
+
+
+import Therapistassesment from '../views/therapist/Therapistassesment.vue'
+import Therapistdiagnosisandtreatmentplan  from '../views/therapist/Therapistdiagnosisandtreatmentplan.vue'
+import Therapistmentalstatusexam  from '../views/therapist/Therapistmentalstatusexam.vue'
+import Therapistautomaticemails  from '../views/therapist/Therapistautomaticemails.vue'
 
 
 
@@ -374,12 +384,12 @@ const routes: Array<RouteRecordRaw> = [
     component: Therapistprofile
   },
   {
-    path: '/therapist/Therapistassesment',
+    path: '/therapist/therapistassesment',
     name: 'Therapistassesment',
     component: Therapistassesment 
   },
   {
-    path: '/therapist/Therapistdiagnosisandtreatmentplan',
+    path: '/therapist/therapistdiagnosisandtreatmentplan',
     name: 'Therapistdiagnosisandtreatmentplan',
     component: Therapistdiagnosisandtreatmentplan  
   },
@@ -392,8 +402,29 @@ const routes: Array<RouteRecordRaw> = [
     path: '/therapist/therapistautomaticemails',
     name: 'Therapistautomaticemails',
     component: Therapistautomaticemails  
+  },
+  {
+    path: '/staffmemberlogin',
+    name: 'Staffmemberlogin',
+    component: Staffmemberlogin  
+  },
+  {
+    path: '/staffmembertermsofservice',
+    name: 'Staffmembertermsofservice',
+    component: Staffmembertermsofservice  
+  },
+  {
+    path: '/staffmemberchangepassword',
+    name: 'Staffmemberchangepassword',
+    component: Staffmemberchangepassword  
+  },
+  {
+    path: '/staffcontinue',
+    name: 'Staffcontinue',
+    component: Staffcontinue  
   }
 ]
+
 
 
 
