@@ -88,7 +88,7 @@
                         <div class="card-body">
                             <div class="list-group">
                                 <a href="#" class="list-group-item list-group-item-action">Client Portal</a>
-                                <a href="#" class="list-group-item list-group-item-action">Client Reminders</a>
+                                <router-link to="/therapist/therapistclientreminders" class="list-group-item list-group-item-action">Client Reminders</router-link>
                               </div>
                         </div>
                     </div>
