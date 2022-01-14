@@ -125,9 +125,8 @@
       <router-link to="/therapist/therapistdashboard" class="list-group-item list-group-item-action bg-dark text-light">
         <i class="fas fa-cog"></i> Settings
       </router-link>
-      <router-link to="/therapist/therapistmessages" class="list-group-item list-group-item-action bg-dark text-light">
-        <i class="far fa-comment-alt"></i> Messages <span class="badge bg-primary ms-1">1</span>
-      </router-link>
+      <button class="btn dropdown-item cursor-pointer text-white sidebarbutton"  data-bs-toggle="modal" data-bs-target="#therapistmessagemodal"><i class="far fa-comment-alt"></i>
+        Messages <span class="badge bg-primary ms-1">3</span></button>
       <router-link to="/therapist/Therapistacceptappointment" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-share-square"></i> Requests <span class="badge bg-primary ms-1">2</span>
         </router-link>

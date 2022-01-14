@@ -561,6 +561,59 @@
     <!-- Modal - Edit Session End -->
 
 
+
+
+
+
+     <!-- Therapsit Message  Modal Start -->
+     <div class="modal fade" id="therapistmessagemodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel">Messages</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+         </div>
+         <div class="modal-body">
+
+          <ul class="list-group">
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-sm-6"><span class="d-block">Jamie Appleseed</span></div>
+                <div class="col-sm-6 text-end"><small class="text-muted">01/14/2022</small></div>
+                <div class="col-sm-12">
+                  <small class="text-muted">Example message snippet</small>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-sm-6"><span class="d-block">Jamie Appleseed</span></div>
+                <div class="col-sm-6 text-end"><small class="text-muted">01/13/2022</small></div>
+                <div class="col-sm-12">
+                  <small class="text-muted">Example message snippet</small>
+                </div>
+              </div>
+            </li>
+            <li class="list-group-item">
+              <div class="row">
+                <div class="col-sm-6"><span class="d-block">Jamie Appleseed</span></div>
+                <div class="col-sm-6 text-end"><small class="text-muted">01/07/2022</small></div>
+                <div class="col-sm-12">
+                  <small class="text-muted">Example message snippet. Example message snippet. Example message snippet. Example message snippet</small>
+                </div>
+              </div>
+            </li>
+          </ul>
+
+         </div>
+       </div>
+     </div>
+   </div>
+   <!-- Therapsit Message Modal End -->
+
+
+
   </div>
 
 

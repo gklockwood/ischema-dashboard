@@ -222,4 +222,10 @@
   }
 }
 
-
+.sidebarbutton {
+  padding: 0.5rem 1rem !important;
+  border-radius: 10px !important;
+  &:hover, &:focus {
+    background: rgba(102, 102, 109, 0.555) !important;
+  }
+}

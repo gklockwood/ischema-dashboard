@@ -2,7 +2,19 @@
     <div class="adminbilling">
         <div class="container-fluid py-4">
             <h1>Transactions</h1>
-            <div class="row pt-4">
+            <div class="row pt-2">
+                <div class="col-sm-3 d-flex align-items-center">
+                    <div class="input-group">
+                        <input class="form-control border-end-0 border rounded-pill" type="search" value="Search Transactions"
+                            id="example-search-input">
+                        <span class="input-group-append">
+                            <button class="btn btn-outline-dark bg-white border-bottom-0 border rounded-pill ms-n5"
+                                type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
                 <div class="col-sm-12 col-md-6 col-lg-6 py-3">
                     <div class="dropdown d-inline me-2">
                         <button class="btn btn-outline-dark dropdown-toggle" type="button"
