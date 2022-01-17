@@ -50,7 +50,8 @@
       'Therapistdataexport',
       'Therapistassesment ',
       'Therapistdiagnosisandtreatmentplan',
-      'Therapistmentalstatusexam'
+      'Therapistmentalstatusexam',
+      'Therapistclientreminders'
       ].includes($route.name)"><i class="fas fa-bars"></i></button>
 
       <router-link to="/landing" type="button" class="btn brandtext">
@@ -169,7 +170,8 @@
     'Therapistdataexport',
     'Therapistassesment ',
     'Therapistdiagnosisandtreatmentplan',
-    'Therapistmentalstatusexam'
+    'Therapistmentalstatusexam',
+    'Therapistclientreminders'
     ].includes($route.name)"></sidebar>
 
 
@@ -224,7 +226,8 @@
         'Therapistdataexport',
         'Therapistassesment ',
         'Therapistdiagnosisandtreatmentplan',
-        'Therapistmentalstatusexam'
+        'Therapistmentalstatusexam',
+        'Therapistclientreminders'
         ].includes($route.name) }">
       <router-view />
 
@@ -565,52 +568,156 @@
 
 
 
-     <!-- Therapsit Message  Modal Start -->
-     <div class="modal fade" id="therapistmessagemodal" tabindex="-1" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
-     <div class="modal-dialog modal-dialog-centered">
-       <div class="modal-content">
-         <div class="modal-header">
-           <h5 class="modal-title" id="exampleModalLabel">Messages</h5>
-           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-         </div>
-         <div class="modal-body">
+    <!-- Therapsit Message  Modal Start -->
+    <div class="modal fade" id="therapistmessagemodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Messages</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm text-end pb-3">
+                <button class="btn btn-outline-dark" @click="composemessagebtn" v-if="messagesinitial">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-pencil-square" viewBox="0 0 16 16">
+                    <path
+                      d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                    <path fill-rule="evenodd"
+                      d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
 
-          <ul class="list-group">
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-sm-6"><span class="d-block">Jamie Appleseed</span></div>
-                <div class="col-sm-6 text-end"><small class="text-muted">01/14/2022</small></div>
-                <div class="col-sm-12">
-                  <small class="text-muted">Example message snippet</small>
-                </div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-sm-6"><span class="d-block">Jamie Appleseed</span></div>
-                <div class="col-sm-6 text-end"><small class="text-muted">01/13/2022</small></div>
-                <div class="col-sm-12">
-                  <small class="text-muted">Example message snippet</small>
-                </div>
-              </div>
-            </li>
-            <li class="list-group-item">
-              <div class="row">
-                <div class="col-sm-6"><span class="d-block">Jamie Appleseed</span></div>
-                <div class="col-sm-6 text-end"><small class="text-muted">01/07/2022</small></div>
-                <div class="col-sm-12">
-                  <small class="text-muted">Example message snippet. Example message snippet. Example message snippet. Example message snippet</small>
-                </div>
-              </div>
-            </li>
-          </ul>
 
-         </div>
-       </div>
-     </div>
-   </div>
-   <!-- Therapsit Message Modal End -->
+
+            <div v-if="composemessage">
+              <div class="row">
+                <div class="col-sm-6">
+                  <span class="mt-2 d-block">New Message</span>
+                </div>
+                <div class="col-sm-6 text-end">
+                  <button class="btn btn-outline-dark btn-sm"  @click="cancelcompose">Cancel</button>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm py-3">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="To...">
+                  </div>                  
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm pb-1">
+                  <small class="text-muted">
+                    Recent
+                  </small>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-sm">
+                  <ul class="list-group">
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-sm-6"><span class="d-block text-primary cursor-pointer" @click="composing">Jamie Appleseed</span></div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-sm-6"><span class="d-block text-primary cursor-pointer" @click="composing">Jahnny Johnson</span></div>
+                      </div>
+                    </li>
+                    <li class="list-group-item">
+                      <div class="row">
+                        <div class="col-sm-6"><span class="d-block text-primary cursor-pointer" @click="composing">Bobby McName</span></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+
+            <div v-if="messagesinitial">
+              <ul class="list-group">
+                <li class="list-group-item">
+                  <div class="row">
+                    <div class="col-sm-6"><span class="d-block">Jamie Appleseed</span></div>
+                    <div class="col-sm-6 text-end"><small class="text-muted">01/14/2022</small></div>
+                    <div class="col-sm-12">
+                      <small class="text-muted">Example message snippet</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row">
+                    <div class="col-sm-6"><span class="d-block">Jamie Appleseed</span></div>
+                    <div class="col-sm-6 text-end"><small class="text-muted">01/13/2022</small></div>
+                    <div class="col-sm-12">
+                      <small class="text-muted">Example message snippet</small>
+                    </div>
+                  </div>
+                </li>
+                <li class="list-group-item">
+                  <div class="row">
+                    <div class="col-sm-6"><span class="d-block">Jamie Appleseed</span></div>
+                    <div class="col-sm-6 text-end"><small class="text-muted">01/07/2022</small></div>
+                    <div class="col-sm-12">
+                      <small class="text-muted">Example message snippet. Example message snippet. Example message
+                        snippet. Example message snippet</small>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div v-if="textthread">
+              <div class="row border-bottom pb-3">
+                <div class="col-sm-6">
+                  <span class="mt-2 d-block">New Message</span>
+                </div>
+                <div class="col-sm-6 text-end">
+                  <button class="btn btn-outline-dark btn-sm"  @click="cancelcompose">Cancel</button>
+                </div>
+              </div>
+              <div class="chat">
+                <div class="mine messages firstmessage">
+                  <div class="message last">
+                    Hello Patient X, did you have a moment to fill out the form?
+                  </div>
+                </div>
+                <div class="yours messages">
+                  <div class="message">
+                    Oh yes I just submitted it
+                  </div>
+                </div>
+                <div class="mine messages">
+                  <div class="message">
+                    Ok great I just received it, thank you. 
+                  </div>
+                </div>
+                <div class="yours messages">
+                  <div class="message last">
+                    Ok great thank you for reminding me!
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm pt-3">
+                    <textarea class="form-control" placeholder="Send Message"></textarea>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Therapsit Message Modal End -->
 
 
 
@@ -635,15 +742,47 @@
     setup() {
       const route = useRoute();
       const toggleSidebar = ref(false);
+
       function toggleSidebarLogic() {
         toggleSidebar.value = !toggleSidebar.value;
       }
 
+      // Messages Start
+      const messagesinitial = ref(true);
+      const textthread = ref(false);
+      const composemessage = ref(false);
+
+      function composemessagebtn() {
+        messagesinitial.value = false;
+        composemessage.value = true;
+        textthread.value = false;
+      }
+
+      function cancelcompose() {
+        messagesinitial.value = true;
+        composemessage.value = false;
+        textthread.value = false;
+      }
+
+      function composing() {
+        messagesinitial.value = false;
+        composemessage.value = false;
+        textthread.value = true;
+      }
+
+
+      // Messages End
+
       return {
         toggleSidebar,
         toggleSidebarLogic,
-        route
-
+        route,
+        textthread,
+        messagesinitial,
+        composemessage,
+        composemessagebtn,
+        cancelcompose,
+        composing
       }
     }
   };
@@ -657,4 +796,102 @@
   .st1 {
     fill: #008080;
   }
+
+
+  /* chat specific styles */
+  .chat {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.messages {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.firstmessage {
+  margin-top:0;
+}
+
+.message {
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.yours {
+  align-items: flex-start;
+}
+
+.yours .message {
+  margin-right: 25%;
+  background-color: #eee;
+  position: relative;
+}
+
+.yours .message.last:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: -7px;
+  height: 20px;
+  width: 20px;
+  background: #eee;
+  border-bottom-right-radius: 15px;
+}
+.yours .message.last:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: -10px;
+  width: 10px;
+  height: 20px;
+  background: white;
+  border-bottom-right-radius: 10px;
+}
+
+.mine {
+  align-items: flex-end;
+}
+
+.mine .message {
+  color: white;
+  margin-left: 25%;
+  background: var(--primary-bg-gradient-dark);
+  background-attachment: fixed;
+  position: relative;
+}
+
+.mine .message.last:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  right: -8px;
+  height: 20px;
+  width: 20px;
+  background: var(--primary-bg-gradient-dark);
+  background-attachment: fixed;
+  border-bottom-left-radius: 15px;
+}
+
+.mine .message.last:after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  right: -10px;
+  width: 10px;
+  height: 20px;
+  background: white;
+  border-bottom-left-radius: 10px;
+}
+
 </style>

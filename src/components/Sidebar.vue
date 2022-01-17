@@ -93,18 +93,19 @@
     'Therapistdataexport',
     'Therapistassesment ',
     'Therapistdiagnosisandtreatmentplan',
-    'Therapistmentalstatusexam'
+    'Therapistmentalstatusexam',
+    'Therapistclientreminders'
     ].includes($route.name)">
-      <div class="accordion accordion-flush" id="accordionFlushExample1">
+      <div class="accordion accordion-flush" id="accordionFlushExampleog">
         <div class="accordion-item">
           <h2 class="accordion-header" id="flush-headingOneog">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              data-bs-target="#flush-headingOneog" aria-expanded="false" aria-controls="flush-headingOneog">
               George Lockwood
             </button>
           </h2>
-          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-            data-bs-parent="#accordionFlushExample">
+          <div id="flush-headingOneog" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExampleog">
             <div class="accordion-body">
               <router-link to="#" class="list-group-item list-group-item-action mt-1">
                 <i class="fas fa-user"></i>
