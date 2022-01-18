@@ -574,13 +574,19 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Messages</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Client Messages</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <div class="row">
+            <div class="row" v-if="messagesinitial">
+              <div class="col-sm">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Search Messages...">
+                </div>    
+              </div>
               <div class="col-sm text-end pb-3">
-                <button class="btn btn-outline-dark" @click="composemessagebtn" v-if="messagesinitial">
+                <button class="btn btn-outline-dark" @click="composemessagebtn">
+                  New Message
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                     class="bi bi-pencil-square" viewBox="0 0 16 16">
                     <path
@@ -597,7 +603,7 @@
             <div v-if="composemessage">
               <div class="row">
                 <div class="col-sm-6">
-                  <span class="mt-2 d-block">New Message</span>
+                  <span class="mt-1 d-block">New Message</span>
                 </div>
                 <div class="col-sm-6 text-end">
                   <button class="btn btn-outline-dark btn-sm"  @click="cancelcompose">Cancel</button>
@@ -621,18 +627,27 @@
                 <div class="col-sm">
                   <ul class="list-group">
                     <li class="list-group-item">
-                      <div class="row">
-                        <div class="col-sm-6"><span class="d-block text-primary cursor-pointer" @click="composing">Jamie Appleseed</span></div>
+                      <div class="row cursor-pointer"  @click="composing">
+                        <div class="col-sm-2">
+                          <div class="border rounded-pill p-3 initials">BM</div>
+                        </div>
+                        <div class="col-sm-10"><span class="d-block text-primary cursor-pointer" style="margin-top:14px;position: relative;">Jamie Appleseed</span></div>
                       </div>
                     </li>
                     <li class="list-group-item">
-                      <div class="row">
-                        <div class="col-sm-6"><span class="d-block text-primary cursor-pointer" @click="composing">Jahnny Johnson</span></div>
+                      <div class="row  cursor-pointer" @click="composing">
+                        <div class="col-sm-2">
+                          <div class="border rounded-pill p-3 initials">JJ</div>
+                        </div>
+                        <div class="col-sm-10"><span class="d-block text-primary" style="margin-top:14px;position: relative;">Jahnny Johnson</span></div>
                       </div>
                     </li>
                     <li class="list-group-item">
-                      <div class="row">
-                        <div class="col-sm-6"><span class="d-block text-primary cursor-pointer" @click="composing">Bobby McName</span></div>
+                      <div class="row cursor-pointer"  @click="composing">
+                        <div class="col-sm-2">
+                          <div class="border rounded-pill p-3 initials">BM</div>
+                        </div>
+                        <div class="col-sm-10"><span class="d-block text-primary cursor-pointer" style="margin-top:14px;position: relative;">Bobby McName</span></div>
                       </div>
                     </li>
                   </ul>
@@ -645,30 +660,50 @@
             <div v-if="messagesinitial">
               <ul class="list-group">
                 <li class="list-group-item">
-                  <div class="row">
-                    <div class="col-sm-6"><span class="d-block">Jamie Appleseed</span></div>
-                    <div class="col-sm-6 text-end"><small class="text-muted">01/14/2022</small></div>
-                    <div class="col-sm-12">
-                      <small class="text-muted">Example message snippet</small>
+                  <div class="row  cursor-pointer" @click="composing">
+                    <div class="col-sm-2">
+                      <div class="border rounded-pill p-3 initials">JA</div>
+                    </div>
+                    <div class="col-sm-8">
+                      <dov class="row">
+                        <div class="col-sm-6"><span class="d-block">Jamie Appleseed</span></div>
+                        <div class="col-sm-6 text-end"><small class="text-muted">01/14/2022</small></div>
+                        <div class="col-sm-12">
+                          <small class="text-muted">Example message snippet</small>
+                        </div>
+                      </dov>
                     </div>
                   </div>
                 </li>
                 <li class="list-group-item">
-                  <div class="row">
-                    <div class="col-sm-6"><span class="d-block">Jamie Appleseed</span></div>
-                    <div class="col-sm-6 text-end"><small class="text-muted">01/13/2022</small></div>
-                    <div class="col-sm-12">
-                      <small class="text-muted">Example message snippet</small>
+                  <div class="row  cursor-pointer" @click="composing">
+                    <div class="col-sm-2">
+                      <div class="border rounded-pill p-3 initials">JJ</div>
+                    </div>
+                    <div class="col-sm-8">
+                      <dov class="row">
+                        <div class="col-sm-6"><span class="d-block">Johny Johnson</span></div>
+                        <div class="col-sm-6 text-end"><small class="text-muted">01/13/2022</small></div>
+                        <div class="col-sm-12">
+                          <small class="text-muted">Example message snippet</small>
+                        </div>
+                      </dov>
                     </div>
                   </div>
                 </li>
                 <li class="list-group-item">
-                  <div class="row">
-                    <div class="col-sm-6"><span class="d-block">Jamie Appleseed</span></div>
-                    <div class="col-sm-6 text-end"><small class="text-muted">01/07/2022</small></div>
-                    <div class="col-sm-12">
-                      <small class="text-muted">Example message snippet. Example message snippet. Example message
-                        snippet. Example message snippet</small>
+                  <div class="row  cursor-pointer" @click="composing">
+                    <div class="col-sm-2">
+                      <div class="border rounded-pill p-3 initials">BM</div>
+                    </div>
+                    <div class="col-sm-8">
+                      <dov class="row">
+                        <div class="col-sm-6"><span class="d-block">Bobby McName</span></div>
+                        <div class="col-sm-6 text-end"><small class="text-muted">01/07/2022</small></div>
+                        <div class="col-sm-12">
+                          <small class="text-muted">Example message snippet</small>
+                        </div>
+                      </dov>
                     </div>
                   </div>
                 </li>
@@ -789,6 +824,13 @@
 </script>
 
 <style type="text/css">
+  .initials {
+    width: 54px;
+    height: 54px;
+    text-align: center;
+    line-height: 18px;
+    letter-spacing: 1px;
+  }
   .st0 {
     fill: #6D6E71;
   }
