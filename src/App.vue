@@ -574,7 +574,7 @@
       <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Client Messages</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Messages</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
@@ -603,7 +603,7 @@
             <div v-if="composemessage">
               <div class="row">
                 <div class="col-sm-6">
-                  <span class="mt-1 d-block">New Message</span>
+                  <span class="mt-1 d-block">Message</span>
                 </div>
                 <div class="col-sm-6 text-end">
                   <button class="btn btn-outline-dark btn-sm"  @click="cancelcompose">Cancel</button>
@@ -713,7 +713,7 @@
             <div v-if="textthread">
               <div class="row border-bottom pb-3">
                 <div class="col-sm-6">
-                  <span class="mt-2 d-block">New Message</span>
+                  <span class="mt-2 d-block">To: (Client Name Here)</span>
                 </div>
                 <div class="col-sm-6 text-end">
                   <button class="btn btn-outline-dark btn-sm"  @click="cancelcompose">Cancel</button>
