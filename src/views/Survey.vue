@@ -57,7 +57,7 @@
         </div>
       </div>
       <div class="row mt-4">
-        <div class="vol-sm-12 col-md-6">
+        <div class="col-sm-12 col-md-6">
           <p class="fw-bold">Father</p>
           <form class="form cf">
             <h5 class="fw-bold pb-3">Had realistic expectations of him/herself</h5>
@@ -71,7 +71,7 @@
             </section>
           </form>
         </div>
-        <div class="vol-sm-12 col-md-6">
+        <div class="col-sm-12 col-md-6">
           <p class="fw-bold">Mother</p>
           <form class="form cf">
             <h5 class="fw-bold pb-3">Had realistic expectations of him/herself</h5>
@@ -99,7 +99,7 @@
             <form action="" class="py-3">
               <h5 class="fw-bold pb-3">Had realistic expectations of him/herself.</h5>
               <div class="row">
-                <div class="vol-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-6">
                   <p class="fw-bold">Father</p>
                   <ul class='likert'>
                     <li class="form-check">
@@ -128,7 +128,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="vol-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-6">
                   <p class="fw-bold">Mother</p>
                   <ul class='likert'>
                     <li class="form-check">
@@ -164,7 +164,7 @@
             <form action="" class="py-3">
               <h5 class="fw-bold pb-3">I like to do well but don't have to be the best.</h5>
               <div class="row">
-                <div class="vol-sm-12">
+                <div class="col-sm-12">
                   <ul class='likert'>
                     <li class="form-check">
                       <input type="radio" name="likert" value="1" class="form-check-input">
@@ -199,7 +199,7 @@
             <form action="" class="py-3">
               <h5 class="fw-bold pb-3">Respected my wanting to keep certain things to myself.</h5>
               <div class="row">
-                <div class="vol-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-6">
                   <p class="fw-bold">Father</p>
                   <ul class='likert'>
                     <li class="form-check">
@@ -228,7 +228,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="vol-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-6">
                   <p class="fw-bold">Mother</p>
                   <ul class='likert'>
                     <li class="form-check">
@@ -264,7 +264,7 @@
             <form action="" class="py-3">
               <h5 class="fw-bold pb-3">Was proud of me when I succeeded at something important.</h5>
               <div class="row">
-                <div class="vol-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-6">
                   <p class="fw-bold">Father</p>
                   <ul class='likert'>
                     <li class="form-check">
@@ -293,7 +293,7 @@
                     </li>
                   </ul>
                 </div>
-                <div class="vol-sm-12 col-md-6">
+                <div class="col-sm-12 col-md-6">
                   <p class="fw-bold">Mother</p>
                   <ul class='likert'>
                     <li class="form-check">

@@ -18,10 +18,6 @@ import Staffmembertermsofservice from '../views/Staffmembertermsofservice.vue'
 import Staffmemberchangepassword from '../views/Staffmemberchangepassword.vue'
 import Staffcontinue from '../views/Staffcontinue.vue'
 
-
-
-
-
 // Patient Related
 import Dashboard from '../views/patient/Dashboard.vue'
 import Schedulepreview from '../views/Schedulepreview.vue'
@@ -83,6 +79,12 @@ import Adminbilling from '../views/admin/Adminbilling.vue'
 import Adminstaff from '../views/admin/Adminstaff.vue'
 import Adminaddnewuser from '../views/admin/Adminaddnewuser.vue'
 
+
+// Forms
+import SchemaModePlan1 from '../views/surveys/SchemaModePlan1.vue'
+import SchemaModePlan2 from '../views/surveys/SchemaModePlan2.vue'
+import SchemaModePlan3 from '../views/surveys/SchemaModePlan3.vue'
+
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -92,6 +94,21 @@ const routes: Array<RouteRecordRaw> = [
     path: '/landing',
     name: 'Landing',
     component: Landing
+  },
+  {
+    path: '/schemamodeplan1',
+    name: 'SchemaModePlan1',
+    component: SchemaModePlan1
+  },
+  {
+    path: '/schemamodeplan2',
+    name: 'SchemaModePlan2',
+    component: SchemaModePlan2
+  },
+  {
+    path: '/schemamodeplan3',
+    name: 'SchemaModePlan3',
+    component: SchemaModePlan3
   },
   {
     path: '/patientportal',
