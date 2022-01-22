@@ -79,8 +79,3 @@
   </div>
 </template>
 
-<style>
-  .form label {
-    max-width: 62px;
-  }
-</style>

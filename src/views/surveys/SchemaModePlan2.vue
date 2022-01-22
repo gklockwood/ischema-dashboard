@@ -15,7 +15,7 @@
             <div class="col-sm-12 py-4">
                 <label class="form-label fw-bolder">Occupational or School Performance Rating:</label>
                 <form class="form cf">
-                    <section class="plan cf px-4">
+                    <section class="plan cf ">
                         <input type="radio" name="radio1" id="11" value="1"><label
                             class="six col shadow-sm rounded-pill" for="11">1</label>
                         <input type="radio" name="radio1" id="22" value="2"><label
@@ -38,7 +38,7 @@
             <div class="col-sm-12 py-4">
                 <label class="form-label fw-bolder">Intimate, Romantic, Longer-Term Relationships Rating:</label>
                 <form class="form cf">
-                    <section class="plan cf px-4">
+                    <section class="plan cf ">
                         <input type="radio" name="radio1" id="11" value="1"><label
                             class="six col shadow-sm rounded-pill" for="11">1</label>
                         <input type="radio" name="radio1" id="22" value="2"><label
@@ -62,7 +62,7 @@
             <div class="col-sm-12 py-4">
                 <label class="form-label fw-bolder">Family Relationships Rating:</label>
                 <form class="form cf">
-                    <section class="plan cf px-4">
+                    <section class="plan cf ">
                         <input type="radio" name="radio1" id="11" value="1"><label
                             class="six col shadow-sm rounded-pill" for="11">1</label>
                         <input type="radio" name="radio1" id="22" value="2"><label
@@ -86,7 +86,7 @@
             <div class="col-sm-12 py-4">
                 <label class="form-label fw-bolder">Friends & Other Social Relationships Rating:</label>
                 <form class="form cf">
-                    <section class="plan cf px-4">
+                    <section class="plan cf ">
                         <input type="radio" name="radio1" id="11" value="1"><label
                             class="six col shadow-sm rounded-pill" for="11">1</label>
                         <input type="radio" name="radio1" id="22" value="2"><label
@@ -109,7 +109,7 @@
             <div class="col-sm-12 py-4">
                 <label class="form-label fw-bolder">Solitary Functioning & Time Alone Rating:</label>
                 <form class="form cf">
-                    <section class="plan cf px-4">
+                    <section class="plan cf ">
                         <input type="radio" name="radio1" id="11" value="1"><label
                             class="six col shadow-sm rounded-pill" for="11">1</label>
                         <input type="radio" name="radio1" id="22" value="2"><label
@@ -134,7 +134,7 @@
             <div class="col-sm-12 py-4">
                 <label class="form-label fw-bolder">Play/Hobbies/Creative Outlets Rating:</label>
                 <form class="form cf">
-                    <section class="plan cf px-4">
+                    <section class="plan cf ">
                         <input type="radio" name="radio1" id="11" value="1"><label
                             class="six col shadow-sm rounded-pill" for="11">1</label>
                         <input type="radio" name="radio1" id="22" value="2"><label
@@ -157,7 +157,7 @@
             <div class="col-sm-12 py-4">
                 <label class="form-label fw-bolder">Exercise Rating:</label>
                 <form class="form cf">
-                    <section class="plan cf px-4">
+                    <section class="plan cf ">
                         <input type="radio" name="radio1" id="11" value="1"><label
                             class="six col shadow-sm rounded-pill" for="11">1</label>
                         <input type="radio" name="radio1" id="22" value="2"><label
@@ -180,7 +180,7 @@
             <div class="col-sm-12 py-4">
                 <label class="form-label fw-bolder">Nutrition Rating:</label>
                 <form class="form cf">
-                    <section class="plan cf px-4">
+                    <section class="plan cf ">
                         <input type="radio" name="radio1" id="11" value="1"><label
                             class="six col shadow-sm rounded-pill" for="11">1</label>
                         <input type="radio" name="radio1" id="22" value="2"><label
@@ -204,7 +204,7 @@
             <div class="col-sm-12 py-4">
                 <label class="form-label fw-bolder">Sleep Rating:</label>
                 <form class="form cf">
-                    <section class="plan cf px-4">
+                    <section class="plan cf ">
                         <input type="radio" name="radio1" id="11" value="1"><label
                             class="six col shadow-sm rounded-pill" for="11">1</label>
                         <input type="radio" name="radio1" id="22" value="2"><label
@@ -227,7 +227,7 @@
             <div class="col-sm-12 py-4">
                 <label class="form-label fw-bolder">Mediation/Yoga/Contemplative Practice/Spirituality Rating:</label>
                 <form class="form cf">
-                    <section class="plan cf px-4">
+                    <section class="plan cf ">
                         <input type="radio" name="radio1" id="11" value="1"><label
                             class="six col shadow-sm rounded-pill" for="11">1</label>
                         <input type="radio" name="radio1" id="22" value="2"><label
@@ -250,7 +250,7 @@
             <div class="col-sm-12 py-4">
                 <label class="form-label fw-bolder">Connection with Nature Rating:</label>
                 <form class="form cf">
-                    <section class="plan cf px-4">
+                    <section class="plan cf ">
                         <input type="radio" name="radio1" id="11" value="1"><label
                             class="six col shadow-sm rounded-pill" for="11">1</label>
                         <input type="radio" name="radio1" id="22" value="2"><label
@@ -282,3 +282,9 @@
           </div>
     </div>
 </template>
+
+<style scoped>
+    .form label {
+      max-width: 62px;
+    }
+  </style>
