@@ -84,6 +84,7 @@ import Adminaddnewuser from '../views/admin/Adminaddnewuser.vue'
 import SchemaModePlan1 from '../views/surveys/SchemaModePlan1.vue'
 import SchemaModePlan2 from '../views/surveys/SchemaModePlan2.vue'
 import SchemaModePlan3 from '../views/surveys/SchemaModePlan3.vue'
+import Intakenote1 from '../views/surveys/Intakenote1.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -99,6 +100,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/schemamodeplan1',
     name: 'SchemaModePlan1',
     component: SchemaModePlan1
+  },
+  {
+    path: '/intakenote1',
+    name: 'Intakenote1',
+    component: Intakenote1
   },
   {
     path: '/schemamodeplan2',
