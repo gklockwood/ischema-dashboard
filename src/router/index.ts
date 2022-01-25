@@ -85,6 +85,8 @@ import SchemaModePlan1 from '../views/surveys/SchemaModePlan1.vue'
 import SchemaModePlan2 from '../views/surveys/SchemaModePlan2.vue'
 import SchemaModePlan3 from '../views/surveys/SchemaModePlan3.vue'
 import Intakenote1 from '../views/surveys/Intakenote1.vue'
+import Psychotherapynote from '../views/surveys/Psychotherapynote.vue'
+import Terminationnote from '../views/surveys/Terminationnote.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -95,6 +97,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/landing',
     name: 'Landing',
     component: Landing
+  },
+  {
+    path: '/terminationnote',
+    name: 'Terminationnote',
+    component: Terminationnote
+  },
+  {
+    path: '/psychotherapynote',
+    name: 'Psychotherapynote',
+    component: Psychotherapynote
   },
   {
     path: '/schemamodeplan1',

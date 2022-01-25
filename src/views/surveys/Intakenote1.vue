@@ -65,8 +65,16 @@
                             <tr>
                                 <th></th>
                                 <th></th>
-                                <th>All Normal</th>
-                                <th>All Not Assessed</th>
+                                <th>
+                                    
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            All Normal 
+                                        </label>
+                                      </div>
+                                </th>
+                                <th></th>
                             </tr>
                         </thead>
                         <tbody>
@@ -415,24 +423,32 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-md-6 pt-4">
+            <div class="row pb-4">
+                <div class="col-sm-12 pt-4">
                     <h4>Diagnoses</h4>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Code">
-                        <input type="text" class="form-control" placeholder="Description">
+                    <div class="row mb-3">
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" placeholder="Code">
+                        </div>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" placeholder="Description"  rows="1"></textarea>
+                        </div>
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Code">
-                        <input type="text" class="form-control" placeholder="Description">
+                    <div class="row mb-3">
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" placeholder="Code">
+                        </div>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" placeholder="Description"  rows="1"></textarea>
+                        </div>
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Code">
-                        <input type="text" class="form-control" placeholder="Description">
-                    </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Code">
-                        <input type="text" class="form-control" placeholder="Description">
+                    <div class="row mb-3">
+                        <div class="col-sm-3">
+                            <input type="text" class="form-control" placeholder="Code">
+                        </div>
+                        <div class="col-sm-9">
+                            <textarea class="form-control" placeholder="Description"  rows="1"></textarea>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -463,7 +479,7 @@
             </div>
 
             <div class="row pt-4">
-                <div class="col-sm">
+                <div class="col-sm-6">
                     <label class="form-label fw-bolded">[—] Sign this form: I, John Henry, Ph.D., Clinical Psychologist, declare this information is accurate and complete. </label>
                     <input type="text" class="form-control" placeholder="Sign Here...">
                 </div>
