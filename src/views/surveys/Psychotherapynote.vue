@@ -849,12 +849,19 @@
 
             </div>
 
-            <div class="row pt-4">
+            <div class="row pt-4 pb-4">
                 <div class="col-sm-6">
                     <label class="form-label fw-bolded">[—] Sign this form: I, John Henry, Ph.D., Clinical Psychologist, declare this information is accurate and complete. </label>
                     <input type="text" class="form-control" placeholder="Sign Here...">
                 </div>
             </div>
+
+            <div class="row py-4">
+                <div class="col-sm-12 text-center">
+                  <button type="button" class="btn btn-danger m-2">Reset</button>
+                  <button type="button" class="btn btn-primary m-2">Submit</button>
+                </div>
+              </div>
 
 
 
