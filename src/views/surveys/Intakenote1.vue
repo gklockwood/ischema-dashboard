@@ -83,7 +83,7 @@
                                 <td>
                                     <select class="form-select" aria-label="Default select example">
                                         <option selected>Orientation</option>
-                                        <option value="1">X3: Oriented to Person, Place, and Time</option>
+                                        <option disabled selected value> ... </option>
                                         <option value="2">X2: Oriented to Person, Place; Impaired to Time</option>
                                         <option value="3">X2: Oriented to Person, Time; Impaired to Place</option>
                                         <option value="1">X2: Oriented to Time, Place; Impaired to Person</option>
@@ -99,7 +99,7 @@
                                 </th>
                                 <td>
                                     <select class="form-select" aria-label="Default select example">
-                                        <option selected>Insight</option>
+                                        <option disabled selected value> ... </option>
                                         <option value="1">Excellent</option>
                                         <option value="2">Fair</option>
                                         <option value="3">Poor</option>
@@ -112,7 +112,7 @@
                                 <th scope="row">General Appearance</th>
                                 <td>
                                     <select class="form-select" aria-label="Default select example">
-                                        <option selected>General Appearance</option>
+                                        <option disabled selected value> ... </option>
                                         <option value="1">Appropriate</option>
                                         <option value="2">Disheveled</option>
                                         <option value="3">Emaciated</option>
@@ -126,7 +126,7 @@
                                 </th>
                                 <td>
                                     <select class="form-select" aria-label="Default select example">
-                                        <option selected>Judgement/Impulse Control</option>
+                                        <option disabled selected value> ... </option>
                                         <option value="1">Excellent</option>
                                         <option value="2">Good</option>
                                         <option value="3">Fair</option>
@@ -140,7 +140,7 @@
                                 <th scope="row">Dress</th>
                                 <td>
                                     <select class="form-select" aria-label="Default select example">
-                                        <option selected>Dress</option>
+                                        <option disabled selected value> ... </option>
                                         <option value="1">Appropriate</option>
                                         <option value="2">Eccentric</option>
                                         <option value="3">Seductive</option>
@@ -153,7 +153,7 @@
                                 </th>
                                 <td>
                                     <select class="form-select" aria-label="Default select example">
-                                        <option selected>Memory</option>
+                                        <option disabled selected value> ... </option>
                                         <option value="1">Intact</option>
                                         <option value="2">Poor Remote</option>
                                         <option value="3">Poor Recent</option>
@@ -165,7 +165,7 @@
                                 <th scope="row">Motor Activity</th>
                                 <td>
                                     <select class="form-select" aria-label="Default select example">
-                                        <option selected>Motor Activity</option>
+                                        <option disabled selected value> ... </option>
                                         <option value="1">Unremarkable</option>
                                         <option value="2">Agitation</option>
                                         <option value="3">Retardation</option>
@@ -182,7 +182,7 @@
                                 </th>
                                 <td>
                                     <select class="form-select" aria-label="Default select example">
-                                        <option selected>Attention/Concentration</option>
+                                        <option disabled selected value> ... </option>
                                         <option value="1">Good</option>
                                         <option value="2">Distractible</option>
                                         <option value="3">Variable</option>
@@ -194,7 +194,7 @@
                                 <th scope="row">Interview Behavior</th>
                                 <td>
                                     <select class="form-select" aria-label="Default select example">
-                                        <option selected>Interview Behavior</option>
+                                        <option disabled selected value> ... </option>
                                         <option value="1">Appropriate</option>
                                         <option value="2">Aggressive</option>
                                         <option value="3">Angry</option>
@@ -217,7 +217,7 @@
                                 </th>
                                 <td>
                                     <select class="form-select" aria-label="Default select example">
-                                        <option selected>Thought Process</option>
+                                        <option disabled selected value> ... </option>
                                         <option value="1">Unremarkable</option>
                                         <option value="2">Blocking</option>
                                         <option value="3">Circumstantial</option>
@@ -233,7 +233,7 @@
                                 <th scope="row">Speech</th>
                                 <td>
                                     <select class="form-select" aria-label="Default select example">
-                                        <option selected>Speech</option>
+                                        <option disabled selected value> ... </option>
                                         <option value="1">Normal</option>
                                         <option value="2">Hesitant</option>
                                         <option value="3">Pressured</option>
@@ -250,7 +250,7 @@
                                 </th>
                                 <td>
                                     <select class="form-select" aria-label="Default select example">
-                                        <option selected>Thought Content</option>
+                                        <option disabled selected value> ... </option>
                                         <option value="1">Appropriate</option>
                                         <option value="2">Preoccupied</option>
                                         <option value="3">Obsessions</option>
@@ -270,7 +270,7 @@
                                 <th scope="row">Mood</th>
                                 <td>
                                     <select class="form-select" aria-label="Default select example">
-                                        <option selected>Mood</option>
+                                        <option disabled selected value> ... </option>
                                         <option value="1">Euthymic</option>
                                         <option value="2">Dysphoric</option>
                                         <option value="3">Depressed</option>
@@ -288,7 +288,7 @@
                                 </th>
                                 <td>
                                     <select class="form-select" aria-label="Default select example">
-                                        <option selected>Perception</option>
+                                        <option disabled selected value> ... </option>
                                         <option value="1">Unremarkable</option>
                                         <option value="2">Auditory Hallucinations</option>
                                         <option value="3">Visual Hallucinations</option>
@@ -303,7 +303,7 @@
                                 <th scope="row">Affect</th>
                                 <td>
                                     <select class="form-select" aria-label="Default select example">
-                                        <option selected>Affect</option>
+                                        <option disabled selected value> ... </option>
                                         <option value="1">Congruent</option>
                                         <option value="2">Incongruent</option>
                                         <option value="3">Appropriate</option>
@@ -320,7 +320,7 @@
                                 </th>
                                 <td>
                                     <select class="form-select" aria-label="Default select example">
-                                        <option selected>Functional Status</option>
+                                        <option disabled selected value> ... </option>
                                         <option value="1">Intact</option>
                                         <option value="2">Mildly Impaired</option>
                                         <option value="3">Moderately Impaired</option>

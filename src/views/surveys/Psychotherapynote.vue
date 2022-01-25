@@ -103,7 +103,7 @@
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
                             @click="showmodefocused">
                         <label class="form-check-label" for="flexCheckDefault">
-                            Default checkbox
+                            Mode Focused
                         </label>
                     </div>
                 </div>
