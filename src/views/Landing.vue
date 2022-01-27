@@ -2,7 +2,7 @@
   <div class="landing">
     <div class="container py-4">
       <div class="col-sm-12 py-4">
-        <h1>eSchemaTherapy Prorotype Directory</h1>
+        <h1>eSchemaTherapy Prototype Directory</h1>
         <p class="pt-3">
           <i>
             * indented list items are linked to parent items in system.
@@ -10,12 +10,12 @@
         </p>
       </div>
         <div class="col-sm-12 py-4">
-          <h2>General Screens</h2>
-         <ul>
-           <li>
-              <router-link to="/patient/dashboard" target="_blank">Client Dashboard</router-link>
-            </li>
-          </ul>
+          <h2>Client Registration Screens</h2>
+          <ul>
+            <li>
+               <router-link to="/register" target="_blank">Client Register</router-link>
+             </li>
+           </ul>
         </div>
         <div class="col-sm-12 py-4">
           <h2>Client Screens</h2>
@@ -26,7 +26,7 @@
           </ul>
         </div>
         <div class="col-sm-12 py-4">
-          <h2>Therapist Create Membership Screens</h2>
+          <h2>Therapist Registration Screens</h2>
           <li>
             <router-link to="/staffmemberlogin" target="_blank">Login to e-Schematherapy </router-link>
             <ul>
