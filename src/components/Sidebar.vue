@@ -45,12 +45,13 @@
     'Clientappointmentconfirmation',
     'Clientappointments',
     'Clientrequestappointment',
-    'Clientselecttime'
+    'Clientselecttime',
+    'Clientprofile'
     ].includes($route.name)">
       <router-link to="/patient/dashboard" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-chart-bar"></i> Dashboard</router-link>
-      <router-link to="/patient/profile" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-user"></i> Personal Information (still needed/use register)</router-link>
+      <router-link to="/patient/Clientprofile" class="list-group-item list-group-item-action bg-dark text-light"><i
+          class="fas fa-user"></i> Personal Information</router-link>
       <router-link to="/patient/messages" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="far fa-comment-alt"></i> Messages)<span class="badge bg-primary ms-1">1</span></router-link>
       <router-link to="/patient/Clientappointments" class="list-group-item list-group-item-action bg-dark text-light"><i

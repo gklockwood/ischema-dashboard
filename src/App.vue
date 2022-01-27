@@ -52,7 +52,8 @@
       'Therapistdiagnosisandtreatmentplan',
       'Therapistmentalstatusexam',
       'Therapistclientreminders',
-      'Therapistprofile'
+      'Therapistprofile',
+      'Clientprofile'
       ].includes($route.name)"><i class="fas fa-bars"></i></button>
 
       <router-link to="/landing" type="button" class="btn brandtext">
@@ -173,7 +174,8 @@
     'Therapistdiagnosisandtreatmentplan',
     'Therapistmentalstatusexam',
     'Therapistclientreminders',
-    'Therapistprofile'
+    'Therapistprofile',
+    'Clientprofile'
     ].includes($route.name)"></sidebar>
 
 
@@ -230,7 +232,8 @@
         'Therapistdiagnosisandtreatmentplan',
         'Therapistmentalstatusexam',
         'Therapistclientreminders',
-        'Therapistprofile'
+        'Therapistprofile',
+        'Clientprofile'
         ].includes($route.name) }">
       <router-view />
 

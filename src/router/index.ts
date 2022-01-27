@@ -28,6 +28,7 @@ import Clientappointmentconfirmation from '../views/patient/Clientappointmentcon
 import Clientappointments from '../views/patient/Clientappointments.vue'
 import Clientrequestappointment from '../views/patient/Clientrequestappointment.vue'
 import Clientselecttime from '../views/patient/Clientselecttime.vue'
+import Clientprofile from '../views/patient/Clientprofile.vue'
 
 // Therapist Related
 import Tdashboard from '../views/therapist/Tdashboard.vue'
@@ -147,6 +148,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/faq',
     name: 'Faq',
     component: Faq
+  },
+  {
+    path: '/patient/clientprofile',
+    name: 'Clientprofile',
+    component: Clientprofile
   },
   {
     path: '/login',
