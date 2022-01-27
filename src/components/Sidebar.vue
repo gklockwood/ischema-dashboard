@@ -31,7 +31,7 @@
       <router-link to="/admin/adminaccountactivity" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-users"></i> Account Activity</router-link>
       <router-link to="/admin/adminreminders" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-users"></i> Reminders</router-link>
+          class="fas fa-users"></i> Reminders (still needed)</router-link>
     </div>
 
 
@@ -50,11 +50,9 @@
       <router-link to="/patient/dashboard" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-chart-bar"></i> Dashboard</router-link>
       <router-link to="/patient/profile" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-user"></i> Personal Information</router-link>
+          class="fas fa-user"></i> Personal Information (still needed/use register)</router-link>
       <router-link to="/patient/messages" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="far fa-comment-alt"></i> Messages <span class="badge bg-primary ms-1">1</span></router-link>
-      <router-link to="/patient/schedule" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-clock"></i> Prospective Patient</router-link>
+          class="far fa-comment-alt"></i> Messages)<span class="badge bg-primary ms-1">1</span></router-link>
       <router-link to="/patient/Clientappointments" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="far fa-calendar-alt"></i> Appointments</router-link>
       <router-link to="/patient/documents" class="list-group-item list-group-item-action bg-dark text-light"><i

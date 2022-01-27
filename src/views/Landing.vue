@@ -13,6 +13,14 @@
       <div class="row">
         <div class="col-sm-6">
           <div class="col-sm-12 py-4">
+            <h2>Prospective Client Screens</h2>
+            <ul>
+              <li>
+                <router-link to="/patient/schedule" target="_blank">Preview Appointments & Register</router-link>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-12 py-4">
             <h2>Client Registration Screens</h2>
             <ul>
               <li>
