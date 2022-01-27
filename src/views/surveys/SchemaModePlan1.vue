@@ -12,22 +12,22 @@
           creates difficulties in the client’s life. </b>
         <div class="mb-3">
           <label class="form-label fw-bolder">1. Life Problem/Symptom: </label>
-          <textarea class="form-control mb-3" rows="3" placeholder="Symptom Label..." required></textarea>
+          <textarea class="form-control mb-3" rows="1" placeholder="Symptom Label..." required></textarea>
           <textarea class="form-control" rows="3" placeholder="Symptom Description..." required></textarea>
         </div>
         <div class="mb-3">
           <label class="form-label fw-bolder">2. Life Problem/Symptom: </label>
-          <textarea class="form-control mb-3" rows="3" placeholder="Symptom Label..." required></textarea>
+          <textarea class="form-control mb-3" rows="1" placeholder="Symptom Label..." required></textarea>
           <textarea class="form-control" rows="3" placeholder="Symptom Description..." required></textarea>
         </div>
         <div class="mb-3">
           <label class="form-label fw-bolder">3. Life Problem/Symptom: </label>
-          <textarea class="form-control mb-3" rows="3" placeholder="Symptom Label..." required></textarea>
+          <textarea class="form-control mb-3" rows="1" placeholder="Symptom Label..." required></textarea>
           <textarea class="form-control" rows="3" placeholder="Symptom Description..." required></textarea>
         </div>
         <div class="mb-3">
           <label class="form-label fw-bolder">4. Other Life Problem/Symptom: </label>
-          <textarea class="form-control mb-3" rows="3" placeholder="Symptom Label..." required></textarea>
+          <textarea class="form-control mb-3" rows="1" placeholder="Symptom Label..." required></textarea>
           <textarea class="form-control" rows="3" placeholder="Symptom Description..." required></textarea>
         </div>
         <b class="py-3 d-block">Presenting Strengths: Major areas of satisfaction, fulfillment and/or success. (Results
@@ -42,25 +42,25 @@
         </b>
         <div class="mb-3">
           <label class="form-label fw-bolder">1. Positive Life Pattern:</label>
-          <textarea class="form-control mb-3" rows="3" placeholder="Positive Life Pattern Label..." required></textarea>
+          <textarea class="form-control mb-3" rows="1" placeholder="Positive Life Pattern Label..." required></textarea>
           <textarea class="form-control" rows="3" placeholder="Positive Life Pattern Description..."
             required></textarea>
         </div>
         <div class="mb-3">
           <label class="form-label fw-bolder">2. Positive Life Pattern:</label>
-          <textarea class="form-control mb-3" rows="3" placeholder="Positive Life Pattern Label..." required></textarea>
+          <textarea class="form-control mb-3" rows="1" placeholder="Positive Life Pattern Label..." required></textarea>
           <textarea class="form-control" rows="3" placeholder="Positive Life Pattern Description..."
             required></textarea>
         </div>
         <div class="mb-3">
           <label class="form-label fw-bolder">3. Positive Life Pattern:</label>
-          <textarea class="form-control mb-3" rows="3" placeholder="Positive Life Pattern Label..." required></textarea>
+          <textarea class="form-control mb-3" rows="1" placeholder="Positive Life Pattern Label..." required></textarea>
           <textarea class="form-control" rows="3" placeholder="Positive Life Pattern Description..."
             required></textarea>
         </div>
         <div class="mb-3">
           <label class="form-label fw-bolder">4. Positive Life Pattern:</label>
-          <textarea class="form-control mb-3" rows="3" placeholder="Positive Life Pattern Label..." required></textarea>
+          <textarea class="form-control mb-3" rows="1" placeholder="Positive Life Pattern Label..." required></textarea>
           <textarea class="form-control" rows="3" placeholder="Positive Life Pattern Description..."
             required></textarea>
         </div>
