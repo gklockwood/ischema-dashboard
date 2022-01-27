@@ -18,7 +18,7 @@
 
                         <div class="card-body">
                             <div class="list-group">
-                                <a href="#" class="list-group-item list-group-item-action">My Profile</a>
+                                <router-link to="/therapist/therapistprofile" class="list-group-item list-group-item-action ">My Profile</router-link>
                               </div>
                         </div>
                     </div>

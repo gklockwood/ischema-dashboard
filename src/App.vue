@@ -51,7 +51,8 @@
       'Therapistassesment ',
       'Therapistdiagnosisandtreatmentplan',
       'Therapistmentalstatusexam',
-      'Therapistclientreminders'
+      'Therapistclientreminders',
+      'Therapistprofile'
       ].includes($route.name)"><i class="fas fa-bars"></i></button>
 
       <router-link to="/landing" type="button" class="btn brandtext">
@@ -171,7 +172,8 @@
     'Therapistassesment ',
     'Therapistdiagnosisandtreatmentplan',
     'Therapistmentalstatusexam',
-    'Therapistclientreminders'
+    'Therapistclientreminders',
+    'Therapistprofile'
     ].includes($route.name)"></sidebar>
 
 
@@ -227,7 +229,8 @@
         'Therapistassesment ',
         'Therapistdiagnosisandtreatmentplan',
         'Therapistmentalstatusexam',
-        'Therapistclientreminders'
+        'Therapistclientreminders',
+        'Therapistprofile'
         ].includes($route.name) }">
       <router-view />
 

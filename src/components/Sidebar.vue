@@ -92,7 +92,8 @@
     'Therapistassesment ',
     'Therapistdiagnosisandtreatmentplan',
     'Therapistmentalstatusexam',
-    'Therapistclientreminders'
+    'Therapistclientreminders',
+    'Therapistprofile'
     ].includes($route.name)">
       <div class="accordion accordion-flush" id="accordionFlushExampleog">
         <div class="accordion-item">
