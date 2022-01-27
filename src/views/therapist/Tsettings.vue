@@ -49,7 +49,7 @@
                 </div>
 
 
-                <div class="col-md-6 mt-4">
+                <!-- <div class="col-md-6 mt-4">
                     <div class="card shadow border-0">
                         <div class="card-title text-white bg-dark rounded-top d-flex">
                             <div class="col-sm-6 d-flex align-items-center p-4">
@@ -69,7 +69,7 @@
                               </div>
                         </div>
                     </div>
-                </div>
+                </div> -->
 
 
                 <div class="col-md-6 mt-4">
@@ -87,8 +87,8 @@
 
                         <div class="card-body">
                             <div class="list-group">
-                                <a href="#" class="list-group-item list-group-item-action">Client Portal</a>
-                                <router-link to="/therapist/therapistclientreminders" class="list-group-item list-group-item-action">Client Reminders</router-link>
+                                <router-link to="/therapist/clientportal" class="list-group-item list-group-item-action ">
+                                    Client Portal</router-link>
                               </div>
                         </div>
                     </div>

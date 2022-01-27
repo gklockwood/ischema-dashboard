@@ -1,8 +1,7 @@
 <template>
     <div class="adminreports">
         <div class="container-fluid py-4 dashboard">
-            <h1>Dashboard</h1>
-            <div class="row mt-4">
+            <div class="row">
                 
                 <div class="col-md-6">
                     <div class="card shadow border-0">

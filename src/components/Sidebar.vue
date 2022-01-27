@@ -18,16 +18,16 @@
     'Adminstaff',
     'Adminaddnewuser'
     ].includes($route.name)">
+    <router-link to="/admin/adminreports" class="list-group-item list-group-item-action bg-dark text-light"><i
+      class="fas fa-users"></i> Dashboard</router-link>
       <router-link to="/admin/admincalendar" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-calendar"></i> Calendar</router-link>
+          class="fas fa-calendar"></i> Calendar (still needed)</router-link>
       <router-link to="/admin/adminstaff" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-users"></i> Staff</router-link>
       <router-link to="/admin/adminclients" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-users"></i> Clients</router-link>
+          class="fas fa-users"></i> Clients (still needed)</router-link>
       <router-link to="/admin/adminbilling" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-users"></i> Billing</router-link>
-      <router-link to="/admin/adminreports" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-users"></i> Reports</router-link>
       <router-link to="/admin/adminaccountactivity" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-users"></i> Account Activity</router-link>
       <router-link to="/admin/adminreminders" class="list-group-item list-group-item-action bg-dark text-light"><i
@@ -118,19 +118,22 @@
       <!-- <router-link to="/therapist/therapistdashboard" class="list-group-item list-group-item-action bg-dark text-light">
         <i class="fas fa-chart-bar"></i> Dashboard
       </router-link> -->
+      <router-link to="/therapist/therapistdashboard" class="list-group-item list-group-item-action bg-dark text-light">
+        <i class="fas fa-cog"></i> Dashboard
+      </router-link>
       <router-link to="/therapist/therapistcalendar" class="list-group-item list-group-item-action bg-dark text-light">
         <i class="far fa-calendar-alt"></i> Calendar
       </router-link>
       <router-link to="/therapist/clientlist" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-users"></i> Clients</router-link>
-      <router-link to="/therapist/therapistdashboard" class="list-group-item list-group-item-action bg-dark text-light">
-        <i class="fas fa-cog"></i> Settings
-      </router-link>
+          <router-link to="/therapist/therapistclientreminders" class="list-group-item list-group-item-action bg-dark text-light">
+            <i class="fas fa-clipboard"></i> Reminders
+          </router-link>
       <button class="btn dropdown-item cursor-pointer text-white sidebarbutton"  data-bs-toggle="modal" data-bs-target="#therapistmessagemodal"><i class="far fa-comment-alt"></i>
         Messages <span class="badge bg-primary ms-1">3</span></button>
-      <router-link to="/therapist/Therapistacceptappointment" class="list-group-item list-group-item-action bg-dark text-light"><i
+      <!-- <router-link to="/therapist/Therapistacceptappointment" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-share-square"></i> Requests <span class="badge bg-primary ms-1">2</span>
-        </router-link>
+        </router-link> -->
       <div class="dropdown">
         <button class="btn btn-dark shadow-sm dropdown-toggle d-block mt-2 ms-1 w-100 text-start" type="button" id="dropdownMenuButton1"
           data-bs-toggle="dropdown" aria-expanded="false">

@@ -8,7 +8,7 @@
                 <li class="nav-item" role="presentation">
                     <button class="nav-link active" id="clientinfo-tab" data-bs-toggle="tab"
                         data-bs-target="#clientinfo" type="button" role="tab" aria-controls="clientinfo"
-                        aria-selected="true">Client Portal</button>
+                        aria-selected="true">Client Details</button>
                 </li>
                 <!-- <li class="nav-item" role="presentation">
                     <button class="nav-link" id="clientbilling-tab" data-bs-toggle="tab" data-bs-target="#clientbilling"
@@ -18,11 +18,6 @@
                     <button class="nav-link" id="clientcontacts-tab" data-bs-toggle="tab"
                         data-bs-target="#clientcontacts" type="button" role="tab" aria-controls="clientcontacts"
                         aria-selected="false">Contacts</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="patientportal-tab" data-bs-toggle="tab" data-bs-target="#patientportal"
-                        type="button" role="tab" aria-controls="patientportal" aria-selected="false">Client
-                        Portal</button>
                 </li>
             </ul>
             <div class="tab-content" id="myTabContent">
@@ -724,9 +719,6 @@
                         </div>
                         </div>
                       </div>
-                </div>
-                <div class="tab-pane fade" id="patientportal" role="tabpanel" aria-labelledby="patientportal-tab">
-                    Client Portal
                 </div>
             </div>
 
