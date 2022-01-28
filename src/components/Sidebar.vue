@@ -53,7 +53,7 @@
       <router-link to="/patient/Clientprofile" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-user"></i> Personal Information</router-link>
       <router-link to="/patient/messages" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="far fa-comment-alt"></i> Messages)<span class="badge bg-primary ms-1">1</span></router-link>
+          class="far fa-comment-alt"></i> Messages<span class="badge bg-primary ms-1">1</span></router-link>
       <router-link to="/patient/Clientappointments" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="far fa-calendar-alt"></i> Appointments</router-link>
       <router-link to="/patient/documents" class="list-group-item list-group-item-action bg-dark text-light"><i
