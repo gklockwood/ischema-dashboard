@@ -25,7 +25,7 @@
       <router-link to="/admin/adminstaff" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-users"></i> Staff</router-link>
       <router-link to="/admin/adminclients" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-users"></i> Clients (still needed)</router-link>
+          class="fas fa-users"></i> Clients</router-link>
       <router-link to="/admin/adminbilling" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-users"></i> Billing</router-link>
       <router-link to="/admin/adminaccountactivity" class="list-group-item list-group-item-action bg-dark text-light"><i

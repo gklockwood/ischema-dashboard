@@ -285,7 +285,7 @@ const routes: Array<RouteRecordRaw> = [
     component: Admincalendar
   },
   {
-    path: '/admin/Aaminclients',
+    path: '/admin/adminclients',
     name: 'Adminclients',
     component: Adminclients
   },
