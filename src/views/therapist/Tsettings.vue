@@ -40,8 +40,11 @@
 
                         <div class="card-body">
                             <div class="list-group">
-                                <a href="#" class="list-group-item list-group-item-action">Subscription Information</a>
-                                <a href="#" class="list-group-item list-group-item-action">Demo Data</a>
+                                <router-link to="/therapist/therapistsubscriptioninformation" class="list-group-item list-group-item-action ">
+                                    Subscription Information</router-link>
+
+                                <router-link to="/therapist/therapistdemodata" class="list-group-item list-group-item-action ">
+                                    Practice Client</router-link>
 
                                 <router-link to="/therapist/therapistdataexport" class="list-group-item list-group-item-action ">
                                     Data Export</router-link>

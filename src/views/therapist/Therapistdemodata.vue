@@ -1,7 +1,11 @@
 <template>
     <div class="therapistdemodata">
-        <div class="container-fluid py-4">
-            <h1>Demo Data</h1>
+        <div class="container pt-4">
+            <h1>Practice Client
+            </h1>
+            <p>
+                We have included a fictitious client, John Hancock,  that you can use to try out the features of e-Schematherapy. You can delete or add it back any time you want. 
+            </p>
         </div>
     </div>
 </template>
