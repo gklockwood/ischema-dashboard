@@ -21,7 +21,7 @@
     <router-link to="/admin/adminreports" class="list-group-item list-group-item-action bg-dark text-light"><i
       class="fas fa-users"></i> Dashboard</router-link>
       <router-link to="/admin/admincalendar" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-calendar"></i> Calendar (still needed)</router-link>
+          class="fas fa-calendar"></i> Calendar</router-link>
       <router-link to="/admin/adminstaff" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-users"></i> Staff</router-link>
       <router-link to="/admin/adminclients" class="list-group-item list-group-item-action bg-dark text-light"><i

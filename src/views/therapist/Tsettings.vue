@@ -42,7 +42,9 @@
                             <div class="list-group">
                                 <a href="#" class="list-group-item list-group-item-action">Subscription Information</a>
                                 <a href="#" class="list-group-item list-group-item-action">Demo Data</a>
-                                <a href="#" class="list-group-item list-group-item-action">Data Export</a>
+
+                                <router-link to="/therapist/therapistdataexport" class="list-group-item list-group-item-action ">
+                                    Data Export</router-link>
                               </div>
                         </div>
                     </div>
