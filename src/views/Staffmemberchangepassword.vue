@@ -5,7 +5,7 @@
                 <div class="col-md-4 offset-md-4 pt-2">
                     <h3>Change Your Password</h3>
                     <p>
-                        Welcome to e-SCHEMATHERAPY.  Please create a new password, to replace your temporary password. Your  temporary password will only work for this one login.  
+                        Welcome to eSchemaTherapy.  Please create a new password, to replace your temporary password. Your  temporary password will only work for this one login.  
                     </p>
                     <p>
                         Your password must contain at least 10 characters consisting of at least:

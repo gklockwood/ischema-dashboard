@@ -3,9 +3,9 @@
         <div class="container py-4">
             <div class="row">
                 <div class="col-sm">
-                    <h1>e-Schematherapy Terms of Service</h1>
+                    <h1>eSchemaTherapy Terms of Service</h1>
                     <p>
-                        You must agree to the latest version of the e-SCHEMATHERAPY Terms of Service to continue with your login attempt. 
+                        You must agree to the latest version of the eSchemaTherapy Terms of Service to continue with your login attempt. 
                     </p>
                     <h3>TERMS OF SERVICE</h3>
                     <p>

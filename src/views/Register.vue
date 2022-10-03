@@ -17,7 +17,7 @@
             
             <div class="row g-3 py-4">
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Age" aria-label="Age">
+                    <input type="text" class="form-control" placeholder="Date of Birth" aria-label="Date of Birth">
                 </div>
                 <div class="col">
                     <select class="form-select" aria-label="Default select example">

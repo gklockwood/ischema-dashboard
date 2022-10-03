@@ -3,7 +3,7 @@
         <div class="container py-4">
             <div class="row">
                 <div class="col-sm  text-center">
-                    <h1>Login to e-Schematherapy</h1>
+                    <h1>Login to eSchemaTherapy</h1>
                 </div>
             </div>
             <div class="row">

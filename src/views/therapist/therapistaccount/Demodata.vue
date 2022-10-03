@@ -4,7 +4,7 @@
             <h1>Practice Client
             </h1>
             <p>
-                We have included a fictitious client, John Hancock,  that you can use to try out the features of e-Schematherapy. You can delete or add it back any time you want. 
+                We have included a fictitious client, John Hancock,  that you can use to try out the features of eSchemaTherapy. You can delete or add it back any time you want. 
             </p>
         </div>
     </div>

@@ -102,7 +102,7 @@
           <div class="modal-body">
               <div class="row">
                   <div class="col-md-6">
-                      <span class="fw-bolder d-block">e-Schematherapy</span>
+                      <span class="fw-bolder d-block">eSchemaTherapy</span>
                       <span class="pt-3 d-block text-muted">Account:</span>
                       <span class="fw-bolder d-block">George Lockwood</span>
                       <span class="d-block">471 West South Street 41C</span>

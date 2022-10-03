@@ -7,7 +7,7 @@
 
             <h3 class="pt-4">Roles:</h3>
             <p>
-                Each user can have multiple roles.  A user's roles determine what they can access within e-schematherapy.
+                Each user can have multiple roles.  A user's roles determine what they can access within eSchemaTherapy.
             </p>
             <h4 class="pt-3">Practive Administration</h4>
             <div class="row">
@@ -16,7 +16,7 @@
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                         <label class="form-check-label" for="flexCheckChecked">
                             <span class="fw-bolder">Practice Administrator </span><br>
-                            <small class="text-muted">a e-schematherapy practice administrator can add and edit e-schematherapy users, change user roles, and set account access settings.</small>
+                            <small class="text-muted">a eSchemaTherapy practice administrator can add and edit eSchemaTherapy users, change user roles, and set account access settings.</small>
                         </label>
                     </div>
                 </div>

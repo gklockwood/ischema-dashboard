@@ -39,10 +39,10 @@
           <div class="col-sm-12 py-4">
             <h2>Therapist Registration Screens</h2>
             <li>
-              <router-link to="/staffmemberlogin" target="_blank">Login to e-Schematherapy </router-link>
+              <router-link to="/staffmemberlogin" target="_blank">Login to eSchemaTherapy </router-link>
               <ul>
                 <li>
-                  <router-link to="/staffmembertermsofservice" target="_blank">e-Schematherapy Terms of Service</router-link>
+                  <router-link to="/staffmembertermsofservice" target="_blank">eSchemaTherapy Terms of Service</router-link>
                   <ul>
                     <li>
                       <router-link to="/staffmemberchangepassword" target="_blank">Change Your Password</router-link>

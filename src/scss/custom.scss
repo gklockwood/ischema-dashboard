@@ -7,7 +7,7 @@ body {
   font-family: "Source Sans Pro", sans-serif !important;
 }
 
-$primary: teal;
+$primary: #4A8BA6;
 $secondary:  purple;
 $danger: #ff4136;
 $dark: #303840;
@@ -65,9 +65,9 @@ $dark: #303840;
 }
 
 // header styles
-.brandtext {
-  font-size: 20px;
-  font-weight: 600;
+.brandtext img {
+  height: 40px;
+  width: auto
 }
 
 // Dashboard styles
