@@ -293,6 +293,7 @@
                                         <option selected>Prefer not to say</option>
                                         <option value="1">Male</option>
                                         <option value="1">Female</option>
+                                        <option value="1">Intersex</option>
                                         <option value="1">Other</option>
                                     </select>
                                 </div>

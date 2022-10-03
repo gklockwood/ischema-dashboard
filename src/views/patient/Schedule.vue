@@ -574,17 +574,26 @@
                     
                     <div class="row g-3 py-4">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Age" aria-label="Age">
+                            <input type="text" class="form-control" placeholder="Date of Birth" aria-label="Date of Birth">
                         </div>
                         <div class="col">
                             <select class="form-select" aria-label="Default select example">
-                                <option selected>Gender</option>
-                                <option value="1">Male</option>
-                                <option value="2">Female</option>
+                                <option selected>Gender Identity</option>
+                                <option value="1">Male (including trans man)</option>
+                                <option value="2">Female (including trans woman)</option>
                                 <option value="3">Non-Binary</option>
-                                <option value="1">Gender-Neutral</option>
-                                <option value="2">Gender-Fluid</option>
-                                <option value="3">Gender-Queer</option>
+                                <option value="1">Other (not listed)</option>
+                                <option value="2">Not known</option>
+                                <option value="3">Not stated</option>
+                            </select>
+                        </div>
+                        <div class="col">
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>Gender Identity at Birth</option>
+                                <option value="1">Gender is the same as it was assigned at birth</option>
+                                <option value="2">Gender is not the same as it was assigned at birth</option>
+                                <option value="3">Gender is not known</option>
+                                <option value="1">Decline to answer this question</option>
                             </select>
                         </div>
                     </div>
