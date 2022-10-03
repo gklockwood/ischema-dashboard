@@ -64,7 +64,7 @@
                 <div class="col">
                     <div class="control-group">
                         <div class="controls">
-                            <input id="region" name="region" type="text" placeholder="State / Province / egion"
+                            <input id="region" name="region" type="text" placeholder="State/Province/Region"
                                 class="form-control">
                             <p class="help-block"></p>
                         </div>
