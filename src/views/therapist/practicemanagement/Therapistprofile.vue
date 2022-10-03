@@ -30,23 +30,7 @@
                     </div>
                     <div class="row">
                           <div class="col-md-4 border-start border-top border-bottom p-2">
-                            <span class="fw-bolder">Mobile Phone</span>
-                        </div>
-                        <div class="col-md-8 border p-2">
-                            <span>1-222-222-2222</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                          <div class="col-md-4 border-start border-top border-bottom p-2">
-                            <span class="fw-bolder">Work Phone</span>
-                        </div>
-                        <div class="col-md-8 border p-2">
-                            <span>1-222-222-2222</span>
-                        </div>
-                    </div>
-                    <div class="row">
-                          <div class="col-md-4 border-start border-top border-bottom p-2">
-                            <span class="fw-bolder">Home Phone</span>
+                            <span class="fw-bolder">Phone</span>
                         </div>
                         <div class="col-md-8 border p-2">
                             <span>1-222-222-2222</span>
