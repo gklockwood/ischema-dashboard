@@ -314,7 +314,7 @@
                                         <option selected>Not Selected</option>
                                         <option value="1">Single</option>
                                         <option value="1">Married</option>
-                                        <option value="1">Dicorced</option>
+                                        <option value="1">Divorced</option>
                                         <option value="1">Partnership</option>
                                         <option value="1">In Long-term Relationship</option>
                                         <option value="1">Separated</option>

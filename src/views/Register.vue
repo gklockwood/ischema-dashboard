@@ -12,34 +12,11 @@
                 <div class="col">
                     <input type="text" class="form-control" placeholder="Last Name" aria-label="Last name">
                 </div>
-            </div>
-
-            
-            <div class="row g-3 py-4">
                 <div class="col">
                     <input type="text" class="form-control" placeholder="Date of Birth" aria-label="Date of Birth">
                 </div>
-                <div class="col">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Gender Identity</option>
-                        <option value="1">Male (including trans man)</option>
-                        <option value="2">Female (including trans woman)</option>
-                        <option value="3">Non-Binary</option>
-                        <option value="1">Other (not listed)</option>
-                        <option value="2">Not known</option>
-                        <option value="3">Not stated</option>
-                    </select>
-                </div>
-                <div class="col">
-                    <select class="form-select" aria-label="Default select example">
-                        <option selected>Gender Identity at Birth</option>
-                        <option value="1">Gender is the same as it was assigned at birth</option>
-                        <option value="2">Gender is not the same as it was assigned at birth</option>
-                        <option value="3">Gender is not known</option>
-                        <option value="1">Decline to answer this question</option>
-                    </select>
-                </div>
             </div>
+
      
             <div class="row g-3 pt-4">
                 <div class="col">
@@ -364,6 +341,19 @@
                 </div>
             </div>
 
+            <div class="row">
+                <div class="col">
+                    <button class="btn btn-outline-dark"  data-bs-toggle="modal" data-bs-target="#termsofservicemodal">View terms of service</button>
+
+                    <div class="form-check mt-2">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                        <label class="form-check-label" for="flexCheckDefault">
+                            Agree to terms of service
+                        </label>
+                    </div>
+                </div>
+            </div>
+
 
             <div class="row">
                 <div class="col text-center">
@@ -372,4 +362,32 @@
             </div>
         </div>
     </div>
+
+
+
+    
+    <!-- Terms of service Modal Start -->
+    <div class="modal fade" id="termsofservicemodal" tabindex="-1" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" style="z-index:2000;position: relative;">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">eSchemaTherapy terms of service</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <div class="row py-3">
+              <div class="col">
+                The following terms and conditions by eSchemaTherapy, LLC ("eSchemaTherapy, LLC,” “we,” or “us”), apply to the eSchemaTherapy and eSchemaTherapy websites, and any related applications, online services and mobile applications provided by eSchemaTherapy (collectively, the “Services”). These Terms of Service together with our Privacy Policy (collectively, this “Agreement”) govern your use of the Services. The Agreement applies to any registered or a non-registered client or other user of the Services (“User”), including a doctor, therapist, or other healthcare specialist, professional or provider using the Services in connection with a healthcare-related practice or other organization (“Service Provider”). BY USING OR OTHERWISE ACCESSING THE SERVICES, AND/OR BY REGISTERING WITH US, YOU AGREE TO THIS AGREEMENT. IF YOU DO NOT AGREE, YOU CANNOT USE THE SERVICES.              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Terms of Service Modal End -->
+
+
+
 </template>

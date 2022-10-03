@@ -9,7 +9,7 @@
                     </p>
                     <h3>TERMS OF SERVICE</h3>
                     <p>
-                        The following terms and conditions by TherapyNotes, LLC (“TherapyNotes,” “we,” or “us”), apply to the TherapyNotes.com and TherapyPortal.com websites, and any related applications, online services and mobile applications provided by TherapyNotes (collectively, the “Services”). These Terms of Service together with our Privacy Policy (collectively, this “Agreement”) govern your use of the Services.
+                        The following terms and conditions by eSchemaTherapy, LLC ("eSchemaTherapy, LLC,” “we,” or “us”), apply to the eSchemaTherapy and TherapyPortal.com websites, and any related applications, online services and mobile applications provided by eSchemaTherapy (collectively, the “Services”). These Terms of Service together with our Privacy Policy (collectively, this “Agreement”) govern your use of the Services.
 The Agreement applies to any registered or a non-registered patient or other user of the Services (“User”), including a doctor, therapist, or other healthcare specialist, professional or provider using the Services in connection with a healthcare-related practice or other organization (“Service Provider”).
 BY USING OR OTHERWISE ACCESSING THE SERVICES, AND/OR BY REGISTERING WITH US, YOU AGREE TO THIS AGREEMENT. IF YOU DO NOT AGREE, YOU CANNOT USE THE SERVICES.
 
