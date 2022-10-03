@@ -2,7 +2,7 @@
     <div class="register">
 
         <div class="container py-4">
-            <h2>Please enter Personal Information</h2>
+            <h2>Registration</h2>
 
 
             <div class="row g-3 py-4">
@@ -352,7 +352,7 @@
                     <input type="text" class="form-control" placeholder="Password" aria-label="Password">
                 </div>
                 <div class="col">
-                    <input type="text" class="form-control" placeholder="Repeat Passord" aria-label="AgRepeat Passworde">
+                    <input type="text" class="form-control" placeholder="Repeat Password" aria-label="AgRepeat Passworde">
                 </div>
             </div>
 
@@ -360,12 +360,12 @@
             <div class="row g-3 py-4">
                 <div class="col">
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                        placeholder="Add Additional Information"></textarea>
+                        placeholder="Add additional information (please tell us a little bit about what you would like help with)"></textarea>
                 </div>
             </div>
 
 
-            <div class="row pt-4">
+            <div class="row">
                 <div class="col text-center">
                     <router-link to="/Patient" type="button" class="btn btn-primary">Register</router-link>
                 </div>
