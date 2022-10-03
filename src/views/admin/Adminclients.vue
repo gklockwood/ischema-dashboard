@@ -68,7 +68,7 @@
                         </div>
                         <div class="row">
                             <div class="col-sm-12">
-                                <a href="{{ client.client_number }}" class="text-decoration-none">{{ client.client_number }}</a> <span class="badge bg-secondary ms-1">Mobile</span>
+                                <a href="{{ client.client_number }}" class="text-decoration-none">{{ client.client_number }}</a> <span class="badge rounded-pill bg-light text-dark shadow-sm ms-1">Mobile</span>
                             </div>
                             <div class="col-sm-12">
                                 <hr class="my-2">
