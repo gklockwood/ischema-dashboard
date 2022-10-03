@@ -21,13 +21,6 @@
                                     :therapist-name="language.label" :id="language.id">{{ language.label }}</option>
                             </select>
                         </div>
-                        <div class="col-sm-12 col-md-6 col-lg-4">
-                            <select class="form-select" aria-label="Default select example">
-                                <option value="" selected disabled>Select Desired Treatment</option>
-                                <option v-for="treatment in selectTreatment" :key="treatment.id"
-                                    :therapist-name="treatment.label" :id="treatment.id">{{ treatment.label }}</option>
-                            </select>
-                        </div>
                     </div>
                     <div class="row my-3">
                         <div class="col-sm py-3">
@@ -574,7 +567,7 @@
                         </div>
                     </div>
         
-    >
+    
              
                     <div class="row g-3 pt-4">
                         <div class="col">
