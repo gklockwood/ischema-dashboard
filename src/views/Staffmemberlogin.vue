@@ -9,7 +9,7 @@
             <div class="row">
                 <div class="col-md-4 offset-md-4 pt-4">
                     <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Username">
+                        <input type="text" class="form-control" placeholder="Username or Email">
                       </div>
                       <div class="input-group">
                         <input type="text" class="form-control" placeholder="Password">

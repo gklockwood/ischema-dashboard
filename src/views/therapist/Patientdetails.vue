@@ -461,8 +461,8 @@
                                     <button type="button" class="btn btn-danger">
                                         Cancel
                                     </button>
-                                    <button type="button" class="btn btn-success ms-2">
-                                        Cancel
+                                    <button type="button" class="btn btn-primary ms-2">
+                                        Save
                                     </button>
                                 </div>
                             </div>

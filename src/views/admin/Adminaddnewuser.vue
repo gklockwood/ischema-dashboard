@@ -1,7 +1,7 @@
 <template>
     <div class="admincalender">
         <div class="container py-4">
-            <h1>Staff: Add a new User</h1>
+            <h1>Add a New User</h1>
 
 
 
@@ -9,14 +9,14 @@
             <p>
                 Each user can have multiple roles.  A user's roles determine what they can access within eSchemaTherapy.
             </p>
-            <h4 class="pt-3">Practive Administration</h4>
+            <h4 class="pt-3">Practice Administration</h4>
             <div class="row">
                 <div class="col-sm-12">
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                         <label class="form-check-label" for="flexCheckChecked">
                             <span class="fw-bolder">Practice Administrator </span><br>
-                            <small class="text-muted">a eSchemaTherapy practice administrator can add and edit eSchemaTherapy users, change user roles, and set account access settings.</small>
+                            <small class="text-muted">An eSchemaTherapy practice administrator can add and edit eSchemaTherapy users, change user roles, and set account access settings.</small>
                         </label>
                     </div>
                 </div>
@@ -25,7 +25,7 @@
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                         <label class="form-check-label" for="flexCheckChecked">
                             <span class="fw-bolder">Clinician Access </span><br>
-                            <small class="text-muted">Clinicians can view and edit their own schedule and the notes and records of the patients assigned to them.</small>
+                            <small class="text-muted">A Clinician can view and edit their own schedule and the notes and records of the patients assigned to them.</small>
                         </label>
                     </div>
                 </div>
@@ -42,7 +42,7 @@
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                         <label class="form-check-label" for="flexCheckChecked">
-                            <span class="fw-bolder">Clical Administrator </span><br>
+                            <span class="fw-bolder">Clinical Administrator </span><br>
                             <small class="text-muted">A clinical Administrator can access any patient's records, and can give other clinicians access to patient records.  This user must have the Clinician role.</small>
                         </label>
                     </div>
@@ -52,7 +52,7 @@
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                         <label class="form-check-label" for="flexCheckChecked">
-                            <span class="fw-bolder">Practive Schedular </span><br>
+                            <span class="fw-bolder">Practice Scheduler </span><br>
                             <small class="text-muted">A Schedular can schedule appointments for any clinician and add new patients.</small>
                         </label>
                     </div>
@@ -62,7 +62,7 @@
                     <div class="form-check">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
                         <label class="form-check-label" for="flexCheckChecked">
-                            <span class="fw-bolder">Practive Biller </span><br>
+                            <span class="fw-bolder">Practice Biller </span><br>
                             <small class="text-muted">User has full billing access to all patients in the practice.</small>
                         </label>
                     </div>
@@ -76,7 +76,7 @@
 
                     <div class="row g-3 py-3">
                         <div class="col">
-                            <label for="" class="pb-2">User Name</label>
+                            <label for="" class="pb-2">Username</label>
                             <input type="text" class="form-control">
                         </div>
                     </div>

@@ -326,6 +326,9 @@
             
             <div class="row g-3 py-4">
                 <div class="col">
+                    <input type="text" class="form-control" placeholder="Username" aria-label="Username">
+                </div>
+                <div class="col">
                     <input type="text" class="form-control" placeholder="Password" aria-label="Password">
                 </div>
                 <div class="col">
