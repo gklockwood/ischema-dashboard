@@ -1,7 +1,7 @@
 <template>
     <div class="demographicsform">
         <div class="container py-4">
-            <h2 class="pb-3">Demographic Form</h2>
+            <h2 class="pb-3">Demographics Form</h2>
             <div class="row">
                 <div class="col-sm-12">
                     <label class="fw-bolder pt-4">Name</label>
