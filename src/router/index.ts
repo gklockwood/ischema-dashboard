@@ -82,6 +82,7 @@ import Adminaddnewuser from '../views/admin/Adminaddnewuser.vue'
 
 
 // Forms
+import Demographicsform from '../views/surveys/Demographicsform.vue'
 import SchemaModePlan1 from '../views/surveys/SchemaModePlan1.vue'
 import SchemaModePlan2 from '../views/surveys/SchemaModePlan2.vue'
 import SchemaModePlan3 from '../views/surveys/SchemaModePlan3.vue'
@@ -463,6 +464,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/staffcontinue',
     name: 'Staffcontinue',
     component: Staffcontinue  
+  },
+  {
+    path: '/demographicsform',
+    name: 'Demographicsform',
+    component: Demographicsform  
   }
 ]
 

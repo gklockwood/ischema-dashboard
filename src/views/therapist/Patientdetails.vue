@@ -1,5 +1,5 @@
 <template>
-    <div class="patientdetails">
+    <div class="clientdetails">
         <div class="container py-4">
             <h2 class="pb-3">Edit Client <a href="" class="text-decoration-none">Client Name</a> </h2>
 
@@ -38,12 +38,12 @@
                             <div class="row g-3 py-3">
                                 <div class="col">
                                     <label for="" class="pb-2">First Name</label>
-                                    <input type="text" class="form-control" placeholder="Patient First Name"
+                                    <input type="text" class="form-control" placeholder="Client First Name"
                                         aria-label="First name">
                                 </div>
                                 <div class="col">
                                     <label for="" class="pb-2">Middle Name</label>
-                                    <input type="text" class="form-control" placeholder="Patient Middle Name"
+                                    <input type="text" class="form-control" placeholder="Client Middle Name"
                                         aria-label="Last name">
                                 </div>
                             </div>
@@ -51,7 +51,7 @@
                             <div class="row g-3 py-3">
                                 <div class="col">
                                     <label for="" class="pb-2">Last Name</label>
-                                    <input type="text" class="form-control" placeholder="Patient Last Name"
+                                    <input type="text" class="form-control" placeholder="Client Last Name"
                                         aria-label="Last name">
                                 </div>
                                 <div class="col">
@@ -89,7 +89,7 @@
                     <div class="row">
                         <div class="col-sm">
                             <label class="fw-bolder pt-4 d-block">Phone</label>
-                            <small class="text-muted"> Used for sending patient texts and reminders.</small>
+                            <small class="text-muted"> Used for sending client texts and reminders.</small>
                             <div class="row g-3 py-3">
                                 <div class="col-sm-3">
                                     <input type="text" class="form-control" placeholder="(269) 267-1964">
@@ -189,29 +189,8 @@
                                     </button>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm">
-                                    <label class="fw-bolder pt-4 d-block">Send Email Reminders for:</label>
-                                </div>
-                            </div>
-                            <div class="d-flex pt-2">
-                                <div>
-                                    <div class="form-check pe-3">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            Appointments
-                                        </label>
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="form-check px-4">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                        <label class="form-check-label" for="flexCheckChecked">
-                                            Completing documents
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
+ 
+                         
                         </div>
                     </div>
                     <hr>

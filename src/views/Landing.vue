@@ -79,6 +79,10 @@
             <h2>Forms & Surveys</h2>
           </div>
          <ul>
+          <li>
+            <router-link to="/Demographicsform"  target="_blank">Demographics Form<Form:get></Form:get></router-link>
+          </li>
+          <hr>
            <li>
               <router-link to="/Intakenote1"  target="_blank">Initial Psychotherapy Intake Note and Treatment Plan</router-link>
             </li>
