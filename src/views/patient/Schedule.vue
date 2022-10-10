@@ -7,23 +7,31 @@
             <div class="row" v-if="therapistsVisiblity">
                 <div class="col-sm-12">
                     <div class="row pt-4">
-                        <div class="col-sm-12 col-md-6 col-lg-4">
+                        <!-- <div class="col-sm-12 col-md-6 col-lg-4">
                             <select class="form-select" aria-label="Default select example">
-                                <option value="" selected disabled>Select Your Region</option>
+                                <option value="" selected disabled>Select your region</option>
                                 <option v-for="region in selectRegion" :key="region.id" :therapist-name="region.label"
                                     :id="region.id">{{ region.label }}</option>
                             </select>
+                        </div> -->
+                        <h3 class="pb-3">Getting Started</h3>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <select class="form-select" aria-label="Default select example">
+                                <option value="" selected disabled>Select residential status</option>
+                                <option v-for="resident in selectResident" :key="resident.id"
+                                    :therapist-name="resident.label" :id="resident.id">{{ resident.label }}</option>
+                            </select>
                         </div>
                         <div class="col-sm-12 col-md-6 col-lg-4">
                             <select class="form-select" aria-label="Default select example">
-                                <option value="" selected disabled>Select a Language Preference</option>
-                                <option v-for="language in selectLanguage" :key="language.id"
-                                    :therapist-name="language.label" :id="language.id">{{ language.label }}</option>
+                                <option value="" selected disabled>What would you like help with?</option>
+                                <option v-for="help in selectHelp" :key="help.id"
+                                    :therapist-name="help.label" :id="help.id">{{ help.label }}</option>
                             </select>
                         </div>
                     </div>
-                    <div class="row my-3">
-                        <div class="col-sm py-3">
+                    <div class="row">
+                        <!-- <div class="col-sm py-3">
                             <div class="input-group">
                                 <input class="form-control border-end-0 border rounded-pill" type="search"
                                     value="Search Therapists" id="example-search-input">
@@ -35,8 +43,8 @@
                                     </button>
                                 </span>
                             </div>
-                        </div>
-                        <div class="col-sm py-3">
+                        </div> -->
+                        <!-- <div class="col-sm py-3">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
                                 <label class="form-check-label ps-1 fw-bold" for="inlineCheckbox1">Male Only</label>
@@ -45,7 +53,7 @@
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
                                 <label class="form-check-label ps-1 fw-bold" for="inlineCheckbox2">Female Only</label>
                             </div>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
@@ -58,7 +66,7 @@
                                     </div>
 
                                     <div class="text-left ps-3">
-                                        <h3>Dr {{ therapist.first_name }} {{ therapist.last_name }}</h3>
+                                        <h5>Dr {{ therapist.first_name }} {{ therapist.last_name }}</h5>
 
                                         <button type="button" class="btn btn-outline-dark" data-bs-toggle="modal" data-bs-target="#profileModal">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
@@ -764,8 +772,10 @@
     import therapistData from './../../data/therapists-data.js';
     import languagesData from './../../data/languages-data.js';
     import regionsData from './../../data/regions-data.js';
+    import residentsData from './../../data/resident-data.js';
     import treatmentData from './../../data/treatment-data.js';
     import TreatmentData from './../../data/treatment-data.js';
+    import needHelp from './../../data/needhelp-js.js';
 
 
     import {
@@ -783,6 +793,8 @@
 
             const selectLanguage = languagesData;
             const selectRegion = regionsData;
+            const selectHelp = needHelp;
+            const selectResident = residentsData;
             const selectTreatment = treatmentData;
             const calendarVisiblity = ref(false);
             const therapistsVisiblity = ref(true);
@@ -864,6 +876,8 @@
                 selectLanguage,
                 selectTreatment,
                 selectRegion,
+                selectResident,
+                selectHelp,
                 showCalendar,
                 showTherapists,
                 calendarVisiblity,
