@@ -31,7 +31,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <!-- <div class="col-sm py-3">
+                        <div class="col-sm-4 py-3">
                             <div class="input-group">
                                 <input class="form-control border-end-0 border rounded-pill" type="search"
                                     value="Search Therapists" id="example-search-input">
@@ -43,7 +43,7 @@
                                     </button>
                                 </span>
                             </div>
-                        </div> -->
+                        </div>
                         <!-- <div class="col-sm py-3">
                             <div class="form-check form-check-inline">
                                 <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
@@ -667,7 +667,7 @@
         
                     <div class="row">
                         <div class="col text-center">
-                            <button type="button" class="btn btn-primary" @click="triggerUserPayment">Continue</button>
+                            <button type="button" class="btn btn-primary" @click="triggerUserPayment">Register</button>
                         </div>
                     </div>
                 </div>
