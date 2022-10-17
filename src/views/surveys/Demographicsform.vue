@@ -56,18 +56,10 @@
                         </div>
                         <div class="col-sm-2">
                             <select class="form-select" aria-label="Default select example">
-                                <option selected>Personal Mobile</option>
-                                <option value="1">Personal Landline</option>
-                                <option value="1">Work Mobile</option>
-                                <option value="1">Work Landine</option>
-                                <option value="1">Guardian Mobile</option>
-                                <option value="1">Guardian Landine</option>
-                                <option value="1">Spouse Mobile</option>
-                                <option value="1">Spouse Landine</option>
+                                <option selected>Mobile</option>
+                                <option value="1">Personal</option>
+                                <option value="1">Landine</option>
                             </select>
-                        </div>
-                        <div class="col-sm col-md-3">
-                            <textarea name="" id="" rows="1" class="form-control" placeholder="Add note..."></textarea>
                         </div>
                         <div class="col-sm-1">
                             <button type="button" class="btn btn-outline-dark">
@@ -109,7 +101,7 @@
                                     <path
                                         d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
                                 </svg>
-                                Add Phone Number
+                                Add Number
                             </button>
                         </div>
                     </div>
@@ -128,12 +120,7 @@
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Personal Email</option>
                                 <option value="1">Work Email</option>
-                                <option value="1">Guardian Email</option>
-                                <option value="1">Spouse Email</option>
                             </select>
-                        </div>
-                        <div class="col-sm col-md-3">
-                            <textarea name="" id="" rows="1" class="form-control" placeholder="Add note..."></textarea>
                         </div>
                         <div class="col-sm-1">
                             <button type="button" class="btn btn-outline-dark">
