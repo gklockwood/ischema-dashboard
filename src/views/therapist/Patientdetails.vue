@@ -37,12 +37,12 @@
 
                             <div class="row g-3 py-3">
                                 <div class="col">
-                                    <label for="" class="pb-2">First Name</label>
+                                  <label for="" class="pb-2 fw-bolder">First Name</label>
                                     <input type="text" class="form-control" placeholder="Client First Name"
                                         aria-label="First name">
                                 </div>
                                 <div class="col">
-                                    <label for="" class="pb-2">Middle Name</label>
+                                  <label for="" class="pb-2 fw-bolder">Middle Name</label>
                                     <input type="text" class="form-control" placeholder="Client Middle Name"
                                         aria-label="Last name">
                                 </div>
@@ -50,19 +50,19 @@
 
                             <div class="row g-3 py-3">
                                 <div class="col">
-                                    <label for="" class="pb-2">Last Name</label>
+                                  <label for="" class="pb-2 fw-bolder">Last Name</label>
                                     <input type="text" class="form-control" placeholder="Client Last Name"
                                         aria-label="Last name">
                                 </div>
                                 <div class="col">
-                                    <label for="" class="pb-2">Suffix</label>
+                                  <label for="" class="pb-2 fw-bolder">Suffix</label>
                                     <input type="text" class="form-control">
                                 </div>
                             </div>
 
                             <div class="row g-3 py-3">
                                 <div class="col">
-                                    <label for="" class="pb-2">Preferred Name</label>
+                                  <label for="" class="pb-2 fw-bolder">Preferred Name</label>
                                     <input type="text" class="form-control" aria-label="Last name">
                                     <small class="text-muted">
                                         Used in place of a first name.
@@ -199,18 +199,18 @@
                             <label class="fw-bolder pt-4">Address</label>
                             <div class="row g-3 py-3">
                                 <div class="col-sm-3">
-                                    <label for="" class="pb-2">Street</label>
+                                  <label for="" class="pb-2 fw-bolder">Street</label>
                                     <input type="text" class="form-control" placeholder="123 Main St">
                                 </div>
                                 <div class="col-sm-1">
-                                    <label for="" class="pb-2">State</label>
+                                  <label for="" class="pb-2 fw-bolder">State</label>
                                     <select class="form-select" aria-label="Default select example">
                                         <option selected>CA</option>
                                         <option value="1">option</option>
                                     </select>
                                 </div>
                                 <div class="col-sm-1">
-                                    <label for="" class="pb-2">ZIP</label>
+                                  <label for="" class="pb-2 fw-bolder">ZIP</label>
                                     <input type="text" class="form-control" placeholder="12345">
                                 </div>
                                 <div class="col-sm-1 pt-2">
@@ -242,8 +242,7 @@
                     <hr>
                     <div class="row">
                         <div class="col-sm">
-                            <label class="fw-bolder pt-4 d-block pb-3">About Client</label>
-                            <label for="" class="pb-2">Date of Birth</label>
+                          <label for="" class="pb-2 fw-bolder">Date of Birth</label>
                             <div class="d-flex">
                                 <div>
                                     <select class="form-select">
@@ -264,44 +263,58 @@
                                     </select>
                                 </div>
                             </div>
-                            <small class="text-muted">30 Years</small>
-                            <div class="row g-3 py-3">
-                                <div class="col-sm-3">
-                                    <label for="" class="pb-2">Sex</label>
-                                    <select class="form-select">
-                                        <option selected>Prefer not to say</option>
-                                        <option value="1">Male</option>
-                                        <option value="1">Female</option>
-                                        <option value="1">Intersex</option>
-                                        <option value="1">Other</option>
-                                    </select>
+                            <div class="d-flex pt-4">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                    <label class="form-check-label" for="flexCheckChecked">
+                                        Female
+                                    </label>
+                                </div>
+                                <div class="px-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Male
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="px-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Prefer not to say
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row g-3 py-3">
                                 <div class="col-sm-6">
-                                    <label for="" class="pb-2">Gender Identity</label>
+                                  <label for="" class="pb-2 fw-bolder">Gender Identity</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                     <small class="text-muted">Add client's gender identity & pronouns.</small>
                                 </div>
                             </div>
 
-
                             <div class="row g-3 py-3">
                                 <div class="col-sm-3">
-                                    <label class="pb-2">Relationship Status</label>
+                                    <label class="pb-2 fw-bolder">Relationship Status</label>
                                     <select class="form-select">
                                         <option selected>Not Selected</option>
                                         <option value="1">Single</option>
                                         <option value="1">Married</option>
                                         <option value="1">Divorced</option>
-                                        <option value="1">Partnership</option>
+                                        <option value="1">Domestic Partnership</option>
                                         <option value="1">In Long-term Relationship</option>
                                         <option value="1">Separated</option>
                                         <option value="1">Widowed</option>
                                     </select>
                                 </div>
+                            </div>
+        
+        
+                            <div class="row g-3 py-3">
                                 <div class="col-sm-3">
-                                    <label class="pb-2">Employment Status</label>
+                                    <label class="pb-2 fw-bolder">Employment Status</label>
                                     <select class="form-select">
                                         <option selected>Not Selected</option>
                                         <option value="1">Full-Time</option>
@@ -371,7 +384,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-sm-6 pt-4">
-                                    <label for="" class="pb-2">Race & Ethnicity Details</label>
+                                  <label for="" class="pb-2 fw-bolder">Race & Ethnicity Details</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                     <small class="text-muted">Add any relevant detials about the client's race,
                                         ethnicity or origin.</small>
@@ -379,7 +392,7 @@
                             </div>
                             <div class="row pb-4">
                                 <div class="col-sm-6 pt-4">
-                                    <label for="" class="pb-2">Preferred Language</label>
+                                  <label for="" class="pb-2 fw-bolder">Preferred Language</label>
                                     <select class="form-select">
                                         <option selected>Not Selected</option>
                                         <option value="1">Option</option>
@@ -389,13 +402,13 @@
                             <hr>
                             <div class="row">
                                 <div class="col-sm-6 pt-4">
-                                    <label for="" class="pb-2">Client Notes</label>
+                                  <label for="" class="pb-2 fw-bolder">Client Notes</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-6 pt-4">
-                                    <label for="" class="pb-2">Date First Seen</label>
+                                  <label for="" class="pb-2 fw-bolder">Date First Seen</label>
                                     <div class="d-flex">
                                         <div>
                                             <select class="form-select">
@@ -579,7 +592,7 @@
                 <div class="modal-body">
                     <div class="row pb-3">
                         <div class="col-sm-4">
-                            <label for="" class="pb-2">Card Type</label>
+                          <label for="" class="pb-2 fw-bolder">Card Type</label>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Card Type</option>
                                 <option value="1">Visa</option>
@@ -606,33 +619,33 @@
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                            <label for="" class="pb-2">Cardholder's Name</label>
+                          <label for="" class="pb-2 fw-bolder">Cardholder's Name</label>
                             <input type="text" class="form-control" placeholder="Please enter the cardholder's name">
                         </div>
                     </div>
                     <div class="row pt-3">
                         <div class="col-sm">
-                            <label for="" class="pb-2">Card Number</label>
+                          <label for="" class="pb-2 fw-bolder">Card Number</label>
                             <input type="text" class="form-control" placeholder="Please enter a card number">
                         </div>
                     </div>
                     <div class="row g-3 py-3">
                         <div class="col">
-                            <label for="" class="pb-2">Expiration Date</label>
+                          <label for="" class="pb-2 fw-bolder">Expiration Date</label>
                             <input type="text" class="form-control" placeholder="MM / YY">
                         </div>
                         <div class="col">
-                            <label for="" class="pb-2">CVC</label>
+                          <label for="" class="pb-2 fw-bolder">CVC</label>
                             <input type="text" class="form-control" placeholder="CVC">
                         </div>
                         <div class="col">
-                            <label for="" class="pb-2">Billing zip code</label>
+                          <label for="" class="pb-2 fw-bolder">Billing zip code</label>
                             <input type="text" class="form-control" placeholder="12345">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                            <label for="" class="pb-2">Card Nickname (optional)</label>
+                          <label for="" class="pb-2 fw-bolder">Card Nickname (optional)</label>
                             <input type="text" class="form-control" placeholder="Ex: Galen's primary credit card">
                         </div>
                     </div>
@@ -661,7 +674,7 @@
                 <div class="modal-body">
                     <div class="row pb-3">
                         <div class="col-sm-4">
-                            <label for="" class="pb-2">Card Type</label>
+                          <label for="" class="pb-2 fw-bolder">Card Type</label>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Visa</option>
                                 <option value="1">Mastercard</option>
@@ -687,33 +700,33 @@
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                            <label for="" class="pb-2">Cardholder's Name</label>
+                          <label for="" class="pb-2 fw-bolder">Cardholder's Name</label>
                             <input type="text" class="form-control" placeholder="Johny Johnson">
                         </div>
                     </div>
                     <div class="row pt-3">
                         <div class="col-sm">
-                            <label for="" class="pb-2">Card Number</label>
+                          <label for="" class="pb-2 fw-bolder">Card Number</label>
                             <input type="text" class="form-control" placeholder="---- ---- ---- 2222">
                         </div>
                     </div>
                     <div class="row g-3 py-3">
                         <div class="col">
-                            <label for="" class="pb-2">Expiration Date</label>
+                          <label for="" class="pb-2 fw-bolder">Expiration Date</label>
                             <input type="text" class="form-control" placeholder="05 / 23">
                         </div>
                         <div class="col">
-                            <label for="" class="pb-2">CVC</label>
+                          <label for="" class="pb-2 fw-bolder">CVC</label>
                             <input type="text" class="form-control" placeholder="111">
                         </div>
                         <div class="col">
-                            <label for="" class="pb-2">Billing zip code</label>
+                          <label for="" class="pb-2 fw-bolder">Billing zip code</label>
                             <input type="text" class="form-control" placeholder="12345">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                            <label for="" class="pb-2">Card Nickname (optional)</label>
+                          <label for="" class="pb-2 fw-bolder">Card Nickname (optional)</label>
                             <input type="text" class="form-control" placeholder="Johnie's primary credit card">
                         </div>
                     </div>
@@ -745,27 +758,27 @@
                     <label for="" class="fw-bolder">Name</label>
                     <div class="row py-2">
                         <div class="col-sm-6">
-                            <label for="" class="pb-2"> First Name</label>
+                          <label for="" class="pb-2 fw-bolder"> First Name</label>
                             <input type="text" class="form-control">
                         </div>
                         <div class="col-sm-6">
-                            <label for="" class="pb-2"> Middle Name</label>
+                          <label for="" class="pb-2 fw-bolder"> Middle Name</label>
                             <input type="text" class="form-control">
                         </div>
                     </div>
                     <div class="row py-2">
                         <div class="col-sm-6">
-                            <label for="" class="pb-2"> Last Name</label>
+                          <label for="" class="pb-2 fw-bolder"> Last Name</label>
                             <input type="text" class="form-control">
                         </div>
                         <div class="col-sm-6">
-                            <label for="" class="pb-2"> Suffix</label>
+                          <label for="" class="pb-2 fw-bolder"> Suffix</label>
                             <input type="text" class="form-control">
                         </div>
                     </div>
                     <div class="row py-2">
                         <div class="col-sm-12">
-                            <label for="" class="pb-2"> Preferred Name</label>
+                          <label for="" class="pb-2 fw-bolder"> Preferred Name</label>
                             <input type="text" class="form-control">
                             <small class="text-muted">
                                 Used in place of a first name across the site.
@@ -774,7 +787,7 @@
                     </div>
                     <div class="row pb-3 py-2">
                         <div class="col-sm-6">
-                            <label for="" class="pb-2">Relationship Type</label>
+                          <label for="" class="pb-2 fw-bolder">Relationship Type</label>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>select</option>
                                 <option value="1">Parent</option>
@@ -800,9 +813,10 @@
                             <input type="text" class="form-control" placeholder="Phone Number">
                         </div>
                         <div class="col-3">
-                            <select class="form-select">
+                            <select class="form-select" aria-label="Default select example">
                                 <option selected>Mobile</option>
-                                <option value="1">Landline</option>
+                                <option value="1">Personal</option>
+                                <option value="1">Home</option>
                             </select>
                         </div>
                     </div>
@@ -912,18 +926,18 @@
                             <label class="fw-bolder pt-4">Address</label>
                             <div class="row g-3 py-3">
                                 <div class="col-sm-6">
-                                    <label for="" class="pb-2">Street</label>
+                                  <label for="" class="pb-2 fw-bolder">Street</label>
                                     <input type="text" class="form-control" placeholder="123 Main St">
                                 </div>
                                 <div class="col-sm-3">
-                                    <label for="" class="pb-2">State</label>
+                                  <label for="" class="pb-2 fw-bolder">State</label>
                                     <select class="form-select" aria-label="Default select example">
                                         <option selected>CA</option>
                                         <option value="1">option</option>
                                     </select>
                                 </div>
                                 <div class="col-sm-3">
-                                    <label for="" class="pb-2">ZIP</label>
+                                  <label for="" class="pb-2 fw-bolder">ZIP</label>
                                     <input type="text" class="form-control" placeholder="12345">
                                 </div>
                             </div>
