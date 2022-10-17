@@ -1,7 +1,7 @@
 <template>
     <div class="clientdetails">
         <div class="container py-4">
-            <h2 class="pb-3">Contacts</h2>
+            <h2 class="pb-3">Client Information</h2>
 
 
             <ul class="nav nav-tabs" id="myTab" role="tablist">

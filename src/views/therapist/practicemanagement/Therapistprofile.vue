@@ -2,7 +2,7 @@
     <div class="clientlist">
         <div class="container py-4">
             <h1>My Profile</h1>
-            <div class="row pt-4">
+            <div class="row pt-4 px-3">
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-4 border-start border-top border-bottom p-2">
