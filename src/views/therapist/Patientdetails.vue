@@ -1,7 +1,7 @@
 <template>
     <div class="clientdetails">
         <div class="container py-4">
-            <h2 class="pb-3">Edit Client <a href="" class="text-decoration-none">Client Name</a> </h2>
+            <h2 class="pb-3">Contacts</h2>
 
 
             <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -33,53 +33,33 @@
                     </div>
                     <div class="row">
                         <div class="col-sm-12">
-                            <label class="fw-bolder pt-4">Name</label>
-
-                            <div class="row g-3 py-3">
-                                <div class="col">
-                                  <label for="" class="pb-2 fw-bolder">First Name</label>
-                                    <input type="text" class="form-control" placeholder="Client First Name"
-                                        aria-label="First name">
-                                </div>
-                                <div class="col">
-                                  <label for="" class="pb-2 fw-bolder">Middle Name</label>
-                                    <input type="text" class="form-control" placeholder="Client Middle Name"
-                                        aria-label="Last name">
-                                </div>
-                            </div>
-
-                            <div class="row g-3 py-3">
-                                <div class="col">
-                                  <label for="" class="pb-2 fw-bolder">Last Name</label>
-                                    <input type="text" class="form-control" placeholder="Client Last Name"
-                                        aria-label="Last name">
-                                </div>
-                                <div class="col">
-                                  <label for="" class="pb-2 fw-bolder">Suffix</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                            </div>
-
-                            <div class="row g-3 py-3">
-                                <div class="col">
-                                  <label for="" class="pb-2 fw-bolder">Preferred Name</label>
-                                    <input type="text" class="form-control" aria-label="Last name">
-                                    <small class="text-muted">
-                                        Used in place of a first name.
-                                    </small>
-                                </div>
-                                <div class="col">
-                                </div>
-                            </div>
 
                             <div class="row">
-                                <div class="col-sm">
-                                    <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                        <label class="form-check-label" for="flexCheckDefault">
-                                            Client is a minor
-                                        </label>
+                                <div class="col-sm-12">
+                                    <div class="row g-3 py-3">
+                                        <div class="col">
+                                            <label for="" class="pb-2 fw-bolder">First Name</label>
+                                            <input type="text" class="form-control" aria-label="First name">
+                                        </div>
+                
+                                        <div class="col">
+                                            <label for="" class="pb-2 fw-bolder">Last Name</label>
+                                            <input type="text" class="form-control" aria-label="Last name">
+                                        </div>
                                     </div>
+                
+                                    <div class="row g-3 py-3">
+                                        <div class="col">
+                                            <label for="" class="pb-2 fw-bolder">Middle Name</label>
+                                            <input type="text" class="form-control" aria-label="Last name">
+                                        </div>
+                                        <div class="col">
+                                            <label for="" class="pb-2 fw-bolder">Prefered Name</label>
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                
+                
                                 </div>
                             </div>
 
@@ -89,10 +69,10 @@
                     <div class="row">
                         <div class="col-sm">
                             <label class="fw-bolder pt-4 d-block">Phone</label>
-                            <small class="text-muted"> Used for sending client texts and reminders.</small>
+                            <small class="text-muted"> Use for sending client texts and reminders.</small>
                             <div class="row g-3 py-3">
                                 <div class="col-sm-3">
-                                    <input type="text" class="form-control" placeholder="(269) 267-1964">
+                                    <input type="text" class="form-control" placeholder="(###) ###-####">
                                 </div>
                                 <div class="col-sm-2">
                                     <select class="form-select" aria-label="Default select example">
@@ -134,12 +114,24 @@
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-sm pt-4">
+                            <button type="button" class="btn btn-outline-dark">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-plus" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                                </svg>
+                                Add Number
+                            </button>
+                        </div>
+                    </div>
                     <hr>
                     <div class="row">
                         <div class="col-sm">
                             <label class="fw-bolder pt-4 d-block">Email</label>
                             <small class="text-muted">
-                                Used to send client reminders or documents, as well as give access to the Client
+                                Use to send client reminders or documents, as well as give access to the Client
                                 Portal.
                             </small>
                             <div class="row g-3 py-3">
@@ -176,7 +168,7 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm pt-2 pb-4">
+                                <div class="col-sm pt-2">
                                     <button type="button" class="btn btn-outline-dark">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                             fill="currentColor" class="bi bi-envelope-plus me-1" viewBox="0 0 16 16">
@@ -194,81 +186,85 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="row">
-                        <div class="col-sm">
-                            <label class="fw-bolder pt-4">Address</label>
-                            <div class="row g-3 py-3">
-                                <div class="col-sm-3">
-                                  <label for="" class="pb-2 fw-bolder">Street</label>
-                                    <input type="text" class="form-control" placeholder="123 Main St">
-                                </div>
-                                <div class="col-sm-1">
-                                  <label for="" class="pb-2 fw-bolder">State</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>CA</option>
-                                        <option value="1">option</option>
-                                    </select>
-                                </div>
-                                <div class="col-sm-1">
-                                  <label for="" class="pb-2 fw-bolder">ZIP</label>
-                                    <input type="text" class="form-control" placeholder="12345">
-                                </div>
-                                <div class="col-sm-1 pt-2">
-                                    <button type="button" class="btn btn-outline-dark mt-4">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                                            <path
-                                                d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
-                                            <path fill-rule="evenodd"
-                                                d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-sm pt-2 pb-4">
-                                    <button type="button" class="btn btn-outline-dark">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
-                                            <path
-                                                d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
-                                        </svg>
-                                        Add Address
-                                    </button>
-                                </div>
-                            </div>
+                    <div class="row g-3">
+                        <h4 class="pt-4">Address</h4>
+                        <div class="col-sm-3">
+                            <label for="" class="pb-2 fw-bolder">Address Line 1</label>
+                            <input type="text" class="form-control" placeholder="Street Address">
+                        </div>
+                        <div class="col-sm-3">
+                            <label for="" class="pb-2 fw-bolder">Address Line 2</label>
+                            <input type="text" class="form-control" placeholder="Unit/Apt #">
+                        </div>
+                        <div class="col-sm-1">
+                            <label for="" class="pb-2 fw-bolder">State</label>
+                            <select class="form-select" aria-label="Default select example">
+                                <option selected>CA</option>
+                                <option value="1">option</option>
+                            </select>
+                        </div>
+                        <div class="col-sm-1">
+                            <label for="" class="pb-2 fw-bolder">ZIP</label>
+                            <input type="text" class="form-control" placeholder="12345">
+                        </div>
+                        <div class="col-sm-1 pt-2">
+                            <button type="button" class="btn btn-outline-dark mt-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-trash" viewBox="0 0 16 16">
+                                    <path
+                                        d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
+                                    <path fill-rule="evenodd"
+                                        d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
+                                </svg>
+                            </button>
                         </div>
                     </div>
                     <hr>
                     <div class="row">
                         <div class="col-sm">
-                          <label for="" class="pb-2 fw-bolder">Date of Birth</label>
-                            <div class="d-flex">
-                                <div>
-                                    <select class="form-select">
-                                        <option selected>March</option>
-                                        <option value="1">option</option>
-                                    </select>
+                            <div class="row">
+                                <div class="col-sm py-3">
+                                    <label for="" class="pb-2 fw-bolder">Birth Date</label>
+                                    <div class="d-flex">
+                                        <div>
+                                            <select class="form-select">
+                                                <option selected>MM</option>
+                                                <option value="1">option</option>
+                                            </select>
+                                        </div>
+                                        <div class="px-1">
+                                            <select class="form-select">
+                                                <option selected>DD</option>
+                                                <option value="1">option</option>
+                                            </select>
+                                        </div>
+                                        <div>
+                                            <select class="form-select">
+                                                <option selected>YYYY</option>
+                                                <option value="1">option</option>
+                                            </select>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="px-1">
-                                    <select class="form-select">
-                                        <option selected>7</option>
-                                        <option value="1">option</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <select class="form-select">
-                                        <option selected>1991</option>
-                                        <option value="1">option</option>
-                                    </select>
+                                                            <div class="row">
+                                <div class="col-sm">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Client is a minor
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
+                            </div>
                             <div class="d-flex pt-4">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                    <label class="form-check-label" for="flexCheckChecked">
-                                        Female
-                                    </label>
+                                <div class="pr-3">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Female
+                                        </label>
+                                    </div>
                                 </div>
                                 <div class="px-3">
                                     <div class="form-check">
@@ -289,46 +285,11 @@
                             </div>
                             <div class="row g-3 py-3">
                                 <div class="col-sm-6">
-                                  <label for="" class="pb-2 fw-bolder">Gender Identity</label>
+                                    <label for="" class="pb-2 fw-bolder">Gender Identity</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    <small class="text-muted">Add client's gender identity & pronouns.</small>
                                 </div>
                             </div>
 
-                            <div class="row g-3 py-3">
-                                <div class="col-sm-3">
-                                    <label class="pb-2 fw-bolder">Relationship Status</label>
-                                    <select class="form-select">
-                                        <option selected>Not Selected</option>
-                                        <option value="1">Single</option>
-                                        <option value="1">Married</option>
-                                        <option value="1">Divorced</option>
-                                        <option value="1">Domestic Partnership</option>
-                                        <option value="1">In Long-term Relationship</option>
-                                        <option value="1">Separated</option>
-                                        <option value="1">Widowed</option>
-                                    </select>
-                                </div>
-                            </div>
-        
-        
-                            <div class="row g-3 py-3">
-                                <div class="col-sm-3">
-                                    <label class="pb-2 fw-bolder">Employment Status</label>
-                                    <select class="form-select">
-                                        <option selected>Not Selected</option>
-                                        <option value="1">Full-Time</option>
-                                        <option value="1">Part-Time</option>
-                                        <option value="1">Self-Employed</option>
-                                        <option value="1">Unamployed</option>
-                                        <option value="1">Full-time Student</option>
-                                        <option value="1">Part-time Student</option>
-                                        <option value="1">Retired</option>
-                                        <option value="1">Homemaker</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <hr>
                             <div class="row">
                                 <div class="col-sm">
                                     <label class="fw-bolder pt-4 d-block pb-3">Race & Ethnicity</label>
@@ -382,17 +343,51 @@
                                     </div>
                                 </div>
                             </div>
+
                             <div class="row">
                                 <div class="col-sm-6 pt-4">
-                                  <label for="" class="pb-2 fw-bolder">Race & Ethnicity Details</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                                    <small class="text-muted">Add any relevant detials about the client's race,
-                                        ethnicity or origin.</small>
+                                    <label for="" class="pb-2 fw-bolder">Race & Ethnicity Details</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add any relevant detials about the client's race, ethnicity or origin."></textarea>
                                 </div>
                             </div>
+
+
+                            <div class="row g-3 py-3">
+                                <div class="col-sm-3">
+                                    <label class="pb-2 fw-bolder">Relationship Status</label>
+                                    <select class="form-select">
+                                        <option selected>Not Selected</option>
+                                        <option value="1">Single</option>
+                                        <option value="1">Married</option>
+                                        <option value="1">Divorced</option>
+                                        <option value="1">Domestic Partnership</option>
+                                        <option value="1">In Long-term Relationship</option>
+                                        <option value="1">Separated</option>
+                                        <option value="1">Widowed</option>
+                                    </select>
+                                </div>
+                            </div>
+                
+                            <div class="row g-3 py-3">
+                                <div class="col-sm-3">
+                                    <label class="pb-2 fw-bolder">Employment Status</label>
+                                    <select class="form-select">
+                                        <option selected>Not Selected</option>
+                                        <option value="1">Full-Time</option>
+                                        <option value="1">Part-Time</option>
+                                        <option value="1">Self-Employed</option>
+                                        <option value="1">Unamployed</option>
+                                        <option value="1">Full-time Student</option>
+                                        <option value="1">Part-time Student</option>
+                                        <option value="1">Retired</option>
+                                        <option value="1">Homemaker</option>
+                                    </select>
+                                </div>
+                            </div>
+
                             <div class="row pb-4">
                                 <div class="col-sm-6 pt-4">
-                                  <label for="" class="pb-2 fw-bolder">Preferred Language</label>
+                                    <label for="" class="pb-2 fw-bolder">Preferred Language</label>
                                     <select class="form-select">
                                         <option selected>Not Selected</option>
                                         <option value="1">Option</option>
@@ -402,29 +397,29 @@
                             <hr>
                             <div class="row">
                                 <div class="col-sm-6 pt-4">
-                                  <label for="" class="pb-2 fw-bolder">Client Notes</label>
+                                    <label for="" class="pb-2 fw-bolder">Client Notes</label>
                                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col-sm-6 pt-4">
-                                  <label for="" class="pb-2 fw-bolder">Date First Seen</label>
+                                    <label for="" class="pb-2 fw-bolder">Date First Seen</label>
                                     <div class="d-flex">
                                         <div>
                                             <select class="form-select">
-                                                <option selected>May</option>
+                                                <option selected>MM</option>
                                                 <option value="1">option</option>
                                             </select>
                                         </div>
                                         <div class="px-1">
                                             <select class="form-select">
-                                                <option selected>17</option>
+                                                <option selected>DD</option>
                                                 <option value="1">option</option>
                                             </select>
                                         </div>
                                         <div>
                                             <select class="form-select">
-                                                <option selected>2020</option>
+                                                <option selected>YYYY</option>
                                                 <option value="1">option</option>
                                             </select>
                                         </div>
@@ -448,6 +443,7 @@
                                     </button>
                                 </div>
                             </div>
+                            <hr>
                             <div class="row py-4">
                                 <div class="col-sm">
                                     <button type="button" class="btn btn-danger">
@@ -516,8 +512,9 @@
                             <div class="col-sm-2">
                                 <span class="fw-bolder">Phone</span>
                             </div>
-                            <div class="col-sm-2">
+                            <div class="col-sm-10">
                               <span>(310) 555-1212</span> 
+                              <span class="ms-2 badge rounded-pill bg-light text-dark shadow-sm">Mobile</span> 
                           </div>
                         </div>
                         <div class="row py-3">
@@ -526,18 +523,7 @@
                             </div>
                             <div class="col-sm-10 d-flex">
                               <span>example@examplemail.net</span> 
-                              <span class="text-muted ms-2">work</span> 
-                           
-                                <button type="button" class="btn btn-outline-dark muted ms-2">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                        fill="currentColor" class="bi bi-envelope-plus" viewBox="0 0 16 16">
-                                        <path
-                                            d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z" />
-                                        <path
-                                            d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z" />
-                                    </svg>
-                                </button>
-                         
+                              <span class="ms-2 badge rounded-pill bg-light text-dark shadow-sm">Personal Email</span>
                           </div>
                         </div>
                         <div class="row py-3">
@@ -546,14 +532,6 @@
                             </div>
                             <div class="col-sm-2">
                               <span>123 Example Lane</span> 
-                          </div>
-                        </div>
-                        <div class="row py-3">
-                            <div class="col-sm-2">
-                                <span class="fw-bolder">Appointment Reminders</span>
-                            </div>
-                            <div class="col-sm-3">
-                              <span>Will not receive appointment reminders</span> 
                           </div>
                         </div>
                         <div class="row py-3">
@@ -592,7 +570,7 @@
                 <div class="modal-body">
                     <div class="row pb-3">
                         <div class="col-sm-4">
-                          <label for="" class="pb-2 fw-bolder">Card Type</label>
+                            <label for="" class="pb-2">Card Type</label>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Card Type</option>
                                 <option value="1">Visa</option>
@@ -619,33 +597,33 @@
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                          <label for="" class="pb-2 fw-bolder">Cardholder's Name</label>
+                            <label for="" class="pb-2">Cardholder's Name</label>
                             <input type="text" class="form-control" placeholder="Please enter the cardholder's name">
                         </div>
                     </div>
                     <div class="row pt-3">
                         <div class="col-sm">
-                          <label for="" class="pb-2 fw-bolder">Card Number</label>
+                            <label for="" class="pb-2">Card Number</label>
                             <input type="text" class="form-control" placeholder="Please enter a card number">
                         </div>
                     </div>
                     <div class="row g-3 py-3">
                         <div class="col">
-                          <label for="" class="pb-2 fw-bolder">Expiration Date</label>
+                            <label for="" class="pb-2">Expiration Date</label>
                             <input type="text" class="form-control" placeholder="MM / YY">
                         </div>
                         <div class="col">
-                          <label for="" class="pb-2 fw-bolder">CVC</label>
+                            <label for="" class="pb-2">CVC</label>
                             <input type="text" class="form-control" placeholder="CVC">
                         </div>
                         <div class="col">
-                          <label for="" class="pb-2 fw-bolder">Billing zip code</label>
+                            <label for="" class="pb-2">Billing zip code</label>
                             <input type="text" class="form-control" placeholder="12345">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                          <label for="" class="pb-2 fw-bolder">Card Nickname (optional)</label>
+                            <label for="" class="pb-2">Card Nickname (optional)</label>
                             <input type="text" class="form-control" placeholder="Ex: Galen's primary credit card">
                         </div>
                     </div>
@@ -674,7 +652,7 @@
                 <div class="modal-body">
                     <div class="row pb-3">
                         <div class="col-sm-4">
-                          <label for="" class="pb-2 fw-bolder">Card Type</label>
+                            <label for="" class="pb-2">Card Type</label>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>Visa</option>
                                 <option value="1">Mastercard</option>
@@ -700,33 +678,33 @@
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                          <label for="" class="pb-2 fw-bolder">Cardholder's Name</label>
+                            <label for="" class="pb-2">Cardholder's Name</label>
                             <input type="text" class="form-control" placeholder="Johny Johnson">
                         </div>
                     </div>
                     <div class="row pt-3">
                         <div class="col-sm">
-                          <label for="" class="pb-2 fw-bolder">Card Number</label>
+                            <label for="" class="pb-2">Card Number</label>
                             <input type="text" class="form-control" placeholder="---- ---- ---- 2222">
                         </div>
                     </div>
                     <div class="row g-3 py-3">
                         <div class="col">
-                          <label for="" class="pb-2 fw-bolder">Expiration Date</label>
+                            <label for="" class="pb-2">Expiration Date</label>
                             <input type="text" class="form-control" placeholder="05 / 23">
                         </div>
                         <div class="col">
-                          <label for="" class="pb-2 fw-bolder">CVC</label>
+                            <label for="" class="pb-2">CVC</label>
                             <input type="text" class="form-control" placeholder="111">
                         </div>
                         <div class="col">
-                          <label for="" class="pb-2 fw-bolder">Billing zip code</label>
+                            <label for="" class="pb-2">Billing zip code</label>
                             <input type="text" class="form-control" placeholder="12345">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-sm">
-                          <label for="" class="pb-2 fw-bolder">Card Nickname (optional)</label>
+                            <label for="" class="pb-2">Card Nickname (optional)</label>
                             <input type="text" class="form-control" placeholder="Johnie's primary credit card">
                         </div>
                     </div>
@@ -758,27 +736,27 @@
                     <label for="" class="fw-bolder">Name</label>
                     <div class="row py-2">
                         <div class="col-sm-6">
-                          <label for="" class="pb-2 fw-bolder"> First Name</label>
+                            <label for="" class="pb-2"> First Name</label>
                             <input type="text" class="form-control">
                         </div>
                         <div class="col-sm-6">
-                          <label for="" class="pb-2 fw-bolder"> Middle Name</label>
+                            <label for="" class="pb-2"> Middle Name</label>
                             <input type="text" class="form-control">
                         </div>
                     </div>
                     <div class="row py-2">
                         <div class="col-sm-6">
-                          <label for="" class="pb-2 fw-bolder"> Last Name</label>
+                            <label for="" class="pb-2"> Last Name</label>
                             <input type="text" class="form-control">
                         </div>
                         <div class="col-sm-6">
-                          <label for="" class="pb-2 fw-bolder"> Suffix</label>
+                            <label for="" class="pb-2"> Suffix</label>
                             <input type="text" class="form-control">
                         </div>
                     </div>
                     <div class="row py-2">
                         <div class="col-sm-12">
-                          <label for="" class="pb-2 fw-bolder"> Preferred Name</label>
+                            <label for="" class="pb-2"> Preferred Name</label>
                             <input type="text" class="form-control">
                             <small class="text-muted">
                                 Used in place of a first name across the site.
@@ -787,7 +765,7 @@
                     </div>
                     <div class="row pb-3 py-2">
                         <div class="col-sm-6">
-                          <label for="" class="pb-2 fw-bolder">Relationship Type</label>
+                            <label for="" class="pb-2">Relationship Type</label>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>select</option>
                                 <option value="1">Parent</option>
@@ -813,10 +791,9 @@
                             <input type="text" class="form-control" placeholder="Phone Number">
                         </div>
                         <div class="col-3">
-                            <select class="form-select" aria-label="Default select example">
+                            <select class="form-select">
                                 <option selected>Mobile</option>
-                                <option value="1">Personal</option>
-                                <option value="1">Home</option>
+                                <option value="1">Landline</option>
                             </select>
                         </div>
                     </div>
@@ -926,18 +903,18 @@
                             <label class="fw-bolder pt-4">Address</label>
                             <div class="row g-3 py-3">
                                 <div class="col-sm-6">
-                                  <label for="" class="pb-2 fw-bolder">Street</label>
+                                    <label for="" class="pb-2">Street</label>
                                     <input type="text" class="form-control" placeholder="123 Main St">
                                 </div>
                                 <div class="col-sm-3">
-                                  <label for="" class="pb-2 fw-bolder">State</label>
+                                    <label for="" class="pb-2">State</label>
                                     <select class="form-select" aria-label="Default select example">
                                         <option selected>CA</option>
                                         <option value="1">option</option>
                                     </select>
                                 </div>
                                 <div class="col-sm-3">
-                                  <label for="" class="pb-2 fw-bolder">ZIP</label>
+                                    <label for="" class="pb-2">ZIP</label>
                                     <input type="text" class="form-control" placeholder="12345">
                                 </div>
                             </div>
