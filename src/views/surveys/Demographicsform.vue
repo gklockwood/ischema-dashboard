@@ -1,7 +1,7 @@
 <template>
     <div class="demographicsform">
         <div class="container py-4">
-            <h2 class="pb-3">Demographics Form</h2>
+            <h2 class="pb-3">My Profile</h2>
             <div class="row">
                 <div class="col-sm-12">
                     <div class="row g-3 py-3">
@@ -142,22 +142,22 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm">
-                    <label class="fw-bolder pt-4">Address</label>
+                <div class="col-sm pb-3">
+                    <h4 class="pt-4">Address</h4>
                     <div class="row g-3 py-3">
                         <div class="col-sm-3">
-                            <label for="" class="pb-2">Street</label>
+                            <label for="" class="pb-2 fw-bolder">Street</label>
                             <input type="text" class="form-control" placeholder="123 Main St">
                         </div>
                         <div class="col-sm-1">
-                            <label for="" class="pb-2">State</label>
+                            <label for="" class="pb-2 fw-bolder">State</label>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>CA</option>
                                 <option value="1">option</option>
                             </select>
                         </div>
                         <div class="col-sm-1">
-                            <label for="" class="pb-2">ZIP</label>
+                            <label for="" class="pb-2 fw-bolder">ZIP</label>
                             <input type="text" class="form-control" placeholder="12345">
                         </div>
                         <div class="col-sm-1 pt-2">
@@ -173,6 +173,7 @@
                         </div>
                     </div>
                 </div>
+                <hr>
             </div>
             <div class="row">
                 <div class="col-sm py-3">
@@ -229,7 +230,59 @@
                         </div>
                     </div>
 
-
+                    <div class="row">
+                        <div class="col-sm">
+                            <label class="fw-bolder d-block pb-3">Race & Ethnicity</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    American Indian or Alaska Native
+                                </label>
+                            </div>
+                            <div class="form-check py-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Asian
+                                </label>
+                            </div>
+                            <div class="form-check py-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Black or African American
+                                </label>
+                            </div>
+                            <div class="form-check py-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Hispanic or Latinx
+                                </label>
+                            </div>
+                            <div class="form-check py-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Middle Eastern or North African
+                                </label>
+                            </div>
+                            <div class="form-check py-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Native Hawaiian or Other Pacific Islander
+                                </label>
+                            </div>
+                            <div class="form-check py-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    White
+                                </label>
+                            </div>
+                            <div class="form-check py-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
+                                <label class="form-check-label" for="flexCheckChecked">
+                                    Race or ethnicity not listed
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                     <div class="row g-3 py-3">
                         <div class="col-sm-3">
                             <label class="pb-2 fw-bolder">Relationship Status</label>
@@ -265,7 +318,7 @@
 <hr>
                     <div class="row py-3">
                         <div class="col-sm">
-                            <span class="fw-bolder">Emergency Contact</span>
+                            <h4>Emergency Contact</h4>
                             <div class="row g-3 py-3">
                                 <div class="col">
                                     <label for="" class="pb-2 fw-bolder">First Name</label>
@@ -377,63 +430,6 @@
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="row">
-                        <div class="col-sm">
-                            <label class="fw-bolder d-block pb-3">Race & Ethnicity</label>
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                    American Indian or Alaska Native
-                                </label>
-                            </div>
-                            <div class="form-check py-2">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                    Asian
-                                </label>
-                            </div>
-                            <div class="form-check py-2">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                    Black or African American
-                                </label>
-                            </div>
-                            <div class="form-check py-2">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                    Hispanic or Latinx
-                                </label>
-                            </div>
-                            <div class="form-check py-2">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                    Middle Eastern or North African
-                                </label>
-                            </div>
-                            <div class="form-check py-2">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                    Native Hawaiian or Other Pacific Islander
-                                </label>
-                            </div>
-                            <div class="form-check py-2">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                    White
-                                </label>
-                            </div>
-                            <div class="form-check py-2">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked">
-                                <label class="form-check-label" for="flexCheckChecked">
-                                    Race or ethnicity not listed
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-
                     <div class="row py-4">
                         <div class="col-sm">
                             <button type="button" class="btn btn-danger">
