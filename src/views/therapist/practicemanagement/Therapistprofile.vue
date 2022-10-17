@@ -6,18 +6,18 @@
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-md-4 border-start border-top border-bottom p-2">
-                            <span class="fw-bolder">User Name</span>
+                            <span class="fw-bolder">First Name</span>
                         </div>
                         <div class="col-md-8 border p-2">
-                            <span>ExampleUsername</span>
+                            <span>FirstName</span>
                         </div>
                     </div>
                     <div class="row">
                           <div class="col-md-4 border-start border-top border-bottom p-2">
-                            <span class="fw-bolder">Name</span>
+                            <span class="fw-bolder">Last Name</span>
                         </div>
                         <div class="col-md-8 border p-2">
-                            <span>FirstName LastName</span>
+                            <span>LastName</span>
                         </div>
                     </div>
                     <div class="row">
