@@ -50,8 +50,6 @@
     ].includes($route.name)">
       <router-link to="/patient/dashboard" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-chart-bar"></i> Dashboard</router-link>
-      <router-link to="/patient/Clientprofile" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-user"></i> Personal Information</router-link>
       <router-link to="/patient/messages" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="far fa-comment-alt"></i> Messages<span class="badge bg-primary ms-1">1</span></router-link>
       <router-link to="/patient/Clientappointments" class="list-group-item list-group-item-action bg-dark text-light"><i
@@ -98,12 +96,6 @@
     ].includes($route.name)">
       <div class="accordion accordion-flush" id="accordionFlushExampleog">
         <div class="accordion-item">
-          <h2 class="accordion-header" id="flush-headingOneog">
-            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#flush-headingOneog" aria-expanded="false" aria-controls="flush-headingOneog">
-              George Lockwood
-            </button>
-          </h2>
           <div id="flush-headingOneog" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
             data-bs-parent="#accordionFlushExampleog">
             <div class="accordion-body">
