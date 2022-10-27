@@ -19,7 +19,7 @@
     'Adminaddnewuser'
     ].includes($route.name)">
     <router-link to="/admin/adminreports" class="list-group-item list-group-item-action bg-dark text-light"><i
-      class="fas fa-users"></i> Dashboard</router-link>
+      class="fas fa-users"></i> Home</router-link>
       <router-link to="/admin/admincalendar" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-calendar"></i> Calendar</router-link>
       <router-link to="/admin/adminstaff" class="list-group-item list-group-item-action bg-dark text-light"><i
@@ -49,7 +49,7 @@
     'Clientprofile'
     ].includes($route.name)">
       <router-link to="/patient/dashboard" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-chart-bar"></i> Dashboard</router-link>
+          class="fas fa-chart-bar"></i> Home</router-link>
       <router-link to="/patient/messages" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="far fa-comment-alt"></i> Messages<span class="badge bg-primary ms-1">1</span></router-link>
       <router-link to="/patient/Clientappointments" class="list-group-item list-group-item-action bg-dark text-light"><i
@@ -111,35 +111,49 @@
         <i class="fas fa-chart-bar"></i> Dashboard
       </router-link> -->
       <router-link to="/therapist/therapistdashboard" class="list-group-item list-group-item-action bg-dark text-light">
-        <i class="fas fa-cog"></i> Dashboard
+        <i class="fa fa-home"></i> Home
       </router-link>
       <router-link to="/therapist/therapistcalendar" class="list-group-item list-group-item-action bg-dark text-light">
         <i class="far fa-calendar-alt"></i> Calendar
       </router-link>
       <router-link to="/therapist/clientlist" class="list-group-item list-group-item-action bg-dark text-light"><i
           class="fas fa-users"></i> Clients</router-link>
-          <router-link to="/therapist/therapistclientreminders" class="list-group-item list-group-item-action bg-dark text-light">
+      <router-link to="/therapist/therapistclientreminders" class="list-group-item list-group-item-action bg-dark text-light">
             <i class="fas fa-clipboard"></i> Reminders
-          </router-link>
-      <button class="btn dropdown-item cursor-pointer text-white sidebarbutton"  data-bs-toggle="modal" data-bs-target="#therapistmessagemodal"><i class="far fa-comment-alt"></i>
-         Messages <span class="badge bg-primary ms-1">3</span></button>
-      <!-- <router-link to="/therapist/Therapistacceptappointment" class="list-group-item list-group-item-action bg-dark text-light"><i
-          class="fas fa-share-square"></i> Requests <span class="badge bg-primary ms-1">2</span>
-        </router-link> -->
+      </router-link>
+      <button class="btn dropdown-item cursor-pointer text-white sidebarbutton"  data-bs-toggle="modal" data-bs-target="#therapistmessagemodal"><i class="fa fa-comment"></i> Messages <span class="badge bg-primary ms-1">3</span></button>
+      
+      <router-link to="/therapist/clientportal" class="list-group-item list-group-item-action bg-dark text-light">
+        <i class="fa fa-file"></i> Documents
+      </router-link>
+
+      <router-link to="/therapist/therapistdataexport" class="list-group-item list-group-item-action bg-dark text-light"><i class="fa fa-file-export"></i>
+        Data Export</router-link>
+
+        <router-link to="/therapist/therapistsubscriptioninformation" class="list-group-item list-group-item-action bg-dark text-light"><i class="fa fa-edit"></i>
+          Account</router-link>
+      
+          <div class="dropdown">
+            <button class="btn btn-dark shadow-sm dropdown-toggle d-block mt-2 ms-1 w-100 text-start" type="button" id="dropdownMenuButton1"
+              data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="fas fa-user me-2"></i> Profile
+            </button>
+            <ul class="dropdown-menu w-100 p-2" aria-labelledby="dropdownMenuButton1">
+              <li><router-link to="/therapist/therapistprofile" class="dropdown-item cursor-pointer btn btn-light" >My Practice Profile</router-link></li>
+              <li><router-link to="#" class="dropdown-item cursor-pointer btn btn-light" >My Public Profile</router-link></li>
+            </ul>
+          </div>
+
       <div class="dropdown">
         <button class="btn btn-dark shadow-sm dropdown-toggle d-block mt-2 ms-1 w-100 text-start" type="button" id="dropdownMenuButton1"
           data-bs-toggle="dropdown" aria-expanded="false">
           <i class="fas fa-plus me-2"></i> Add
         </button>
         <ul class="dropdown-menu w-100 p-2" aria-labelledby="dropdownMenuButton1">
-          <li><a class="dropdown-item cursor-pointer"  data-bs-toggle="modal" data-bs-target="#addavailabilitymodal"><i class="fas fa-clock me-1"></i>
-              Add Availability</a></li>
-          <li><a class="dropdown-item cursor-pointer"  data-bs-toggle="modal" data-bs-target="#addappointmentmodal"><i class="fas fa-check me-1"></i>
-              Add Appointment</a></li>
+          <li><a class="dropdown-item cursor-pointer"  data-bs-toggle="modal" data-bs-target="#addavailabilitymodal">Add Availability</a></li>
+          <li><a class="dropdown-item cursor-pointer"  data-bs-toggle="modal" data-bs-target="#addappointmentmodal">Add Appointment</a></li>
         </ul>
       </div>
-
-
     </div>
 
    

@@ -13,7 +13,7 @@
                                         <span class="fw-light">Good Morning, <br></span> Galen
                                     </div>
                                     <div class="mx-4 usericon">
-                                        <i class="fas fa-usaer"></i>
+                                        <i class="fa fa-user"></i>
                                     </div>
                                 </div>
                             </div>

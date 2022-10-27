@@ -1,7 +1,7 @@
 <template>
     <div class="clientlist">
         <div class="container py-4">
-            <h1>My Profile</h1>
+            <h1>My Practice Profile</h1>
             <div class="row pt-4 px-3">
                 <div class="col-md-6">
                     <div class="row">
