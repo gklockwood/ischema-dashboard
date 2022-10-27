@@ -130,7 +130,7 @@
       <router-link to="/therapist/therapistdataexport" class="list-group-item list-group-item-action bg-dark text-light"><i class="fa fa-file-export"></i>
         Data Export</router-link>
 
-        <router-link to="/therapist/therapistsubscriptioninformation" class="list-group-item list-group-item-action bg-dark text-light"><i class="fa fa-edit"></i>
+        <router-link to="/therapist/therapistsubscriptioninformation" class="list-group-item list-group-item-action bg-dark text-light"><i class="fa fa-wrench"></i>
           Account</router-link>
       
           <div class="dropdown">
