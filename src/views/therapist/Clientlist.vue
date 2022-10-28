@@ -52,7 +52,7 @@
                         <a href="{{ client.client_number }}" class="text-decoration-none">{{ client.client_number }}</a> <span class="badge bg-light text-dark ms-1 shadow-sm">Mobile</span>
                     </div>
                     <div class="col-sm">
-                        <a href="mailto:{{ client.client_email }}" class="text-decoration-none">{{ client.client_email }}</a> <a href="#" class="ps-2 text-decoration-none"> <i class="fas fa-copy"></i></a>
+                        <a href="mailto:{{ client.client_email }}" class="text-decoration-none">{{ client.client_email }}</a>
                     </div>
                 </div>
             </div>
