@@ -121,7 +121,109 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="documentlibrary" role="tabpanel" aria-labelledby="documentlibrary-tab">
-                            Add document library here
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 py-3">
+                                    <h5 for="" class="fw-bolder">Core documents</h5>
+                                    <ul class="list-group pt-2">
+                                        <li class="list-group-item bg-light fw-bolder">Intake Forms</li>
+                                        <li class="list-group-item"><a href="">Intake Demographics</a></li>
+                                        <li class="list-group-item"><a href="">Intake Questionnaire, part 1</a></li>
+                                    </ul>
+                                    <ul class="list-group pt-3">
+                                        <li class="list-group-item bg-light fw-bolder">Assessments</li>
+                                        <li class="list-group-item"><a href="">YSQ</a></li>
+                                        <li class="list-group-item"><a href="">YPSQ</a></li>
+                                        <li class="list-group-item"><a href="">YPI-R3</a></li>
+                                        <li class="list-group-item"><a href="">PPSI</a></li>
+                                        <li class="list-group-item"><a href="">PHQ-9</a></li>
+                                        <li class="list-group-item"><a href="">GAD-7</a></li>
+                                    </ul>
+                                </div>
+    
+                                <div class="col-sm-12 col-md-6 py-3">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <h5 for="" class="fw-bolder">Custom Documents</h5>
+                                        </div>
+                                        <div class="col-sm-6 text-end">
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal">Create Document</button>
+                                        </div>
+                                    </div>
+                                    <ul class="list-group pt-2">
+                                        <li class="list-group-item">
+                                            <div class="alert alert-primary m-0" role="alert">
+                                                <a href="">Create</a> your first custom document!
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <!-- <div class="row">
+                                <div class="col-sm">
+                                    <table class="table">
+                                        <thead>
+                                          <tr>
+                                            <th scope="col">Name</th>
+                                            <th scope="col">Type</th>
+                                            <th scope="col"></th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td><a href="">Consent for Telehealth Consultation</a></td>
+                                            <td>Consent Form</td>
+                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
+                                          </tr>
+                                          <tr>
+                                            <td><a href="">Notice of Privacy Practices</a></td>
+                                            <td>Consent Form</td>
+                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
+                                          </tr>
+                                          <tr>
+                                            <td><a href="">Informed Consent for Psychotherapy</a></td>
+                                            <td>Consent Form</td>
+                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
+                                          </tr>
+                                          <tr>
+                                            <td><a href="">Practice Policies</a></td>
+                                            <td>Consent Form</td>
+                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
+                                          </tr>
+                                          <tr>
+                                            <td><a href="">Consent for Telehealth Consultation</a></td>
+                                            <td>Consent Form</td>
+                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
+                                          </tr>
+                                          <tr>
+                                            <td><a href="">Release of Information</a></td>
+                                            <td>Consent Form</td>
+                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
+                                          </tr>
+                                          <tr>
+                                            <td><a href="">Intake Demographics</a></td>
+                                            <td>Intake Form</td>
+                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
+                                          </tr>
+                                          <tr>
+                                            <td><a href="">Intake Questionnaire, part 1</a></td>
+                                            <td>Intake Form</td>
+                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
+                                          </tr>
+                                          <tr>
+                                            <td><a href="">YSQ</a></td>
+                                            <td>Assessment</td>
+                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
+                                          </tr>
+                                          <tr>
+                                            <td><a href="">YPS</a></td>
+                                            <td>Assessment</td>
+                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                </div>
+                            </div> -->
                         </div>
                         <div class="tab-pane fade" id="sentdocuments" role="tabpanel" aria-labelledby="sentdocuments-tab">
                             Add sent documents here
