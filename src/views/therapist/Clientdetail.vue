@@ -15,7 +15,7 @@
             <div class="row pt-3">
 
                 <div class="col-sm">
-                    <ul class="nav nav-tabs small" id="myTab" role="tablist">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
                           <button class="nav-link active" id="clientinfo-tab" data-bs-toggle="tab" data-bs-target="#clientinfo" type="button" role="tab" aria-controls="clientinfo" aria-selected="true">Client Info</button>
                         </li>
