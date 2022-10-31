@@ -2,41 +2,10 @@
     <div class="clientdetail">
         <div class="container-fluid py-4">
             <div class="row">
-                <div class="col-sm-8">
+                <div class="col-sm-12">
                     <div class="d-flex align-items-center">
                         <div class="col-sm d-flex align-items-center">
-                            <h4 class="align-self-center m-0">(Client Name Here) Detail</h4>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="d-flex">
-                        <router-link to="/therapist/patientdetails"
-                            class="btn btn-outline-dark align-self-center shadow-sm align-self-center me-2">
-                            <i class="fas fa-edit"></i>
-                            Edit
-                        </router-link>
-
-                        <button class="btn btn-outline-dark align-self-center shadow-sm" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"><i class="fas fa-file-upload"></i>
-                            Upload</button>
-
-                        <button class="btn btn-outline-dark align-self-center shadow-sm ms-2" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"><i class="fas fa-comment-alt"></i>
-                            Message
-                        </button>
-
-                        <div class="dropdown ms-2">
-                            <button class="btn btn-outline-dark shadow-sm dropdown-toggle" type="button"
-                                id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                <i class="fas fa-share"></i> Share
-                            </button>
-                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-folder me-1"></i> Consent
-                                        Forms</a></li>
-                                <li><a class="dropdown-item" href="#"><i class="fas fa-table me-1"></i>
-                                        Inventories</a></li>
-                            </ul>
+                            <h4 class="align-self-center m-0">Joe Schmo</h4>
                         </div>
                     </div>
                 </div>
@@ -46,37 +15,28 @@
             <div class="row pt-3">
 
                 <div class="col-sm">
-                    <ul class="nav nav-pills small small-tabs" id="myTab" role="tablist">
+                    <ul class="nav nav-tabs small" id="myTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link active" id="sessions-tab" data-bs-toggle="tab" data-bs-target="#sessions" type="button" role="tab" aria-controls="sessions" aria-selected="true">Upcoming Appointments</button>
+                          <button class="nav-link active" id="clientinfo-tab" data-bs-toggle="tab" data-bs-target="#clientinfo" type="button" role="tab" aria-controls="clientinfo" aria-selected="true">Client Info</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="schemamodeconceptualizationplan-tab" data-bs-toggle="tab" data-bs-target="#schemamodeconceptualizationplan" type="button" role="tab" aria-controls="profile" aria-selected="false">Schema Mode Conceptualization Plan</button>
+                            <button class="nav-link" id="appointments-tab" data-bs-toggle="tab" data-bs-target="#appointments" type="button" role="tab" aria-controls="appointments" aria-selected="false">Appointments</button>
                           </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="diagnoses-tab" data-bs-toggle="tab" data-bs-target="#diagnoses" type="button" role="tab" aria-controls="profile" aria-selected="false">Diagnoses</button>
+                          <button class="nav-link" id="documentlibrary-tab" data-bs-toggle="tab" data-bs-target="#documentlibrary" type="button" role="tab" aria-controls="documentlibrary" aria-selected="false">Document Library</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="mentalstatusexam-tab" data-bs-toggle="tab" data-bs-target="#mentalstatusexam" type="button" role="tab" aria-controls="contact" aria-selected="false">Mental Status Exam</button>
+                          <button class="nav-link" id="sentdocuments-tab" data-bs-toggle="tab" data-bs-target="#sentdocuments" type="button" role="tab" aria-controls="sentdocuments" aria-selected="false">Sent Documents</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="assesmentresults-tab" data-bs-toggle="tab" data-bs-target="#assesmentresults" type="button" role="tab" aria-controls="assesmentresults" aria-selected="false">Assesment Results</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="treatmentreview-tab" data-bs-toggle="tab" data-bs-target="#treatmentreview" type="button" role="tab" aria-controls="treatmentreview" aria-selected="false">Treatment Review</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="dischargesummary-tab" data-bs-toggle="tab" data-bs-target="#dischargesummary" type="button" role="tab" aria-controls="dischargesummary" aria-selected="false">Discharge Summary</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="completedformsanddocuments-tab" data-bs-toggle="tab" data-bs-target="#completedformsanddocuments" type="button" role="tab" aria-controls="completedformsanddocuments" aria-selected="false">Completed Forms and Signed Documents</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="uploadedfiles-tab" data-bs-toggle="tab" data-bs-target="#uploadedfiles" type="button" role="tab" aria-controls="uploadedfiles" aria-selected="false">Uploaded Files</button>
+                          <button class="nav-link" id="billing-tab" data-bs-toggle="tab" data-bs-target="#billing" type="button" role="tab" aria-controls="billing" aria-selected="false">Billing</button>
                         </li>
                       </ul>
                       <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="sessions" role="tabpanel" aria-labelledby="sessions">
+                        <div class="tab-pane fade show active" id="clientinfo" role="tabpanel" aria-labelledby="clientinfo">
+Add client details here
+                        </div>
+                        <div class="tab-pane fade" id="appointments" role="tabpanel" aria-labelledby="appointments-tab">
                             <div class="row pt-4">
                                 <div class="col-sm-6 d-flex ">
                                     <div class="dropdown shadow-sm">
@@ -181,223 +141,18 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="tab-pane fade" id="schemamodeconceptualizationplan" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                        <div class="tab-pane fade" id="diagnoses" role="tabpanel" aria-labelledby="contact-tab">...</div>
-                        <div class="tab-pane fade" id="mentalstatusexam" role="tabpanel" aria-labelledby="contact-tab">...</div>
-                        <div class="tab-pane fade" id="assesmentresults" role="tabpanel" aria-labelledby="contact-tab">...</div>
-                        <div class="tab-pane fade" id="treatmentreview" role="tabpanel" aria-labelledby="contact-tab">...</div>
-                        <div class="tab-pane fade" id="dischargesummary" role="tabpanel" aria-labelledby="contact-tab">...</div>
-                        <div class="tab-pane fade" id="completedformsanddocuments" role="tabpanel" aria-labelledby="contact-tab">
-                            <ul class="list-group py-3">
-                                <li class="list-group-item">
-                                    <div class="row">
-                                        <div class="col-sm-10">
-                                            <label class="d-block">
-                                                Consent for Telehealth
-                                            </label>
-                                            <small class="text-muted">
-                                                Viewed by GL on Dec 11, 2021
-                                            </small>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <button class="btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                    height="16" fill="currentColor" class="bi bi-x-lg"
-                                                    viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
-                                                    <path fill-rule="evenodd"
-                                                        d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="row">
-                                        <div class="col-sm-10">
-                                            <label class="d-block">
-                                                Notice of Privacy Practices
-                                            </label>
-                                            <small class="text-muted">
-                                                Viewed by GL on Nov 27, 2021
-                                            </small>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <button class="btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                    height="16" fill="currentColor" class="bi bi-x-lg"
-                                                    viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
-                                                    <path fill-rule="evenodd"
-                                                        d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="row">
-                                        <div class="col-sm-10">
-                                            <label class="d-block">
-                                                Informed Consent for Pychotherapy
-                                            </label>
-                                            <small class="text-muted">
-                                                Viewed by GL on Nov 27, 2021
-                                            </small>
-                                        </div>
-                                        <div class="col-sm-2">
-                                            <button class="btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                    height="16" fill="currentColor" class="bi bi-x-lg"
-                                                    viewBox="0 0 16 16">
-                                                    <path fill-rule="evenodd"
-                                                        d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
-                                                    <path fill-rule="evenodd"
-                                                        d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-    
-    
-                            </ul>
+                        <div class="tab-pane fade" id="documentlibrary" role="tabpanel" aria-labelledby="documentlibrary-tab">
+                            Add document library here
                         </div>
-                        <div class="tab-pane fade" id="uploadedfiles" role="tabpanel" aria-labelledby="uploadedfiles">
-                            <ul class="list-group py-3">
-                                <li class="list-group-item">
-                                    <div class="row">
-                                        <div class="col-sm">
-                                            <a href="" class="text-decoration-none"> Consent for
-                                                Telehealth</a>
-                                        </div>
-                                        <div class="col-sm">
-                                            <button class="btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                    height="16" fill="currentColor"
-                                                    class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                                                    <path fill-rule="evenodd"
-                                                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
-                                                </svg>
-                                            </button>
-                                            <button class="btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                    height="16" fill="currentColor"
-                                                    class="bi bi-download" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                                                    <path
-                                                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                                                </svg>
-                                            </button>
-                                            <button class="btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                    height="16" fill="currentColor" class="bi bi-trash"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
-                                                    <path fill-rule="evenodd"
-                                                        d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="row">
-                                        <div class="col-sm">
-                                            <a href="" class="text-decoration-none">Notice of Privacy
-                                                Practices</a>
-                                        </div>
-                                        <div class="col-sm">
-                                            <button class="btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                    height="16" fill="currentColor"
-                                                    class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                                                    <path fill-rule="evenodd"
-                                                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
-                                                </svg>
-                                            </button>
-                                            <button class="btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                    height="16" fill="currentColor"
-                                                    class="bi bi-download" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                                                    <path
-                                                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                                                </svg>
-                                            </button>
-                                            <button class="btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                    height="16" fill="currentColor" class="bi bi-trash"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
-                                                    <path fill-rule="evenodd"
-                                                        d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item">
-                                    <div class="row">
-                                        <div class="col-sm">
-                                            <label class="d-block">
-                                                <a href="" class="text-decoration-none">Informed Consent
-                                                    for Pychotherapy</a>
-                                            </label>
-                                        </div>
-                                        <div class="col-sm">
-                                            <button class="btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                    height="16" fill="currentColor"
-                                                    class="bi bi-pencil-square" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
-                                                    <path fill-rule="evenodd"
-                                                        d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5v11z" />
-                                                </svg>
-                                            </button>
-                                            <button class="btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                    height="16" fill="currentColor"
-                                                    class="bi bi-download" viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
-                                                    <path
-                                                        d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
-                                                </svg>
-                                            </button>
-                                            <button class="btn">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
-                                                    height="16" fill="currentColor" class="bi bi-trash"
-                                                    viewBox="0 0 16 16">
-                                                    <path
-                                                        d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z" />
-                                                    <path fill-rule="evenodd"
-                                                        d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z" />
-                                                </svg>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-    
-    
-                            </ul>
+                        <div class="tab-pane fade" id="sentdocuments" role="tabpanel" aria-labelledby="sentdocuments-tab">
+                            Add sent documents here
                         </div>
-                      
+                        <div class="tab-pane fade" id="billing" role="tabpanel" aria-labelledby="billing-tab">
+                            Add billing details here
+                        </div>
                       </div>
                 </div>
             </div>
-
         </div>
 
 
