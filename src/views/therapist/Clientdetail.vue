@@ -34,112 +34,91 @@
                       </ul>
                       <div class="tab-content" id="myTabContent">
                         <div class="tab-pane fade show active" id="clientinfo" role="tabpanel" aria-labelledby="clientinfo">
-Add client details here
-                        </div>
-                        <div class="tab-pane fade" id="appointments" role="tabpanel" aria-labelledby="appointments-tab">
-                            <div class="row pt-4">
-                                <div class="col-sm-6 d-flex ">
-                                    <div class="dropdown shadow-sm">
-                                        <button class="btn btn-outline-dark dropdown-toggle" type="button"
-                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            All Time
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="#">Select</a></li>
-                                            <li><a class="dropdown-item" href="#">Select</a></li>
-                                            <li><a class="dropdown-item" href="#">Select</a></li>
-                                        </ul>
+                            <div class="row pt-4 px-3">
+                                <div class="col-md-6">
+                                    <div class="row border-bottom">
+                                        <div class="col-md-4 p-2">
+                                            <span class="fw-bolder">Name</span>
+                                        </div>
+                                        <div class="col-md-8 p-2">
+                                            <span>Joe Schmo</span>
+                                        </div>
                                     </div>
-                                    <div class="dropdown  ms-2 shadow-sm">
-                                        <button class="btn btn-outline-dark dropdown-toggle" type="button"
-                                            id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                                class="bi bi-filter" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5zm-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5z" />
-                                            </svg>
-                                            All Items
-                                        </button>
-                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                                            <li><a class="dropdown-item" href="#">All Items</a></li>
-                                            <li><a class="dropdown-item" href="#">Assessments</a></li>
-                                            <li><a class="dropdown-item" href="#">Diagnosis and Treatment Plans</a></li>
-                                            <li><a class="dropdown-item" href="#">Mental Status Exams</a></li>
-                                            <li><a class="dropdown-item" href="#">Appointments</a></li>
-                                            <li><a class="dropdown-item" href="#">Chart Notes</a></li>
-                                            <li><a class="dropdown-item" href="#">Inventories</a></li>
-                                        </ul>
+                                    <div class="row border-bottom">
+                                          <div class="col-md-4  p-2">
+                                            <span class="fw-bolder">Email Address</span>
+                                        </div>
+                                        <div class="col-md-8 p-2">
+                                            <span>joschmoy@gmail.com</span>
+                                        </div>
+                                    </div>
+                                    <div class="row border-bottom">
+                                          <div class="col-md-4 p-2">
+                                            <span class="fw-bolder">Phone</span>
+                                        </div>
+                                        <div class="col-md-8 p-2">
+                                            <span>1-222-222-2222</span>
+                                        </div>
+                                    </div>
+                                    <div class="row border-bottom">
+                                          <div class="col-md-4 p-2">
+                                            <span class="fw-bolder">Address</span>
+                                        </div>
+                                        <div class="col-md-8 p-2">
+                                            <span>1234 Example Lane</span>
+                                        </div>
+                                    </div>
+                                    <div class="row border-bottom">
+                                          <div class="col-md-4 p-2">
+                                            <span class="fw-bolder">Zip</span>
+                                        </div>
+                                        <div class="col-md-8 p-2">
+                                            <span>12345</span>
+                                        </div>
+                                    </div>
+                                    <div class="row border-bottom">
+                                          <div class="col-md-4 p-2">
+                                            <span class="fw-bolder">City/State</span>
+                                        </div>
+                                        <div class="col-md-8 p-2">
+                                            <span>Michigan</span>
+                                        </div>
+                                    </div>
+                                    <div class="row border-bottom">
+                                          <div class="col-md-4 p-2">
+                                            <span class="fw-bolder">Status</span>
+                                        </div>
+                                        <div class="col-md-8 p-2">
+                                            <span class="badge rounded-pill bg-success">Active</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <ul class="list-group mt-4">
-                                <li class="list-group-item py-3">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <h5 class="d-inline"><span class="badge bg-light text-dark">DEC 13</span>
-                                            </h5>
-                                            <span class="fw-bolder px-2">Appointment</span>
-                                        </div>
-                                        <div class="col-sm-6 text-end">
-                                            <span>11:00 am - 12:00 pm</span>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="fas fa-edit"></i>
-                                                Add Progress Note
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item py-3">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <h5 class="d-inline"><span class="badge bg-light text-dark">NOV 13</span>
-                                            </h5>
-                                            <span class="fw-bolder px-2">Appointment</span>
-                                        </div>
-                                        <div class="col-sm-6 text-end">
-                                            <span>11:00 am - 12:00 pm</span>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="fas fa-edit"></i>
-                                                Add Progress Note
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="list-group-item py-3">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <h5 class="d-inline"><span class="badge bg-light text-dark">OCT 13</span>
-                                            </h5>
-                                            <span class="fw-bolder px-2">Appointment</span>
-                                        </div>
-                                        <div class="col-sm-6 text-end">
-                                            <span>11:00 am - 12:00 pm</span>
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="row">
-                                        <div class="col-sm-12">
-                                            <button class="btn btn-outline-dark btn-sm align-self-center shadow-sm"
-                                                data-bs-toggle="modal" data-bs-target="#exampleModal"><i
-                                                    class="fas fa-edit"></i>
-                                                Add Progress Note
-                                            </button>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                            <div class="row py-4">
+                                <div class="col-md-6">
+                                  <button type="button" class="btn btn-outline-dark">Edit Information</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="appointments" role="tabpanel" aria-labelledby="appointments-tab">
+                            <div class="col-sm-12 pt-4">
+                                <label for="" class="fw-bold pb-2">Upcoming</label>
+                                <ul class="list-group">
+                                    <li class="py-2 list-group-item"><a href=""><span class="fw-bold">October 29, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
+                                    <li class="py-2 list-group-item"><a href=""><span class="fw-bold">October 25, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
+                                    <li class="py-2 list-group-item"><a href=""><span class="fw-bold">October 20, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
+                                    <li class="py-2 list-group-item"><a href=""><span class="fw-bold">October 15, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-12 pt-4">
+                                <label for="" class="fw-bold pb-2">Past</label>
+                                <ul class="list-group">
+                                    <li class="py-2 list-group-item"><a href=""><span class="fw-bold">October 10, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
+                                    <li class="py-2 list-group-item"><a href=""><span class="fw-bold">October 5, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
+                                    <li class="py-2 list-group-item"><a href=""><span class="fw-bold">September 29, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
+                                    <li class="py-2 list-group-item"><a href=""><span class="fw-bold">September 25, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="documentlibrary" role="tabpanel" aria-labelledby="documentlibrary-tab">
                             Add document library here

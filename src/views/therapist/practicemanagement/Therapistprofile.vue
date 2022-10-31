@@ -138,7 +138,7 @@
                 <div class="col-md-6">
                   <button type="button" class="btn btn-outline-dark">Edit Information</button>
                 </div>
-              </div>
+            </div>
         </div>
     </div>
 </template>
