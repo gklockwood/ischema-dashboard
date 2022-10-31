@@ -151,7 +151,7 @@
                                     </div>
                                     <ul class="list-group pt-2">
                                         <li class="list-group-item">
-                                            <div class="alert alert-primary m-0" role="alert">
+                                            <div class="alert alert-info m-0 text-center" role="alert">
                                                 <a href="">Create</a> your first custom document!
                                             </div>
                                         </li>
