@@ -104,26 +104,26 @@
                             <div class="col-sm-12 pt-4">
                                 <label for="" class="fw-bold pb-2">Upcoming</label>
                                 <ul class="list-group">
-                                    <li class="py-2 list-group-item"><a href=""><span class="fw-bold">October 29, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
-                                    <li class="py-2 list-group-item"><a href=""><span class="fw-bold">October 25, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
-                                    <li class="py-2 list-group-item"><a href=""><span class="fw-bold">October 20, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
-                                    <li class="py-2 list-group-item"><a href=""><span class="fw-bold">October 15, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
+                                    <li class="py-2 list-group-item text-primary cursor-pointer"><a  data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fw-bold">October 29, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
+                                    <li class="py-2 list-group-item text-primary cursor-pointer"><a  data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fw-bold">October 25, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
+                                    <li class="py-2 list-group-item text-primary cursor-pointer"><a  data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fw-bold">October 20, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
+                                    <li class="py-2 list-group-item text-primary cursor-pointer"><a  data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fw-bold">October 15, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
                                 </ul>
                             </div>
                             <div class="col-sm-12 pt-4">
                                 <label for="" class="fw-bold pb-2">Past</label>
                                 <ul class="list-group">
-                                    <li class="py-2 list-group-item"><a href=""><span class="fw-bold">October 10, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
-                                    <li class="py-2 list-group-item"><a href=""><span class="fw-bold">October 5, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
-                                    <li class="py-2 list-group-item"><a href=""><span class="fw-bold">September 29, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
-                                    <li class="py-2 list-group-item"><a href=""><span class="fw-bold">September 25, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
+                                    <li class="py-2 list-group-item text-primary cursor-pointer"><a  data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fw-bold">October 10, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
+                                    <li class="py-2 list-group-item text-primary cursor-pointer"><a  data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fw-bold">October 5, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
+                                    <li class="py-2 list-group-item text-primary cursor-pointer"><a  data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fw-bold">September 29, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
+                                    <li class="py-2 list-group-item text-primary cursor-pointer"><a  data-bs-toggle="modal" data-bs-target="#exampleModal"><span class="fw-bold">September 25, 2022 5:00 PM - 5:55 PM,</span> 55 Min, 90837-George Lockwood</a></li>
                                 </ul>
                             </div>
                         </div>
                         <div class="tab-pane fade" id="documentlibrary" role="tabpanel" aria-labelledby="documentlibrary-tab">
                             <div class="row">
                                 <div class="col-sm-12 col-md-6 py-3">
-                                    <h5 for="" class="fw-bolder">Core documents</h5>
+                                    <h5 for="" class="fw-bolder">Core Documents</h5>
                                     <ul class="list-group pt-2">
                                         <li class="list-group-item bg-light fw-bolder">Intake Forms</li>
                                         <li class="list-group-item"><a href="">Intake Demographics</a></li>
@@ -143,23 +143,25 @@
                                 <div class="col-sm-12 col-md-6 py-3">
                                     <div class="row">
                                         <div class="col-sm-6">
-                                            <h5 for="" class="fw-bolder">Custom Documents</h5>
+                                            <h5 for="" class="fw-bolder">Document Uploads</h5>
                                         </div>
                                         <div class="col-sm-6 text-end">
-                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal">Create Document</button>
+                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal">Upload Document</button>
                                         </div>
                                     </div>
                                     <ul class="list-group pt-2">
                                         <li class="list-group-item">
                                             <div class="alert alert-info m-0 text-center" role="alert">
-                                                <a href="">Create</a> your first custom document!
+                                                <a href="">Upload</a> a custom document.
                                             </div>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
 
-                            <!-- <div class="row">
+                            <!-- table view -->
+
+                            <div class="row">
                                 <div class="col-sm">
                                     <table class="table">
                                         <thead>
@@ -223,7 +225,7 @@
                                         </tbody>
                                       </table>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="sentdocuments" role="tabpanel" aria-labelledby="sentdocuments-tab">
                             Add sent documents here
