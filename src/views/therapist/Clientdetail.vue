@@ -133,7 +133,7 @@
                                     <div class="card p-3 my-3" v-if="showFilter">
                                         <div class="row">
                                             <div class="col-sm">
-                                                <label for="" class="fw-bolder">Document Type</label>
+                                                <label for="" class="fw-bolder">Document Cetegory</label>
                                                 <div class="form-check pt-2">
                                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked value="option1">
                                                     <label class="form-check-label" for="inlineCheckbox1">Intake Forms</label>
@@ -227,7 +227,7 @@
                                             <tr>
                                                 <th>Name</th>
                                                 <th>Created</th>
-                                                <th>Type</th>
+                                                <th>Category</th>
                                                 <th>Author/Access</th>
                                                 <th>Service</th>
                                                 <th>Sent</th>
@@ -236,16 +236,62 @@
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
-                                        <tbody v-for="document in documentList" :key="document.id">
+                                        <!-- <tbody v-for="document in documentList" :key="document.id">
                                             <tr>
-                                                <td>{{ document.document_name }}</td>
+                                                <td><i class="fas fa-file-pdf"></i> {{ document.document_name }}</td>
                                                 <td>{{ document.date_created }}</td>
-                                                <td>{{ document.document_type }}</td>
+                                                <td> {{ document.document_category }}</td>
                                                 <td>{{ document.author_access }}</td>
                                                 <td>{{ document.service_code }}</td>
                                                 <td>{{ document.date_sent }}</td>
                                                 <td>{{ document.date_received }}</td>
                                                 <td>{{ document.document_status }}</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody> -->
+                                        <tbody>
+                                            <tr>
+                                                <td><i class="fas fa-edit"></i> In Love </td>
+                                                <td>11/2/2022</td>
+                                                <td>Note</td>
+                                                <td>Clinical</td>
+                                                <td></td>
+                                                <td>11/2/2022</td>
+                                                <td>11/2/2022</td>
+                                                <td>Pending Patient Signature</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-file-pdf"></i> Notice of Privacy Practices </td>
+                                                <td>11/2/2022</td>
+                                                <td>Intake Form</td>
+                                                <td>Administrative</td>
+                                                <td></td>
+                                                <td>11/2/2022</td>
+                                                <td>11/2/2022</td>
+                                                <td>Completed by Patient</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-file-pdf"></i> Good faith estimate model disclosure </td>
+                                                <td>11/2/2022</td>
+                                                <td>Intake Form</td>
+                                                <td>Administrative</td>
+                                                <td></td>
+                                                <td>11/2/2022</td>
+                                                <td>11/2/2022</td>
+                                                <td>Reviewed by Patient</td>
+                                                <td></td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-edit"></i>Psychotherapy Progress Note </td>
+                                                <td>10/31/2022</td>
+                                                <td>Intake Form</td>
+                                                <td>Administrative</td>
+                                                <td>90834</td>
+                                                <td></td>
+                                                <td></td>
+                                                <td>Signed by Author</td>
                                                 <td></td>
                                             </tr>
                                         </tbody>

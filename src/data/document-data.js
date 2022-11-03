@@ -1,7 +1,7 @@
 export default [{
     "id": 1,
     "document_name": "In Love",
-    "document_type": "Note",
+    "document_category": "Note",
     "date_created": "11/2/2022",
     "date_sent": "11/2/2022",
     "date_received": "",
@@ -11,7 +11,7 @@ export default [{
   }, {
     "id": 2,
     "document_name": "Psychotherapy Progress Note",
-    "document_type": "Note",
+    "document_category": "Note",
     "date_created": "10/31/2022",
     "date_sent": "10/31/2022",
     "date_received": "10/31/2022",
@@ -21,7 +21,7 @@ export default [{
   }, {
     "id": 2,
     "document_name": "Notice of Privacy Practices",
-    "document_type": "Intake Form",
+    "document_category": "Intake Form",
     "date_created": "11/2/2022",
     "date_sent": "11/2/2022",
     "date_received": "11/2/2022",
