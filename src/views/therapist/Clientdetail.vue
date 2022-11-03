@@ -228,7 +228,134 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="sentdocuments" role="tabpanel" aria-labelledby="sentdocuments-tab">
-                            Add sent documents here
+                            <!-- Document Fitler Bar -->
+                            <div class="row pt-3">
+                                <div class="col-sm-12">
+                                <button type="button" class="btn btn-outline-dark" @click="toggleFilter"><i class="fas fa-filter me-1"></i> Filter Documents</button>
+                                
+                       
+                                    <div class="card p-3 my-3" v-if="showFilter">
+                                        <div class="row">
+                                            <div class="col-sm">
+                                                <label for="" class="fw-bolder">Document Type</label>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">Intake Forms</label>
+                                                </div>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">Assessments</label>
+                                                </div>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" checked value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">Intake Forms</label>
+                                                </div>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" checked value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">Notes</label>
+                                                </div>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">Uploads</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm">
+                                                <label for="" class="fw-bolder">Access</label>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox6" checked value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">Administrative</label>
+                                                </div>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox7" checked value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">Billing</label>
+                                                </div>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox8" checked value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">Clinical</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm">
+                                                <label for="" class="fw-bolder">Status</label>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox9" checked value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">Pending Patient Signature</label>
+                                                </div>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox10" checked value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">Reviewed by Patient</label>
+                                                </div>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox11" checked value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">Pending Patient Submission</label>
+                                                </div>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox12" checked value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">Completed by Patient</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm">
+                                                <label for="" class="fw-bolder">Column</label>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox14" checked value="option1">
+                                                    <label class="form-check-label" for="inlineCheckbox1">Created</label>
+                                                </div>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox15" checked value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">Type</label>
+                                                </div>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox16" checked value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">Access</label>
+                                                </div>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox17" checked value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">Service</label>
+                                                </div>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox18" checked value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">Received</label>
+                                                </div>
+                                                <div class="form-check pt-2">
+                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox19" checked value="option2">
+                                                    <label class="form-check-label" for="inlineCheckbox2">Status</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                               
+                                
+                                </div>
+                                <div class="col-sm-12">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Name</th>
+                                                <th>Created</th>
+                                                <th>Type</th>
+                                                <th>Author/Access</th>
+                                                <th>Service</th>
+                                                <th>Sent</th>
+                                                <th>Received</th>
+                                                <th>Status</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody v-for="document in documentList" :key="document.id">
+                                            <tr>
+                                                <td>{{ document.document_name }}</td>
+                                                <td>{{ document.date_created }}</td>
+                                                <td>{{ document.document_type }}</td>
+                                                <td>{{ document.author_access }}</td>
+                                                <td>{{ document.service_code }}</td>
+                                                <td>{{ document.date_sent }}</td>
+                                                <td>{{ document.date_received }}</td>
+                                                <td>{{ document.document_status }}</td>
+                                                <td></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="billing" role="tabpanel" aria-labelledby="billing-tab">
                             <div class="container-fluid py-4">
@@ -703,3 +830,29 @@
 
     </div>
 </template>
+
+<script>
+    import documentData from '../../data/document-data.js';
+
+    import {
+        ref
+    } from 'vue';
+
+    export default {
+        setup() {
+            const documentList = documentData;
+            const showFilter = ref(false);
+            
+            function toggleFilter() {
+                showFilter.value = ! showFilter.value;
+            }
+
+
+            return {
+                documentList,
+                showFilter,
+                toggleFilter
+            }
+        }
+    };
+</script>

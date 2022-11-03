@@ -42,24 +42,22 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm">
-                    <ul class="list-group">
-                        <li v-for="client in clientList" :key="client.id" :therapist-name="client.first_name" :id="client.id" class="py-2 list-group-item">
-                            <div class="row">
-                                <div class="col-sm">
-                                    <router-link to="/therapist/clientdetail" class="text-decoration-none fw-bolder"> {{ client.first_name }} {{ client.last_name }}</router-link>
-                                </div>
-                                <div class="col-sm">
-                                    <a href="mailto:{{ client.client_email }}" class="text-decoration-none">{{ client.client_email }}</a>
-                                </div>
-                                <div class="col-sm">
-                                    <a href="{{ client.client_number }}" class="text-decoration-none">{{ client.client_number }}</a> <span class="badge bg-light text-dark ms-1 shadow-sm">Mobile</span>
-                                </div>
+                <ul class="list-group">
+                    <li v-for="client in clientList" :key="client.id" :therapist-name="client.first_name" :id="client.id" class="py-2 list-group-item">
+                        <div class="row">
+                            <div class="col-sm">
+                                <router-link to="/therapist/clientdetail" class="text-decoration-none fw-bolder"> {{ client.first_name }} {{ client.last_name }}</router-link>
                             </div>
-                  
-                        </li>
-                    </ul>
-                </div>
+                            <div class="col-sm">
+                                <a href="mailto:{{ client.client_email }}" class="text-decoration-none">{{ client.client_email }}</a>
+                            </div>
+                            <div class="col-sm">
+                                <a href="{{ client.client_number }}" class="text-decoration-none">{{ client.client_number }}</a> <span class="badge bg-light text-dark ms-1 shadow-sm">Mobile</span>
+                            </div>
+                        </div>
+              
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
@@ -70,10 +68,10 @@
     import clientData from '../../data/client-data.js';
 
 
-
     export default {
         setup() {
             const clientList = clientData;
+
 
 
             return {
