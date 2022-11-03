@@ -11,6 +11,43 @@
                     <a class="nav-link" aria-current="Client Emails" href="#">Emails</a>
                 </li>
             </ul>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 py-3">
+                    <h5 for="" class="fw-bolder">Core Documents</h5>
+                    <ul class="list-group pt-2">
+                        <li class="list-group-item bg-light fw-bolder">Intake Forms</li>
+                        <li class="list-group-item"><a href="">Intake Demographics</a></li>
+                        <li class="list-group-item"><a href="">Intake Questionnaire, part 1</a></li>
+                    </ul>
+                    <ul class="list-group pt-3">
+                        <li class="list-group-item bg-light fw-bolder">Assessments</li>
+                        <li class="list-group-item"><a href="">YSQ</a></li>
+                        <li class="list-group-item"><a href="">YPSQ</a></li>
+                        <li class="list-group-item"><a href="">YPI-R3</a></li>
+                        <li class="list-group-item"><a href="">PPSI</a></li>
+                        <li class="list-group-item"><a href="">PHQ-9</a></li>
+                        <li class="list-group-item"><a href="">GAD-7</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-sm-12 col-md-6 py-3">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <h5 for="" class="fw-bolder">Document Uploads</h5>
+                        </div>
+                        <div class="col-sm-6 text-end">
+                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal">Upload Document</button>
+                        </div>
+                    </div>
+                    <ul class="list-group pt-2">
+                        <li class="list-group-item">
+                            <div class="alert alert-info m-0 text-center" role="alert">
+                                <a href="">Upload</a> a custom document.
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
             <div class="row pt-4">
                 <div class="col-sm">
                     <div class="row">

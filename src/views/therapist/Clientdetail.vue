@@ -23,10 +23,7 @@
                             <button class="nav-link" id="appointments-tab" data-bs-toggle="tab" data-bs-target="#appointments" type="button" role="tab" aria-controls="appointments" aria-selected="false">Appointments</button>
                           </li>
                         <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="documentlibrary-tab" data-bs-toggle="tab" data-bs-target="#documentlibrary" type="button" role="tab" aria-controls="documentlibrary" aria-selected="false">Document Library</button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                          <button class="nav-link" id="sentdocuments-tab" data-bs-toggle="tab" data-bs-target="#sentdocuments" type="button" role="tab" aria-controls="sentdocuments" aria-selected="false">Sent Documents</button>
+                          <button class="nav-link" id="documents-tab" data-bs-toggle="tab" data-bs-target="#documents" type="button" role="tab" aria-controls="documents" aria-selected="false">Documents</button>
                         </li>
                         <li class="nav-item" role="presentation">
                           <button class="nav-link" id="billing-tab" data-bs-toggle="tab" data-bs-target="#billing" type="button" role="tab" aria-controls="billing" aria-selected="false">Billing</button>
@@ -120,120 +117,19 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="documentlibrary" role="tabpanel" aria-labelledby="documentlibrary-tab">
-                            <div class="row">
-                                <div class="col-sm-12 col-md-6 py-3">
-                                    <h5 for="" class="fw-bolder">Core Documents</h5>
-                                    <ul class="list-group pt-2">
-                                        <li class="list-group-item bg-light fw-bolder">Intake Forms</li>
-                                        <li class="list-group-item"><a href="">Intake Demographics</a></li>
-                                        <li class="list-group-item"><a href="">Intake Questionnaire, part 1</a></li>
-                                    </ul>
-                                    <ul class="list-group pt-3">
-                                        <li class="list-group-item bg-light fw-bolder">Assessments</li>
-                                        <li class="list-group-item"><a href="">YSQ</a></li>
-                                        <li class="list-group-item"><a href="">YPSQ</a></li>
-                                        <li class="list-group-item"><a href="">YPI-R3</a></li>
-                                        <li class="list-group-item"><a href="">PPSI</a></li>
-                                        <li class="list-group-item"><a href="">PHQ-9</a></li>
-                                        <li class="list-group-item"><a href="">GAD-7</a></li>
-                                    </ul>
-                                </div>
-    
-                                <div class="col-sm-12 col-md-6 py-3">
-                                    <div class="row">
-                                        <div class="col-sm-6">
-                                            <h5 for="" class="fw-bolder">Document Uploads</h5>
-                                        </div>
-                                        <div class="col-sm-6 text-end">
-                                            <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal">Upload Document</button>
-                                        </div>
-                                    </div>
-                                    <ul class="list-group pt-2">
-                                        <li class="list-group-item">
-                                            <div class="alert alert-info m-0 text-center" role="alert">
-                                                <a href="">Upload</a> a custom document.
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
-                            <!-- table view -->
-
-                            <div class="row">
-                                <div class="col-sm">
-                                    <table class="table">
-                                        <thead>
-                                          <tr>
-                                            <th scope="col">Name</th>
-                                            <th scope="col">Type</th>
-                                            <th scope="col"></th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          <tr>
-                                            <td><a href="">Consent for Telehealth Consultation</a></td>
-                                            <td>Consent Form</td>
-                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
-                                          </tr>
-                                          <tr>
-                                            <td><a href="">Notice of Privacy Practices</a></td>
-                                            <td>Consent Form</td>
-                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
-                                          </tr>
-                                          <tr>
-                                            <td><a href="">Informed Consent for Psychotherapy</a></td>
-                                            <td>Consent Form</td>
-                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
-                                          </tr>
-                                          <tr>
-                                            <td><a href="">Practice Policies</a></td>
-                                            <td>Consent Form</td>
-                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
-                                          </tr>
-                                          <tr>
-                                            <td><a href="">Consent for Telehealth Consultation</a></td>
-                                            <td>Consent Form</td>
-                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
-                                          </tr>
-                                          <tr>
-                                            <td><a href="">Release of Information</a></td>
-                                            <td>Consent Form</td>
-                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
-                                          </tr>
-                                          <tr>
-                                            <td><a href="">Intake Demographics</a></td>
-                                            <td>Intake Form</td>
-                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
-                                          </tr>
-                                          <tr>
-                                            <td><a href="">Intake Questionnaire, part 1</a></td>
-                                            <td>Intake Form</td>
-                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
-                                          </tr>
-                                          <tr>
-                                            <td><a href="">YSQ</a></td>
-                                            <td>Assessment</td>
-                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
-                                          </tr>
-                                          <tr>
-                                            <td><a href="">YPS</a></td>
-                                            <td>Assessment</td>
-                                            <td><button class="btn btn-outline-dark btn-sm">Send</button></td>
-                                          </tr>
-                                        </tbody>
-                                      </table>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="sentdocuments" role="tabpanel" aria-labelledby="sentdocuments-tab">
+                        <div class="tab-pane fade" id="documents" role="tabpanel" aria-labelledby="documents-tab">
                             <!-- Document Fitler Bar -->
                             <div class="row pt-3">
                                 <div class="col-sm-12">
-                                <button type="button" class="btn btn-outline-dark" @click="toggleFilter"><i class="fas fa-filter me-1"></i> Filter Documents</button>
-                                
-                       
+                                    <div class="row">
+                                        <div class="col-sm">
+                                            <button type="button" class="btn btn-outline-dark" @click="toggleFilter"><i class="fas fa-filter me-1"></i> Filter Documents</button>
+                                            <button type="button" class="btn btn-outline-dark ms-2"><i class="fas fa-file-upload me-1"></i> Upload Document</button>
+                                            <button type="button" class="btn btn-outline-dark ms-2"><i class="fas fa-paper-plane"></i> Send Document</button>
+                                        </div>
+                                    </div>
+                              
+
                                     <div class="card p-3 my-3" v-if="showFilter">
                                         <div class="row">
                                             <div class="col-sm">
