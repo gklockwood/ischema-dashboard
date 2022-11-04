@@ -124,7 +124,7 @@
                                     <div class="row py-3">
                                         <div class="col-sm">
                                             <button type="button" class="btn btn-outline-dark" @click="toggleFilter"><i class="fas fa-filter me-1"></i> Filter Documents</button>
-                                            <!-- <button type="button" class="btn btn-outline-dark ms-2" data-bs-toggle="modal" data-bs-target="#uploaddocumentmodal"><i class="fas fa-file-upload me-1"></i> Upload Document</button> -->
+                                            <button type="button" class="btn btn-outline-dark ms-2" data-bs-toggle="modal" data-bs-target="#uploaddocumentmodal"><i class="fas fa-file-upload me-1"></i> Upload Document</button>
                                             <button type="button" class="btn btn-outline-dark ms-2" data-bs-toggle="modal" data-bs-target="#senddocumentmodal"><i class="fas fa-paper-plane"></i> Send Document</button>
                                         </div>
                                     </div>
