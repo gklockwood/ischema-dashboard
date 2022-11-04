@@ -11,6 +11,8 @@ $primary: #4A8BA6;
 $secondary:  purple;
 $danger: #ff4136;
 $dark: #303840;
+$info: #2d74aa;
+$warning: rgb(203, 135, 7);
 
 
 
@@ -224,5 +226,9 @@ th, td {
     padding: 5px !important;
 }
 
-
+// Custom fontAwesome
+.customfontawesome svg {
+  width: 16px;
+  height: 16px;
+}
 

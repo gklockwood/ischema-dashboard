@@ -121,14 +121,13 @@
                             <!-- Document Fitler Bar -->
                             <div class="row pt-3">
                                 <div class="col-sm-12">
-                                    <div class="row">
+                                    <div class="row py-3">
                                         <div class="col-sm">
                                             <button type="button" class="btn btn-outline-dark" @click="toggleFilter"><i class="fas fa-filter me-1"></i> Filter Documents</button>
-                                            <button type="button" class="btn btn-outline-dark ms-2"><i class="fas fa-file-upload me-1"></i> Upload Document</button>
-                                            <button type="button" class="btn btn-outline-dark ms-2"><i class="fas fa-paper-plane"></i> Send Document</button>
+                                            <!-- <button type="button" class="btn btn-outline-dark ms-2" data-bs-toggle="modal" data-bs-target="#uploaddocumentmodal"><i class="fas fa-file-upload me-1"></i> Upload Document</button> -->
+                                            <button type="button" class="btn btn-outline-dark ms-2" data-bs-toggle="modal" data-bs-target="#senddocumentmodal"><i class="fas fa-paper-plane"></i> Send Document</button>
                                         </div>
                                     </div>
-                              
 
                                     <div class="card p-3 my-3" v-if="showFilter">
                                         <div class="row">
@@ -218,6 +217,22 @@
                                             </div>
                                         </div>
                                     </div>
+
+                                    <div class="row py-3">
+                                        <div class="col-sm-4 d-flex align-items-center">
+                                            <div class="input-group">
+                                                <input class="form-control border-end-0 border rounded-pill" type="search" value="Search Documents"
+                                                    id="example-search-input">
+                                                <span class="input-group-append">
+                                                    <button class="btn btn-outline-dark bg-white border-bottom-0 border rounded-pill ms-n5"
+                                                        type="button">
+                                                        <i class="fa fa-search"></i>
+                                                    </button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                              
                                
                                 
                                 </div>
@@ -251,7 +266,10 @@
                                         </tbody> -->
                                         <tbody>
                                             <tr>
-                                                <td><i class="fas fa-edit"></i> In Love </td>
+                                                <td> 
+                                                    <span class="customfontawesome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V285.7l-86.8 86.8c-10.3 10.3-17.5 23.1-21 37.2l-18.7 74.9c-2.3 9.2-1.8 18.8 1.3 27.5H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM549.8 235.7l14.4 14.4c15.6 15.6 15.6 40.9 0 56.6l-29.4 29.4-71-71 29.4-29.4c15.6-15.6 40.9-15.6 56.6 0zM311.9 417L441.1 287.8l71 71L382.9 487.9c-4.1 4.1-9.2 7-14.9 8.4l-60.1 15c-5.5 1.4-11.2-.2-15.2-4.2s-5.6-9.7-4.2-15.2l15-60.1c1.4-5.6 4.3-10.8 8.4-14.9z"/></svg></span>
+                                                    In Love 
+                                                </td>
                                                 <td>11/2/2022</td>
                                                 <td>Note</td>
                                                 <td>Clinical</td>
@@ -259,21 +277,35 @@
                                                 <td>11/2/2022</td>
                                                 <td>11/2/2022</td>
                                                 <td>Pending Patient Signature</td>
-                                                <td></td>
+                                                <td>
+                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-edit"></i></span>
+                                                    <span class="p-2 text-muted cursor-pointer"> <i class="fa fa-download"></i></span>
+                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-trash"></i></span>                       
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td><i class="fas fa-file-pdf"></i> Notice of Privacy Practices </td>
+                                                <td>
+                                                    <span class="customfontawesome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM64 224H88c30.9 0 56 25.1 56 56s-25.1 56-56 56H80v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V320 240c0-8.8 7.2-16 16-16zm24 80c13.3 0 24-10.7 24-24s-10.7-24-24-24H80v48h8zm72-64c0-8.8 7.2-16 16-16h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H176c-8.8 0-16-7.2-16-16V240zm32 112h8c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16h-8v96zm96-128h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H304v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H304v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V304 240c0-8.8 7.2-16 16-16z"/></svg></span>
+                                                     Notice of Privacy Practices 
+                                                    </td>
                                                 <td>11/2/2022</td>
                                                 <td>Intake Form</td>
                                                 <td>Administrative</td>
                                                 <td></td>
                                                 <td>11/2/2022</td>
                                                 <td>11/2/2022</td>
-                                                <td>Completed by Patient</td>
-                                                <td></td>
+                                                <td><span class="badge bg-success">Completed by Patient</span></td>
+                                                <td>
+                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-edit"></i></span>
+                                                    <span class="p-2 text-muted cursor-pointer"> <i class="fa fa-download"></i></span>
+                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-trash"></i></span>                       
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td><i class="fas fa-file-pdf"></i> Good faith estimate model disclosure </td>
+                                                <td>
+                                                    <span class="customfontawesome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM64 224H88c30.9 0 56 25.1 56 56s-25.1 56-56 56H80v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V320 240c0-8.8 7.2-16 16-16zm24 80c13.3 0 24-10.7 24-24s-10.7-24-24-24H80v48h8zm72-64c0-8.8 7.2-16 16-16h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H176c-8.8 0-16-7.2-16-16V240zm32 112h8c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16h-8v96zm96-128h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H304v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H304v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V304 240c0-8.8 7.2-16 16-16z"/></svg></span>
+                                                    Good faith estimate model disclosure 
+                                                </td>
                                                 <td>11/2/2022</td>
                                                 <td>Intake Form</td>
                                                 <td>Administrative</td>
@@ -281,10 +313,17 @@
                                                 <td>11/2/2022</td>
                                                 <td>11/2/2022</td>
                                                 <td>Reviewed by Patient</td>
-                                                <td></td>
+                                                <td>
+                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-edit"></i></span>
+                                                    <span class="p-2 text-muted cursor-pointer"> <i class="fa fa-download"></i></span>
+                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-trash"></i></span>                                            
+                                                </td>
                                             </tr>
                                             <tr>
-                                                <td><i class="fas fa-edit"></i>Psychotherapy Progress Note </td>
+                                                <td>
+                                                    <span class="customfontawesome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V285.7l-86.8 86.8c-10.3 10.3-17.5 23.1-21 37.2l-18.7 74.9c-2.3 9.2-1.8 18.8 1.3 27.5H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM549.8 235.7l14.4 14.4c15.6 15.6 15.6 40.9 0 56.6l-29.4 29.4-71-71 29.4-29.4c15.6-15.6 40.9-15.6 56.6 0zM311.9 417L441.1 287.8l71 71L382.9 487.9c-4.1 4.1-9.2 7-14.9 8.4l-60.1 15c-5.5 1.4-11.2-.2-15.2-4.2s-5.6-9.7-4.2-15.2l15-60.1c1.4-5.6 4.3-10.8 8.4-14.9z"/></svg></span>
+                                                    Psychotherapy Progress Note 
+                                                </td>
                                                 <td>10/31/2022</td>
                                                 <td>Intake Form</td>
                                                 <td>Administrative</td>
@@ -292,7 +331,11 @@
                                                 <td></td>
                                                 <td></td>
                                                 <td>Signed by Author</td>
-                                                <td></td>
+                                                <td>
+                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-edit"></i></span>
+                                                    <span class="p-2 text-muted cursor-pointer"> <i class="fa fa-download"></i></span>
+                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-trash"></i></span>                                          
+                                                </td>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -300,7 +343,7 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="billing" role="tabpanel" aria-labelledby="billing-tab">
-                            <div class="container-fluid py-4">
+                          
                                 <div class="row pt-2">
                                     <div class="col-sm-3 d-flex align-items-center">
                                         <div class="input-group">
@@ -404,7 +447,7 @@
                                           </table>
                                     </div>
                                 </div>
-                            </div>
+                            
                     
                     
                     
@@ -771,6 +814,107 @@
 
 
     </div>
+
+
+
+        <!-- Upload Document Modal Start -->
+        <div class="modal fade" id="uploaddocumentmodal" tabindex="-1" aria-labelledby="uploaddocumentmodal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" style="z-index:2000;position: relative;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Document Upload</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="mb-3">
+                    <input class="form-control" type="file" id="formFile">
+                  </div>
+                <div class="image-upload-wrap text-center pt-4 px-4 pb-3 border">
+                      <p>Drag and drop a files</p>
+                </div>
+  
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-success">Upload</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Upload Document Modal End -->
+
+
+
+        <!-- Send Document Modal Start -->
+        <div class="modal fade" id="senddocumentmodal" tabindex="-1" aria-labelledby="senddocumentmodal"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" style="z-index:2000;position: relative;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Send Document</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <label for="" class="fw-bolder">Preloaded Practice Documents</label>
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-sm-6">
+                        <label for="" class="fw-bolder">Custom Documents</label>
+                        <select class="form-select form-select-sm" aria-label=".form-select-sm example">
+                        <option selected>Open this select menu</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                        </select>  
+                    </div>
+                    <VSelect
+                    v-model="selected"
+                    :options="countries"
+                  />
+                </div>
+                <div class="row pt-3">
+                    <div class="col-sm">
+                        <label for="" class="fw-bolder">Selected Documents:</label>
+                        <ul class="list-group">
+                            <li class="py-2 list-group-item"> Example Document  <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-x-lg"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+                                <path fill-rule="evenodd"
+                                    d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+                            </svg></li>
+                            <li class="py-2 list-group-item">Example Document <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" fill="currentColor" class="bi bi-x-lg"
+                                viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M13.854 2.146a.5.5 0 0 1 0 .708l-11 11a.5.5 0 0 1-.708-.708l11-11a.5.5 0 0 1 .708 0Z" />
+                                <path fill-rule="evenodd"
+                                    d="M2.146 2.146a.5.5 0 0 0 0 .708l11 11a.5.5 0 0 0 .708-.708l-11-11a.5.5 0 0 0-.708 0Z" />
+                            </svg></li>
+                        </ul>
+                    </div>
+                </div>
+  
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Cancel</button>
+              <button type="button" class="btn btn-success">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Send Document Modal End -->
+
+
 </template>
 
 <script>
