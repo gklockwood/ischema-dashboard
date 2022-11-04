@@ -129,7 +129,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="card p-3 my-3" v-if="showFilter">
+                                    <div class="card p-3 mt-3 pb-2" v-if="showFilter">
                                         <div class="row">
                                             <div class="col-sm">
                                                 <label for="" class="fw-bolder">Document Cetegory</label>
@@ -216,6 +216,11 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="row border-top pt-2">
+                                            <div class="col-sm text-center">
+                                                <button type="button" class="btn btn-outline-dark" @click="toggleFilter">Reset Filter</button>
+                                            </div>
+                                        </div>
                                     </div>
 
                                     <div class="row py-3">
@@ -266,10 +271,7 @@
                                         </tbody> -->
                                         <tbody>
                                             <tr>
-                                                <td> 
-                                                    <span class="customfontawesome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V285.7l-86.8 86.8c-10.3 10.3-17.5 23.1-21 37.2l-18.7 74.9c-2.3 9.2-1.8 18.8 1.3 27.5H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM549.8 235.7l14.4 14.4c15.6 15.6 15.6 40.9 0 56.6l-29.4 29.4-71-71 29.4-29.4c15.6-15.6 40.9-15.6 56.6 0zM311.9 417L441.1 287.8l71 71L382.9 487.9c-4.1 4.1-9.2 7-14.9 8.4l-60.1 15c-5.5 1.4-11.2-.2-15.2-4.2s-5.6-9.7-4.2-15.2l15-60.1c1.4-5.6 4.3-10.8 8.4-14.9z"/></svg></span>
-                                                    In Love 
-                                                </td>
+                                                <td><i class="fas fa-file text-info"></i> In Love</td>
                                                 <td>11/2/2022</td>
                                                 <td>Note</td>
                                                 <td>Clinical</td>
@@ -284,10 +286,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>
-                                                    <span class="customfontawesome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM64 224H88c30.9 0 56 25.1 56 56s-25.1 56-56 56H80v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V320 240c0-8.8 7.2-16 16-16zm24 80c13.3 0 24-10.7 24-24s-10.7-24-24-24H80v48h8zm72-64c0-8.8 7.2-16 16-16h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H176c-8.8 0-16-7.2-16-16V240zm32 112h8c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16h-8v96zm96-128h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H304v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H304v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V304 240c0-8.8 7.2-16 16-16z"/></svg></span>
-                                                     Notice of Privacy Practices 
-                                                    </td>
+                                                <td><i class="fas fa-file-pdf text-pdf"></i> Notice of Privacy Practices</td>
                                                 <td>11/2/2022</td>
                                                 <td>Intake Form</td>
                                                 <td>Administrative</td>
@@ -302,10 +301,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>
-                                                    <span class="customfontawesome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M64 0C28.7 0 0 28.7 0 64V448c0 35.3 28.7 64 64 64H320c35.3 0 64-28.7 64-64V160H256c-17.7 0-32-14.3-32-32V0H64zM256 0V128H384L256 0zM64 224H88c30.9 0 56 25.1 56 56s-25.1 56-56 56H80v32c0 8.8-7.2 16-16 16s-16-7.2-16-16V320 240c0-8.8 7.2-16 16-16zm24 80c13.3 0 24-10.7 24-24s-10.7-24-24-24H80v48h8zm72-64c0-8.8 7.2-16 16-16h24c26.5 0 48 21.5 48 48v64c0 26.5-21.5 48-48 48H176c-8.8 0-16-7.2-16-16V240zm32 112h8c8.8 0 16-7.2 16-16V272c0-8.8-7.2-16-16-16h-8v96zm96-128h48c8.8 0 16 7.2 16 16s-7.2 16-16 16H304v32h32c8.8 0 16 7.2 16 16s-7.2 16-16 16H304v48c0 8.8-7.2 16-16 16s-16-7.2-16-16V304 240c0-8.8 7.2-16 16-16z"/></svg></span>
-                                                    Good faith estimate model disclosure 
-                                                </td>
+                                                <td><i class="fas fa-file-pdf text-pdf"></i> Good faith estimate model disclosure </td>
                                                 <td>11/2/2022</td>
                                                 <td>Intake Form</td>
                                                 <td>Administrative</td>
@@ -320,10 +316,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td>
-                                                    <span class="customfontawesome"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V285.7l-86.8 86.8c-10.3 10.3-17.5 23.1-21 37.2l-18.7 74.9c-2.3 9.2-1.8 18.8 1.3 27.5H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128zM549.8 235.7l14.4 14.4c15.6 15.6 15.6 40.9 0 56.6l-29.4 29.4-71-71 29.4-29.4c15.6-15.6 40.9-15.6 56.6 0zM311.9 417L441.1 287.8l71 71L382.9 487.9c-4.1 4.1-9.2 7-14.9 8.4l-60.1 15c-5.5 1.4-11.2-.2-15.2-4.2s-5.6-9.7-4.2-15.2l15-60.1c1.4-5.6 4.3-10.8 8.4-14.9z"/></svg></span>
-                                                    Psychotherapy Progress Note 
-                                                </td>
+                                                <td><i class="fas fa-file text-info"></i> Psychotherapy Progress Note</td>
                                                 <td>10/31/2022</td>
                                                 <td>Intake Form</td>
                                                 <td>Administrative</td>
