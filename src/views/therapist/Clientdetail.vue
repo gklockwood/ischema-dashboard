@@ -317,6 +317,32 @@
                                                     </li>
                                                 </ul>
                                             </div>
+                                            <div class="col-sm-12 col-md-6 border-bottom py-3">
+                                                <div class="row">
+                                                    <div class="col-sm-12 text-center pb-2">
+                                                        <label for="" class="fw-bolder">Date Range (Created)</label>
+                                                    </div>
+                                                    <div class="col-sm">
+                                                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Select start date">
+                                                    </div>
+                                                    <div class="col-sm">
+                                                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Select end date">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6 border-bottom py-3">
+                                                <div class="row">
+                                                    <div class="col-sm-12 text-center pb-2">
+                                                        <label for="" class="fw-bolder">Date Range (Sent)</label>
+                                                    </div>
+                                                    <div class="col-sm">
+                                                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Select start date">
+                                                    </div>
+                                                    <div class="col-sm">
+                                                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Select end date">
+                                                    </div>
+                                                </div>
+                                            </div>
                                             <div class="col-sm-12 text-center border-bottom py-3">
                                                 <button type="button" class="btn btn-outline-dark" @click="toggleFilter">Reset Filter</button>
                                             </div>
@@ -371,7 +397,7 @@
                                         </tbody> -->
                                         <tbody>
                                             <tr>
-                                                <td><i class="fas fa-file text-info"></i> In Love</td>
+                                                <td><i class="fas fa-file text-info"></i> In Love <small class="text-muted">(Word)</small></td>
                                                 <td>11/2/2022</td>
                                                 <td>Note</td>
                                                 <td>Clinical</td>
@@ -387,14 +413,14 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><i class="fas fa-file-pdf text-pdf"></i> Notice of Privacy Practices</td>
+                                                <td><i class="fas fa-file-pdf text-pdf"></i> Notice of Privacy Practices <small class="text-muted">(PDF)</small></td>
                                                 <td>11/2/2022</td>
                                                 <td>Intake Form</td>
                                                 <td>Administrative</td>
                                                 <td></td>
                                                 <td>11/2/2022</td>
                                                 <td>11/2/2022</td>
-                                                <td><span class="badge bg-success">Completed by Patient</span></td>
+                                                <td><span class="badge bg-success"><i class="fa fa-file-signature"></i> Completed by Patient</span></td>
                                                 <td>
                                                     <span class="p-2 text-muted cursor-pointer"><i class="fa fa-edit"></i></span>
                                                     <span class="p-2 text-muted cursor-pointer"><i class="fa fa-print"></i></span>
@@ -403,7 +429,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><i class="fas fa-file-pdf text-pdf"></i> Good faith estimate model disclosure </td>
+                                                <td><i class="fas fa-file-pdf text-pdf"></i> Good faith estimate model disclosure <small class="text-muted">(PDF)</small></td>
                                                 <td>11/2/2022</td>
                                                 <td>Intake Form</td>
                                                 <td>Administrative</td>
@@ -419,14 +445,14 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><i class="fas fa-file text-info"></i> Psychotherapy Progress Note</td>
+                                                <td><i class="fas fa-file text-info"></i> Psychotherapy Progress Note <small class="text-muted">(Txt)</small></td>
                                                 <td>10/31/2022</td>
                                                 <td>Intake Form</td>
                                                 <td>Administrative</td>
                                                 <td>90834</td>
                                                 <td></td>
                                                 <td></td>
-                                                <td>Signed by Author</td>
+                                                <td>Pending Patient Signature</td>
                                                 <td>
                                                     <span class="p-2 text-muted cursor-pointer"><i class="fa fa-edit"></i></span>
                                                     <span class="p-2 text-muted cursor-pointer"><i class="fa fa-print"></i></span>
