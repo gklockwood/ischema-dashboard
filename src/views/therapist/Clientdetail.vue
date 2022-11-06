@@ -381,6 +381,7 @@
                                                 <td>Pending Patient Signature</td>
                                                 <td>
                                                     <span class="p-2 text-muted cursor-pointer"><i class="fa fa-edit"></i></span>
+                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-print"></i></span>
                                                     <span class="p-2 text-muted cursor-pointer"> <i class="fa fa-download"></i></span>
                                                     <span class="p-2 text-muted cursor-pointer"><i class="fa fa-trash"></i></span>                       
                                                 </td>
@@ -396,6 +397,7 @@
                                                 <td><span class="badge bg-success">Completed by Patient</span></td>
                                                 <td>
                                                     <span class="p-2 text-muted cursor-pointer"><i class="fa fa-edit"></i></span>
+                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-print"></i></span>
                                                     <span class="p-2 text-muted cursor-pointer"> <i class="fa fa-download"></i></span>
                                                     <span class="p-2 text-muted cursor-pointer"><i class="fa fa-trash"></i></span>                       
                                                 </td>
@@ -411,6 +413,7 @@
                                                 <td>Reviewed by Patient</td>
                                                 <td>
                                                     <span class="p-2 text-muted cursor-pointer"><i class="fa fa-edit"></i></span>
+                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-print"></i></span>
                                                     <span class="p-2 text-muted cursor-pointer"> <i class="fa fa-download"></i></span>
                                                     <span class="p-2 text-muted cursor-pointer"><i class="fa fa-trash"></i></span>                                            
                                                 </td>
@@ -426,6 +429,7 @@
                                                 <td>Signed by Author</td>
                                                 <td>
                                                     <span class="p-2 text-muted cursor-pointer"><i class="fa fa-edit"></i></span>
+                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-print"></i></span>
                                                     <span class="p-2 text-muted cursor-pointer"> <i class="fa fa-download"></i></span>
                                                     <span class="p-2 text-muted cursor-pointer"><i class="fa fa-trash"></i></span>                                          
                                                 </td>
