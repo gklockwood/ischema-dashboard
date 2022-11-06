@@ -420,7 +420,7 @@
                                                 <td></td>
                                                 <td>11/2/2022</td>
                                                 <td>11/2/2022</td>
-                                                <td><span class="badge bg-success"><i class="fa fa-file-signature"></i> Completed by Patient</span></td>
+                                                <td><span class="badge bg-success">Completed by Patient</span></td>
                                                 <td>
                                                     <span class="p-2 text-muted cursor-pointer"><i class="fa fa-edit"></i></span>
                                                     <span class="p-2 text-muted cursor-pointer"><i class="fa fa-print"></i></span>
