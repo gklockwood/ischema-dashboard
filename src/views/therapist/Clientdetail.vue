@@ -129,99 +129,199 @@
                                         </div>
                                     </div>
 
-                                    <div class="card p-3 mt-3 pb-2" v-if="showFilter">
-                                        <div class="row">
+          
+                                        <div class="row small" v-if="showFilter">
                                             <div class="col-sm">
-                                                <label for="" class="fw-bolder">Document Cetegory</label>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked value="option1">
-                                                    <label class="form-check-label" for="inlineCheckbox1">Intake Forms</label>
-                                                </div>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked value="option1">
-                                                    <label class="form-check-label" for="inlineCheckbox1">Assessments</label>
-                                                </div>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" checked value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">Intake Forms</label>
-                                                </div>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" checked value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">Notes</label>
-                                                </div>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">Uploads</label>
-                                                </div>
+                                                <ul class="list-group pb-3">
+                                                    <li class="list-group-item bg-light">
+                                                        <label for="" class="fw-bolder">Document Cetegory</label>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check pt-2">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked value="option1">
+                                                            <label class="form-check-label" for="inlineCheckbox1">Consent Forms</label>
+                                                        </div>
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item border-0 pb-0">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked value="option1">
+                                                                    <label class="form-check-label" for="inlineCheckbox1">Consent for Telehealth Consultation</label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-group-item border-0 pb-0">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked value="option1">
+                                                                    <label class="form-check-label" for="inlineCheckbox1">Notice of Privacy Practices</label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-group-item border-0 pb-0">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked value="option1">
+                                                                    <label class="form-check-label" for="inlineCheckbox1">Informed Consent for Psychotherapy</label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-group-item border-0 pb-0">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked value="option1">
+                                                                    <label class="form-check-label" for="inlineCheckbox1">Practice Policie</label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-group-item border-0 pb-0">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked value="option1">
+                                                                    <label class="form-check-label" for="inlineCheckbox1">Notice of Privacy Practices</label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-group-item border-0 pb-0">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked value="option1">
+                                                                    <label class="form-check-label" for="inlineCheckbox1">Release of Information</label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-group-item border-0 pb-0">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked value="option1">
+                                                                    <label class="form-check-label" for="inlineCheckbox1">Good Faith Estimate</label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked value="option1">
+                                                            <label class="form-check-label" for="inlineCheckbox1">Intake Forms</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" checked value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Assessments: Part 1</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" checked value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Assessments: Part 2</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" checked value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Notes</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Uploads</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
                                             <div class="col-sm">
-                                                <label for="" class="fw-bolder">Access</label>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox6" checked value="option1">
-                                                    <label class="form-check-label" for="inlineCheckbox1">Administrative</label>
-                                                </div>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox7" checked value="option1">
-                                                    <label class="form-check-label" for="inlineCheckbox1">Billing</label>
-                                                </div>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox8" checked value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">Clinical</label>
-                                                </div>
+                                                <ul class="list-group pb-3 ">
+                                                    <li class="list-group-item bg-light">
+                                                        <label for="" class="fw-bolder">Types of Access</label>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" checked value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Administrative</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" checked value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Billing</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Clinical</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
                                             <div class="col-sm">
-                                                <label for="" class="fw-bolder">Status</label>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox9" checked value="option1">
-                                                    <label class="form-check-label" for="inlineCheckbox1">Pending Patient Signature</label>
-                                                </div>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox10" checked value="option1">
-                                                    <label class="form-check-label" for="inlineCheckbox1">Reviewed by Patient</label>
-                                                </div>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox11" checked value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">Pending Patient Submission</label>
-                                                </div>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox12" checked value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">Completed by Patient</label>
-                                                </div>
+                                                <ul class="list-group pb-3">
+                                                    <li class="list-group-item bg-light">
+                                                        <label for="" class="fw-bolder">Status of Document</label>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" checked value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Pending Patient Signature</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" checked value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Reviewed by Patient</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Pending Patient Submission</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Completed by Patient</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
                                             <div class="col-sm">
-                                                <label for="" class="fw-bolder">Column</label>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox14" checked value="option1">
-                                                    <label class="form-check-label" for="inlineCheckbox1">Created</label>
-                                                </div>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox15" checked value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">Type</label>
-                                                </div>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox16" checked value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">Access</label>
-                                                </div>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox17" checked value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">Service</label>
-                                                </div>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox18" checked value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">Received</label>
-                                                </div>
-                                                <div class="form-check pt-2">
-                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox19" checked value="option2">
-                                                    <label class="form-check-label" for="inlineCheckbox2">Status</label>
-                                                </div>
+                                                <ul class="list-group pb-3">
+                                                    <li class="list-group-item bg-light">
+                                                        <label for="" class="fw-bolder">Column selection</label>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" checked value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Created</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" checked value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Category</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Access</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Service</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Received</label>
+                                                        </div>
+                                                    </li>
+                                                    <li class="list-group-item pb-0">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
+                                                            <label class="form-check-label" for="inlineCheckbox2">Status</label>
+                                                        </div>
+                                                    </li>
+                                                </ul>
                                             </div>
-                                        </div>
-                                        <div class="row border-top pt-2">
-                                            <div class="col-sm text-center">
+                                            <div class="col-sm-12 text-center border-bottom py-3">
                                                 <button type="button" class="btn btn-outline-dark" @click="toggleFilter">Reset Filter</button>
                                             </div>
                                         </div>
-                                    </div>
+                                   
 
                                     <div class="row py-3">
                                         <div class="col-sm-4 d-flex align-items-center">
