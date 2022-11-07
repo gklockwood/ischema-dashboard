@@ -137,74 +137,88 @@
                                                         <label for="" class="fw-bolder">Document Category</label>
                                                     </li>
                                                     <li class="list-group-item pb-0">
-                                                        <div class="form-check pt-2">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
-                                                            <label class="form-check-label" for="inlineCheckbox1">Consent Forms</label>
-                                                        </div>
-                                                    </li>
-                                                    <li class="list-group-item pb-0">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked value="option1">
                                                             <label class="form-check-label" for="inlineCheckbox1">Clinical Documents</label>
                                                         </div>
+                                                        <ul class="list-group">
+                                                            <li class="list-group-item pb-0 border-0">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
+                                                                    <label class="form-check-label" for="inlineCheckbox2">Inventories</label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-group-item pb-0 border-0">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
+                                                                    <label class="form-check-label" for="inlineCheckbox2">Upload</label>
+                                                                </div>
+                                                            </li>
+                                                        </ul>
                                                     </li>
                                                     <li class="list-group-item pb-0">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option1">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" checked value="option1">
                                                             <label class="form-check-label" for="inlineCheckbox1">Intake Forms</label>
                                                         </div>
                                                     </li>
                                                     <li class="list-group-item pb-0">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2" @click="togglenoteSub">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" checked value="option2" @click="togglenoteSub">
                                                             <label class="form-check-label" for="inlineCheckbox2">Notes</label>
                                                         </div>
-                                                        <ul class="list-group" v-if="shownoteSub">
+                                                        <ul class="list-group">
                                                             <li class="list-group-item pb-0 border-0">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5"  checked value="option2">
                                                                     <label class="form-check-label" for="inlineCheckbox2">Initial Intake and Treatment Plan</label>
                                                                 </div>
                                                             </li>
                                                             <li class="list-group-item pb-0 border-0">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5"  checked value="option2">
                                                                     <label class="form-check-label" for="inlineCheckbox2">Schema/Mode Conceptualization & Treatment Plan</label>
                                                                 </div>
                                                             </li>
                                                             <li class="list-group-item pb-0 border-0">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5"  checked value="option2">
+                                                                    <label class="form-check-label" for="inlineCheckbox2">Progress Notes</label>
+                                                                </div>
+                                                            </li>
+                                                            <li class="list-group-item pb-0 border-0">
+                                                                <div class="form-check">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5"  checked value="option2">
                                                                     <label class="form-check-label" for="inlineCheckbox2">Process Notes</label>
                                                                 </div>
                                                             </li>
                                                             <li class="list-group-item pb-0 border-0">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5"  checked value="option2">
                                                                     <label class="form-check-label" for="inlineCheckbox2">Treatment Review</label>
                                                                 </div>
                                                             </li>
                                                             <li class="list-group-item pb-0 border-0">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5"  checked value="option2">
                                                                     <label class="form-check-label" for="inlineCheckbox2">Termination Note</label>
                                                                 </div>
                                                             </li>
                                                             <li class="list-group-item pb-0 border-0">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5"  checked value="option2">
                                                                     <label class="form-check-label" for="inlineCheckbox2">Consultation</label>
                                                                 </div>
                                                             </li>
                                                             <li class="list-group-item pb-0 border-0">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5"  checked value="option2">
                                                                     <label class="form-check-label" for="inlineCheckbox2">Collateral Contact</label>
                                                                 </div>
                                                             </li>
                                                             <li class="list-group-item pb-0 border-0">
                                                                 <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5"  checked value="option2">
                                                                     <label class="form-check-label" for="inlineCheckbox2">Chart Note</label>
                                                                 </div>
                                                             </li>
@@ -223,39 +237,8 @@
                                                     </li>
                                                     <li class="list-group-item pb-0">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
-                                                            <label class="form-check-label" for="inlineCheckbox2">Uploads</label>
-                                                        </div>
-                                                    </li>
-                                                    <li class="list-group-item pb-0">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5"  checked value="option2">
                                                             <label class="form-check-label" for="inlineCheckbox2">Shared Documents</label>
-                                                        </div>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                            <div class="col-sm">
-                                                <ul class="list-group pb-3 ">
-                                                    <li class="list-group-item bg-light">
-                                                        <label for="" class="fw-bolder">Types of Access</label>
-                                                    </li>
-                                                    <li class="list-group-item pb-0">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
-                                                            <label class="form-check-label" for="inlineCheckbox2">Administrative</label>
-                                                        </div>
-                                                    </li>
-                                                    <li class="list-group-item pb-0">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
-                                                            <label class="form-check-label" for="inlineCheckbox2">Billing</label>
-                                                        </div>
-                                                    </li>
-                                                    <li class="list-group-item pb-0">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
-                                                            <label class="form-check-label" for="inlineCheckbox2">Clinical</label>
                                                         </div>
                                                     </li>
                                                 </ul>
@@ -267,25 +250,25 @@
                                                     </li>
                                                     <li class="list-group-item pb-0">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" checked value="option2">
                                                             <label class="form-check-label" for="inlineCheckbox2">Pending Patient Signature</label>
                                                         </div>
                                                     </li>
                                                     <li class="list-group-item pb-0">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" checked value="option2">
                                                             <label class="form-check-label" for="inlineCheckbox2">Reviewed by Patient</label>
                                                         </div>
                                                     </li>
                                                     <li class="list-group-item pb-0">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
                                                             <label class="form-check-label" for="inlineCheckbox2">Pending Patient Submission</label>
                                                         </div>
                                                     </li>
                                                     <li class="list-group-item pb-0">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
                                                             <label class="form-check-label" for="inlineCheckbox2">Completed by Patient</label>
                                                         </div>
                                                     </li>
@@ -298,37 +281,37 @@
                                                     </li>
                                                     <li class="list-group-item pb-0">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option2">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" checked value="option2">
                                                             <label class="form-check-label" for="inlineCheckbox2">Created</label>
                                                         </div>
                                                     </li>
                                                     <li class="list-group-item pb-0">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option2">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox4" checked value="option2">
                                                             <label class="form-check-label" for="inlineCheckbox2">Category</label>
                                                         </div>
                                                     </li>
                                                     <li class="list-group-item pb-0">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
                                                             <label class="form-check-label" for="inlineCheckbox2">Access</label>
                                                         </div>
                                                     </li>
                                                     <li class="list-group-item pb-0">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
                                                             <label class="form-check-label" for="inlineCheckbox2">Service</label>
                                                         </div>
                                                     </li>
                                                     <li class="list-group-item pb-0">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
                                                             <label class="form-check-label" for="inlineCheckbox2">Received</label>
                                                         </div>
                                                     </li>
                                                     <li class="list-group-item pb-0">
                                                         <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
+                                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox5" checked value="option2">
                                                             <label class="form-check-label" for="inlineCheckbox2">Status</label>
                                                         </div>
                                                     </li>
@@ -1052,24 +1035,16 @@
         setup() {
             const documentList = documentData;
             const showFilter = ref(false);
-            const shownoteSub = ref(false);
 
             function toggleFilter() {
                 showFilter.value = ! showFilter.value;
             }
 
-            function togglenoteSub() {
-                shownoteSub.value = ! shownoteSub.value;
-            }
-
-
 
             return {
                 documentList,
                 showFilter,
-                shownoteSub,
-                toggleFilter,
-                togglenoteSub
+                toggleFilter
             }
         }
     };
