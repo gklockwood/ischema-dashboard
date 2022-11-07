@@ -131,7 +131,7 @@
 
           
                                         <div class="row small" v-if="showFilter">
-                                            <div class="col-sm">
+                                            <div class="col-sm-12 col-md-4">
                                                 <ul class="list-group pb-3">
                                                     <li class="list-group-item bg-light">
                                                         <label for="" class="fw-bolder">Document Category</label>
@@ -222,17 +222,6 @@
                                                                     <label class="form-check-label" for="inlineCheckbox2">Chart Note</label>
                                                                 </div>
                                                             </li>
-                                                            <li class="list-group-item border-0">
-                                                                <div class="col-sm-12 pb-2">
-                                                                    <label for="" class="fw-bolder">Date Range (Created)</label>
-                                                                </div>
-                                                                <div class="col-sm pb-2">
-                                                                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Select start date">
-                                                                </div>
-                                                                <div class="col-sm">
-                                                                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Select end date">
-                                                                </div>
-                                                            </li>  
                                                         </ul>
                                                     </li>
                                                     <li class="list-group-item pb-0">
@@ -243,7 +232,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="col-sm">
+                                            <div class="col-sm-12 col-md-4">
                                                 <ul class="list-group pb-3">
                                                     <li class="list-group-item bg-light">
                                                         <label for="" class="fw-bolder">Status of Document</label>
@@ -274,7 +263,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="col-sm">
+                                            <div class="col-sm-12 col-md-4">
                                                 <ul class="list-group pb-3">
                                                     <li class="list-group-item bg-light">
                                                         <label for="" class="fw-bolder">Column selection</label>
@@ -316,6 +305,19 @@
                                                         </div>
                                                     </li>
                                                 </ul>
+                                            </div>
+                                            <div class="col-sm-12 col-md-6">
+                                                <div class="row">
+                                                    <div class="col-sm-12 pb-2 text-center">
+                                                        <label for="" class="fw-bolder">Date Range (Created)</label>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Select start date">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Select end date">
+                                                    </div>
+                                                </div>
                                             </div>
                                             <div class="col-sm-12 text-center border-bottom py-3">
                                                 <button type="button" class="btn btn-outline-dark" @click="toggleFilter">Reset Filter</button>
