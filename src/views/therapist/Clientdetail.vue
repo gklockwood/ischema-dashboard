@@ -404,10 +404,10 @@
                                                 <td>Pending Patient Signature</td>
                                                 <td>
                                                     <div class="btn-group">
-                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-edit"></i></span>
-                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-print"></i></span>
-                                                        <span class="p-2 btn btn-outline-dark"> <i class="fa fa-download"></i></span>
-                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-trash"></i></span>                       
+                                                        <span class="p-2 btn btn-outline-dark btn-sm disabled"><i class="fa fa-edit"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i class="fa fa-print"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"> <i class="fa fa-download"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i class="fa fa-trash"></i></span>                      
                                                     </div>
                                                 </td>
                                             </tr>
@@ -422,10 +422,10 @@
                                                 <td><span class="badge bg-success">Completed by Patient</span></td>
                                                 <td>
                                                     <div class="btn-group">
-                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-edit"></i></span>
-                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-print"></i></span>
-                                                        <span class="p-2 btn btn-outline-dark"> <i class="fa fa-download"></i></span>
-                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-trash"></i></span>                       
+                                                        <span class="p-2 btn btn-outline-dark btn-sm disabled"><i class="fa fa-edit"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i class="fa fa-print"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"> <i class="fa fa-download"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i class="fa fa-trash"></i></span>                     
                                                     </div>
                                                 </td>
                                             </tr>
@@ -440,15 +440,15 @@
                                                 <td>Reviewed by Patient</td>
                                                 <td>
                                                     <div class="btn-group">
-                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-edit"></i></span>
-                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-print"></i></span>
-                                                        <span class="p-2 btn btn-outline-dark"> <i class="fa fa-download"></i></span>
-                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-trash"></i></span>                       
+                                                        <span class="p-2 btn btn-outline-dark btn-sm disabled"><i class="fa fa-edit"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i class="fa fa-print"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"> <i class="fa fa-download"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i class="fa fa-trash"></i></span>                        
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><i class="fas fa-file text-info"></i> Psychotherapy Progress Note <small class="text-muted">(Txt)</small></td>
+                                                <td><i class="fas fa-file text-info"></i> Psychotherapy Progress Note <small class="text-muted">(HTML/Web Form)</small></td>
                                                 <td>10/31/2022</td>
                                                 <td>Intake Form</td>
                                                 <td>Administrative</td>
@@ -458,10 +458,10 @@
                                                 <td>Pending Patient Signature</td>
                                                 <td>
                                                     <div class="btn-group">
-                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-edit"></i></span>
-                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-print"></i></span>
-                                                        <span class="p-2 btn btn-outline-dark"> <i class="fa fa-download"></i></span>
-                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-trash"></i></span>                       
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i class="fa fa-edit"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i class="fa fa-print"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"> <i class="fa fa-download"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i class="fa fa-trash"></i></span>                       
                                                     </div>
                                                 </td>
                                             </tr>
