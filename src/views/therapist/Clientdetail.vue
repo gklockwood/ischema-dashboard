@@ -363,12 +363,9 @@
                                             </div>
                                         </div>
                                     </div>
-                              
-                               
-                                
                                 </div>
-                                <div class="col-sm-12">
-                                    <table class="table">
+                                <div class="col-sm-12" style="overflow: scroll;">
+                                    <table class="table" style="min-width: 1200px">
                                         <thead>
                                             <tr>
                                                 <th>Name</th>
@@ -406,10 +403,12 @@
                                                 <td>11/2/2022</td>
                                                 <td>Pending Patient Signature</td>
                                                 <td>
-                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-edit"></i></span>
-                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-print"></i></span>
-                                                    <span class="p-2 text-muted cursor-pointer"> <i class="fa fa-download"></i></span>
-                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-trash"></i></span>                       
+                                                    <div class="btn-group">
+                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-edit"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-print"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark"> <i class="fa fa-download"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-trash"></i></span>                       
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -422,10 +421,12 @@
                                                 <td>11/2/2022</td>
                                                 <td><span class="badge bg-success">Completed by Patient</span></td>
                                                 <td>
-                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-edit"></i></span>
-                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-print"></i></span>
-                                                    <span class="p-2 text-muted cursor-pointer"> <i class="fa fa-download"></i></span>
-                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-trash"></i></span>                       
+                                                    <div class="btn-group">
+                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-edit"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-print"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark"> <i class="fa fa-download"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-trash"></i></span>                       
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -438,10 +439,12 @@
                                                 <td>11/2/2022</td>
                                                 <td>Reviewed by Patient</td>
                                                 <td>
-                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-edit"></i></span>
-                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-print"></i></span>
-                                                    <span class="p-2 text-muted cursor-pointer"> <i class="fa fa-download"></i></span>
-                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-trash"></i></span>                                            
+                                                    <div class="btn-group">
+                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-edit"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-print"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark"> <i class="fa fa-download"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-trash"></i></span>                       
+                                                    </div>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -454,10 +457,12 @@
                                                 <td></td>
                                                 <td>Pending Patient Signature</td>
                                                 <td>
-                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-edit"></i></span>
-                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-print"></i></span>
-                                                    <span class="p-2 text-muted cursor-pointer"> <i class="fa fa-download"></i></span>
-                                                    <span class="p-2 text-muted cursor-pointer"><i class="fa fa-trash"></i></span>                                          
+                                                    <div class="btn-group">
+                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-edit"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-print"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark"> <i class="fa fa-download"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark"><i class="fa fa-trash"></i></span>                       
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>
