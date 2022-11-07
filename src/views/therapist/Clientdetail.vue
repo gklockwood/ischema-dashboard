@@ -187,12 +187,6 @@
                                                             <li class="list-group-item pb-0 border-0">
                                                                 <div class="form-check">
                                                                     <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
-                                                                    <label class="form-check-label" for="inlineCheckbox2">Progress Notes</label>
-                                                                </div>
-                                                            </li>
-                                                            <li class="list-group-item pb-0 border-0">
-                                                                <div class="form-check">
-                                                                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option2">
                                                                     <label class="form-check-label" for="inlineCheckbox2">Process Notes</label>
                                                                 </div>
                                                             </li>
@@ -226,6 +220,17 @@
                                                                     <label class="form-check-label" for="inlineCheckbox2">Chart Note</label>
                                                                 </div>
                                                             </li>
+                                                            <li class="list-group-item border-0">
+                                                                <div class="col-sm-12 pb-2">
+                                                                    <label for="" class="fw-bolder">Date Range (Created)</label>
+                                                                </div>
+                                                                <div class="col-sm pb-2">
+                                                                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Select start date">
+                                                                </div>
+                                                                <div class="col-sm">
+                                                                    <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Select end date">
+                                                                </div>
+                                                            </li>  
                                                         </ul>
                                                     </li>
                                                     <li class="list-group-item pb-0">
@@ -340,32 +345,6 @@
                                                         </div>
                                                     </li>
                                                 </ul>
-                                            </div>
-                                            <div class="col-sm-12 col-md-6 border-bottom py-3">
-                                                <div class="row">
-                                                    <div class="col-sm-12 text-center pb-2">
-                                                        <label for="" class="fw-bolder">Date Range (Created)</label>
-                                                    </div>
-                                                    <div class="col-sm">
-                                                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Select start date">
-                                                    </div>
-                                                    <div class="col-sm">
-                                                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Select end date">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-12 col-md-6 border-bottom py-3">
-                                                <div class="row">
-                                                    <div class="col-sm-12 text-center pb-2">
-                                                        <label for="" class="fw-bolder">Date Range (Sent)</label>
-                                                    </div>
-                                                    <div class="col-sm">
-                                                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Select start date">
-                                                    </div>
-                                                    <div class="col-sm">
-                                                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Select end date">
-                                                    </div>
-                                                </div>
                                             </div>
                                             <div class="col-sm-12 text-center border-bottom py-3">
                                                 <button type="button" class="btn btn-outline-dark" @click="toggleFilter">Reset Filter</button>
