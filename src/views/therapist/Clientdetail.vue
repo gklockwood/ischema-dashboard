@@ -350,7 +350,7 @@
                                    
 
                                     <div class="row py-3">
-                                        <div class="col-sm-4 d-flex align-items-center">
+                                        <div class="col-sm-12 col-md-4 d-flex align-items-center">
                                             <div class="input-group">
                                                 <input class="form-control border-end-0 border rounded-pill" type="search" value="Search Documents"
                                                     id="example-search-input">
@@ -361,6 +361,9 @@
                                                     </button>
                                                 </span>
                                             </div>
+                                        </div>
+                                        <div class="col-sm align-text-bottom pt-1">
+                                            <small class="text-muted">Only <span class="fw-bolder">Web Forms</span> can be edited in the app. To edit another document type you can download it and re-upload as a custom document.</small>
                                         </div>
                                     </div>
                                 </div>
@@ -448,7 +451,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><i class="fas fa-file text-info"></i> Psychotherapy Progress Note <small class="text-muted">(HTML/Web Form)</small></td>
+                                                <td><i class="fas fa-file text-info"></i> Psychotherapy Progress Note <small class="text-muted">(Web Form)</small></td>
                                                 <td>10/31/2022</td>
                                                 <td>Intake Form</td>
                                                 <td>Administrative</td>
