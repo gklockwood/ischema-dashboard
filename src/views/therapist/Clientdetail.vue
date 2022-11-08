@@ -306,7 +306,7 @@
                                                     </li>
                                                 </ul>
                                             </div>
-                                            <div class="col-sm-12 col-md-6">
+                                            <div class="col-sm-12 col-md-4">
                                                 <div class="row">
                                                     <div class="col-sm-12 pb-2 text-center">
                                                         <label for="" class="fw-bolder">Date Range (Created)</label>
