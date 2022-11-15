@@ -99,6 +99,14 @@
               <router-link to="/SchemaModePlan3"  target="_blank">Schema/Mode Conceptualization and Treatment Plan-3b. Childhood & Adolescent Origins</router-link>
             </li>
           </ul>
+          <div class="col-sm-12 py-4">
+            <h2>eSchemaTherapy.Research</h2>
+          </div>
+          <ul>
+             <li>
+                <router-link to="/research"  target="_blank">Research Home</router-link>
+              </li>
+            </ul>
         </div>
       </div>
       

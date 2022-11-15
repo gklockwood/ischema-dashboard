@@ -90,6 +90,9 @@ import Intakenote1 from '../views/surveys/Intakenote1.vue'
 import Psychotherapynote from '../views/surveys/Psychotherapynote.vue'
 import Terminationnote from '../views/surveys/Terminationnote.vue'
 
+// Reearch relatd 
+import Research from '../views/research/research.vue'
+
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
@@ -469,6 +472,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/demographicsform',
     name: 'Demographicsform',
     component: Demographicsform  
+  },
+  {
+    path: '/research',
+    name: 'Research',
+    component: Research  
   }
 ]
 
