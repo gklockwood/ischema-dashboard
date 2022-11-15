@@ -9,27 +9,27 @@
                         <li class="list-group-item bg-light fw-bolder">Consent Documents</li>
                         <li class="list-group-item">
                             <a href="">Consent for Telehealth Consultation</a>       
-                                <div class="btn-group ps-2">
-                                    <span class="p-2 btn-sm"><i class="fa fa-print"></i></span>
-                                    <span class="p-2 btn-sm"> <i class="fa fa-download"></i></span>
+                                <div class="btn-group ps-2 float-end">
+                                    <span class="btn btn-sm"><i class="fa fa-print"></i></span>
+                                    <span class="btn btn-sm"> <i class="fa fa-download"></i></span>
                                 </div>
                         </li>
                         <li class="list-group-item"><a href="">Notice of Privacy Practices</a>
-                            <div class="btn-group ps-2">
-                                <span class="p-2 btn-sm"><i class="fa fa-print"></i></span>
-                                <span class="p-2 btn-sm"> <i class="fa fa-download"></i></span>
+                            <div class="btn-group ps-2 float-end">
+                                <span class="btn btn-sm"><i class="fa fa-print"></i></span>
+                                <span class="btn btn-sm"> <i class="fa fa-download"></i></span>
                             </div>
                         </li>
                         <li class="list-group-item"><a href="">Informed Consent for Psychotherapy</a>
-                            <div class="btn-group ps-2">
-                                <span class="p-2 btn-sm"><i class="fa fa-print"></i></span>
-                                <span class="p-2 btn-sm"> <i class="fa fa-download"></i></span>
+                            <div class="btn-group ps-2 float-end">
+                                <span class="btn btn-sm"><i class="fa fa-print"></i></span>
+                                <span class="btn btn-sm"> <i class="fa fa-download"></i></span>
                             </div>
                         </li>
                           <li class="list-group-item"><a href="">Practice Policies</a>
-                            <div class="btn-group ps-2">
-                                <span class="p-2 btn-sm"><i class="fa fa-print"></i></span>
-                                <span class="p-2 btn-sm"> <i class="fa fa-download"></i></span>
+                            <div class="btn-group ps-2 float-end">
+                                <span class="btn btn-sm"><i class="fa fa-print"></i></span>
+                                <span class="btn btn-sm"> <i class="fa fa-download"></i></span>
                             </div>
                         </li>
                 
@@ -38,54 +38,54 @@
                         <li class="list-group-item bg-light fw-bolder">Intake Forms</li>
                         <li class="list-group-item">
                             <a href="">Intake Demographics</a>       
-                                <div class="btn-group ps-2">
-                                    <span class="p-2 btn-sm"><i class="fa fa-print"></i></span>
-                                    <span class="p-2 btn-sm"> <i class="fa fa-download"></i></span>
+                                <div class="btn-group ps-2 float-end">
+                                    <span class="btn btn-sm"><i class="fa fa-print"></i></span>
+                                    <span class="btn btn-sm"> <i class="fa fa-download"></i></span>
                                 </div>
                         </li>
                         <li class="list-group-item"><a href="">Intake Questionnaire, part 1</a>
-                            <div class="btn-group ps-2">
-                                <span class="p-2 btn-sm"><i class="fa fa-print"></i></span>
-                                <span class="p-2 btn-sm"> <i class="fa fa-download"></i></span>
+                            <div class="btn-group ps-2 float-end">
+                                <span class="btn btn-sm"><i class="fa fa-print"></i></span>
+                                <span class="btn btn-sm"> <i class="fa fa-download"></i></span>
                             </div>
                         </li>
                     </ul>
                     <ul class="list-group pt-3">
                         <li class="list-group-item bg-light fw-bolder">Assessments</li>
                         <li class="list-group-item"><a href="">YSQ</a>
-                            <div class="btn-group ps-2">
-                                <span class="p-2 btn-sm"><i class="fa fa-print"></i></span>
-                                <span class="p-2 btn-sm"> <i class="fa fa-download"></i></span>
+                            <div class="btn-group ps-2 float-end">
+                                <span class="btn btn-sm"><i class="fa fa-print"></i></span>
+                                <span class="btn btn-sm"> <i class="fa fa-download"></i></span>
                             </div>
                         </li>
                         <li class="list-group-item"><a href="">YPSQ</a>
-                            <div class="btn-group ps-2">
-                                <span class="p-2 btn-sm"><i class="fa fa-print"></i></span>
-                                <span class="p-2 btn-sm"> <i class="fa fa-download"></i></span>
+                            <div class="btn-group ps-2 float-end">
+                                <span class="btn btn-sm"><i class="fa fa-print"></i></span>
+                                <span class="btn btn-sm"> <i class="fa fa-download"></i></span>
                             </div>
                         </li>
                         <li class="list-group-item"><a href="">YPI-R3</a>
-                            <div class="btn-group ps-2">
-                                <span class="p-2 btn-sm"><i class="fa fa-print"></i></span>
-                                <span class="p-2 btn-sm"> <i class="fa fa-download"></i></span>
+                            <div class="btn-group ps-2 float-end">
+                                <span class="btn btn-sm"><i class="fa fa-print"></i></span>
+                                <span class="btn btn-sm"> <i class="fa fa-download"></i></span>
                             </div>
                         </li>
                         <li class="list-group-item"><a href="">PPSI</a>
-                            <div class="btn-group ps-2">
-                                <span class="p-2 btn-sm"><i class="fa fa-print"></i></span>
-                                <span class="p-2 btn-sm"> <i class="fa fa-download"></i></span>
+                            <div class="btn-group ps-2 float-end">
+                                <span class="btn btn-sm"><i class="fa fa-print"></i></span>
+                                <span class="btn btn-sm"> <i class="fa fa-download"></i></span>
                             </div>
                         </li>
                         <li class="list-group-item"><a href="">PHQ-9</a>
-                            <div class="btn-group ps-2">
-                                <span class="p-2 btn-sm"><i class="fa fa-print"></i></span>
-                                <span class="p-2 btn-sm"> <i class="fa fa-download"></i></span>
+                            <div class="btn-group ps-2 float-end">
+                                <span class="btn btn-sm"><i class="fa fa-print"></i></span>
+                                <span class="btn btn-sm"> <i class="fa fa-download"></i></span>
                             </div>
                         </li>
                         <li class="list-group-item"><a href="">GAD-7</a>
-                            <div class="btn-group ps-2">
-                                <span class="p-2 btn-sm"><i class="fa fa-print"></i></span>
-                                <span class="p-2 btn-sm"> <i class="fa fa-download"></i></span>
+                            <div class="btn-group ps-2 float-end">
+                                <span class="btn btn-sm"><i class="fa fa-print"></i></span>
+                                <span class="btn btn-sm"> <i class="fa fa-download"></i></span>
                             </div>
                         </li>
                     </ul>
@@ -108,11 +108,11 @@
                         </li>
                         <li class="list-group-item">
                             <a href="#">Custom Document Example</a>
-                            <div class="btn-group">
-                                <span class="p-2 btn btn-sm"><i class="fa fa-edit"></i></span>
-                                <span class="p-2 btn btn-sm"><i class="fa fa-print"></i></span>
-                                <span class="p-2 btn btn-sm"> <i class="fa fa-download"></i></span>
-                                <span class="p-2 btn btn-sm"><i class="fa fa-trash"></i></span>                      
+                            <div class="btn-group ps-2 float-end">
+                                <span class="btn btn-sm"><i class="fa fa-edit"></i></span>
+                                <span class="btn btn-sm"><i class="fa fa-print"></i></span>
+                                <span class="btn btn-sm"> <i class="fa fa-download"></i></span>
+                                <span class="btn btn-sm"><i class="fa fa-trash"></i></span>                      
                             </div>
                         </li>
                     </ul>
