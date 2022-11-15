@@ -124,7 +124,7 @@
       <button class="btn dropdown-item cursor-pointer text-white sidebarbutton"  data-bs-toggle="modal" data-bs-target="#therapistmessagemodal"><i class="fa fa-comment"></i> Messages <span class="badge bg-primary ms-1">3</span></button>
       
       <router-link to="/therapist/clientportal" class="list-group-item list-group-item-action bg-dark text-light">
-        <i class="fa fa-file"></i> Documents
+        <i class="fa fa-file"></i> Document Library
       </router-link>
 
       <router-link to="/therapist/therapistdataexport" class="list-group-item list-group-item-action bg-dark text-light"><i class="fa fa-file-export"></i>

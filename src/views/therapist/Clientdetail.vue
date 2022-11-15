@@ -937,7 +937,9 @@
             <div class="modal-body">
                 <div class="mb-3">
                     <input class="form-control" type="file" id="formFile">
+                    <small>(Client specific uploads)</small>
                   </div>
+                  
                 <div class="image-upload-wrap text-center pt-4 px-4 pb-3 border">
                       <p>Drag and drop a files</p>
                 </div>
