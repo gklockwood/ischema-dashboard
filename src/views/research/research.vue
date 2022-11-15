@@ -19,7 +19,7 @@
                                         data-bs-target="#collectiveresults"></i></span>
                             </div>
                         </li>
-                        <li class="list-group-item">
+                          <li class="list-group-item">
                             <span class="link-primary cursor-pointer" data-bs-toggle="modal"
                                 data-bs-target="#formpreview">YSQ</span>
                             <div class="btn-group ps-2 float-end">
@@ -27,9 +27,11 @@
                                         data-bs-target="#sharesurvey"></i></span>
                                 <span class="btn btn-sm"><i class="fa fa-cog" data-bs-toggle="modal"
                                         data-bs-target="#surveysettings"></i></span>
+                                <span class="btn btn-sm"><i class="fa fa-chart-bar" data-bs-toggle="modal"
+                                        data-bs-target="#collectiveresults"></i></span>
                             </div>
                         </li>
-                        <li class="list-group-item">
+                          <li class="list-group-item">
                             <span class="link-primary cursor-pointer" data-bs-toggle="modal"
                                 data-bs-target="#formpreview">YSQ</span>
                             <div class="btn-group ps-2 float-end">
@@ -37,40 +39,48 @@
                                         data-bs-target="#sharesurvey"></i></span>
                                 <span class="btn btn-sm"><i class="fa fa-cog" data-bs-toggle="modal"
                                         data-bs-target="#surveysettings"></i></span>
-                            </div>
-                        </li>
-                        <li class="list-group-item">
-                            <span class="link-primary cursor-pointer" data-bs-toggle="modal"
-                                data-bs-target="#formpreview">YSQ</span>
-
-                            <div class="btn-group ps-2 float-end">
-                                <span class="btn btn-sm"><i class="fa fa-link" data-bs-toggle="modal"
-                                        data-bs-target="#sharesurvey"></i></span>
-                                <span class="btn btn-sm"><i class="fa fa-cog" data-bs-toggle="modal"
-                                        data-bs-target="#surveysettings"></i></span>
+                                <span class="btn btn-sm"><i class="fa fa-chart-bar" data-bs-toggle="modal"
+                                        data-bs-target="#collectiveresults"></i></span>
                             </div>
                         </li>
                         <li class="list-group-item">
                             <span class="link-primary cursor-pointer" data-bs-toggle="modal"
                                 data-bs-target="#formpreview">YSQ</span>
 
-                            <div class="btn-group ps-2 float-end">
-                                <span class="btn btn-sm"><i class="fa fa-link" data-bs-toggle="modal"
-                                        data-bs-target="#sharesurvey"></i></span>
-                                <span class="btn btn-sm"><i class="fa fa-cog" data-bs-toggle="modal"
-                                        data-bs-target="#surveysettings"></i></span>
-                            </div>
+                                <div class="btn-group ps-2 float-end">
+                                    <span class="btn btn-sm"><i class="fa fa-link" data-bs-toggle="modal"
+                                            data-bs-target="#sharesurvey"></i></span>
+                                    <span class="btn btn-sm"><i class="fa fa-cog" data-bs-toggle="modal"
+                                            data-bs-target="#surveysettings"></i></span>
+                                    <span class="btn btn-sm"><i class="fa fa-chart-bar" data-bs-toggle="modal"
+                                            data-bs-target="#collectiveresults"></i></span>
+                                </div>
                         </li>
                         <li class="list-group-item">
                             <span class="link-primary cursor-pointer" data-bs-toggle="modal"
                                 data-bs-target="#formpreview">YSQ</span>
 
-                            <div class="btn-group ps-2 float-end">
-                                <span class="btn btn-sm"><i class="fa fa-link" data-bs-toggle="modal"
-                                        data-bs-target="#sharesurvey"></i></span>
-                                <span class="btn btn-sm"><i class="fa fa-cog" data-bs-toggle="modal"
-                                        data-bs-target="#surveysettings"></i></span>
-                            </div>
+                                <div class="btn-group ps-2 float-end">
+                                    <span class="btn btn-sm"><i class="fa fa-link" data-bs-toggle="modal"
+                                            data-bs-target="#sharesurvey"></i></span>
+                                    <span class="btn btn-sm"><i class="fa fa-cog" data-bs-toggle="modal"
+                                            data-bs-target="#surveysettings"></i></span>
+                                    <span class="btn btn-sm"><i class="fa fa-chart-bar" data-bs-toggle="modal"
+                                            data-bs-target="#collectiveresults"></i></span>
+                                </div>
+                        </li>
+                        <li class="list-group-item">
+                            <span class="link-primary cursor-pointer" data-bs-toggle="modal"
+                                data-bs-target="#formpreview">YSQ</span>
+
+                                <div class="btn-group ps-2 float-end">
+                                    <span class="btn btn-sm"><i class="fa fa-link" data-bs-toggle="modal"
+                                            data-bs-target="#sharesurvey"></i></span>
+                                    <span class="btn btn-sm"><i class="fa fa-cog" data-bs-toggle="modal"
+                                            data-bs-target="#surveysettings"></i></span>
+                                    <span class="btn btn-sm"><i class="fa fa-chart-bar" data-bs-toggle="modal"
+                                            data-bs-target="#collectiveresults"></i></span>
+                                </div>
                         </li>
                     </ul>
                 </div>
@@ -411,7 +421,7 @@
                         </div>
 
                     </div>
-
+<!-- 
                     <div class="container my-4">
                         <div class="row">
                             <div class="col-sm-12 text-center">
@@ -419,7 +429,7 @@
                                 <button type="button" class="btn btn-primary m-2">Submit</button>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>
@@ -439,6 +449,8 @@
                     <div class="modal-body">
                         <div class="container py-4">
                             <h3>Current Level of Functioning in Major Life Areas</h3>
+                            <button type="button" class="btn btn-outline-dark">Download as Excel <i class="fa fa-download"></i></button>
+                            <button type="button" class="btn btn-outline-dark">Share with Therapist <i class="fa fa-send"></i></button>
                             <div class="col-sm-12 py-4">
                                 <label class="form-label fw-bolder">Occupational or School Performance Rating:</label>
                                 <div class="progress" style="height: 30px;">
@@ -543,6 +555,9 @@
                     <div class="modal-body">
                         <div class="container py-4">
                             <h3>Current Level of Functioning in Major Life Areas</h3>
+                            <div class="col-sm-12 py-4">
+                                <button type="button" class="btn btn-outline-dark">Download as Excel <i class="fa fa-download"></i></button>
+                            </div>
                             <div class="col-sm-12 py-4">
                                 <label class="form-label fw-bolder">Occupational or School Performance Rating:</label>
                                 <div class="progress" style="height: 30px;">

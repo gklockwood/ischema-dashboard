@@ -92,6 +92,8 @@ import Terminationnote from '../views/surveys/Terminationnote.vue'
 
 // Reearch relatd 
 import Research from '../views/research/research.vue'
+import Yoursurveyresults from '../views/research/yoursurveyresults.vue'
+import Takesurvey from '../views/research/takesurvey.vue'
 
 const routes: Array<RouteRecordRaw> = [
   {
@@ -477,6 +479,16 @@ const routes: Array<RouteRecordRaw> = [
     path: '/research',
     name: 'Research',
     component: Research  
+  },
+  {
+    path: '/takesurvey',
+    name: 'Takesurvey',
+    component: Takesurvey  
+  },
+  {
+    path: '/yoursurveyresults',
+    name: 'Yoursurveyresults',
+    component: Yoursurveyresults  
   }
 ]
 

@@ -106,6 +106,12 @@
              <li>
                 <router-link to="/research"  target="_blank">Research Home</router-link>
               </li>
+              <li>
+                <router-link to="/takesurvey"  target="_blank">Take Survey</router-link>
+              </li>
+              <li>
+                <router-link to="/yoursurveyresults"  target="_blank">Your Survey Results</router-link>
+              </li>
             </ul>
         </div>
       </div>
