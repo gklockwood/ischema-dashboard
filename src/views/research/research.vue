@@ -16,7 +16,7 @@
                                 <span class="btn btn-sm"><i class="fa fa-cog" data-bs-toggle="modal"
                                         data-bs-target="#surveysettings"></i></span>
                                 <span class="btn btn-sm"><i class="fa fa-chart-bar" data-bs-toggle="modal"
-                                        data-bs-target="#surveysettings"></i></span>
+                                        data-bs-target="#collectiveresults"></i></span>
                             </div>
                         </li>
                         <li class="list-group-item">
@@ -149,21 +149,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="container py-4">
-                        <h3>Schema:Mode Conceptualization and Treatment Plan-2. Current Level of Functioning</h3>
-
-                        <b class="d-block pt-4">Current Level of Functioning in Major Life Areas</b>
-                        <p>
-                            Rate the patient’s current functioning for each of the 10 life areas in the table below.
-                            (1=Not
-                            Functional/Very Low, 6=Very Good or Excellent Functioning). Below it you can clarify your
-                            rationale for
-                            each rating in behavioral terms. If the patient’s prior level of functioning was
-                            significantly different
-                            from the current level, it may be helpful to clarify this too. Information about how to rate
-                            these areas
-                            can be found in the accompanying guide.
-                        </p>
-
+                        <h3>Current Level of Functioning in Major Life Areas</h3>
                         <div class="col-sm-12 py-4">
                             <label class="form-label fw-bolder">Occupational or School Performance Rating:</label>
                             <form class="form cf">
@@ -440,6 +426,214 @@
     </div>
 
     <!-- Preview Form Modal End -->
+
+
+        <!-- Individual results Modal Start -->
+        <div class="modal fade" id="individualresults" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl" style="z-index:2000;position: relative;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Results for YSQ</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container py-4">
+                            <h3>Current Level of Functioning in Major Life Areas</h3>
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Occupational or School Performance Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100">3</div>
+                                  </div>
+                            </div>
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Intimate, Romantic, Longer-Term Relationships
+                                    Rating:</label>
+                                    <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5</div>
+                                    </div>
+                            </div>
+    
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Family Relationships Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100">4</div>
+                                  </div>
+                            </div>
+    
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Friends & Other Social Relationships Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100">1</div>
+                                  </div>
+                            </div>
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Solitary Functioning & Time Alone Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">3</div>
+                                  </div>
+                            </div>
+    
+    
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Play/Hobbies/Creative Outlets Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">5</div>
+                                </div>
+                            </div>
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Exercise Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">3</div>
+                                  </div>
+                            </div>
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Nutrition Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100">4</div>
+                                  </div>
+                            </div>
+    
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Sleep Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">3</div>
+                                  </div>
+                            </div>
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Mediation/Yoga/Contemplative Practice/Spirituality
+                                    Rating:</label>
+                                    <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100">1</div>
+                                    </div>
+                            </div>
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Connection with Nature Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">3</div>
+                                  </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Individual results Modal End -->
+
+
+         <!-- Collective results Modal Start -->
+         <div class="modal fade" id="collectiveresults" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-xl" style="z-index:2000;position: relative;">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Results</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container py-4">
+                            <h3>Current Level of Functioning in Major Life Areas</h3>
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Occupational or School Performance Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="3" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                  </div>
+                            </div>
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Intimate, Romantic, Longer-Term Relationships
+                                    Rating:</label>
+                                    <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                    </div>
+                            </div>
+    
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Family Relationships Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                  </div>
+                            </div>
+    
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Friends & Other Social Relationships Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100">20%</div>
+                                  </div>
+                            </div>
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Solitary Functioning & Time Alone Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                  </div>
+                            </div>
+    
+    
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Play/Hobbies/Creative Outlets Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                </div>
+                            </div>
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Exercise Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                  </div>
+                            </div>
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Nutrition Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%;" aria-valuenow="4" aria-valuemin="0" aria-valuemax="100">60%</div>
+                                  </div>
+                            </div>
+    
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Sleep Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                  </div>
+                            </div>
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Mediation/Yoga/Contemplative Practice/Spirituality
+                                    Rating:</label>
+                                    <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar" role="progressbar" style="width: 20%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100">20%</div>
+                                    </div>
+                            </div>
+    
+                            <div class="col-sm-12 py-4">
+                                <label class="form-label fw-bolder">Connection with Nature Rating:</label>
+                                <div class="progress" style="height: 30px;">
+                                    <div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">50%</div>
+                                  </div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Collective results Modal End -->
 
 
 
