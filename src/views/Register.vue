@@ -7,12 +7,15 @@
 
             <div class="row g-3 py-4">
                 <div class="col">
+                    <label for="" class="form-label fw-bolder">First Name *</label>
                     <input type="text" class="form-control" placeholder="First Name" aria-label="First name">
                 </div>
                 <div class="col">
+                    <label for="" class="form-label fw-bolder">Last Name *</label>
                     <input type="text" class="form-control" placeholder="Last Name" aria-label="Last name">
                 </div>
                 <div class="col">
+                    <label for="" class="form-label fw-bolder">Date of Birth *</label>
                     <input type="text" class="form-control" placeholder="Date of Birth" aria-label="Date of Birth">
                 </div>
             </div>
@@ -20,6 +23,7 @@
      
             <div class="row g-3 pt-4">
                 <div class="col">
+                    <label for="" class="form-label fw-bolder">Address Line 1 *</label>
                     <div class="control-group">
                         <div class="controls">
                             <input id="address-line1" name="address-line1" type="text" placeholder="Address line 1"
@@ -29,6 +33,7 @@
                     </div>
                 </div>
                 <div class="col">
+                    <label for="" class="form-label fw-bolder">Address Line 2</label>
                     <div class="control-group">
                         <div class="controls">
                             <input id="address-line1" name="address-line1" type="text" placeholder="Address line 2"
@@ -40,6 +45,7 @@
             </div>
             <div class="row g-3 pt-4">
                 <div class="col">
+                    <label for="" class="form-label fw-bolder">City/Town *</label>
                     <div class="control-group">
                         <div class="controls">
                             <input id="city" name="city" type="text" placeholder="City/Town" class="form-control">
@@ -48,6 +54,7 @@
                     </div>
                 </div>
                 <div class="col">
+                    <label for="" class="form-label fw-bolder">State/Province/Region *</label>
                     <div class="control-group">
                         <div class="controls">
                             <input id="region" name="region" type="text" placeholder="State/Province/Region"
@@ -59,6 +66,7 @@
             </div>
             <div class="row g-3 pt-4">
                 <div class="col">
+                    <label for="" class="form-label fw-bolder">Zip/Postal Code *</label>
                     <div class="control-group">
                         <div class="controls">
                             <input id="city" name="city" type="text" placeholder="Zip/Postal Code" class="form-control">
@@ -67,6 +75,7 @@
                     </div>
                 </div>
                 <div class="col">
+                    <label for="" class="form-label fw-bolder">Country *</label>
                     <select class="form-select" aria-label="Default select example">
                         <option value="" selected="selected">Country</option>
                         <option value="AF">Afghanistan</option>
@@ -315,9 +324,11 @@
 
             <div class="row g-3 py-4">
                 <div class="col">
+                    <label for="" class="form-label fw-bolder">Email *</label>
                     <input type="text" class="form-control" placeholder="Email" aria-label="Email">
                 </div>
                 <div class="col">
+                    <label for="" class="form-label fw-bolder">Phone Number *</label>
                     <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number">
                 </div>
             </div>
@@ -329,9 +340,11 @@
                     <input type="text" class="form-control" placeholder="Username" aria-label="Username">
                 </div> -->
                 <div class="col">
+                    <label for="" class="form-label fw-bolder">Password *</label>
                     <input type="text" class="form-control" placeholder="Password" aria-label="Password">
                 </div>
                 <div class="col">
+                    <label for="" class="form-label fw-bolder">Repeat Password *</label>
                     <input type="text" class="form-control" placeholder="Repeat Password" aria-label="AgRepeat Passworde">
                 </div>
             </div>
@@ -339,6 +352,7 @@
 
             <div class="row g-3 py-4">
                 <div class="col">
+                    <label for="" class="form-label fw-bolder">Additional Comments</label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
                         placeholder="Add additional information (please tell us a little bit about what you would like help with)"></textarea>
                 </div>
