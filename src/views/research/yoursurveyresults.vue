@@ -3,7 +3,6 @@
         <div class="container py-4">
             <h3>Your Results</h3>
             <button type="button" class="btn btn-outline-dark">Download Results <i class="fa fa-download"></i></button>
-            <button type="button" class="btn btn-outline-dark ms-2">Share with Therapist <i class="fas fa-paper-plane"></i></button>
             <div class="col-sm-12 py-4">
                 <label class="form-label fw-bolder">Occupational or School Performance Rating:</label>
                 <div class="progress" style="height: 30px;">

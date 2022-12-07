@@ -15,8 +15,7 @@
                                         data-bs-target="#sharesurvey"></i></span>
                                 <span class="btn btn-sm"><i class="fa fa-cog" data-bs-toggle="modal"
                                         data-bs-target="#surveysettings"></i></span>
-                                <span class="btn btn-sm"><i class="fa fa-chart-bar" data-bs-toggle="modal"
-                                        data-bs-target="#collectiveresults"></i></span>
+                                <span class="btn btn-sm"><i class="fa fa-download"></i></span>
                             </div>
                         </li>
                           <li class="list-group-item">
@@ -27,8 +26,7 @@
                                         data-bs-target="#sharesurvey"></i></span>
                                 <span class="btn btn-sm"><i class="fa fa-cog" data-bs-toggle="modal"
                                         data-bs-target="#surveysettings"></i></span>
-                                <span class="btn btn-sm"><i class="fa fa-chart-bar" data-bs-toggle="modal"
-                                        data-bs-target="#collectiveresults"></i></span>
+                             <span class="btn btn-sm"><i class="fa fa-download"></i></span>
                             </div>
                         </li>
                           <li class="list-group-item">
@@ -39,8 +37,7 @@
                                         data-bs-target="#sharesurvey"></i></span>
                                 <span class="btn btn-sm"><i class="fa fa-cog" data-bs-toggle="modal"
                                         data-bs-target="#surveysettings"></i></span>
-                                <span class="btn btn-sm"><i class="fa fa-chart-bar" data-bs-toggle="modal"
-                                        data-bs-target="#collectiveresults"></i></span>
+                             <span class="btn btn-sm"><i class="fa fa-download"></i></span>
                             </div>
                         </li>
                         <li class="list-group-item">
@@ -52,7 +49,7 @@
                                             data-bs-target="#sharesurvey"></i></span>
                                     <span class="btn btn-sm"><i class="fa fa-cog" data-bs-toggle="modal"
                                             data-bs-target="#surveysettings"></i></span>
-                                    <span class="btn btn-sm"><i class="fa fa-chart-bar" data-bs-toggle="modal"
+                                    <span class="btn btn-sm"><i class="fa fa-download" data-bs-toggle="modal"
                                             data-bs-target="#collectiveresults"></i></span>
                                 </div>
                         </li>
@@ -65,7 +62,7 @@
                                             data-bs-target="#sharesurvey"></i></span>
                                     <span class="btn btn-sm"><i class="fa fa-cog" data-bs-toggle="modal"
                                             data-bs-target="#surveysettings"></i></span>
-                                    <span class="btn btn-sm"><i class="fa fa-chart-bar" data-bs-toggle="modal"
+                                    <span class="btn btn-sm"><i class="fa fa-download" data-bs-toggle="modal"
                                             data-bs-target="#collectiveresults"></i></span>
                                 </div>
                         </li>
@@ -78,7 +75,7 @@
                                             data-bs-target="#sharesurvey"></i></span>
                                     <span class="btn btn-sm"><i class="fa fa-cog" data-bs-toggle="modal"
                                             data-bs-target="#surveysettings"></i></span>
-                                    <span class="btn btn-sm"><i class="fa fa-chart-bar" data-bs-toggle="modal"
+                                    <span class="btn btn-sm"><i class="fa fa-download" data-bs-toggle="modal"
                                             data-bs-target="#collectiveresults"></i></span>
                                 </div>
                         </li>
