@@ -47,7 +47,7 @@
 
             <div class="row pt-4">
                 <div class="col-sm-12">
-                    <label class="form-label fw-bolder">Risk Factors</label>
+                    <label class="form-label fw-bolder">Risk Factors *</label>
                     <div class="form-check pb-2">
                         <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
                         <label class="form-check-label" for="flexCheckDefault">
@@ -78,7 +78,7 @@
             <div class="row pt-4">
                 <div class="col-sm-12">
                     <div class="mb-3">
-                        <label class="form-label fw-bolder">Medication Update</label>
+                        <label class="form-label fw-bolder">Medication Update *</label>
                         <textarea class="form-control mb-3" rows="3" required></textarea>
                     </div>
                 </div>
@@ -87,14 +87,14 @@
             <div class="row py-4">
                 <div class="col-sm-12">
                     <div class="mb-3">
-                        <label class="form-label fw-bolder"> Summary of main themes and content of session</label>
+                        <label class="form-label fw-bolder"> Summary of main themes and content of session *</label>
                         <textarea class="form-control mb-3" rows="3" required></textarea>
                     </div>
                 </div>
             </div>
 
             <h4>
-                Interventions
+                Interventions *
             </h4>
 
             <div class="row py-4">
@@ -822,6 +822,7 @@
 
             <div class="row pt-4">
                 <div class="col-sm-4">
+                    <label for="" class="form-label fw-bolder">Needs Met *</label>
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Needs Met</option>
                         <option value="3">Emotional Nurturance and Unconditional Love</option>
@@ -838,6 +839,7 @@
 
             <div class="row  pt-4">
                 <div class="col-sm-4">
+                    <label for="" class="form-label fw-bolder">Outcome/ Progress *</label>
                     <select class="form-select" aria-label="Default select example">
                         <option selected>Outcome/ Progress</option>
                         <option value="1">none</option>

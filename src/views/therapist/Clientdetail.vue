@@ -896,14 +896,6 @@
                                 </div>
 
 
-
-                                <div class="d-flex pt-4">
-                                    <button type="button" class="btn btn-outline-dark"><i
-                                            class="fas fa-file-upload me-1"></i>
-                                        Upload
-                                        Progress Note</button>
-                                </div>
-
                                 <hr>
 
                                 <div class="d-flex my-4 justify-content-center">

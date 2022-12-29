@@ -6,12 +6,12 @@
                 <div class="col-sm-12">
                     <div class="row g-3 py-3">
                         <div class="col">
-                            <label for="" class="pb-2 fw-bolder">First Name</label>
+                            <label for="" class="pb-2 fw-bolder">First Name *</label>
                             <input type="text" class="form-control" aria-label="First name">
                         </div>
 
                         <div class="col">
-                            <label for="" class="pb-2 fw-bolder">Last Name</label>
+                            <label for="" class="pb-2 fw-bolder">Last Name *</label>
                             <input type="text" class="form-control" aria-label="Last name">
                         </div>
                     </div>
@@ -33,7 +33,7 @@
             <hr>
             <div class="row">
                 <div class="col-sm">
-                    <label class="fw-bolder pt-4 d-block">Phone</label>
+                    <label class="fw-bolder pt-4 d-block">Phone *</label>
                     <div class="row g-3 py-3">
                         <div class="col-sm-3">
                             <input type="text" class="form-control" placeholder="(###) ###-####">
@@ -92,7 +92,7 @@
             </div>
             <div class="row">
                 <div class="col-sm">
-                    <label class="fw-bolder pt-4 d-block">Email</label>
+                    <label class="fw-bolder pt-4 d-block">Email *</label>
                     <div class="row g-3 py-3">
                         <div class="col-sm-3">
                             <input type="text" class="form-control" placeholder="Email...">
@@ -145,7 +145,7 @@
                     <h4 class="pt-4">Address</h4>
                     <div class="row g-3 py-3">
                         <div class="col-sm-3">
-                            <label for="" class="pb-2 fw-bolder">Address Line 1</label>
+                            <label for="" class="pb-2 fw-bolder">Address Line 1 *</label>
                             <input type="text" class="form-control" placeholder="Street Address">
                         </div>
                         <div class="col-sm-3">
@@ -153,14 +153,14 @@
                             <input type="text" class="form-control" placeholder="Unit/Apt #">
                         </div>
                         <div class="col-sm-1">
-                            <label for="" class="pb-2 fw-bolder">State</label>
+                            <label for="" class="pb-2 fw-bolder">State *</label>
                             <select class="form-select" aria-label="Default select example">
                                 <option selected>CA</option>
                                 <option value="1">option</option>
                             </select>
                         </div>
                         <div class="col-sm-1">
-                            <label for="" class="pb-2 fw-bolder">ZIP</label>
+                            <label for="" class="pb-2 fw-bolder">ZIP *</label>
                             <input type="text" class="form-control" placeholder="12345">
                         </div>
                         <div class="col-sm-1 pt-2">
@@ -180,7 +180,7 @@
             </div>
             <div class="row">
                 <div class="col-sm py-3">
-                    <label for="" class="pb-2 fw-bolder">Birth Date</label>
+                    <label for="" class="pb-2 fw-bolder">Birth Date *</label>
                     <div class="d-flex">
                         <div>
                             <select class="form-select">
