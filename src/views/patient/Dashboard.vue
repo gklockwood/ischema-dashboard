@@ -3,7 +3,7 @@
         <div class="container-fluid py-4 dashboard">
             <div class="row mt-4">
                 <div class="col-md-6">
-                    <div class="card shadow border-0 card-welcome mb-4 customcardbg">
+                    <div class="card shadow border-0 card-welcome mb-4 bg-secondary">
 
 
                         <div class="card-body">
@@ -17,9 +17,6 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="customcardimage">
-
                         </div>
                     </div>
                 </div>

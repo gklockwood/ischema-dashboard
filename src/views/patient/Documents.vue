@@ -20,18 +20,6 @@
             </div>
             <div class="row py-4">
                 <div class="col-sm pt-4">
-                    <h5>Optional</h5>
-                    <ul class="list-group">
-                        <li class="list-group-item"><a href="">Optional 1</a></li>
-                        <li class="list-group-item"><a href="">Optional 2</a></li>
-                        <li class="list-group-item"><a href="">Optional 3</a></li>
-                        <li class="list-group-item"><a href="">Optional 4</a></li>
-                        <li class="list-group-item"><a href="">Optional 5</a></li>
-                      </ul>
-                </div>
-            </div>
-            <div class="row py-4">
-                <div class="col-sm pt-4">
                     <h5>Completed</h5>
                     <ul class="list-group">
                         <li class="list-group-item"><i class="fas fa-check me-2" style="color:#198754"></i><a href="">Contact Information</a></li>
