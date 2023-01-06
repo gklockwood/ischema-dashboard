@@ -10,7 +10,7 @@
                             <div class="welcometext shadow mb-4 rounded-3">
                                 <div class="d-flex">
                                     <div>
-                                        <span class="fw-light">Good Morning, <br></span> Galen
+                                        <span class="fw-light">Welcome,<br></span> Galen
                                     </div>
                                     <div class="mx-4 usericon">
                                         <i class="fa fa-user"></i>
