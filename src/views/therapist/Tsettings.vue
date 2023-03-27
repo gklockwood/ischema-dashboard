@@ -3,17 +3,14 @@
         <div class="container-fluid py-4 dashboard">
             <div class="row mt-4">
                 <div class="col-md-6">
-                    <div class="card shadow border-0 card-welcome mb-4 bg-secondary">
+                    <div class="card shadow border-0 card-welcome mb-4 bg-primary">
 
 
                         <div class="card-body">
-                            <div class="welcometext shadow mb-4 rounded-3">
+                            <div class="welcometext">
                                 <div class="d-flex">
                                     <div>
                                         <span class="fw-light">Welcome, <br></span> Dr. George Lockwood, PHD
-                                    </div>
-                                    <div class="mx-4 usericon">
-                                        <i class="fa fa-user"></i>
                                     </div>
                                 </div>
                             </div>
