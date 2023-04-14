@@ -227,3 +227,13 @@ th, td {
  td .btn-group .btn {
   padding: 2px 5px !important;
  }
+
+
+ // List Group Item Overrides
+ li.list-group-item {
+  border-right: 0;
+  border-left: 0;
+}
+li.list-group-item:first-child {
+  border: none;
+}

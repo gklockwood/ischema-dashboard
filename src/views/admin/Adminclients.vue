@@ -45,7 +45,7 @@
 
 
 
-            <div class="card p-3 my-3 shadow-sm" v-for="client in clientList" :key="client.id"
+            <div class="card p-3 my-3 shadow border-0" v-for="client in clientList" :key="client.id"
                 :therapist-name="client.first_name" :id="client.id">
                 <div class="row">
                     <div class="col-sm-3">

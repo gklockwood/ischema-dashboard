@@ -5,8 +5,8 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6 py-3">
                     <h5 for="" class="fw-bolder">Core Documents</h5>
-                    <ul class="list-group pt-2">
-                        <li class="list-group-item bg-light fw-bolder">Consent Documents</li>
+                    <ul class="list-group card shadow border-0 mt-4">
+                        <li class="list-group-item card-title text-white bg-primary mb-0">Consent Documents</li>
                         <li class="list-group-item">
                             <a href="">Consent for Telehealth Consultation</a>       
                                 <div class="btn-group ps-2 float-end">
@@ -34,8 +34,8 @@
                         </li>
                 
                     </ul>
-                    <ul class="list-group pt-2">
-                        <li class="list-group-item bg-light fw-bolder">Intake Forms</li>
+                    <ul class="list-group card shadow border-0 mt-4">
+                        <li class="list-group-item card-title text-white bg-primary mb-0">Intake Forms</li>
                         <li class="list-group-item">
                             <a href="">Intake Demographics</a>       
                                 <div class="btn-group ps-2 float-end">
@@ -50,8 +50,8 @@
                             </div>
                         </li>
                     </ul>
-                    <ul class="list-group pt-3">
-                        <li class="list-group-item bg-light fw-bolder">Assessments</li>
+                    <ul class="list-group card shadow border-0 mt-4">
+                        <li class="list-group-item card-title text-white bg-primary mb-0">Assessments</li>
                         <li class="list-group-item"><a href="">YSQ</a>
                             <div class="btn-group ps-2 float-end">
                                 <span class="btn btn-sm"><i class="fa fa-print"></i></span>
@@ -100,12 +100,7 @@
                             <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal">Upload Document</button>
                         </div>
                     </div>
-                    <ul class="list-group pt-2">
-                        <li class="list-group-item">
-                            <div class="alert alert-info m-0 text-center" role="alert">
-                                <a href="">Upload</a> a custom document.
-                            </div>
-                        </li>
+                    <ul class="list-group card shadow border-0 mt-3">
                         <li class="list-group-item">
                             <a href="#">Custom Document Example</a>
                             <div class="btn-group ps-2 float-end">
