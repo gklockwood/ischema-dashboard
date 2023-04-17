@@ -71,8 +71,8 @@
                                 Patient documents need to be completed.
                             </div>
                             <ul class="list-group">
-                                <li class="list-group-item"><i class="fas fa-exclamation me-2" style="color:#dc3545"></i><a href="">Credit Card Information</a></li>
-                                <li class="list-group-item"><i class="fas fa-exclamation me-2" style="color:#dc3545"></i><a href="">Practice Policies</a></li>
+                                <li class="list-group-item"><i class="fas fa-exclamation me-2 warning-color"></i><a href="">Credit Card Information</a></li>
+                                <li class="list-group-item"><i class="fas fa-exclamation me-2 warning-color"></i><a href="">Practice Policies</a></li>
                               </ul>
                             <div class="cardfooter">
                                 <button type="button" class="btn btn-light mx-1 shadow-sm text-dark">View all Documents</button>

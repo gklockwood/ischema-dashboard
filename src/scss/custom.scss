@@ -27,6 +27,10 @@ $warning: rgb(203, 135, 7);
 @import "tabs.scss";
 @import "modals.scss";
 
+.warning-color {
+  color: $warning;
+}
+
 .custom-logo {
  width: 180px;
  height:auto;
