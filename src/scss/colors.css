@@ -6,15 +6,7 @@
   --gray-bg-gradient-dark: linear-gradient(to right, #0f172a, #203a43, #2c5364);
   --danger-bg-gradient: linear-gradient(to right, #c93345, #b92f3f);
   --success-bg-gradient: linear-gradient(to right, #378f66, #228169);
-  --warning-bg-gradient: linear-gradient(
-      to right,
-      rgb(200, 131, 2),
-      rgb(192, 127, 24)
-    );
-  --info-bg-gradient: linear-gradient(
-      to right,
-      rgb(102, 171, 189),
-      rgb(76, 163, 185)
-    );
+  --warning-bg-gradient: linear-gradient(to right,rgb(200, 131, 2),rgb(192, 127, 24));
+  --info-bg-gradient: linear-gradient(to right,rgb(102, 171, 189),rgb(76, 163, 185));
 }
-/*# sourceMappingURL=colors.css.map */
+

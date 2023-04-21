@@ -93,14 +93,12 @@
 
                 <div class="col-sm-12 col-md-6 py-3">
                     <div class="row">
-                        <div class="col-sm-6">
-                            <h5 for="" class="fw-bolder">My Uploads</h5>
-                        </div>
-                        <div class="col-sm-6 text-end">
+                        <div class="col-sm-12 text-end">
                             <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal">Upload Document</button>
                         </div>
                     </div>
                     <ul class="list-group card shadow border-0 mt-3">
+                        <li class="list-group-item card-title text-white bg-primary mb-0">My Uploads</li>
                         <li class="list-group-item">
                             <a href="#">Custom Document Example</a>
                             <div class="btn-group ps-2 float-end">

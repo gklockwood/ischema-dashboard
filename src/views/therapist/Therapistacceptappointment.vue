@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-sm-12">
 
-                    <div class="card shadow-sm my-3">
+                    <div class="card my-3">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-sm-12">
@@ -61,7 +61,7 @@
                         </div>
                     </div>
 
-                    <div class="card shadow-sm my-3">
+                    <div class="card my-3">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-sm-12">
@@ -118,7 +118,7 @@
                     </div>
 
 
-                    <div class="card shadow-sm my-3">
+                    <div class="card my-3">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col-sm-12">
