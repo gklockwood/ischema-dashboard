@@ -158,14 +158,11 @@
                                             <button type="button" class="btn btn-outline-dark" @click="toggleFilter"><i
                                                     class="fas fa-filter me-1"></i> Filter Documents</button>
                                             <button type="button" class="btn btn-outline-dark ms-2"
-                                                data-bs-toggle="modal" data-bs-target="#uploaddocumentmodal"><i
-                                                    class="fas fa-file-upload me-1"></i> Upload Document</button>
-                                            <button type="button" class="btn btn-outline-dark ms-2"
                                                 data-bs-toggle="modal" data-bs-target="#senddocumentmodal"><i
                                                     class="fas fa-paper-plane"></i> Send Document</button>
                                             <button type="button" class="btn btn-outline-dark ms-2"
                                                 data-bs-toggle="modal" data-bs-target="#newprogressnote"><i
-                                                    class="fas fa-plus"></i> New Note</button>
+                                                    class="fas fa-edit"></i> New Note</button>
                                         </div>
                                     </div>
 
@@ -421,26 +418,7 @@
                                     </div>
 
 
-                                    <div class="row py-3">
-                                        <div class="col-sm-12 col-md-4 d-flex align-items-center">
-                                            <div class="input-group">
-                                                <input class="form-control border-end-0 border rounded-pill"
-                                                    type="search" value="Search Documents" id="example-search-input">
-                                                <span class="input-group-append">
-                                                    <button
-                                                        class="btn btn-outline-dark bg-white border-bottom-0 border rounded-pill ms-n5"
-                                                        type="button">
-                                                        <i class="fa fa-search"></i>
-                                                    </button>
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div class="col-sm align-text-bottom pt-1">
-                                            <small class="text-muted">Only <span class="fw-bolder">Web Forms</span> can
-                                                be edited in the app. To edit another document type you can download it
-                                                and re-upload as a custom document.</small>
-                                        </div>
-                                    </div>
+                            
                                 </div>
                                 <div class="col-sm-12" style="overflow: scroll;">
 
@@ -473,7 +451,7 @@
                                         </tbody> -->
                                         <tbody>
                                             <tr>
-                                                <td><i class="fas fa-file text-info"></i> In Love <small
+                                                <td>In Love <small
                                                         class="text-muted">(Word)</small></td>
                                                 <td>11/2/2022</td>
                                                 <td>Note</td>
@@ -496,7 +474,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><i class="fas fa-file-pdf text-pdf"></i> Notice of Privacy Practices
+                                                <td>Notice of Privacy Practices
                                                     <small class="text-muted">(PDF)</small></td>
                                                 <td>11/2/2022</td>
                                                 <td>Intake Form</td>
@@ -519,7 +497,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><i class="fas fa-file-pdf text-pdf"></i> Good faith estimate model
+                                                <td>Good faith estimate model
                                                     disclosure <small class="text-muted">(PDF)</small></td>
                                                 <td>11/2/2022</td>
                                                 <td>Intake Form</td>
@@ -542,7 +520,7 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><i class="fas fa-file text-info"></i> Psychotherapy Progress Note
+                                                <td>Psychotherapy Progress Note
                                                     <small class="text-muted">(Web Form)</small></td>
                                                 <td>10/31/2022</td>
                                                 <td>Intake Form</td>
