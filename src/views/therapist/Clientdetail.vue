@@ -428,11 +428,8 @@
                                                 <th>Name</th>
                                                 <th>Created</th>
                                                 <th>Category</th>
-                                                <th>Author/Access</th>
-                                                <th>Service</th>
                                                 <th>Sent</th>
                                                 <th>Received</th>
-                                                <th>Status</th>
                                                 <th>Actions</th>
                                             </tr>
                                         </thead>
@@ -451,15 +448,87 @@
                                         </tbody> -->
                                         <tbody>
                                             <tr>
-                                                <td>In Love <small
-                                                        class="text-muted">(Word)</small></td>
+                                                <td>
+                                                    <img src="../../assets/img/tableicons/icon_docs_demographic.svg" alt="" class="tableicon">
+                                                    Demographics
+                                                </td>
+                                                <td>11/2/2022</td>
+                                                <td>Intake Form</td>
+                                                <td></td>
+                                                <td>11/2/2022</td>
+                                                <td>11/2/2022</td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <span class="p-2 btn btn-outline-dark btn-sm disabled"><i
+                                                                class="fa fa-edit"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-print"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"> <i
+                                                                class="fa fa-download"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-trash"></i></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img src="../../assets/img/tableicons/icon_docs_areasofconcern.svg" alt="" class="tableicon">
+                                                    Initial Areas of Concern 
+                                                </td>
+                                                <td>11/2/2022</td>
+                                                <td>Intake Form</td>
+                                                <td></td>
+                                                <td>11/2/2022</td>
+                                                <td>11/2/2022</td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <span class="p-2 btn btn-outline-dark btn-sm disabled"><i
+                                                                class="fa fa-edit"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-print"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"> <i
+                                                                class="fa fa-download"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-trash"></i></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img src="../../assets/img/tableicons/icon_docs_inventory.svg" alt="" class="tableicon">
+                                                    Inventory
+                                                </td>
+                                                <td>11/2/2022</td>
+                                                <td>Inventory</td>
+                                                <td></td>
+                                                <td>11/2/2022</td>
+                                                <td>11/2/2022</td>
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <span class="p-2 btn btn-outline-dark btn-sm disabled"><i
+                                                                class="fa fa-edit"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-print"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"> <i
+                                                                class="fa fa-download"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-trash"></i></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img src="../../assets/img/tableicons/icon_docs_treatmentplan.svg" alt="" class="tableicon">
+                                                    Initial Intake and Treatment Plan
+                                                </td>
                                                 <td>11/2/2022</td>
                                                 <td>Note</td>
-                                                <td>Clinical</td>
                                                 <td></td>
                                                 <td>11/2/2022</td>
                                                 <td>11/2/2022</td>
-                                                <td>Pending Patient Signature</td>
                                                 <td>
                                                     <div class="btn-group">
                                                         <span class="p-2 btn btn-outline-dark btn-sm disabled"><i
@@ -473,16 +542,18 @@
                                                     </div>
                                                 </td>
                                             </tr>
+
                                             <tr>
-                                                <td>Notice of Privacy Practices
-                                                    <small class="text-muted">(PDF)</small></td>
+                                                <td>
+                                                    <img src="../../assets/img/tableicons/icon_docs_progressnote.svg" alt="" class="tableicon">
+                                                    Progress Note
+                                                </td>
                                                 <td>11/2/2022</td>
-                                                <td>Intake Form</td>
-                                                <td>Administrative</td>
+                                                <td>Note</td>
                                                 <td></td>
                                                 <td>11/2/2022</td>
                                                 <td>11/2/2022</td>
-                                                <td><span class="badge bg-success">Completed by Patient</span></td>
+                                                
                                                 <td>
                                                     <div class="btn-group">
                                                         <span class="p-2 btn btn-outline-dark btn-sm disabled"><i
@@ -496,16 +567,18 @@
                                                     </div>
                                                 </td>
                                             </tr>
+
                                             <tr>
-                                                <td>Good faith estimate model
-                                                    disclosure <small class="text-muted">(PDF)</small></td>
+                                                <td>
+                                                    <img src="../../assets/img/tableicons/icon_docs_processnote.svg" alt="" class="tableicon">
+                                                    Process Note
+                                                </td>
                                                 <td>11/2/2022</td>
-                                                <td>Intake Form</td>
-                                                <td>Administrative</td>
+                                                <td>Note</td>
                                                 <td></td>
                                                 <td>11/2/2022</td>
                                                 <td>11/2/2022</td>
-                                                <td>Reviewed by Patient</td>
+                                                
                                                 <td>
                                                     <div class="btn-group">
                                                         <span class="p-2 btn btn-outline-dark btn-sm disabled"><i
@@ -519,19 +592,21 @@
                                                     </div>
                                                 </td>
                                             </tr>
+
                                             <tr>
-                                                <td>Psychotherapy Progress Note
-                                                    <small class="text-muted">(Web Form)</small></td>
-                                                <td>10/31/2022</td>
-                                                <td>Intake Form</td>
-                                                <td>Administrative</td>
-                                                <td>90834</td>
+                                                <td>
+                                                    <img src="../../assets/img/tableicons/icon_docs_consultationnote.svg" alt="" class="tableicon">
+                                                    Consultation Note
+                                                </td>
+                                                <td>11/2/2022</td>
+                                                <td>Note</td>
                                                 <td></td>
-                                                <td></td>
-                                                <td>Pending Patient Signature</td>
+                                                <td>11/2/2022</td>
+                                                <td>11/2/2022</td>
+                                                
                                                 <td>
                                                     <div class="btn-group">
-                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                        <span class="p-2 btn btn-outline-dark btn-sm disabled"><i
                                                                 class="fa fa-edit"></i></span>
                                                         <span class="p-2 btn btn-outline-dark btn-sm"><i
                                                                 class="fa fa-print"></i></span>
@@ -542,6 +617,158 @@
                                                     </div>
                                                 </td>
                                             </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img src="../../assets/img/tableicons/icon_docs_terminationnote.svg" alt="" class="tableicon">
+                                                    Termination Note
+                                                </td>
+                                                <td>11/2/2022</td>
+                                                <td>Note</td>
+                                                <td></td>
+                                                <td>11/2/2022</td>
+                                                <td>11/2/2022</td>
+                                                
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <span class="p-2 btn btn-outline-dark btn-sm disabled"><i
+                                                                class="fa fa-edit"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-print"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"> <i
+                                                                class="fa fa-download"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-trash"></i></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img src="../../assets/img/tableicons/icon_docs_missedappointmentnote.svg" alt="" class="tableicon">
+                                                    Missed Appointment Note
+                                                </td>
+                                                <td>11/2/2022</td>
+                                                <td>Note</td>
+                                                <td></td>
+                                                <td>11/2/2022</td>
+                                                <td>11/2/2022</td>
+                                                
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <span class="p-2 btn btn-outline-dark btn-sm disabled"><i
+                                                                class="fa fa-edit"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-print"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"> <i
+                                                                class="fa fa-download"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-trash"></i></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img src="../../assets/img/tableicons/icon_docs_contact.svg" alt="" class="tableicon">
+                                                    Contact Note
+                                                </td>
+                                                <td>11/2/2022</td>
+                                                <td>Note</td>
+                                                <td></td>
+                                                <td>11/2/2022</td>
+                                                <td>11/2/2022</td>
+                                                
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <span class="p-2 btn btn-outline-dark btn-sm disabled"><i
+                                                                class="fa fa-edit"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-print"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"> <i
+                                                                class="fa fa-download"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-trash"></i></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <img src="../../assets/img/tableicons/icon_docs_concecptualization.svg" alt="" class="tableicon">
+                                                    Case Conceptualization and Treatment Plan
+                                                </td>
+                                                <td>11/2/2022</td>
+                                                <td>Treatment Plan</td>
+                                                <td></td>
+                                                <td>11/2/2022</td>
+                                                <td>11/2/2022</td>
+                                                
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <span class="p-2 btn btn-outline-dark btn-sm disabled"><i
+                                                                class="fa fa-edit"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-print"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"> <i
+                                                                class="fa fa-download"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-trash"></i></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>
+                                                    <img src="../../assets/img/tableicons/icon_docs_mylifestory.svg" alt="" class="tableicon">
+                                                    My Life Story
+                                                </td>
+                                                <td>11/2/2022</td>
+                                                <td>Treatment Plan</td>
+                                                <td></td>
+                                                <td>11/2/2022</td>
+                                                <td>11/2/2022</td>
+                                                
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <span class="p-2 btn btn-outline-dark btn-sm disabled"><i
+                                                                class="fa fa-edit"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-print"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"> <i
+                                                                class="fa fa-download"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-trash"></i></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            
+                                            <tr>
+                                                <td>
+                                                    <img src="../../assets/img/tableicons/icon_docs_consentform.svg" alt="" class="tableicon">
+                                                    Consent Form
+                                                </td>
+                                                <td>11/2/2022</td>
+                                                <td>Consent Form</td>
+                                                <td></td>
+                                                <td>11/2/2022</td>
+                                                <td>11/2/2022</td>
+                                                
+                                                <td>
+                                                    <div class="btn-group">
+                                                        <span class="p-2 btn btn-outline-dark btn-sm disabled"><i
+                                                                class="fa fa-edit"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-print"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"> <i
+                                                                class="fa fa-download"></i></span>
+                                                        <span class="p-2 btn btn-outline-dark btn-sm"><i
+                                                                class="fa fa-trash"></i></span>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                         
                                         </tbody>
                                     </table>
                                 </div>
