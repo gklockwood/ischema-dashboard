@@ -3,10 +3,13 @@
   position: fixed;
   top: 70px;
   bottom: 0;
-  background: $dark;
   left: -300px;
   transition: ease all 0.3s;
   padding: 10px;
+  background: url(../assets/img/eschema_website_backgrounds-sidebar-01.svg) no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+  background-color: $dark;
   a,
   .accordion-item {
     margin: 2px 0;
@@ -27,7 +30,7 @@
     }
   }
   a.activeLink {
-    background: rgba(102, 102, 109, 0.555) !important;
+    background: rgb(39 89 106) !important;
   }
 }
 .sidebarOpen {
@@ -38,6 +41,10 @@
   position: relative;
   transition: ease all 0.3s;
   padding-top: 70px;
+  // background: url(../assets/img/page_bg-01.svg) no-repeat;
+  // background-position: right;
+  // background-size: cover;
+  // height: 100vh;
 }
 .mainContentPushed {
   margin-left: 300px;
